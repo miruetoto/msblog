@@ -247,7 +247,7 @@ window.Quarto = {
 <p><code>-</code> FPCA = 하루 곡선을 B-스플라인 → FPCA. VMD+MFPCA (CEEMDAN · EEMD · EMD 도 같음) = 그 분해로 나눈 성분마다 이틀보다 느린 변동을 걷어내고 (네 분해 모두 같은 필터) 하루 주기에 맞게 보정한 뒤 B-스플라인 → MFPCA, 그 점수에 하루 평균 (수준 점수) 을 더해 k-means. 모두 k-means (k = 2) 이고 값은 ARI.</p>
 <p><code>-</code> 탭마다 표 아래에 지점 지도와 ARI 상자 그림, 그 아래에 분해 그림 (리포트 1 의 4 × 7 꼴) — 분해 그림 지점은 그 자료에서 X+MFPCA 넷 중 가장 높은 ARI 가 가장 큰 곳 (사건 · 대조 각 30일 이상 — 그보다 적으면 사건 하루짜리가 ARI 1 로 뽑힘).</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">에어코리아</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">EPA AQS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">OpenAQ</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">WEIS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">USGS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false" href="">기상청 ASOS ①</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false" href="">기상청 ASOS ②</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-8" role="tab" aria-controls="tabset-1-8" aria-selected="false" href="">NOAA ISD</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">에어코리아</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">EPA AQS · PM2.5</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">EPA AQS · O3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">OpenAQ</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">WEIS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false" href="">USGS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false" href="">기상청 ASOS ①</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-8" role="tab" aria-controls="tabset-1-8" aria-selected="false" href="">기상청 ASOS ②</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-9-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-9" role="tab" aria-controls="tabset-1-9" aria-selected="false" href="">NOAA ISD</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p><code>-</code> 676곳 — 계산 655 · 라벨 부족 20 · 자료 없음 1.</p>
@@ -362,7 +362,7 @@ window.Quarto = {
 </div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<p><code>-</code> 1,018곳 — 계산 815 · 라벨 부족 156 · 자료 없음 47.</p>
+<p><code>-</code> 484곳 — 계산 384 · 라벨 부족 55 · 자료 없음 45.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 11%">
@@ -387,15 +387,6 @@ window.Quarto = {
 <tbody>
 <tr class="odd">
 <td><strong>평균</strong></td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.610}\)</span></td>
-<td style="text-align: right;">0.076</td>
-<td style="text-align: right;">0.105</td>
-<td style="text-align: right;">0.106</td>
-<td style="text-align: right;">0.108</td>
-<td style="text-align: right;">0.105</td>
-</tr>
-<tr class="even">
-<td>평균 PM2.5</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.801}\)</span></td>
 <td style="text-align: right;">0.130</td>
 <td style="text-align: right;">0.175</td>
@@ -403,59 +394,50 @@ window.Quarto = {
 <td style="text-align: right;">0.176</td>
 <td style="text-align: right;">0.175</td>
 </tr>
-<tr class="odd">
-<td>평균 O3</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.440}\)</span></td>
-<td style="text-align: right;">0.027</td>
-<td style="text-align: right;">0.043</td>
-<td style="text-align: right;">0.042</td>
-<td style="text-align: right;">0.047</td>
-<td style="text-align: right;">0.043</td>
-</tr>
 <tr class="even">
 <td>중앙값</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.602}\)</span></td>
-<td style="text-align: right;">0.011</td>
-<td style="text-align: right;">0.016</td>
-<td style="text-align: right;">0.016</td>
-<td style="text-align: right;">0.019</td>
-<td style="text-align: right;">0.017</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.875}\)</span></td>
+<td style="text-align: right;">0.035</td>
+<td style="text-align: right;">0.055</td>
+<td style="text-align: right;">0.053</td>
+<td style="text-align: right;">0.057</td>
+<td style="text-align: right;">0.053</td>
 </tr>
 <tr class="odd">
 <td>아래 25%</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.386}\)</span></td>
-<td style="text-align: right;">0.001</td>
-<td style="text-align: right;">0.002</td>
-<td style="text-align: right;">0.002</td>
-<td style="text-align: right;">0.003</td>
-<td style="text-align: right;">0.002</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.665}\)</span></td>
+<td style="text-align: right;">0.010</td>
+<td style="text-align: right;">0.013</td>
+<td style="text-align: right;">0.015</td>
+<td style="text-align: right;">0.015</td>
+<td style="text-align: right;">0.015</td>
 </tr>
 <tr class="even">
 <td>위 25%</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.881}\)</span></td>
-<td style="text-align: right;">0.063</td>
-<td style="text-align: right;">0.089</td>
-<td style="text-align: right;">0.099</td>
-<td style="text-align: right;">0.108</td>
-<td style="text-align: right;">0.108</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{1.000}\)</span></td>
+<td style="text-align: right;">0.170</td>
+<td style="text-align: right;">0.243</td>
+<td style="text-align: right;">0.247</td>
+<td style="text-align: right;">0.247</td>
+<td style="text-align: right;">0.252</td>
 </tr>
 <tr class="odd">
 <td>1등 지점 수</td>
-<td style="text-align: right;">797</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">13</td>
-<td style="text-align: right;">10</td>
+<td style="text-align: right;">381</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">8</td>
 </tr>
 <tr class="even">
 <td>1등 지점 수 (오라클 빼고)</td>
 <td style="text-align: right;">—</td>
-<td style="text-align: right;">230</td>
-<td style="text-align: right;">160</td>
-<td style="text-align: right;">149</td>
-<td style="text-align: right;">248</td>
-<td style="text-align: right;">194</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: right;">97</td>
+<td style="text-align: right;">99</td>
+<td style="text-align: right;">112</td>
+<td style="text-align: right;">116</td>
 </tr>
 </tbody>
 </table>
@@ -490,6 +472,88 @@ window.Quarto = {
 </div>
 </div>
 </div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p><code>-</code> 534곳 — 계산 431 · 라벨 부족 101 · 자료 없음 2.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 11%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">일평균 최적 문턱 (오라클)</th>
+<th style="text-align: right;">FPCA</th>
+<th style="text-align: right;">VMD+MFPCA</th>
+<th style="text-align: right;">CEEMDAN+MFPCA</th>
+<th style="text-align: right;">EEMD+MFPCA</th>
+<th style="text-align: right;">EMD+MFPCA</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>평균</strong></td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.440}\)</span></td>
+<td style="text-align: right;">0.027</td>
+<td style="text-align: right;">0.043</td>
+<td style="text-align: right;">0.042</td>
+<td style="text-align: right;">0.047</td>
+<td style="text-align: right;">0.043</td>
+</tr>
+<tr class="even">
+<td>중앙값</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.437}\)</span></td>
+<td style="text-align: right;">0.002</td>
+<td style="text-align: right;">0.002</td>
+<td style="text-align: right;">0.003</td>
+<td style="text-align: right;">0.005</td>
+<td style="text-align: right;">0.004</td>
+</tr>
+<tr class="odd">
+<td>아래 25%</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.300}\)</span></td>
+<td style="text-align: right;">-0.001</td>
+<td style="text-align: right;">-0.000</td>
+<td style="text-align: right;">-0.000</td>
+<td style="text-align: right;">0.000</td>
+<td style="text-align: right;">-0.000</td>
+</tr>
+<tr class="even">
+<td>위 25%</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.569}\)</span></td>
+<td style="text-align: right;">0.015</td>
+<td style="text-align: right;">0.024</td>
+<td style="text-align: right;">0.028</td>
+<td style="text-align: right;">0.034</td>
+<td style="text-align: right;">0.028</td>
+</tr>
+<tr class="odd">
+<td>1등 지점 수</td>
+<td style="text-align: right;">416</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td>1등 지점 수 (오라클 빼고)</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">129</td>
+<td style="text-align: right;">63</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">136</td>
+<td style="text-align: right;">78</td>
+</tr>
+</tbody>
+</table>
+<p><code>-</code> 1등 지점 수: 지점마다 여섯 설계 중 가장 높은 것을 셈 (같으면 모두에 하나씩). «오라클 빼고» 는 나머지 다섯 중에서.</p>
 <div class="quarto-layout-panel" data-layout="[[62,38],[100]]">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 62.0%;justify-content: flex-start;">
@@ -521,7 +585,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <p><code>-</code> 2곳.</p>
 <table class="caption-top table">
 <colgroup>
@@ -597,7 +661,7 @@ window.Quarto = {
 </figure>
 </div>
 </div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
 <p><code>-</code> 77곳 — 계산 9 · 라벨 부족 68.</p>
 <table class="caption-top table">
 <colgroup>
@@ -769,7 +833,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<div id="tabset-1-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-6-tab">
 <p><code>-</code> 563곳 — 계산 549 · 라벨 부족 14.</p>
 <table class="caption-top table">
 <colgroup>
@@ -881,7 +945,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div id="tabset-1-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-6-tab">
+<div id="tabset-1-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-7-tab">
 <p><code>-</code> 7곳.</p>
 <table class="caption-top table">
 <colgroup>
@@ -1030,7 +1094,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div id="tabset-1-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-7-tab">
+<div id="tabset-1-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-8-tab">
 <p><code>-</code> 7곳.</p>
 <table class="caption-top table">
 <colgroup>
@@ -1179,7 +1243,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div id="tabset-1-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-8-tab">
+<div id="tabset-1-9" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-9-tab">
 <p><code>-</code> 60곳 — 계산 57 · 라벨 부족 3.</p>
 <table class="caption-top table">
 <colgroup>
@@ -1296,7 +1360,12 @@ window.Quarto = {
 </section>
 <section id="어블레이션-부품을-하나씩-빼면" class="level1">
 <h1>4. 어블레이션 — 부품을 하나씩 빼면</h1>
-<p><code>-</code> 계산한 지점 전부 (2,101곳) 에서 날 · 라벨 · 분해 결과를 그대로 두고 분해+MFPCA 의 부품을 한 번에 하나씩 뺌. 값은 평균 ARI, 괄호는 «그대로» 대비 평균 차. 빨강 = 열마다 가장 높은 값.</p>
+<p><code>-</code> 자료마다 (3절과 같은 탭) 계산한 지점에서 날 · 라벨 · 분해 결과를 그대로 두고 분해+MFPCA 의 부품을 한 번에 하나씩 바꿈. 값은 평균 ARI, 괄호는 «그대로» 대비 평균 차. 빨강 = 열마다 가장 높은 값.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">에어코리아</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">EPA AQS · PM2.5</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">EPA AQS · O3</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">OpenAQ</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false" href="">WEIS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false" href="">USGS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-7" role="tab" aria-controls="tabset-2-7" aria-selected="false" href="">기상청 ASOS ①</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-8" role="tab" aria-controls="tabset-2-8" aria-selected="false" href="">기상청 ASOS ②</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-9-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-9" role="tab" aria-controls="tabset-2-9" aria-selected="false" href="">NOAA ISD</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p><code>-</code> 655곳.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 15%">
@@ -1317,76 +1386,877 @@ window.Quarto = {
 <tbody>
 <tr class="odd">
 <td>그대로</td>
-<td style="text-align: right;">0.231</td>
-<td style="text-align: right;">0.234</td>
-<td style="text-align: right;">0.237</td>
-<td style="text-align: right;">0.234</td>
+<td style="text-align: right;">0.503</td>
+<td style="text-align: right;">0.509</td>
+<td style="text-align: right;">0.512</td>
+<td style="text-align: right;">0.507</td>
 </tr>
 <tr class="even">
 <td>수준 끄기</td>
-<td style="text-align: right;">0.082 (-0.149)</td>
-<td style="text-align: right;">0.085 (-0.149)</td>
-<td style="text-align: right;">0.090 (-0.147)</td>
-<td style="text-align: right;">0.083 (-0.151)</td>
+<td style="text-align: right;">0.029 (-0.474)</td>
+<td style="text-align: right;">0.037 (-0.472)</td>
+<td style="text-align: right;">0.041 (-0.472)</td>
+<td style="text-align: right;">0.029 (-0.479)</td>
 </tr>
 <tr class="odd">
 <td>거르기 끄기</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.243}\)</span> (+0.012)</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.248}\)</span> (+0.013)</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.248}\)</span> (+0.011)</td>
-<td style="text-align: right;">0.239 (+0.005)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.545}\)</span> (+0.043)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.601}\)</span> (+0.092)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.601}\)</span> (+0.089)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.580}\)</span> (+0.073)</td>
 </tr>
 <tr class="even">
 <td>평균 보정 끄기</td>
-<td style="text-align: right;">0.158 (-0.073)</td>
-<td style="text-align: right;">0.222 (-0.012)</td>
-<td style="text-align: right;">0.227 (-0.010)</td>
-<td style="text-align: right;">0.198 (-0.036)</td>
+<td style="text-align: right;">0.260 (-0.242)</td>
+<td style="text-align: right;">0.514 (+0.005)</td>
+<td style="text-align: right;">0.524 (+0.011)</td>
+<td style="text-align: right;">0.469 (-0.039)</td>
 </tr>
 <tr class="odd">
 <td>분해 끄기</td>
-<td style="text-align: right;">0.233 (+0.002)</td>
-<td style="text-align: right;">0.233 (-0.002)</td>
-<td style="text-align: right;">0.233 (-0.004)</td>
-<td style="text-align: right;">0.233 (-0.001)</td>
+<td style="text-align: right;">0.501 (-0.001)</td>
+<td style="text-align: right;">0.501 (-0.007)</td>
+<td style="text-align: right;">0.501 (-0.011)</td>
+<td style="text-align: right;">0.501 (-0.006)</td>
 </tr>
 <tr class="even">
 <td>재배치 끄기</td>
-<td style="text-align: right;">0.237 (+0.006)</td>
-<td style="text-align: right;">0.247 (+0.012)</td>
-<td style="text-align: right;">0.244 (+0.007)</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.246}\)</span> (+0.011)</td>
+<td style="text-align: right;">0.519 (+0.016)</td>
+<td style="text-align: right;">0.534 (+0.025)</td>
+<td style="text-align: right;">0.514 (+0.002)</td>
+<td style="text-align: right;">0.519 (+0.012)</td>
 </tr>
 <tr class="odd">
 <td>다변량 끄기</td>
-<td style="text-align: right;">0.232 (+0.001)</td>
-<td style="text-align: right;">0.232 (-0.003)</td>
-<td style="text-align: right;">0.236 (-0.001)</td>
-<td style="text-align: right;">0.235 (+0.001)</td>
+<td style="text-align: right;">0.503 (-0.000)</td>
+<td style="text-align: right;">0.503 (-0.005)</td>
+<td style="text-align: right;">0.509 (-0.003)</td>
+<td style="text-align: right;">0.509 (+0.002)</td>
 </tr>
 <tr class="even">
 <td>칸 가중치 끄기</td>
-<td style="text-align: right;">0.236 (+0.006)</td>
-<td style="text-align: right;">0.241 (+0.007)</td>
-<td style="text-align: right;">0.244 (+0.007)</td>
-<td style="text-align: right;">0.239 (+0.005)</td>
+<td style="text-align: right;">0.520 (+0.017)</td>
+<td style="text-align: right;">0.524 (+0.016)</td>
+<td style="text-align: right;">0.534 (+0.022)</td>
+<td style="text-align: right;">0.522 (+0.015)</td>
 </tr>
 <tr class="odd">
 <td>에너지 자르기 끄기</td>
-<td style="text-align: right;">0.232 (+0.001)</td>
-<td style="text-align: right;">0.235 (+0.001)</td>
-<td style="text-align: right;">0.238 (+0.001)</td>
-<td style="text-align: right;">0.234 (-0.000)</td>
+<td style="text-align: right;">0.504 (+0.002)</td>
+<td style="text-align: right;">0.509 (+0.000)</td>
+<td style="text-align: right;">0.514 (+0.002)</td>
+<td style="text-align: right;">0.507 (+0.000)</td>
 </tr>
 <tr class="even">
 <td>표준화 끄기</td>
-<td style="text-align: right;">0.228 (-0.003)</td>
-<td style="text-align: right;">0.213 (-0.022)</td>
-<td style="text-align: right;">0.217 (-0.020)</td>
-<td style="text-align: right;">0.209 (-0.025)</td>
+<td style="text-align: right;">0.469 (-0.034)</td>
+<td style="text-align: right;">0.420 (-0.089)</td>
+<td style="text-align: right;">0.429 (-0.083)</td>
+<td style="text-align: right;">0.415 (-0.092)</td>
 </tr>
 </tbody>
 </table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261015_c90dd3_26.png" class="img-fluid figure-img"></p>
+<figcaption>에어코리아 — 어블레이션 («그대로» 대비 평균 ARI 차)</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p><code>-</code> 384곳.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>바꾼 것</th>
+<th style="text-align: right;">VMD</th>
+<th style="text-align: right;">CEEMDAN</th>
+<th style="text-align: right;">EEMD</th>
+<th style="text-align: right;">EMD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>그대로</td>
+<td style="text-align: right;">0.175</td>
+<td style="text-align: right;">0.177</td>
+<td style="text-align: right;">0.176</td>
+<td style="text-align: right;">0.175</td>
+</tr>
+<tr class="even">
+<td>수준 끄기</td>
+<td style="text-align: right;">0.094 (-0.081)</td>
+<td style="text-align: right;">0.101 (-0.075)</td>
+<td style="text-align: right;">0.104 (-0.072)</td>
+<td style="text-align: right;">0.105 (-0.070)</td>
+</tr>
+<tr class="odd">
+<td>거르기 끄기</td>
+<td style="text-align: right;">0.167 (-0.007)</td>
+<td style="text-align: right;">0.149 (-0.028)</td>
+<td style="text-align: right;">0.156 (-0.020)</td>
+<td style="text-align: right;">0.140 (-0.035)</td>
+</tr>
+<tr class="even">
+<td>평균 보정 끄기</td>
+<td style="text-align: right;">0.117 (-0.057)</td>
+<td style="text-align: right;">0.128 (-0.049)</td>
+<td style="text-align: right;">0.133 (-0.043)</td>
+<td style="text-align: right;">0.093 (-0.082)</td>
+</tr>
+<tr class="odd">
+<td>분해 끄기</td>
+<td style="text-align: right;">0.181 (+0.007)</td>
+<td style="text-align: right;">0.181 (+0.004)</td>
+<td style="text-align: right;">0.181 (+0.005)</td>
+<td style="text-align: right;">0.181 (+0.007)</td>
+</tr>
+<tr class="even">
+<td>재배치 끄기</td>
+<td style="text-align: right;">0.177 (+0.002)</td>
+<td style="text-align: right;">0.182 (+0.006)</td>
+<td style="text-align: right;">0.190 (+0.014)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.198}\)</span> (+0.023)</td>
+</tr>
+<tr class="odd">
+<td>다변량 끄기</td>
+<td style="text-align: right;">0.182 (+0.007)</td>
+<td style="text-align: right;">0.172 (-0.005)</td>
+<td style="text-align: right;">0.175 (-0.001)</td>
+<td style="text-align: right;">0.177 (+0.002)</td>
+</tr>
+<tr class="even">
+<td>칸 가중치 끄기</td>
+<td style="text-align: right;">0.176 (+0.001)</td>
+<td style="text-align: right;">0.184 (+0.007)</td>
+<td style="text-align: right;">0.179 (+0.003)</td>
+<td style="text-align: right;">0.177 (+0.002)</td>
+</tr>
+<tr class="odd">
+<td>에너지 자르기 끄기</td>
+<td style="text-align: right;">0.177 (+0.002)</td>
+<td style="text-align: right;">0.183 (+0.006)</td>
+<td style="text-align: right;">0.180 (+0.005)</td>
+<td style="text-align: right;">0.174 (-0.001)</td>
+</tr>
+<tr class="even">
+<td>표준화 끄기</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.185}\)</span> (+0.011)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.187}\)</span> (+0.010)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.191}\)</span> (+0.015)</td>
+<td style="text-align: right;">0.175 (-0.000)</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261015_c90dd3_27.png" class="img-fluid figure-img"></p>
+<figcaption>EPA AQS · PM2.5 — 어블레이션 («그대로» 대비 평균 ARI 차)</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p><code>-</code> 431곳.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>바꾼 것</th>
+<th style="text-align: right;">VMD</th>
+<th style="text-align: right;">CEEMDAN</th>
+<th style="text-align: right;">EEMD</th>
+<th style="text-align: right;">EMD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>그대로</td>
+<td style="text-align: right;">0.043</td>
+<td style="text-align: right;">0.042</td>
+<td style="text-align: right;">0.047</td>
+<td style="text-align: right;">0.043</td>
+</tr>
+<tr class="even">
+<td>수준 끄기</td>
+<td style="text-align: right;">0.040 (-0.003)</td>
+<td style="text-align: right;">0.035 (-0.007)</td>
+<td style="text-align: right;">0.052 (+0.005)</td>
+<td style="text-align: right;">0.042 (-0.002)</td>
+</tr>
+<tr class="odd">
+<td>거르기 끄기</td>
+<td style="text-align: right;">0.041 (-0.002)</td>
+<td style="text-align: right;">0.030 (-0.012)</td>
+<td style="text-align: right;">0.032 (-0.015)</td>
+<td style="text-align: right;">0.030 (-0.013)</td>
+</tr>
+<tr class="even">
+<td>평균 보정 끄기</td>
+<td style="text-align: right;">0.041 (-0.002)</td>
+<td style="text-align: right;">0.025 (-0.017)</td>
+<td style="text-align: right;">0.038 (-0.009)</td>
+<td style="text-align: right;">0.032 (-0.011)</td>
+</tr>
+<tr class="odd">
+<td>분해 끄기</td>
+<td style="text-align: right;">0.042 (-0.000)</td>
+<td style="text-align: right;">0.042 (+0.000)</td>
+<td style="text-align: right;">0.042 (-0.004)</td>
+<td style="text-align: right;">0.042 (-0.001)</td>
+</tr>
+<tr class="even">
+<td>재배치 끄기</td>
+<td style="text-align: right;">0.043 (+0.000)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.047}\)</span> (+0.005)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.059}\)</span> (+0.012)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.050}\)</span> (+0.007)</td>
+</tr>
+<tr class="odd">
+<td>다변량 끄기</td>
+<td style="text-align: right;">0.043 (+0.000)</td>
+<td style="text-align: right;">0.042 (-0.000)</td>
+<td style="text-align: right;">0.047 (+0.000)</td>
+<td style="text-align: right;">0.044 (+0.000)</td>
+</tr>
+<tr class="even">
+<td>칸 가중치 끄기</td>
+<td style="text-align: right;">0.043 (-0.000)</td>
+<td style="text-align: right;">0.042 (-0.000)</td>
+<td style="text-align: right;">0.040 (-0.007)</td>
+<td style="text-align: right;">0.044 (+0.000)</td>
+</tr>
+<tr class="odd">
+<td>에너지 자르기 끄기</td>
+<td style="text-align: right;">0.043 (+0.000)</td>
+<td style="text-align: right;">0.042 (-0.000)</td>
+<td style="text-align: right;">0.047 (+0.000)</td>
+<td style="text-align: right;">0.043 (-0.000)</td>
+</tr>
+<tr class="even">
+<td>표준화 끄기</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.051}\)</span> (+0.008)</td>
+<td style="text-align: right;">0.046 (+0.004)</td>
+<td style="text-align: right;">0.052 (+0.005)</td>
+<td style="text-align: right;">0.047 (+0.003)</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261015_c90dd3_28.png" class="img-fluid figure-img"></p>
+<figcaption>EPA AQS · O3 — 어블레이션 («그대로» 대비 평균 ARI 차)</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+<p><code>-</code> 2곳.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>바꾼 것</th>
+<th style="text-align: right;">VMD</th>
+<th style="text-align: right;">CEEMDAN</th>
+<th style="text-align: right;">EEMD</th>
+<th style="text-align: right;">EMD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>그대로</td>
+<td style="text-align: right;">0.500</td>
+<td style="text-align: right;">0.430</td>
+<td style="text-align: right;">0.468</td>
+<td style="text-align: right;">0.468</td>
+</tr>
+<tr class="even">
+<td>수준 끄기</td>
+<td style="text-align: right;">0.001 (-0.499)</td>
+<td style="text-align: right;">0.131 (-0.299)</td>
+<td style="text-align: right;">0.129 (-0.339)</td>
+<td style="text-align: right;">0.131 (-0.338)</td>
+</tr>
+<tr class="odd">
+<td>거르기 끄기</td>
+<td style="text-align: right;">0.500 (+0.000)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.679}\)</span> (+0.249)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.558}\)</span> (+0.089)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.510}\)</span> (+0.041)</td>
+</tr>
+<tr class="even">
+<td>평균 보정 끄기</td>
+<td style="text-align: right;">0.244 (-0.256)</td>
+<td style="text-align: right;">0.335 (-0.095)</td>
+<td style="text-align: right;">0.480 (+0.012)</td>
+<td style="text-align: right;">0.402 (-0.067)</td>
+</tr>
+<tr class="odd">
+<td>분해 끄기</td>
+<td style="text-align: right;">0.430 (-0.070)</td>
+<td style="text-align: right;">0.430 (+0.000)</td>
+<td style="text-align: right;">0.430 (-0.038)</td>
+<td style="text-align: right;">0.430 (-0.038)</td>
+</tr>
+<tr class="even">
+<td>재배치 끄기</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.558}\)</span> (+0.058)</td>
+<td style="text-align: right;">0.429 (-0.001)</td>
+<td style="text-align: right;">0.458 (-0.010)</td>
+<td style="text-align: right;">0.474 (+0.006)</td>
+</tr>
+<tr class="odd">
+<td>다변량 끄기</td>
+<td style="text-align: right;">0.530 (+0.030)</td>
+<td style="text-align: right;">0.430 (+0.000)</td>
+<td style="text-align: right;">0.468 (+0.000)</td>
+<td style="text-align: right;">0.468 (+0.000)</td>
+</tr>
+<tr class="even">
+<td>칸 가중치 끄기</td>
+<td style="text-align: right;">0.530 (+0.030)</td>
+<td style="text-align: right;">0.396 (-0.034)</td>
+<td style="text-align: right;">0.435 (-0.034)</td>
+<td style="text-align: right;">0.490 (+0.022)</td>
+</tr>
+<tr class="odd">
+<td>에너지 자르기 끄기</td>
+<td style="text-align: right;">0.500 (+0.000)</td>
+<td style="text-align: right;">0.413 (-0.017)</td>
+<td style="text-align: right;">0.468 (+0.000)</td>
+<td style="text-align: right;">0.468 (+0.000)</td>
+</tr>
+<tr class="even">
+<td>표준화 끄기</td>
+<td style="text-align: right;">0.462 (-0.038)</td>
+<td style="text-align: right;">0.413 (-0.017)</td>
+<td style="text-align: right;">0.413 (-0.056)</td>
+<td style="text-align: right;">0.397 (-0.071)</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261015_c90dd3_29.png" class="img-fluid figure-img"></p>
+<figcaption>OpenAQ — 어블레이션 («그대로» 대비 평균 ARI 차)</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
+<p><code>-</code> 9곳.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>바꾼 것</th>
+<th style="text-align: right;">VMD</th>
+<th style="text-align: right;">CEEMDAN</th>
+<th style="text-align: right;">EEMD</th>
+<th style="text-align: right;">EMD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>그대로</td>
+<td style="text-align: right;">0.062</td>
+<td style="text-align: right;">0.062</td>
+<td style="text-align: right;">0.054</td>
+<td style="text-align: right;">0.058</td>
+</tr>
+<tr class="even">
+<td>수준 끄기</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.158}\)</span> (+0.096)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.147}\)</span> (+0.085)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.145}\)</span> (+0.092)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.152}\)</span> (+0.093)</td>
+</tr>
+<tr class="odd">
+<td>거르기 끄기</td>
+<td style="text-align: right;">0.062 (+0.000)</td>
+<td style="text-align: right;">0.037 (-0.026)</td>
+<td style="text-align: right;">0.032 (-0.021)</td>
+<td style="text-align: right;">0.032 (-0.027)</td>
+</tr>
+<tr class="even">
+<td>평균 보정 끄기</td>
+<td style="text-align: right;">0.133 (+0.071)</td>
+<td style="text-align: right;">0.044 (-0.019)</td>
+<td style="text-align: right;">0.033 (-0.020)</td>
+<td style="text-align: right;">0.026 (-0.033)</td>
+</tr>
+<tr class="odd">
+<td>분해 끄기</td>
+<td style="text-align: right;">0.065 (+0.002)</td>
+<td style="text-align: right;">0.065 (+0.002)</td>
+<td style="text-align: right;">0.065 (+0.011)</td>
+<td style="text-align: right;">0.065 (+0.006)</td>
+</tr>
+<tr class="even">
+<td>재배치 끄기</td>
+<td style="text-align: right;">0.067 (+0.005)</td>
+<td style="text-align: right;">0.066 (+0.004)</td>
+<td style="text-align: right;">0.098 (+0.045)</td>
+<td style="text-align: right;">0.062 (+0.004)</td>
+</tr>
+<tr class="odd">
+<td>다변량 끄기</td>
+<td style="text-align: right;">0.062 (+0.000)</td>
+<td style="text-align: right;">0.061 (-0.001)</td>
+<td style="text-align: right;">0.054 (+0.000)</td>
+<td style="text-align: right;">0.059 (+0.000)</td>
+</tr>
+<tr class="even">
+<td>칸 가중치 끄기</td>
+<td style="text-align: right;">0.060 (-0.003)</td>
+<td style="text-align: right;">0.061 (-0.001)</td>
+<td style="text-align: right;">0.053 (-0.000)</td>
+<td style="text-align: right;">0.059 (+0.001)</td>
+</tr>
+<tr class="odd">
+<td>에너지 자르기 끄기</td>
+<td style="text-align: right;">0.061 (-0.001)</td>
+<td style="text-align: right;">0.062 (-0.000)</td>
+<td style="text-align: right;">0.054 (+0.000)</td>
+<td style="text-align: right;">0.058 (-0.001)</td>
+</tr>
+<tr class="even">
+<td>표준화 끄기</td>
+<td style="text-align: right;">0.035 (-0.028)</td>
+<td style="text-align: right;">0.035 (-0.028)</td>
+<td style="text-align: right;">0.035 (-0.019)</td>
+<td style="text-align: right;">0.036 (-0.023)</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261015_c90dd3_30.png" class="img-fluid figure-img"></p>
+<figcaption>WEIS — 어블레이션 («그대로» 대비 평균 ARI 차)</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-6-tab">
+<p><code>-</code> 549곳.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>바꾼 것</th>
+<th style="text-align: right;">VMD</th>
+<th style="text-align: right;">CEEMDAN</th>
+<th style="text-align: right;">EEMD</th>
+<th style="text-align: right;">EMD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>그대로</td>
+<td style="text-align: right;">0.093</td>
+<td style="text-align: right;">0.097</td>
+<td style="text-align: right;">0.097</td>
+<td style="text-align: right;">0.097</td>
+</tr>
+<tr class="even">
+<td>수준 끄기</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.140}\)</span> (+0.047)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.140}\)</span> (+0.044)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.133}\)</span> (+0.036)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.134}\)</span> (+0.036)</td>
+</tr>
+<tr class="odd">
+<td>거르기 끄기</td>
+<td style="text-align: right;">0.095 (+0.002)</td>
+<td style="text-align: right;">0.076 (-0.021)</td>
+<td style="text-align: right;">0.072 (-0.026)</td>
+<td style="text-align: right;">0.073 (-0.024)</td>
+</tr>
+<tr class="even">
+<td>평균 보정 끄기</td>
+<td style="text-align: right;">0.134 (+0.041)</td>
+<td style="text-align: right;">0.096 (-0.001)</td>
+<td style="text-align: right;">0.088 (-0.009)</td>
+<td style="text-align: right;">0.078 (-0.020)</td>
+</tr>
+<tr class="odd">
+<td>분해 끄기</td>
+<td style="text-align: right;">0.097 (+0.004)</td>
+<td style="text-align: right;">0.097 (+0.000)</td>
+<td style="text-align: right;">0.097 (-0.001)</td>
+<td style="text-align: right;">0.097 (-0.001)</td>
+</tr>
+<tr class="even">
+<td>재배치 끄기</td>
+<td style="text-align: right;">0.093 (+0.000)</td>
+<td style="text-align: right;">0.101 (+0.005)</td>
+<td style="text-align: right;">0.105 (+0.008)</td>
+<td style="text-align: right;">0.102 (+0.005)</td>
+</tr>
+<tr class="odd">
+<td>다변량 끄기</td>
+<td style="text-align: right;">0.093 (-0.000)</td>
+<td style="text-align: right;">0.097 (+0.000)</td>
+<td style="text-align: right;">0.097 (-0.000)</td>
+<td style="text-align: right;">0.097 (-0.000)</td>
+</tr>
+<tr class="even">
+<td>칸 가중치 끄기</td>
+<td style="text-align: right;">0.091 (-0.002)</td>
+<td style="text-align: right;">0.098 (+0.002)</td>
+<td style="text-align: right;">0.102 (+0.005)</td>
+<td style="text-align: right;">0.097 (-0.000)</td>
+</tr>
+<tr class="odd">
+<td>에너지 자르기 끄기</td>
+<td style="text-align: right;">0.093 (-0.000)</td>
+<td style="text-align: right;">0.095 (-0.002)</td>
+<td style="text-align: right;">0.096 (-0.001)</td>
+<td style="text-align: right;">0.097 (-0.000)</td>
+</tr>
+<tr class="even">
+<td>표준화 끄기</td>
+<td style="text-align: right;">0.112 (+0.019)</td>
+<td style="text-align: right;">0.116 (+0.020)</td>
+<td style="text-align: right;">0.109 (+0.012)</td>
+<td style="text-align: right;">0.114 (+0.017)</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261015_c90dd3_31.png" class="img-fluid figure-img"></p>
+<figcaption>USGS — 어블레이션 («그대로» 대비 평균 ARI 차)</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-7-tab">
+<p><code>-</code> 7곳.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>바꾼 것</th>
+<th style="text-align: right;">VMD</th>
+<th style="text-align: right;">CEEMDAN</th>
+<th style="text-align: right;">EEMD</th>
+<th style="text-align: right;">EMD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>그대로</td>
+<td style="text-align: right;">-0.023</td>
+<td style="text-align: right;">-0.019</td>
+<td style="text-align: right;">-0.020</td>
+<td style="text-align: right;">-0.017</td>
+</tr>
+<tr class="even">
+<td>수준 끄기</td>
+<td style="text-align: right;">-0.009 (+0.013)</td>
+<td style="text-align: right;">0.002 (+0.021)</td>
+<td style="text-align: right;">0.001 (+0.021)</td>
+<td style="text-align: right;">-0.003 (+0.014)</td>
+</tr>
+<tr class="odd">
+<td>거르기 끄기</td>
+<td style="text-align: right;">-0.026 (-0.004)</td>
+<td style="text-align: right;">0.005 (+0.024)</td>
+<td style="text-align: right;">-0.000 (+0.020)</td>
+<td style="text-align: right;">0.002 (+0.019)</td>
+</tr>
+<tr class="even">
+<td>평균 보정 끄기</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.001}\)</span> (+0.024)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.073}\)</span> (+0.092)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.073}\)</span> (+0.093)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.045}\)</span> (+0.062)</td>
+</tr>
+<tr class="odd">
+<td>분해 끄기</td>
+<td style="text-align: right;">-0.015 (+0.008)</td>
+<td style="text-align: right;">-0.015 (+0.004)</td>
+<td style="text-align: right;">-0.015 (+0.005)</td>
+<td style="text-align: right;">-0.015 (+0.002)</td>
+</tr>
+<tr class="even">
+<td>재배치 끄기</td>
+<td style="text-align: right;">-0.023 (-0.001)</td>
+<td style="text-align: right;">-0.012 (+0.007)</td>
+<td style="text-align: right;">-0.022 (-0.002)</td>
+<td style="text-align: right;">-0.018 (-0.001)</td>
+</tr>
+<tr class="odd">
+<td>다변량 끄기</td>
+<td style="text-align: right;">-0.023 (+0.000)</td>
+<td style="text-align: right;">-0.020 (-0.000)</td>
+<td style="text-align: right;">-0.021 (-0.001)</td>
+<td style="text-align: right;">-0.018 (-0.001)</td>
+</tr>
+<tr class="even">
+<td>칸 가중치 끄기</td>
+<td style="text-align: right;">-0.000 (+0.022)</td>
+<td style="text-align: right;">-0.021 (-0.002)</td>
+<td style="text-align: right;">-0.024 (-0.004)</td>
+<td style="text-align: right;">-0.011 (+0.006)</td>
+</tr>
+<tr class="odd">
+<td>에너지 자르기 끄기</td>
+<td style="text-align: right;">-0.023 (+0.000)</td>
+<td style="text-align: right;">-0.021 (-0.001)</td>
+<td style="text-align: right;">-0.023 (-0.003)</td>
+<td style="text-align: right;">-0.016 (+0.000)</td>
+</tr>
+<tr class="even">
+<td>표준화 끄기</td>
+<td style="text-align: right;">-0.001 (+0.022)</td>
+<td style="text-align: right;">-0.000 (+0.019)</td>
+<td style="text-align: right;">-0.002 (+0.018)</td>
+<td style="text-align: right;">-0.000 (+0.017)</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261015_c90dd3_32.png" class="img-fluid figure-img"></p>
+<figcaption>기상청 ASOS ① — 어블레이션 («그대로» 대비 평균 ARI 차)</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-8-tab">
+<p><code>-</code> 7곳.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>바꾼 것</th>
+<th style="text-align: right;">VMD</th>
+<th style="text-align: right;">CEEMDAN</th>
+<th style="text-align: right;">EEMD</th>
+<th style="text-align: right;">EMD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>그대로</td>
+<td style="text-align: right;">0.041</td>
+<td style="text-align: right;">0.037</td>
+<td style="text-align: right;">0.028</td>
+<td style="text-align: right;">0.035</td>
+</tr>
+<tr class="even">
+<td>수준 끄기</td>
+<td style="text-align: right;">0.413 (+0.371)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.386}\)</span> (+0.349)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.299}\)</span> (+0.271)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.296}\)</span> (+0.261)</td>
+</tr>
+<tr class="odd">
+<td>거르기 끄기</td>
+<td style="text-align: right;">0.035 (-0.006)</td>
+<td style="text-align: right;">0.048 (+0.011)</td>
+<td style="text-align: right;">0.050 (+0.021)</td>
+<td style="text-align: right;">0.049 (+0.014)</td>
+</tr>
+<tr class="even">
+<td>평균 보정 끄기</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.413}\)</span> (+0.371)</td>
+<td style="text-align: right;">0.199 (+0.163)</td>
+<td style="text-align: right;">0.188 (+0.160)</td>
+<td style="text-align: right;">0.162 (+0.127)</td>
+</tr>
+<tr class="odd">
+<td>분해 끄기</td>
+<td style="text-align: right;">0.052 (+0.011)</td>
+<td style="text-align: right;">0.052 (+0.016)</td>
+<td style="text-align: right;">0.052 (+0.024)</td>
+<td style="text-align: right;">0.052 (+0.017)</td>
+</tr>
+<tr class="even">
+<td>재배치 끄기</td>
+<td style="text-align: right;">0.042 (+0.000)</td>
+<td style="text-align: right;">0.062 (+0.026)</td>
+<td style="text-align: right;">0.054 (+0.025)</td>
+<td style="text-align: right;">0.094 (+0.059)</td>
+</tr>
+<tr class="odd">
+<td>다변량 끄기</td>
+<td style="text-align: right;">0.039 (-0.002)</td>
+<td style="text-align: right;">0.037 (+0.000)</td>
+<td style="text-align: right;">0.027 (-0.001)</td>
+<td style="text-align: right;">0.035 (-0.000)</td>
+</tr>
+<tr class="even">
+<td>칸 가중치 끄기</td>
+<td style="text-align: right;">0.069 (+0.027)</td>
+<td style="text-align: right;">0.044 (+0.007)</td>
+<td style="text-align: right;">0.057 (+0.029)</td>
+<td style="text-align: right;">0.069 (+0.033)</td>
+</tr>
+<tr class="odd">
+<td>에너지 자르기 끄기</td>
+<td style="text-align: right;">0.041 (-0.000)</td>
+<td style="text-align: right;">0.038 (+0.002)</td>
+<td style="text-align: right;">0.028 (-0.001)</td>
+<td style="text-align: right;">0.036 (+0.001)</td>
+</tr>
+<tr class="even">
+<td>표준화 끄기</td>
+<td style="text-align: right;">0.053 (+0.012)</td>
+<td style="text-align: right;">0.058 (+0.022)</td>
+<td style="text-align: right;">0.052 (+0.023)</td>
+<td style="text-align: right;">0.060 (+0.025)</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261015_c90dd3_33.png" class="img-fluid figure-img"></p>
+<figcaption>기상청 ASOS ② — 어블레이션 («그대로» 대비 평균 ARI 차)</figcaption>
+</figure>
+</div>
+</div>
+<div id="tabset-2-9" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-9-tab">
+<p><code>-</code> 57곳.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>바꾼 것</th>
+<th style="text-align: right;">VMD</th>
+<th style="text-align: right;">CEEMDAN</th>
+<th style="text-align: right;">EEMD</th>
+<th style="text-align: right;">EMD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>그대로</td>
+<td style="text-align: right;">0.307</td>
+<td style="text-align: right;">0.328</td>
+<td style="text-align: right;">0.348</td>
+<td style="text-align: right;">0.330</td>
+</tr>
+<tr class="even">
+<td>수준 끄기</td>
+<td style="text-align: right;">0.344 (+0.037)</td>
+<td style="text-align: right;">0.342 (+0.013)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.426}\)</span> (+0.078)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.366}\)</span> (+0.036)</td>
+</tr>
+<tr class="odd">
+<td>거르기 끄기</td>
+<td style="text-align: right;">0.311 (+0.004)</td>
+<td style="text-align: right;">0.227 (-0.102)</td>
+<td style="text-align: right;">0.228 (-0.120)</td>
+<td style="text-align: right;">0.228 (-0.102)</td>
+</tr>
+<tr class="even">
+<td>평균 보정 끄기</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.358}\)</span> (+0.051)</td>
+<td style="text-align: right;">0.255 (-0.073)</td>
+<td style="text-align: right;">0.269 (-0.079)</td>
+<td style="text-align: right;">0.263 (-0.067)</td>
+</tr>
+<tr class="odd">
+<td>분해 끄기</td>
+<td style="text-align: right;">0.318 (+0.011)</td>
+<td style="text-align: right;">0.318 (-0.010)</td>
+<td style="text-align: right;">0.318 (-0.030)</td>
+<td style="text-align: right;">0.318 (-0.012)</td>
+</tr>
+<tr class="even">
+<td>재배치 끄기</td>
+<td style="text-align: right;">0.307 (-0.001)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.359}\)</span> (+0.031)</td>
+<td style="text-align: right;">0.323 (-0.025)</td>
+<td style="text-align: right;">0.352 (+0.021)</td>
+</tr>
+<tr class="odd">
+<td>다변량 끄기</td>
+<td style="text-align: right;">0.306 (-0.001)</td>
+<td style="text-align: right;">0.327 (-0.001)</td>
+<td style="text-align: right;">0.348 (-0.000)</td>
+<td style="text-align: right;">0.331 (+0.000)</td>
+</tr>
+<tr class="even">
+<td>칸 가중치 끄기</td>
+<td style="text-align: right;">0.318 (+0.011)</td>
+<td style="text-align: right;">0.328 (-0.001)</td>
+<td style="text-align: right;">0.348 (-0.000)</td>
+<td style="text-align: right;">0.328 (-0.002)</td>
+</tr>
+<tr class="odd">
+<td>에너지 자르기 끄기</td>
+<td style="text-align: right;">0.307 (-0.000)</td>
+<td style="text-align: right;">0.328 (-0.000)</td>
+<td style="text-align: right;">0.347 (-0.001)</td>
+<td style="text-align: right;">0.330 (-0.001)</td>
+</tr>
+<tr class="even">
+<td>표준화 끄기</td>
+<td style="text-align: right;">0.263 (-0.044)</td>
+<td style="text-align: right;">0.272 (-0.057)</td>
+<td style="text-align: right;">0.290 (-0.058)</td>
+<td style="text-align: right;">0.277 (-0.053)</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261015_c90dd3_34.png" class="img-fluid figure-img"></p>
+<figcaption>NOAA ISD — 어블레이션 («그대로» 대비 평균 ARI 차)</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 <ul>
 <li>그대로: 성분마다 이틀보다 느린 변동을 걷어내고 → 주기 칸 → MFPCA, 그 점수에 하루 평균을 더해 k-means</li>
 <li>수준 끄기: 하루 평균을 안 더함</li>
