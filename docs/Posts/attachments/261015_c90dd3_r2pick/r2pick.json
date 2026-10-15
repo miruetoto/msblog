@@ -1,0 +1,1040 @@
+{
+ "airkorea": [
+  {
+   "label": "별양동 (경기도) · EMD+MFPCA 0.887 · FPCA 0.833 · 1 / 0 = 61 / 824",
+   "caption": "분해 그림 — 별양동 (경기도) · EMD+MFPCA 0.887 (FPCA 0.833) · 1 / 0 = 61 / 824일 · 이 자료에서 X+MFPCA 가 가장 높은 곳",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_131201_pm25.webp"
+  },
+  {
+   "label": "청계천로 (서울특별시) · EMD+MFPCA 0.846 · FPCA 0.774 · 1 / 0 = 64 / 903",
+   "caption": "분해 그림 — 청계천로 (서울특별시) · EMD+MFPCA 0.846 (FPCA 0.774) · 1 / 0 = 64 / 903일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_111124_pm25.webp"
+  },
+  {
+   "label": "무전동 (경상남도) · VMD+MFPCA 0.831 · FPCA 0.831 · 1 / 0 = 18 / 923",
+   "caption": "분해 그림 — 무전동 (경상남도) · VMD+MFPCA 0.831 (FPCA 0.831) · 1 / 0 = 18 / 923일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_238411_pm25.webp"
+  },
+  {
+   "label": "신방동 (충청남도) · CEEMDAN+MFPCA 0.829 · FPCA 0.819 · 1 / 0 = 73 / 745",
+   "caption": "분해 그림 — 신방동 (충청남도) · CEEMDAN+MFPCA 0.829 (FPCA 0.819) · 1 / 0 = 73 / 745일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_534116_pm25.webp"
+  },
+  {
+   "label": "봉산동 (경기도) · VMD+MFPCA 0.823 · FPCA 0.833 · 1 / 0 = 73 / 791",
+   "caption": "분해 그림 — 봉산동 (경기도) · VMD+MFPCA 0.823 (FPCA 0.833) · 1 / 0 = 73 / 791일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_131581_pm25.webp"
+  },
+  {
+   "label": "노대동 (광주광역시) · CEEMDAN+MFPCA 0.804 · FPCA 0.759 · 1 / 0 = 27 / 941",
+   "caption": "분해 그림 — 노대동 (광주광역시) · CEEMDAN+MFPCA 0.804 (FPCA 0.759) · 1 / 0 = 27 / 941일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_324124_pm25.webp"
+  },
+  {
+   "label": "모종동 (충청남도) · CEEMDAN+MFPCA 0.804 · FPCA 0.804 · 1 / 0 = 77 / 712",
+   "caption": "분해 그림 — 모종동 (충청남도) · CEEMDAN+MFPCA 0.804 (FPCA 0.804) · 1 / 0 = 77 / 712일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_534441_pm25.webp"
+  },
+  {
+   "label": "송북동 (경기도) · EMD+MFPCA 0.796 · FPCA 0.789 · 1 / 0 = 77 / 796",
+   "caption": "분해 그림 — 송북동 (경기도) · EMD+MFPCA 0.796 (FPCA 0.789) · 1 / 0 = 77 / 796일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_131344_pm25.webp"
+  },
+  {
+   "label": "고덕동 (경기도) · VMD+MFPCA 0.792 · FPCA 0.792 · 1 / 0 = 75 / 799",
+   "caption": "분해 그림 — 고덕동 (경기도) · VMD+MFPCA 0.792 (FPCA 0.792) · 1 / 0 = 75 / 799일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_131346_pm25.webp"
+  },
+  {
+   "label": "청북읍 (경기도) · EEMD+MFPCA 0.780 · FPCA 0.775 · 1 / 0 = 72 / 797",
+   "caption": "분해 그림 — 청북읍 (경기도) · EEMD+MFPCA 0.780 (FPCA 0.775) · 1 / 0 = 72 / 797일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_131345_pm25.webp"
+  },
+  {
+   "label": "송천동 (전북특별자치도) · VMD+MFPCA 0.780 · FPCA 0.760 · 1 / 0 = 49 / 836",
+   "caption": "분해 그림 — 송천동 (전북특별자치도) · VMD+MFPCA 0.780 (FPCA 0.760) · 1 / 0 = 49 / 836일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_735115_pm25.webp"
+  },
+  {
+   "label": "중부대로(구갈동) (경기도) · VMD+MFPCA 0.779 · FPCA 0.774 · 1 / 0 = 74 / 754",
+   "caption": "분해 그림 — 중부대로(구갈동) (경기도) · VMD+MFPCA 0.779 (FPCA 0.774) · 1 / 0 = 74 / 754일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_131414_pm25.webp"
+  },
+  {
+   "label": "괴산읍 (충청북도) · CEEMDAN+MFPCA 0.779 · FPCA 0.768 · 1 / 0 = 45 / 867",
+   "caption": "분해 그림 — 괴산읍 (충청북도) · CEEMDAN+MFPCA 0.779 (FPCA 0.768) · 1 / 0 = 45 / 867일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_633362_pm25.webp"
+  },
+  {
+   "label": "둔포면 (충청남도) · CEEMDAN+MFPCA 0.770 · FPCA 0.770 · 1 / 0 = 76 / 747",
+   "caption": "분해 그림 — 둔포면 (충청남도) · CEEMDAN+MFPCA 0.770 (FPCA 0.770) · 1 / 0 = 76 / 747일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_534444_pm25.webp"
+  },
+  {
+   "label": "창전동 (경기도) · EEMD+MFPCA 0.767 · FPCA 0.716 · 1 / 0 = 76 / 853",
+   "caption": "분해 그림 — 창전동 (경기도) · EEMD+MFPCA 0.767 (FPCA 0.716) · 1 / 0 = 76 / 853일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_131442_pm25.webp"
+  },
+  {
+   "label": "한솔동 (세종특별자치시) · VMD+MFPCA 0.763 · FPCA 0.763 · 1 / 0 = 45 / 766",
+   "caption": "분해 그림 — 한솔동 (세종특별자치시) · VMD+MFPCA 0.763 (FPCA 0.763) · 1 / 0 = 45 / 766일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_541113_pm25.webp"
+  },
+  {
+   "label": "인주면 (충청남도) · EMD+MFPCA 0.752 · FPCA 0.725 · 1 / 0 = 73 / 747",
+   "caption": "분해 그림 — 인주면 (충청남도) · EMD+MFPCA 0.752 (FPCA 0.725) · 1 / 0 = 73 / 747일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_534445_pm25.webp"
+  },
+  {
+   "label": "함평읍 (전라남도) · CEEMDAN+MFPCA 0.751 · FPCA 0.728 · 1 / 0 = 18 / 750",
+   "caption": "분해 그림 — 함평읍 (전라남도) · CEEMDAN+MFPCA 0.751 (FPCA 0.728) · 1 / 0 = 18 / 750일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_336501_pm25.webp"
+  },
+  {
+   "label": "배방읍 (충청남도) · VMD+MFPCA 0.740 · FPCA 0.750 · 1 / 0 = 77 / 716",
+   "caption": "분해 그림 — 배방읍 (충청남도) · VMD+MFPCA 0.740 (FPCA 0.750) · 1 / 0 = 77 / 716일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_534442_pm25.webp"
+  },
+  {
+   "label": "당동 (경기도) · EMD+MFPCA 0.734 · FPCA 0.724 · 1 / 0 = 72 / 835",
+   "caption": "분해 그림 — 당동 (경기도) · EMD+MFPCA 0.734 (FPCA 0.724) · 1 / 0 = 72 / 835일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_131501_pm25.webp"
+  },
+  {
+   "label": "수지 (경기도) · CEEMDAN+MFPCA 0.725 · FPCA 0.719 · 1 / 0 = 77 / 812",
+   "caption": "분해 그림 — 수지 (경기도) · CEEMDAN+MFPCA 0.725 (FPCA 0.719) · 1 / 0 = 77 / 812일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_131412_pm25.webp"
+  },
+  {
+   "label": "운서 (인천광역시) · VMD+MFPCA 0.725 · FPCA 0.717 · 1 / 0 = 77 / 641",
+   "caption": "분해 그림 — 운서 (인천광역시) · VMD+MFPCA 0.725 (FPCA 0.717) · 1 / 0 = 77 / 641일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_823702_pm25.webp"
+  },
+  {
+   "label": "가남읍 (경기도) · EMD+MFPCA 0.717 · FPCA 0.739 · 1 / 0 = 75 / 813",
+   "caption": "분해 그림 — 가남읍 (경기도) · EMD+MFPCA 0.717 (FPCA 0.739) · 1 / 0 = 75 / 813일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_131593_pm25.webp"
+  },
+  {
+   "label": "영종 (인천광역시) · VMD+MFPCA 0.714 · FPCA 0.714 · 1 / 0 = 75 / 672",
+   "caption": "분해 그림 — 영종 (인천광역시) · VMD+MFPCA 0.714 (FPCA 0.714) · 1 / 0 = 75 / 672일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_823613_pm25.webp"
+  },
+  {
+   "label": "당리동 (부산광역시) · CEEMDAN+MFPCA 0.689 · FPCA 0.647 · 1 / 0 = 18 / 1059",
+   "caption": "분해 그림 — 당리동 (부산광역시) · CEEMDAN+MFPCA 0.689 (FPCA 0.647) · 1 / 0 = 18 / 1059일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_221284_pm25.webp"
+  },
+  {
+   "label": "문경시 (경상북도) · VMD+MFPCA 0.658 · FPCA 0.698 · 1 / 0 = 24 / 970",
+   "caption": "분해 그림 — 문경시 (경상북도) · VMD+MFPCA 0.658 (FPCA 0.698) · 1 / 0 = 24 / 970일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_437211_pm25.webp"
+  },
+  {
+   "label": "읍내동 (대전광역시) · EMD+MFPCA 0.649 · FPCA 0.627 · 1 / 0 = 27 / 898",
+   "caption": "분해 그림 — 읍내동 (대전광역시) · EMD+MFPCA 0.649 (FPCA 0.627) · 1 / 0 = 27 / 898일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_525111_pm25.webp"
+  },
+  {
+   "label": "노형로 (제주특별자치도) · EEMD+MFPCA 0.598 · FPCA 0.581 · 1 / 0 = 20 / 1191",
+   "caption": "분해 그림 — 노형로 (제주특별자치도) · EEMD+MFPCA 0.598 (FPCA 0.581) · 1 / 0 = 20 / 1191일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_339211_pm25.webp"
+  },
+  {
+   "label": "이곡동 (대구광역시) · EEMD+MFPCA 0.542 · FPCA 0.171 · 1 / 0 = 18 / 920",
+   "caption": "분해 그림 — 이곡동 (대구광역시) · EEMD+MFPCA 0.542 (FPCA 0.171) · 1 / 0 = 18 / 920일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_422202_pm25.webp"
+  },
+  {
+   "label": "평창읍 (강원특별자치도) · EMD+MFPCA 0.446 · FPCA 0.046 · 1 / 0 = 22 / 1023",
+   "caption": "분해 그림 — 평창읍 (강원특별자치도) · EMD+MFPCA 0.446 (FPCA 0.046) · 1 / 0 = 22 / 1023일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_632171_pm25.webp"
+  },
+  {
+   "label": "무거동 (울산광역시) · EEMD+MFPCA 0.045 · FPCA 0.034 · 1 / 0 = 13 / 994",
+   "caption": "분해 그림 — 무거동 (울산광역시) · EEMD+MFPCA 0.045 (FPCA 0.034) · 1 / 0 = 13 / 994일",
+   "src": "attachments/261015_c90dd3_r2pick/airkorea/airkorea_238129_pm25.webp"
+  }
+ ],
+ "epa_pm25": [
+  {
+   "label": "DARRINGTON - FIR ST (Darrington High School) (Washington / Seattle-Tacoma-Bellevue, WA) · VMD+MFPCA 0.489 · FPCA 0.489 · 1 / 0 = 30 / 1600",
+   "caption": "분해 그림 — DARRINGTON - FIR ST (Darrington High School) (Washington / Seattle-Tacoma-Bellevue, WA) · VMD+MFPCA 0.489 (FPCA 0.489) · 1 / 0 = 30 / 1600일 · 이 자료에서 X+MFPCA 가 가장 높은 곳",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_530610020_pm25.webp"
+  },
+  {
+   "label": "Huntley Place-Hartford (Connecticut / Hartford-West Hartford-East Hartford, CT) · VMD+MFPCA 0.908 · FPCA 0.908 · 1 / 0 = 6 / 891",
+   "caption": "분해 그림 — Huntley Place-Hartford (Connecticut / Hartford-West Hartford-East Hartford, CT) · VMD+MFPCA 0.908 (FPCA 0.908) · 1 / 0 = 6 / 891일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_090030025_pm25.webp"
+  },
+  {
+   "label": "Anoka County Airport (Minnesota / Minneapolis-St. Paul-Bloomington, MN-WI) · CEEMDAN+MFPCA 0.852 · FPCA 0.480 · 1 / 0 = 18 / 1609",
+   "caption": "분해 그림 — Anoka County Airport (Minnesota / Minneapolis-St. Paul-Bloomington, MN-WI) · CEEMDAN+MFPCA 0.852 (FPCA 0.480) · 1 / 0 = 18 / 1609일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_270031002_pm25.webp"
+  },
+  {
+   "label": "MCMILLAN  NCore-PAMS (District Of Columbia / Washington-Arlington-Alexandria, DC-VA-MD-WV) · VMD+MFPCA 0.797 · FPCA 0.797 · 1 / 0 = 12 / 1607",
+   "caption": "분해 그림 — MCMILLAN  NCore-PAMS (District Of Columbia / Washington-Arlington-Alexandria, DC-VA-MD-WV) · VMD+MFPCA 0.797 (FPCA 0.797) · 1 / 0 = 12 / 1607일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_110010043_pm25.webp"
+  },
+  {
+   "label": "Buffalo Near-Road (New York / Buffalo-Cheektowaga, NY) · VMD+MFPCA 0.784 · FPCA 0.636 · 1 / 0 = 9 / 330",
+   "caption": "분해 그림 — Buffalo Near-Road (New York / Buffalo-Cheektowaga, NY) · VMD+MFPCA 0.784 (FPCA 0.636) · 1 / 0 = 9 / 330일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_360290023_pm25.webp"
+  },
+  {
+   "label": "LYNN WATER TREATMENT PLANT (Massachusetts / Boston-Cambridge-Newton, MA-NH) · EMD+MFPCA 0.748 · FPCA 0.331 · 1 / 0 = 5 / 1273",
+   "caption": "분해 그림 — LYNN WATER TREATMENT PLANT (Massachusetts / Boston-Cambridge-Newton, MA-NH) · EMD+MFPCA 0.748 (FPCA 0.331) · 1 / 0 = 5 / 1273일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_250092006_pm25.webp"
+  },
+  {
+   "label": "Lee District Park (Virginia / Washington-Arlington-Alexandria, DC-VA-MD-WV) · VMD+MFPCA 0.540 · FPCA 0.540 · 1 / 0 = 8 / 863",
+   "caption": "분해 그림 — Lee District Park (Virginia / Washington-Arlington-Alexandria, DC-VA-MD-WV) · VMD+MFPCA 0.540 (FPCA 0.540) · 1 / 0 = 8 / 863일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_510590030_pm25.webp"
+  },
+  {
+   "label": "MLK  CORNER OF MLK BLVD AND JUSTISON ST (Delaware / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD) · VMD+MFPCA 0.395 · FPCA 0.395 · 1 / 0 = 8 / 891",
+   "caption": "분해 그림 — MLK  CORNER OF MLK BLVD AND JUSTISON ST (Delaware / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD) · VMD+MFPCA 0.395 (FPCA 0.395) · 1 / 0 = 8 / 891일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_100032004_pm25.webp"
+  },
+  {
+   "label": "Clovis-Villa (California / Fresno, CA) · EMD+MFPCA 0.364 · FPCA 0.407 · 1 / 0 = 92 / 1353",
+   "caption": "분해 그림 — Clovis-Villa (California / Fresno, CA) · EMD+MFPCA 0.364 (FPCA 0.407) · 1 / 0 = 92 / 1353일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_060195001_pm25.webp"
+  },
+  {
+   "label": "Utah Technical Center (Utah / Salt Lake City-Murray, UT) · EEMD+MFPCA 0.294 · FPCA 0.204 · 1 / 0 = 29 / 1628",
+   "caption": "분해 그림 — Utah Technical Center (Utah / Salt Lake City-Murray, UT) · EEMD+MFPCA 0.294 (FPCA 0.204) · 1 / 0 = 29 / 1628일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_490353015_pm25.webp"
+  },
+  {
+   "label": "Rutgers University (New Jersey / New York-Newark-Jersey City, NY-NJ) · VMD+MFPCA 0.248 · FPCA 0.248 · 1 / 0 = 7 / 1404",
+   "caption": "분해 그림 — Rutgers University (New Jersey / New York-Newark-Jersey City, NY-NJ) · VMD+MFPCA 0.248 (FPCA 0.248) · 1 / 0 = 7 / 1404일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_340230011_pm25.webp"
+  },
+  {
+   "label": "WAUKESHA - CLEVELAND AVE (Wisconsin / Milwaukee-Waukesha, WI) · VMD+MFPCA 0.196 · FPCA 0.196 · 1 / 0 = 9 / 842",
+   "caption": "분해 그림 — WAUKESHA - CLEVELAND AVE (Wisconsin / Milwaukee-Waukesha, WI) · VMD+MFPCA 0.196 (FPCA 0.196) · 1 / 0 = 9 / 842일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_551330027_pm25.webp"
+  },
+  {
+   "label": "Liberty (Pennsylvania / Pittsburgh, PA) · EMD+MFPCA 0.187 · FPCA 0.196 · 1 / 0 = 29 / 1427",
+   "caption": "분해 그림 — Liberty (Pennsylvania / Pittsburgh, PA) · EMD+MFPCA 0.187 (FPCA 0.196) · 1 / 0 = 29 / 1427일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_420030064_pm25.webp"
+  },
+  {
+   "label": "Indpls- W. 18th St./ Ernie Pyle School 90 (Indiana / Indianapolis-Carmel-Greenwood, IN) · EEMD+MFPCA 0.180 · FPCA 0.176 · 1 / 0 = 19 / 830",
+   "caption": "분해 그림 — Indpls- W. 18th St./ Ernie Pyle School 90 (Indiana / Indianapolis-Carmel-Greenwood, IN) · EEMD+MFPCA 0.180 (FPCA 0.176) · 1 / 0 = 19 / 830일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_180970081_pm25.webp"
+  },
+  {
+   "label": "4102 Woolworth Ave. on Healthcenter Warehouse (Nebraska / Omaha, NE-IA) · EEMD+MFPCA 0.161 · FPCA 0.035 · 1 / 0 = 6 / 1509",
+   "caption": "분해 그림 — 4102 Woolworth Ave. on Healthcenter Warehouse (Nebraska / Omaha, NE-IA) · EEMD+MFPCA 0.161 (FPCA 0.035) · 1 / 0 = 6 / 1509일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_310550019_pm25.webp"
+  },
+  {
+   "label": "Eliza Howell-NR (Michigan / Detroit-Warren-Dearborn, MI) · EMD+MFPCA 0.155 · FPCA 0.087 · 1 / 0 = 33 / 1537",
+   "caption": "분해 그림 — Eliza Howell-NR (Michigan / Detroit-Warren-Dearborn, MI) · EMD+MFPCA 0.155 (FPCA 0.087) · 1 / 0 = 33 / 1537일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_261630093_pm25.webp"
+  },
+  {
+   "label": "TEMPE (Arizona / Phoenix-Mesa-Chandler, AZ) · EEMD+MFPCA 0.143 · FPCA 0.207 · 1 / 0 = 25 / 1164",
+   "caption": "분해 그림 — TEMPE (Arizona / Phoenix-Mesa-Chandler, AZ) · EEMD+MFPCA 0.143 (FPCA 0.207) · 1 / 0 = 25 / 1164일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_040134005_pm25.webp"
+  },
+  {
+   "label": "Troost (Missouri / Kansas City, MO-KS) · EEMD+MFPCA 0.138 · FPCA 0.163 · 1 / 0 = 8 / 1534",
+   "caption": "분해 그림 — Troost (Missouri / Kansas City, MO-KS) · EEMD+MFPCA 0.138 (FPCA 0.163) · 1 / 0 = 8 / 1534일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_290950034_pm25.webp"
+  },
+  {
+   "label": "Calaveras Lake (Texas / San Antonio-New Braunfels, TX) · EEMD+MFPCA 0.081 · FPCA 0.076 · 1 / 0 = 17 / 1601",
+   "caption": "분해 그림 — Calaveras Lake (Texas / San Antonio-New Braunfels, TX) · EEMD+MFPCA 0.081 (FPCA 0.076) · 1 / 0 = 17 / 1601일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_480290059_pm25.webp"
+  },
+  {
+   "label": "REGIONAL OFFICE BUILDING (Illinois / Chicago-Naperville-Elgin, IL-IN) · EEMD+MFPCA 0.074 · FPCA 0.080 · 1 / 0 = 11 / 920",
+   "caption": "분해 그림 — REGIONAL OFFICE BUILDING (Illinois / Chicago-Naperville-Elgin, IL-IN) · EEMD+MFPCA 0.074 (FPCA 0.080) · 1 / 0 = 11 / 920일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_170314007_pm25.webp"
+  },
+  {
+   "label": "Glenpool (Oklahoma / Tulsa, OK) · EEMD+MFPCA 0.073 · FPCA 0.080 · 1 / 0 = 9 / 1114",
+   "caption": "분해 그림 — Glenpool (Oklahoma / Tulsa, OK) · EEMD+MFPCA 0.073 (FPCA 0.080) · 1 / 0 = 9 / 1114일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_401430174_pm25.webp"
+  },
+  {
+   "label": "DENVER - CAMP (Colorado / Denver-Aurora-Centennial, CO) · EEMD+MFPCA 0.066 · FPCA 0.062 · 1 / 0 = 9 / 1425",
+   "caption": "분해 그림 — DENVER - CAMP (Colorado / Denver-Aurora-Centennial, CO) · EEMD+MFPCA 0.066 (FPCA 0.062) · 1 / 0 = 9 / 1425일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_080310002_pm25.webp"
+  },
+  {
+   "label": "Leeds (Alabama / Birmingham, AL) · CEEMDAN+MFPCA 0.052 · FPCA 0.053 · 1 / 0 = 11 / 769",
+   "caption": "분해 그림 — Leeds (Alabama / Birmingham, AL) · CEEMDAN+MFPCA 0.052 (FPCA 0.053) · 1 / 0 = 11 / 769일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_010731010_pm25.webp"
+  },
+  {
+   "label": "Palo Verde (Nevada / Las Vegas-Henderson-North Las Vegas, NV) · EEMD+MFPCA 0.050 · FPCA 0.029 · 1 / 0 = 9 / 810",
+   "caption": "분해 그림 — Palo Verde (Nevada / Las Vegas-Henderson-North Las Vegas, NV) · EEMD+MFPCA 0.050 (FPCA 0.029) · 1 / 0 = 9 / 810일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_320030073_pm25.webp"
+  },
+  {
+   "label": "Watson Lane (Kentucky / Louisville/Jefferson County, KY-IN) · VMD+MFPCA 0.042 · FPCA 0.044 · 1 / 0 = 5 / 928",
+   "caption": "분해 그림 — Watson Lane (Kentucky / Louisville/Jefferson County, KY-IN) · VMD+MFPCA 0.042 (FPCA 0.044) · 1 / 0 = 5 / 928일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_211110051_pm25.webp"
+  },
+  {
+   "label": "Fair Hill Natural Resource Management Area (Maryland / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD) · CEEMDAN+MFPCA 0.023 · FPCA 0.006 · 1 / 0 = 6 / 1471",
+   "caption": "분해 그림 — Fair Hill Natural Resource Management Area (Maryland / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD) · CEEMDAN+MFPCA 0.023 (FPCA 0.006) · 1 / 0 = 6 / 1471일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_240150003_pm25.webp"
+  },
+  {
+   "label": "CCRI Liston Campus ROOFTOP (Rhode Island / Providence-Warwick, RI-MA) · VMD+MFPCA 0.016 · FPCA 0.011 · 1 / 0 = 4 / 1556",
+   "caption": "분해 그림 — CCRI Liston Campus ROOFTOP (Rhode Island / Providence-Warwick, RI-MA) · VMD+MFPCA 0.016 (FPCA 0.011) · 1 / 0 = 4 / 1556일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_440070022_pm25.webp"
+  },
+  {
+   "label": "Cincinnati Near Road (Ohio / Cincinnati, OH-KY-IN) · CEEMDAN+MFPCA 0.012 · FPCA 0.018 · 1 / 0 = 12 / 1608",
+   "caption": "분해 그림 — Cincinnati Near Road (Ohio / Cincinnati, OH-KY-IN) · CEEMDAN+MFPCA 0.012 (FPCA 0.018) · 1 / 0 = 12 / 1608일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_390610048_pm25.webp"
+  },
+  {
+   "label": "Triple Oak (North Carolina / Raleigh-Cary, NC) · EMD+MFPCA 0.005 · FPCA 0.005 · 1 / 0 = 4 / 1585",
+   "caption": "분해 그림 — Triple Oak (North Carolina / Raleigh-Cary, NC) · EMD+MFPCA 0.005 (FPCA 0.005) · 1 / 0 = 4 / 1585일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_371830021_pm25.webp"
+  },
+  {
+   "label": "Near Road Site (Tennessee / Nashville-Davidson--Murfreesboro--Franklin, TN) · EMD+MFPCA 0.005 · FPCA 0.009 · 1 / 0 = 4 / 1536",
+   "caption": "분해 그림 — Near Road Site (Tennessee / Nashville-Davidson--Murfreesboro--Franklin, TN) · EMD+MFPCA 0.005 (FPCA 0.009) · 1 / 0 = 4 / 1536일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_pm25/epa_470370040_pm25.webp"
+  }
+ ],
+ "epa_o3": [
+  {
+   "label": "Redlands (California / Riverside-San Bernardino-Ontario, CA) · EMD+MFPCA 0.718 · FPCA 0.655 · 1 / 0 = 579 / 1136",
+   "caption": "분해 그림 — Redlands (California / Riverside-San Bernardino-Ontario, CA) · EMD+MFPCA 0.718 (FPCA 0.655) · 1 / 0 = 579 / 1136일 · 이 자료에서 X+MFPCA 가 가장 높은 곳",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_060714003_o3.webp"
+  },
+  {
+   "label": "Houston Deer Park #2 (Texas / Houston-Pasadena-The Woodlands, TX) · EEMD+MFPCA 0.275 · FPCA 0.086 · 1 / 0 = 138 / 1226",
+   "caption": "분해 그림 — Houston Deer Park #2 (Texas / Houston-Pasadena-The Woodlands, TX) · EEMD+MFPCA 0.275 (FPCA 0.086) · 1 / 0 = 138 / 1226일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_482011039_o3.webp"
+  },
+  {
+   "label": "NATIONAL RENEWABLE ENERGY LABS - NREL (Colorado / Denver-Aurora-Centennial, CO) · EMD+MFPCA 0.108 · FPCA 0.088 · 1 / 0 = 128 / 1457",
+   "caption": "분해 그림 — NATIONAL RENEWABLE ENERGY LABS - NREL (Colorado / Denver-Aurora-Centennial, CO) · EMD+MFPCA 0.108 (FPCA 0.088) · 1 / 0 = 128 / 1457일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_080590011_o3.webp"
+  },
+  {
+   "label": "High School Air Monitoring Station (Arizona / Phoenix-Mesa-Chandler, AZ) · EMD+MFPCA 0.092 · FPCA 0.071 · 1 / 0 = 386 / 1173",
+   "caption": "분해 그림 — High School Air Monitoring Station (Arizona / Phoenix-Mesa-Chandler, AZ) · EMD+MFPCA 0.092 (FPCA 0.071) · 1 / 0 = 386 / 1173일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_040137024_o3.webp"
+  },
+  {
+   "label": "GRAFTON (Wisconsin / Milwaukee-Waukesha, WI) · CEEMDAN+MFPCA 0.069 · FPCA 0.000 · 1 / 0 = 32 / 778",
+   "caption": "분해 그림 — GRAFTON (Wisconsin / Milwaukee-Waukesha, WI) · CEEMDAN+MFPCA 0.069 (FPCA 0.000) · 1 / 0 = 32 / 778일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_550890008_o3.webp"
+  },
+  {
+   "label": "REGIONAL OFFICE BUILDING (Illinois / Chicago-Naperville-Elgin, IL-IN) · EMD+MFPCA 0.059 · FPCA 0.037 · 1 / 0 = 78 / 1091",
+   "caption": "분해 그림 — REGIONAL OFFICE BUILDING (Illinois / Chicago-Naperville-Elgin, IL-IN) · EMD+MFPCA 0.059 (FPCA 0.037) · 1 / 0 = 78 / 1091일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_170314007_o3.webp"
+  },
+  {
+   "label": "Sycamore (Ohio / Cincinnati, OH-KY-IN) · EMD+MFPCA 0.033 · FPCA -0.001 · 1 / 0 = 34 / 992",
+   "caption": "분해 그림 — Sycamore (Ohio / Cincinnati, OH-KY-IN) · EMD+MFPCA 0.033 (FPCA -0.001) · 1 / 0 = 34 / 992일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_390610006_o3.webp"
+  },
+  {
+   "label": "VALPARAISO (Indiana / Chicago-Naperville-Elgin, IL-IN) · EEMD+MFPCA 0.025 · FPCA 0.020 · 1 / 0 = 29 / 1448",
+   "caption": "분해 그림 — VALPARAISO (Indiana / Chicago-Naperville-Elgin, IL-IN) · EEMD+MFPCA 0.025 (FPCA 0.020) · 1 / 0 = 29 / 1448일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_181270026_o3.webp"
+  },
+  {
+   "label": "BABYLON (New York / New York-Newark-Jersey City, NY-NJ) · EMD+MFPCA 0.022 · FPCA 0.019 · 1 / 0 = 25 / 1152",
+   "caption": "분해 그림 — BABYLON (New York / New York-Newark-Jersey City, NY-NJ) · EMD+MFPCA 0.022 (FPCA 0.019) · 1 / 0 = 25 / 1152일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_361030002_o3.webp"
+  },
+  {
+   "label": "MCMILLAN  NCore-PAMS (District Of Columbia / Washington-Arlington-Alexandria, DC-VA-MD-WV) · EEMD+MFPCA 0.018 · FPCA -0.004 · 1 / 0 = 17 / 1185",
+   "caption": "분해 그림 — MCMILLAN  NCore-PAMS (District Of Columbia / Washington-Arlington-Alexandria, DC-VA-MD-WV) · EEMD+MFPCA 0.018 (FPCA -0.004) · 1 / 0 = 17 / 1185일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_110010043_o3.webp"
+  },
+  {
+   "label": "Tarrant Elementary School (Alabama / Birmingham, AL) · EMD+MFPCA 0.017 · FPCA 0.002 · 1 / 0 = 14 / 863",
+   "caption": "분해 그림 — Tarrant Elementary School (Alabama / Birmingham, AL) · EMD+MFPCA 0.017 (FPCA 0.002) · 1 / 0 = 14 / 863일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_010736002_o3.webp"
+  },
+  {
+   "label": "CANNONS LANE (Kentucky / Louisville/Jefferson County, KY-IN) · CEEMDAN+MFPCA 0.013 · FPCA 0.013 · 1 / 0 = 40 / 1515",
+   "caption": "분해 그림 — CANNONS LANE (Kentucky / Louisville/Jefferson County, KY-IN) · CEEMDAN+MFPCA 0.013 (FPCA 0.013) · 1 / 0 = 40 / 1515일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_211110067_o3.webp"
+  },
+  {
+   "label": "Whitmore (Nebraska / Omaha, NE-IA) · EEMD+MFPCA 0.013 · FPCA 0.011 · 1 / 0 = 22 / 932",
+   "caption": "분해 그림 — Whitmore (Nebraska / Omaha, NE-IA) · EEMD+MFPCA 0.013 (FPCA 0.011) · 1 / 0 = 22 / 932일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_310550053_o3.webp"
+  },
+  {
+   "label": "FALL RIVER (Massachusetts / Providence-Warwick, RI-MA) · EMD+MFPCA 0.012 · FPCA 0.010 · 1 / 0 = 8 / 1133",
+   "caption": "분해 그림 — FALL RIVER (Massachusetts / Providence-Warwick, RI-MA) · EMD+MFPCA 0.012 (FPCA 0.010) · 1 / 0 = 8 / 1133일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_250051004_o3.webp"
+  },
+  {
+   "label": "Snowbird (Utah / Salt Lake City-Murray, UT) · CEEMDAN+MFPCA 0.012 · FPCA 0.012 · 1 / 0 = 101 / 741",
+   "caption": "분해 그림 — Snowbird (Utah / Salt Lake City-Murray, UT) · CEEMDAN+MFPCA 0.012 (FPCA 0.012) · 1 / 0 = 101 / 741일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_490350015_o3.webp"
+  },
+  {
+   "label": "TULSA CENTRAL (Oklahoma / Tulsa, OK) · EMD+MFPCA 0.011 · FPCA 0.015 · 1 / 0 = 35 / 1550",
+   "caption": "분해 그림 — TULSA CENTRAL (Oklahoma / Tulsa, OK) · EMD+MFPCA 0.011 (FPCA 0.015) · 1 / 0 = 35 / 1550일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_401431127_o3.webp"
+  },
+  {
+   "label": "JFK (Kansas / Kansas City, MO-KS) · EMD+MFPCA 0.008 · FPCA 0.000 · 1 / 0 = 23 / 1455",
+   "caption": "분해 그림 — JFK (Kansas / Kansas City, MO-KS) · EMD+MFPCA 0.008 (FPCA 0.000) · 1 / 0 = 23 / 1455일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_202090021_o3.webp"
+  },
+  {
+   "label": "US-EPA Laboratory (Rhode Island / Providence-Warwick, RI-MA) · CEEMDAN+MFPCA 0.008 · FPCA 0.001 · 1 / 0 = 14 / 695",
+   "caption": "분해 그림 — US-EPA Laboratory (Rhode Island / Providence-Warwick, RI-MA) · CEEMDAN+MFPCA 0.008 (FPCA 0.001) · 1 / 0 = 14 / 695일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_440090007_o3.webp"
+  },
+  {
+   "label": "BELLEVUE STATE PARK, FIELD IN SE PORTION OF PARK (Delaware / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD) · EEMD+MFPCA 0.007 · FPCA 0.005 · 1 / 0 = 9 / 1359",
+   "caption": "분해 그림 — BELLEVUE STATE PARK, FIELD IN SE PORTION OF PARK (Delaware / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD) · EEMD+MFPCA 0.007 (FPCA 0.005) · 1 / 0 = 9 / 1359일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_100031013_o3.webp"
+  },
+  {
+   "label": "Cedar Creek (Minnesota / Minneapolis-St. Paul-Bloomington, MN-WI) · EMD+MFPCA 0.006 · FPCA 0.003 · 1 / 0 = 13 / 908",
+   "caption": "분해 그림 — Cedar Creek (Minnesota / Minneapolis-St. Paul-Bloomington, MN-WI) · EMD+MFPCA 0.006 (FPCA 0.003) · 1 / 0 = 13 / 908일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_270031001_o3.webp"
+  },
+  {
+   "label": "Liberty (Missouri / Kansas City, MO-KS) · EMD+MFPCA 0.006 · FPCA -0.001 · 1 / 0 = 30 / 1010",
+   "caption": "분해 그림 — Liberty (Missouri / Kansas City, MO-KS) · EMD+MFPCA 0.006 (FPCA -0.001) · 1 / 0 = 30 / 1010일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_290470005_o3.webp"
+  },
+  {
+   "label": "Carus - Spangler Road (SPR) (Oregon / Portland-Vancouver-Hillsboro, OR-WA) · EEMD+MFPCA 0.006 · FPCA 0.005 · 1 / 0 = 11 / 718",
+   "caption": "분해 그림 — Carus - Spangler Road (SPR) (Oregon / Portland-Vancouver-Hillsboro, OR-WA) · EEMD+MFPCA 0.006 (FPCA 0.005) · 1 / 0 = 11 / 718일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_410050004_o3.webp"
+  },
+  {
+   "label": "East Health Center (Tennessee / Nashville-Davidson--Murfreesboro--Franklin, TN) · EMD+MFPCA 0.006 · FPCA -0.001 · 1 / 0 = 11 / 973",
+   "caption": "분해 그림 — East Health Center (Tennessee / Nashville-Davidson--Murfreesboro--Franklin, TN) · EMD+MFPCA 0.006 (FPCA -0.001) · 1 / 0 = 11 / 973일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_470370011_o3.webp"
+  },
+  {
+   "label": "Lawrenceville (Pennsylvania / Pittsburgh, PA) · CEEMDAN+MFPCA 0.004 · FPCA 0.001 · 1 / 0 = 16 / 1575",
+   "caption": "분해 그림 — Lawrenceville (Pennsylvania / Pittsburgh, PA) · CEEMDAN+MFPCA 0.004 (FPCA 0.001) · 1 / 0 = 16 / 1575일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_420030008_o3.webp"
+  },
+  {
+   "label": "Padonia (Maryland / Baltimore-Columbia-Towson, MD) · EEMD+MFPCA 0.003 · FPCA 0.004 · 1 / 0 = 27 / 1112",
+   "caption": "분해 그림 — Padonia (Maryland / Baltimore-Columbia-Towson, MD) · EEMD+MFPCA 0.003 (FPCA 0.004) · 1 / 0 = 27 / 1112일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_240051007_o3.webp"
+  },
+  {
+   "label": "SEATTLE - BEACON HILL (Washington / Seattle-Tacoma-Bellevue, WA) · EEMD+MFPCA 0.002 · FPCA 0.000 · 1 / 0 = 9 / 922",
+   "caption": "분해 그림 — SEATTLE - BEACON HILL (Washington / Seattle-Tacoma-Bellevue, WA) · EEMD+MFPCA 0.002 (FPCA 0.000) · 1 / 0 = 9 / 922일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_530330080_o3.webp"
+  },
+  {
+   "label": "Rutgers University (New Jersey / New York-Newark-Jersey City, NY-NJ) · CEEMDAN+MFPCA 0.001 · FPCA 0.000 · 1 / 0 = 10 / 1162",
+   "caption": "분해 그림 — Rutgers University (New Jersey / New York-Newark-Jersey City, NY-NJ) · CEEMDAN+MFPCA 0.001 (FPCA 0.000) · 1 / 0 = 10 / 1162일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_340230011_o3.webp"
+  },
+  {
+   "label": "Hernando (Mississippi / Memphis, TN-MS-AR) · EEMD+MFPCA -0.000 · FPCA -0.000 · 1 / 0 = 8 / 667",
+   "caption": "분해 그림 — Hernando (Mississippi / Memphis, TN-MS-AR) · EEMD+MFPCA -0.000 (FPCA -0.000) · 1 / 0 = 8 / 667일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_280330002_o3.webp"
+  },
+  {
+   "label": "United Avenue (Georgia / Atlanta-Sandy Springs-Roswell, GA) · VMD+MFPCA -0.003 · FPCA -0.005 · 1 / 0 = 18 / 973",
+   "caption": "분해 그림 — United Avenue (Georgia / Atlanta-Sandy Springs-Roswell, GA) · VMD+MFPCA -0.003 (FPCA -0.005) · 1 / 0 = 18 / 973일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_131210055_o3.webp"
+  },
+  {
+   "label": "Green Valley (Nevada / Las Vegas-Henderson-North Las Vegas, NV) · EEMD+MFPCA -0.006 · FPCA -0.016 · 1 / 0 = 96 / 1186",
+   "caption": "분해 그림 — Green Valley (Nevada / Las Vegas-Henderson-North Las Vegas, NV) · EEMD+MFPCA -0.006 (FPCA -0.016) · 1 / 0 = 96 / 1186일",
+   "src": "attachments/261015_c90dd3_r2pick/epa_o3/epa_320030298_o3.webp"
+  }
+ ],
+ "openaq": [
+  {
+   "label": "서울 종로구 (서울특별시) · VMD+MFPCA 0.757 · FPCA 0.635 · 1 / 0 = 11 / 258",
+   "caption": "분해 그림 — 서울 종로구 (서울특별시) · VMD+MFPCA 0.757 (FPCA 0.635) · 1 / 0 = 11 / 258일 · 두 곳 중 X+MFPCA 가 더 높은 곳",
+   "src": "attachments/261015_c90dd3_r2pick/openaq/openaq_2623321_pm25.webp"
+  },
+  {
+   "label": "Los Angeles – N. Main (California / Los Angeles-Long Beach-Anaheim, CA) · VMD+MFPCA 0.203 · FPCA 0.203 · 1 / 0 = 24 / 436",
+   "caption": "분해 그림 — Los Angeles – N. Main (California / Los Angeles-Long Beach-Anaheim, CA) · VMD+MFPCA 0.203 (FPCA 0.203) · 1 / 0 = 24 / 436일",
+   "src": "attachments/261015_c90dd3_r2pick/openaq/openaq_7936_pm25.webp"
+  }
+ ],
+ "weis": [
+  {
+   "label": "대청호 (충청북도 · 금강 수계) · VMD+MFPCA 0.118 · FPCA 0.357 · 1 / 0 = 178 / 986",
+   "caption": "분해 그림 — 대청호 (충청북도 · 금강 수계) · VMD+MFPCA 0.118 (FPCA 0.357) · 1 / 0 = 178 / 986일 · 이 자료에서 X+MFPCA 가 가장 높은 곳",
+   "src": "attachments/261015_c90dd3_r2pick/weis/WEIS_S03003_DO.webp"
+  },
+  {
+   "label": "주암호 (전라남도 · 영산·섬진 수계) · CEEMDAN+MFPCA 0.112 · FPCA 0.000 · 1 / 0 = 14 / 996",
+   "caption": "분해 그림 — 주암호 (전라남도 · 영산·섬진 수계) · CEEMDAN+MFPCA 0.112 (FPCA 0.000) · 1 / 0 = 14 / 996일",
+   "src": "attachments/261015_c90dd3_r2pick/weis/WEIS_S04001_DO.webp"
+  },
+  {
+   "label": "상동 (경상남도 · 낙동강 수계) · EEMD+MFPCA 0.082 · FPCA 0.082 · 1 / 0 = 312 / 520",
+   "caption": "분해 그림 — 상동 (경상남도 · 낙동강 수계) · EEMD+MFPCA 0.082 (FPCA 0.082) · 1 / 0 = 312 / 520일",
+   "src": "attachments/261015_c90dd3_r2pick/weis/WEIS_S02017_DO.webp"
+  },
+  {
+   "label": "청암 (경상남도 · 낙동강 수계) · CEEMDAN+MFPCA 0.067 · FPCA 0.064 · 1 / 0 = 382 / 575",
+   "caption": "분해 그림 — 청암 (경상남도 · 낙동강 수계) · CEEMDAN+MFPCA 0.067 (FPCA 0.064) · 1 / 0 = 382 / 575일",
+   "src": "attachments/261015_c90dd3_r2pick/weis/WEIS_S02006_DO.webp"
+  },
+  {
+   "label": "다산 (경상북도 · 낙동강 수계) · EEMD+MFPCA 0.052 · FPCA 0.027 · 1 / 0 = 179 / 646",
+   "caption": "분해 그림 — 다산 (경상북도 · 낙동강 수계) · EEMD+MFPCA 0.052 (FPCA 0.027) · 1 / 0 = 179 / 646일",
+   "src": "attachments/261015_c90dd3_r2pick/weis/WEIS_S02009_DO.webp"
+  },
+  {
+   "label": "칠서 (경상남도 · 낙동강 수계) · CEEMDAN+MFPCA 0.048 · FPCA 0.045 · 1 / 0 = 417 / 581",
+   "caption": "분해 그림 — 칠서 (경상남도 · 낙동강 수계) · CEEMDAN+MFPCA 0.048 (FPCA 0.045) · 1 / 0 = 417 / 581일",
+   "src": "attachments/261015_c90dd3_r2pick/weis/WEIS_S02007_DO.webp"
+  },
+  {
+   "label": "해평 (경상북도 · 낙동강 수계) · EEMD+MFPCA 0.038 · FPCA 0.015 · 1 / 0 = 142 / 784",
+   "caption": "분해 그림 — 해평 (경상북도 · 낙동강 수계) · EEMD+MFPCA 0.038 (FPCA 0.015) · 1 / 0 = 142 / 784일",
+   "src": "attachments/261015_c90dd3_r2pick/weis/WEIS_S02012_DO.webp"
+  },
+  {
+   "label": "용담호 (전북특별자치도 · 금강 수계) · EEMD+MFPCA 0.001 · FPCA -0.001 · 1 / 0 = 71 / 1074",
+   "caption": "분해 그림 — 용담호 (전북특별자치도 · 금강 수계) · EEMD+MFPCA 0.001 (FPCA -0.001) · 1 / 0 = 71 / 1074일",
+   "src": "attachments/261015_c90dd3_r2pick/weis/WEIS_S03008_DO.webp"
+  },
+  {
+   "label": "의암호 (강원특별자치도 · 한강 수계) · CEEMDAN+MFPCA -0.009 · FPCA -0.009 · 1 / 0 = 20 / 907",
+   "caption": "분해 그림 — 의암호 (강원특별자치도 · 한강 수계) · CEEMDAN+MFPCA -0.009 (FPCA -0.009) · 1 / 0 = 20 / 907일",
+   "src": "attachments/261015_c90dd3_r2pick/weis/WEIS_S01012_DO.webp"
+  }
+ ],
+ "usgs": [
+  {
+   "label": "MIDDLE FORK WILLAMETTE RIVER NEAR DEXTER, OR (Oregon (OR) · Eugene-Springfield, OR 대도시권) · CEEMDAN+MFPCA 0.867 · FPCA 0.816 · 1 / 0 = 61 / 85",
+   "caption": "분해 그림 — MIDDLE FORK WILLAMETTE RIVER NEAR DEXTER, OR (Oregon (OR) · Eugene-Springfield, OR 대도시권) · CEEMDAN+MFPCA 0.867 (FPCA 0.816) · 1 / 0 = 61 / 85일 · 이 자료에서 X+MFPCA 가 가장 높은 곳",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_14150000_DO.webp"
+  },
+  {
+   "label": "SAN JUAN RIVER NEAR BLUFF, UT (Utah (UT) · CBSA 경계상 대응 없음) · EEMD+MFPCA 0.747 · FPCA 0.747 · 1 / 0 = 208 / 249",
+   "caption": "분해 그림 — SAN JUAN RIVER NEAR BLUFF, UT (Utah (UT) · CBSA 경계상 대응 없음) · EEMD+MFPCA 0.747 (FPCA 0.747) · 1 / 0 = 208 / 249일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_09379500_DO.webp"
+  },
+  {
+   "label": "FALL CREEK BLW WINBERRY CREEK, NEAR FALL CREEK, OR (Oregon (OR) · Eugene-Springfield, OR 대도시권) · EMD+MFPCA 0.673 · FPCA 0.663 · 1 / 0 = 342 / 316",
+   "caption": "분해 그림 — FALL CREEK BLW WINBERRY CREEK, NEAR FALL CREEK, OR (Oregon (OR) · Eugene-Springfield, OR 대도시권) · EMD+MFPCA 0.673 (FPCA 0.663) · 1 / 0 = 342 / 316일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_14151000_DO.webp"
+  },
+  {
+   "label": "RUSSIAN R NR HOPLAND CA (California (CA) · Ukiah, CA 소도시권) · EMD+MFPCA 0.632 · FPCA 0.608 · 1 / 0 = 243 / 459",
+   "caption": "분해 그림 — RUSSIAN R NR HOPLAND CA (California (CA) · Ukiah, CA 소도시권) · EMD+MFPCA 0.632 (FPCA 0.608) · 1 / 0 = 243 / 459일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_11462500_DO.webp"
+  },
+  {
+   "label": "L ARKANSAS R NR SEDGWICK, KS (Kansas (KS) · Wichita, KS 대도시권) · VMD+MFPCA 0.563 · FPCA 0.567 · 1 / 0 = 413 / 317",
+   "caption": "분해 그림 — L ARKANSAS R NR SEDGWICK, KS (Kansas (KS) · Wichita, KS 대도시권) · VMD+MFPCA 0.563 (FPCA 0.567) · 1 / 0 = 413 / 317일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_07144100_DO.webp"
+  },
+  {
+   "label": "SNAKE RIVER AT MOOSE, WY (Wyoming (WY) · Jackson, WY-ID 소도시권) · VMD+MFPCA 0.427 · FPCA 0.427 · 1 / 0 = 146 / 253",
+   "caption": "분해 그림 — SNAKE RIVER AT MOOSE, WY (Wyoming (WY) · Jackson, WY-ID 소도시권) · VMD+MFPCA 0.427 (FPCA 0.427) · 1 / 0 = 146 / 253일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_13013650_DO.webp"
+  },
+  {
+   "label": "CEDAR CREEK AT THIXTON ROAD NEAR LOUISVILLE, KY (Kentucky (KY) · Louisville/Jefferson County, KY-IN 대도시권) · CEEMDAN+MFPCA 0.407 · FPCA 0.145 · 1 / 0 = 292 / 173",
+   "caption": "분해 그림 — CEDAR CREEK AT THIXTON ROAD NEAR LOUISVILLE, KY (Kentucky (KY) · Louisville/Jefferson County, KY-IN 대도시권) · CEEMDAN+MFPCA 0.407 (FPCA 0.145) · 1 / 0 = 292 / 173일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_03298250_DO.webp"
+  },
+  {
+   "label": "LOWER RIVER ROUGE AT DEARBORN, MI (Michigan (MI) · Detroit-Warren-Dearborn, MI 대도시권) · EEMD+MFPCA 0.236 · FPCA 0.020 · 1 / 0 = 267 / 160",
+   "caption": "분해 그림 — LOWER RIVER ROUGE AT DEARBORN, MI (Michigan (MI) · Detroit-Warren-Dearborn, MI 대도시권) · EEMD+MFPCA 0.236 (FPCA 0.020) · 1 / 0 = 267 / 160일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_04168400_DO.webp"
+  },
+  {
+   "label": "FRENCH BROAD RIVER NEAR FLETCHER, NC (North Carolina (NC) · Asheville, NC 대도시권) · VMD+MFPCA 0.194 · FPCA -0.002 · 1 / 0 = 196 / 261",
+   "caption": "분해 그림 — FRENCH BROAD RIVER NEAR FLETCHER, NC (North Carolina (NC) · Asheville, NC 대도시권) · VMD+MFPCA 0.194 (FPCA -0.002) · 1 / 0 = 196 / 261일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_03447687_DO.webp"
+  },
+  {
+   "label": "FOX RIVER AT OIL TANK DEPOT AT GREEN BAY, WI (Wisconsin (WI) · Green Bay, WI 대도시권) · EEMD+MFPCA 0.145 · FPCA 0.140 · 1 / 0 = 166 / 127",
+   "caption": "분해 그림 — FOX RIVER AT OIL TANK DEPOT AT GREEN BAY, WI (Wisconsin (WI) · Green Bay, WI 대도시권) · EEMD+MFPCA 0.145 (FPCA 0.140) · 1 / 0 = 166 / 127일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_040851385_DO.webp"
+  },
+  {
+   "label": "Little Blue River near Lake City, MO (Missouri (MO) · Kansas City, MO-KS 대도시권) · VMD+MFPCA 0.137 · FPCA 0.131 · 1 / 0 = 470 / 125",
+   "caption": "분해 그림 — Little Blue River near Lake City, MO (Missouri (MO) · Kansas City, MO-KS 대도시권) · VMD+MFPCA 0.137 (FPCA 0.131) · 1 / 0 = 470 / 125일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_06894000_DO.webp"
+  },
+  {
+   "label": "MUDDY CRK BLW WOLFORD MTN RESER. NR KREMMLING, CO (Colorado (CO) · CBSA 경계상 대응 없음) · VMD+MFPCA 0.136 · FPCA 0.561 · 1 / 0 = 334 / 368",
+   "caption": "분해 그림 — MUDDY CRK BLW WOLFORD MTN RESER. NR KREMMLING, CO (Colorado (CO) · CBSA 경계상 대응 없음) · VMD+MFPCA 0.136 (FPCA 0.561) · 1 / 0 = 334 / 368일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_09041400_DO.webp"
+  },
+  {
+   "label": "PAINT BRANCH NEAR COLLEGE PARK, MD (Maryland (MD) · Washington-Arlington-Alexandria, DC-VA-MD-WV 대도시권) · EEMD+MFPCA 0.126 · FPCA 0.062 · 1 / 0 = 310 / 265",
+   "caption": "분해 그림 — PAINT BRANCH NEAR COLLEGE PARK, MD (Maryland (MD) · Washington-Arlington-Alexandria, DC-VA-MD-WV 대도시권) · EEMD+MFPCA 0.126 (FPCA 0.062) · 1 / 0 = 310 / 265일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_01649190_DO.webp"
+  },
+  {
+   "label": "APALACHICOLA RIVER AT CHATTAHOOCHEE FLA (Florida (FL) · CBSA 경계상 대응 없음) · EEMD+MFPCA 0.120 · FPCA 0.124 · 1 / 0 = 187 / 179",
+   "caption": "분해 그림 — APALACHICOLA RIVER AT CHATTAHOOCHEE FLA (Florida (FL) · CBSA 경계상 대응 없음) · EEMD+MFPCA 0.120 (FPCA 0.124) · 1 / 0 = 187 / 179일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_02358000_DO.webp"
+  },
+  {
+   "label": "Rock Creek at Joyce Rd Washington, DC (District of Columbia (DC) · Washington-Arlington-Alexandria, DC-VA-MD-WV 대도시권) · EEMD+MFPCA 0.098 · FPCA 0.102 · 1 / 0 = 480 / 178",
+   "caption": "분해 그림 — Rock Creek at Joyce Rd Washington, DC (District of Columbia (DC) · Washington-Arlington-Alexandria, DC-VA-MD-WV 대도시권) · EEMD+MFPCA 0.098 (FPCA 0.102) · 1 / 0 = 480 / 178일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_01648010_DO.webp"
+  },
+  {
+   "label": "SOUTH RIVER AT FORREST PARK ROAD, AT ATLANTA, GA (Georgia (GA) · Atlanta-Sandy Springs-Roswell, GA 대도시권) · VMD+MFPCA 0.088 · FPCA 0.077 · 1 / 0 = 368 / 384",
+   "caption": "분해 그림 — SOUTH RIVER AT FORREST PARK ROAD, AT ATLANTA, GA (Georgia (GA) · Atlanta-Sandy Springs-Roswell, GA 대도시권) · VMD+MFPCA 0.088 (FPCA 0.077) · 1 / 0 = 368 / 384일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_02203655_DO.webp"
+  },
+  {
+   "label": "Cobbs Creek at Mt. Moriah Cemetery, Philadelphia (Pennsylvania (PA) · Philadelphia-Camden-Wilmington, PA-NJ-DE-MD 대도시권) · EEMD+MFPCA 0.079 · FPCA 0.087 · 1 / 0 = 222 / 206",
+   "caption": "분해 그림 — Cobbs Creek at Mt. Moriah Cemetery, Philadelphia (Pennsylvania (PA) · Philadelphia-Camden-Wilmington, PA-NJ-DE-MD 대도시권) · EEMD+MFPCA 0.079 (FPCA 0.087) · 1 / 0 = 222 / 206일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_01475548_DO.webp"
+  },
+  {
+   "label": "WEST FORK R BL STONEWALL JACKSON DAM NR WESTON, WV (West Virginia (WV) · CBSA 경계상 대응 없음) · EMD+MFPCA 0.076 · FPCA 0.055 · 1 / 0 = 518 / 239",
+   "caption": "분해 그림 — WEST FORK R BL STONEWALL JACKSON DAM NR WESTON, WV (West Virginia (WV) · CBSA 경계상 대응 없음) · EMD+MFPCA 0.076 (FPCA 0.055) · 1 / 0 = 518 / 239일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_03058000_DO.webp"
+  },
+  {
+   "label": "San Antonio Rv nr Elmendorf, TX (Texas (TX) · San Antonio-New Braunfels, TX 대도시권) · EMD+MFPCA 0.069 · FPCA 0.060 · 1 / 0 = 245 / 245",
+   "caption": "분해 그림 — San Antonio Rv nr Elmendorf, TX (Texas (TX) · San Antonio-New Braunfels, TX 대도시권) · EMD+MFPCA 0.069 (FPCA 0.060) · 1 / 0 = 245 / 245일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_08181800_DO.webp"
+  },
+  {
+   "label": "LAKE TAPPS DIVERSION AT DIERINGER, WA (Washington (WA) · Seattle-Tacoma-Bellevue, WA 대도시권) · EMD+MFPCA 0.066 · FPCA 0.062 · 1 / 0 = 154 / 502",
+   "caption": "분해 그림 — LAKE TAPPS DIVERSION AT DIERINGER, WA (Washington (WA) · Seattle-Tacoma-Bellevue, WA 대도시권) · EMD+MFPCA 0.066 (FPCA 0.062) · 1 / 0 = 154 / 502일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_12101100_DO.webp"
+  },
+  {
+   "label": "TURKEY CREEK AT SEWAGE PLANT NEAR PINSON AL (Alabama (AL) · Birmingham, AL 대도시권) · EMD+MFPCA 0.060 · FPCA 0.734 · 1 / 0 = 271 / 246",
+   "caption": "분해 그림 — TURKEY CREEK AT SEWAGE PLANT NEAR PINSON AL (Alabama (AL) · Birmingham, AL 대도시권) · EMD+MFPCA 0.060 (FPCA 0.734) · 1 / 0 = 271 / 246일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_02455980_DO.webp"
+  },
+  {
+   "label": "Bird Ck at State Highway 266 near Catoosa, OK (Oklahoma (OK) · Tulsa, OK 대도시권) · CEEMDAN+MFPCA 0.058 · FPCA 0.048 · 1 / 0 = 326 / 266",
+   "caption": "분해 그림 — Bird Ck at State Highway 266 near Catoosa, OK (Oklahoma (OK) · Tulsa, OK 대도시권) · CEEMDAN+MFPCA 0.058 (FPCA 0.048) · 1 / 0 = 326 / 266일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_07178200_DO.webp"
+  },
+  {
+   "label": "NORTH BRANCH PARK RIVER AT HARTFORD, CT (Connecticut (CT) · Hartford-West Hartford-East Hartford, CT 대도시권) · CEEMDAN+MFPCA 0.056 · FPCA 0.051 · 1 / 0 = 588 / 130",
+   "caption": "분해 그림 — NORTH BRANCH PARK RIVER AT HARTFORD, CT (Connecticut (CT) · Hartford-West Hartford-East Hartford, CT 대도시권) · CEEMDAN+MFPCA 0.056 (FPCA 0.051) · 1 / 0 = 588 / 130일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_01191000_DO.webp"
+  },
+  {
+   "label": "DIFFICULT RUN ABOVE FOX LAKE NEAR FAIRFAX, VA (Virginia (VA) · Washington-Arlington-Alexandria, DC-VA-MD-WV 대도시권) · CEEMDAN+MFPCA 0.031 · FPCA 0.034 · 1 / 0 = 319 / 300",
+   "caption": "분해 그림 — DIFFICULT RUN ABOVE FOX LAKE NEAR FAIRFAX, VA (Virginia (VA) · Washington-Arlington-Alexandria, DC-VA-MD-WV 대도시권) · CEEMDAN+MFPCA 0.031 (FPCA 0.034) · 1 / 0 = 319 / 300일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_01645704_DO.webp"
+  },
+  {
+   "label": "EAST FORK WHITEWATER RIVER AT RICHMOND, IN (Indiana (IN) · Richmond, IN 소도시권) · CEEMDAN+MFPCA 0.009 · FPCA -0.003 · 1 / 0 = 334 / 143",
+   "caption": "분해 그림 — EAST FORK WHITEWATER RIVER AT RICHMOND, IN (Indiana (IN) · Richmond, IN 소도시권) · CEEMDAN+MFPCA 0.009 (FPCA -0.003) · 1 / 0 = 334 / 143일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_03275500_DO.webp"
+  },
+  {
+   "label": "BRANDYWINE CREEK AT WILMINGTON, DE (Delaware (DE) · Philadelphia-Camden-Wilmington, PA-NJ-DE-MD 대도시권) · CEEMDAN+MFPCA 0.008 · FPCA 0.004 · 1 / 0 = 239 / 172",
+   "caption": "분해 그림 — BRANDYWINE CREEK AT WILMINGTON, DE (Delaware (DE) · Philadelphia-Camden-Wilmington, PA-NJ-DE-MD 대도시권) · CEEMDAN+MFPCA 0.008 (FPCA 0.004) · 1 / 0 = 239 / 172일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_01481500_DO.webp"
+  },
+  {
+   "label": "TAKU R NR JUNEAU AK (Alaska (AK) · Juneau, AK 소도시권) · EMD+MFPCA 0.008 · FPCA 0.005 · 1 / 0 = 248 / 119",
+   "caption": "분해 그림 — TAKU R NR JUNEAU AK (Alaska (AK) · Juneau, AK 소도시권) · EMD+MFPCA 0.008 (FPCA 0.005) · 1 / 0 = 248 / 119일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_15041200_DO.webp"
+  },
+  {
+   "label": "HOBBS BK BELOW CAMBRIDGE RES NR KENDALL GREEN, MA (Massachusetts (MA) · Boston-Cambridge-Newton, MA-NH 대도시권) · EMD+MFPCA 0.006 · FPCA 0.005 · 1 / 0 = 712 / 158",
+   "caption": "분해 그림 — HOBBS BK BELOW CAMBRIDGE RES NR KENDALL GREEN, MA (Massachusetts (MA) · Boston-Cambridge-Newton, MA-NH 대도시권) · EMD+MFPCA 0.006 (FPCA 0.005) · 1 / 0 = 712 / 158일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_01104430_DO.webp"
+  },
+  {
+   "label": "MONGAUP R BELOW SWINGING BRIDGE RESERVOIR NY (New York (NY) · Monticello, NY 소도시권) · EMD+MFPCA 0.006 · FPCA 0.006 · 1 / 0 = 720 / 294",
+   "caption": "분해 그림 — MONGAUP R BELOW SWINGING BRIDGE RESERVOIR NY (New York (NY) · Monticello, NY 소도시권) · EMD+MFPCA 0.006 (FPCA 0.006) · 1 / 0 = 720 / 294일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_01433005_DO.webp"
+  },
+  {
+   "label": "Raritan River at Manville NJ (New Jersey (NJ) · New York-Newark-Jersey City, NY-NJ 대도시권) · EMD+MFPCA 0.005 · FPCA 0.004 · 1 / 0 = 272 / 151",
+   "caption": "분해 그림 — Raritan River at Manville NJ (New Jersey (NJ) · New York-Newark-Jersey City, NY-NJ 대도시권) · EMD+MFPCA 0.005 (FPCA 0.004) · 1 / 0 = 272 / 151일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_01400500_DO.webp"
+  },
+  {
+   "label": "SALUDA RIVER BELOW LK MURRAY DAM NR COLUMBIA, SC (South Carolina (SC) · Columbia, SC 대도시권) · VMD+MFPCA 0.001 · FPCA -0.000 · 1 / 0 = 491 / 323",
+   "caption": "분해 그림 — SALUDA RIVER BELOW LK MURRAY DAM NR COLUMBIA, SC (South Carolina (SC) · Columbia, SC 대도시권) · VMD+MFPCA 0.001 (FPCA -0.000) · 1 / 0 = 491 / 323일",
+   "src": "attachments/261015_c90dd3_r2pick/usgs/USGS_02168504_DO.webp"
+  }
+ ],
+ "asos1": [
+  {
+   "label": "서울 (서울특별시) · VMD+MFPCA 0.116 · FPCA 0.064 · 1 / 0 = 186 / 1640",
+   "caption": "분해 그림 — 서울 (서울특별시) · VMD+MFPCA 0.116 (FPCA 0.064) · 1 / 0 = 186 / 1640일 · 이 자료에서 X+MFPCA 가 가장 높은 곳",
+   "src": "attachments/261015_c90dd3_r2pick/asos1/seoul_temperature_c.webp"
+  },
+  {
+   "label": "광주 (전남광주통합특별시) · VMD+MFPCA 0.100 · FPCA 0.046 · 1 / 0 = 181 / 1642",
+   "caption": "분해 그림 — 광주 (전남광주통합특별시) · VMD+MFPCA 0.100 (FPCA 0.046) · 1 / 0 = 181 / 1642일",
+   "src": "attachments/261015_c90dd3_r2pick/asos1/gwangju_temperature_c.webp"
+  },
+  {
+   "label": "대구 (대구광역시) · VMD+MFPCA 0.099 · FPCA 0.082 · 1 / 0 = 226 / 1598",
+   "caption": "분해 그림 — 대구 (대구광역시) · VMD+MFPCA 0.099 (FPCA 0.082) · 1 / 0 = 226 / 1598일",
+   "src": "attachments/261015_c90dd3_r2pick/asos1/daegu_temperature_c.webp"
+  },
+  {
+   "label": "부산 (부산광역시) · VMD+MFPCA 0.098 · FPCA 0.086 · 1 / 0 = 188 / 1637",
+   "caption": "분해 그림 — 부산 (부산광역시) · VMD+MFPCA 0.098 (FPCA 0.086) · 1 / 0 = 188 / 1637일",
+   "src": "attachments/261015_c90dd3_r2pick/asos1/busan_temperature_c.webp"
+  },
+  {
+   "label": "대전 (대전광역시) · VMD+MFPCA 0.080 · FPCA 0.053 · 1 / 0 = 179 / 1644",
+   "caption": "분해 그림 — 대전 (대전광역시) · VMD+MFPCA 0.080 (FPCA 0.053) · 1 / 0 = 179 / 1644일",
+   "src": "attachments/261015_c90dd3_r2pick/asos1/daejeon_temperature_c.webp"
+  },
+  {
+   "label": "인천 (인천광역시) · VMD+MFPCA 0.075 · FPCA 0.061 · 1 / 0 = 150 / 1676",
+   "caption": "분해 그림 — 인천 (인천광역시) · VMD+MFPCA 0.075 (FPCA 0.061) · 1 / 0 = 150 / 1676일",
+   "src": "attachments/261015_c90dd3_r2pick/asos1/incheon_temperature_c.webp"
+  },
+  {
+   "label": "울산 (울산광역시) · VMD+MFPCA 0.035 · FPCA 0.022 · 1 / 0 = 105 / 1721",
+   "caption": "분해 그림 — 울산 (울산광역시) · VMD+MFPCA 0.035 (FPCA 0.022) · 1 / 0 = 105 / 1721일",
+   "src": "attachments/261015_c90dd3_r2pick/asos1/ulsan_temperature_c.webp"
+  }
+ ],
+ "asos2": [
+  {
+   "label": "울산 (울산광역시) · CEEMDAN+MFPCA 0.271 · FPCA 0.266 · 1 / 0 = 586 / 857",
+   "caption": "분해 그림 — 울산 (울산광역시) · CEEMDAN+MFPCA 0.271 (FPCA 0.266) · 1 / 0 = 586 / 857일 · 이 자료에서 X+MFPCA 가 가장 높은 곳",
+   "src": "attachments/261015_c90dd3_r2pick/asos2/ulsan_temperature_c.webp"
+  },
+  {
+   "label": "부산 (부산광역시) · CEEMDAN+MFPCA 0.245 · FPCA 0.217 · 1 / 0 = 579 / 877",
+   "caption": "분해 그림 — 부산 (부산광역시) · CEEMDAN+MFPCA 0.245 (FPCA 0.217) · 1 / 0 = 579 / 877일",
+   "src": "attachments/261015_c90dd3_r2pick/asos2/busan_temperature_c.webp"
+  },
+  {
+   "label": "대구 (대구광역시) · VMD+MFPCA 0.239 · FPCA 0.228 · 1 / 0 = 575 / 851",
+   "caption": "분해 그림 — 대구 (대구광역시) · VMD+MFPCA 0.239 (FPCA 0.228) · 1 / 0 = 575 / 851일",
+   "src": "attachments/261015_c90dd3_r2pick/asos2/daegu_temperature_c.webp"
+  },
+  {
+   "label": "서울 (서울특별시) · CEEMDAN+MFPCA 0.208 · FPCA 0.225 · 1 / 0 = 654 / 786",
+   "caption": "분해 그림 — 서울 (서울특별시) · CEEMDAN+MFPCA 0.208 (FPCA 0.225) · 1 / 0 = 654 / 786일",
+   "src": "attachments/261015_c90dd3_r2pick/asos2/seoul_temperature_c.webp"
+  },
+  {
+   "label": "인천 (인천광역시) · EEMD+MFPCA 0.156 · FPCA 0.167 · 1 / 0 = 597 / 781",
+   "caption": "분해 그림 — 인천 (인천광역시) · EEMD+MFPCA 0.156 (FPCA 0.167) · 1 / 0 = 597 / 781일",
+   "src": "attachments/261015_c90dd3_r2pick/asos2/incheon_temperature_c.webp"
+  },
+  {
+   "label": "대전 (대전광역시) · VMD+MFPCA 0.146 · FPCA 0.117 · 1 / 0 = 646 / 742",
+   "caption": "분해 그림 — 대전 (대전광역시) · VMD+MFPCA 0.146 (FPCA 0.117) · 1 / 0 = 646 / 742일",
+   "src": "attachments/261015_c90dd3_r2pick/asos2/daejeon_temperature_c.webp"
+  },
+  {
+   "label": "광주 (전남광주통합특별시) · EEMD+MFPCA 0.136 · FPCA 0.125 · 1 / 0 = 699 / 688",
+   "caption": "분해 그림 — 광주 (전남광주통합특별시) · EEMD+MFPCA 0.136 (FPCA 0.125) · 1 / 0 = 699 / 688일",
+   "src": "attachments/261015_c90dd3_r2pick/asos2/gwangju_temperature_c.webp"
+  }
+ ],
+ "isd": [
+  {
+   "label": "Sacramento International (CA / Sacramento-Roseville-Folsom, CA) · EEMD+MFPCA 0.993 · FPCA 0.986 · 1 / 0 = 192 / 409",
+   "caption": "분해 그림 — Sacramento International (CA / Sacramento-Roseville-Folsom, CA) · EEMD+MFPCA 0.993 (FPCA 0.986) · 1 / 0 = 192 / 409일 · 이 자료에서 X+MFPCA 가 가장 높은 곳",
+   "src": "attachments/261015_c90dd3_r2pick/isd/sacramento_temperature_c.webp"
+  },
+  {
+   "label": "Mineta San Jose International (CA / San Jose-Sunnyvale-Santa Clara, CA) · EEMD+MFPCA 0.975 · FPCA 0.958 · 1 / 0 = 174 / 299",
+   "caption": "분해 그림 — Mineta San Jose International (CA / San Jose-Sunnyvale-Santa Clara, CA) · EEMD+MFPCA 0.975 (FPCA 0.958) · 1 / 0 = 174 / 299일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/san_jose_temperature_c.webp"
+  },
+  {
+   "label": "Fresno Yosemite International (CA / Fresno, CA) · VMD+MFPCA 0.970 · FPCA 0.970 · 1 / 0 = 153 / 409",
+   "caption": "분해 그림 — Fresno Yosemite International (CA / Fresno, CA) · VMD+MFPCA 0.970 (FPCA 0.970) · 1 / 0 = 153 / 409일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/fresno_temperature_c.webp"
+  },
+  {
+   "label": "Los Angeles International (CA / Los Angeles-Long Beach-Anaheim, CA) · VMD+MFPCA 0.943 · FPCA 0.954 · 1 / 0 = 120 / 231",
+   "caption": "분해 그림 — Los Angeles International (CA / Los Angeles-Long Beach-Anaheim, CA) · VMD+MFPCA 0.943 (FPCA 0.954) · 1 / 0 = 120 / 231일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/los_angeles_temperature_c.webp"
+  },
+  {
+   "label": "Portland International (OR / Portland-Vancouver-Hillsboro, OR-WA) · VMD+MFPCA 0.940 · FPCA 0.927 · 1 / 0 = 548 / 373",
+   "caption": "분해 그림 — Portland International (OR / Portland-Vancouver-Hillsboro, OR-WA) · VMD+MFPCA 0.940 (FPCA 0.927) · 1 / 0 = 548 / 373일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/portland_temperature_c.webp"
+  },
+  {
+   "label": "Ontario International (CA / Riverside-San Bernardino-Ontario, CA) · CEEMDAN+MFPCA 0.939 · FPCA 0.939 · 1 / 0 = 133 / 340",
+   "caption": "분해 그림 — Ontario International (CA / Riverside-San Bernardino-Ontario, CA) · CEEMDAN+MFPCA 0.939 (FPCA 0.939) · 1 / 0 = 133 / 340일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/riverside_ontario_temperature_c.webp"
+  },
+  {
+   "label": "San Francisco International (CA / San Francisco-Oakland-Fremont, CA) · EEMD+MFPCA 0.939 · FPCA 0.917 · 1 / 0 = 209 / 309",
+   "caption": "분해 그림 — San Francisco International (CA / San Francisco-Oakland-Fremont, CA) · EEMD+MFPCA 0.939 (FPCA 0.917) · 1 / 0 = 209 / 309일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/san_francisco_temperature_c.webp"
+  },
+  {
+   "label": "Seattle-Tacoma International (WA / Seattle-Tacoma-Bellevue, WA) · VMD+MFPCA 0.902 · FPCA 0.894 · 1 / 0 = 543 / 337",
+   "caption": "분해 그림 — Seattle-Tacoma International (WA / Seattle-Tacoma-Bellevue, WA) · VMD+MFPCA 0.902 (FPCA 0.894) · 1 / 0 = 543 / 337일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/seattle_tacoma_temperature_c.webp"
+  },
+  {
+   "label": "San Diego International (CA / San Diego-Chula Vista-Carlsbad, CA) · CEEMDAN+MFPCA 0.889 · FPCA 0.105 · 1 / 0 = 119 / 199",
+   "caption": "분해 그림 — San Diego International (CA / San Diego-Chula Vista-Carlsbad, CA) · CEEMDAN+MFPCA 0.889 (FPCA 0.105) · 1 / 0 = 119 / 199일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/san_diego_temperature_c.webp"
+  },
+  {
+   "label": "Harry Reid International (NV / Las Vegas-Henderson-North Las Vegas, NV) · EEMD+MFPCA 0.884 · FPCA 0.873 · 1 / 0 = 80 / 316",
+   "caption": "분해 그림 — Harry Reid International (NV / Las Vegas-Henderson-North Las Vegas, NV) · EEMD+MFPCA 0.884 (FPCA 0.873) · 1 / 0 = 80 / 316일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/las_vegas_temperature_c.webp"
+  },
+  {
+   "label": "Salt Lake City International (UT / Salt Lake City-Murray, UT) · CEEMDAN+MFPCA 0.702 · FPCA 0.678 · 1 / 0 = 298 / 270",
+   "caption": "분해 그림 — Salt Lake City International (UT / Salt Lake City-Murray, UT) · CEEMDAN+MFPCA 0.702 (FPCA 0.678) · 1 / 0 = 298 / 270일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/salt_lake_city_temperature_c.webp"
+  },
+  {
+   "label": "Austin-Bergstrom International (TX / Austin-Round Rock-San Marcos, TX) · EEMD+MFPCA 0.672 · FPCA 0.256 · 1 / 0 = 340 / 294",
+   "caption": "분해 그림 — Austin-Bergstrom International (TX / Austin-Round Rock-San Marcos, TX) · EEMD+MFPCA 0.672 (FPCA 0.256) · 1 / 0 = 340 / 294일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/austin_temperature_c.webp"
+  },
+  {
+   "label": "Phoenix Sky Harbor International (AZ / Phoenix-Mesa-Chandler, AZ) · CEEMDAN+MFPCA 0.669 · FPCA 0.667 · 1 / 0 = 104 / 280",
+   "caption": "분해 그림 — Phoenix Sky Harbor International (AZ / Phoenix-Mesa-Chandler, AZ) · CEEMDAN+MFPCA 0.669 (FPCA 0.667) · 1 / 0 = 104 / 280일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/phoenix_temperature_c.webp"
+  },
+  {
+   "label": "San Antonio International (TX / San Antonio-New Braunfels, TX) · EEMD+MFPCA 0.590 · FPCA 0.346 · 1 / 0 = 298 / 281",
+   "caption": "분해 그림 — San Antonio International (TX / San Antonio-New Braunfels, TX) · EEMD+MFPCA 0.590 (FPCA 0.346) · 1 / 0 = 298 / 281일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/san_antonio_temperature_c.webp"
+  },
+  {
+   "label": "Okc Will Rogers International (OK / Oklahoma City, OK) · EEMD+MFPCA 0.582 · FPCA 0.490 · 1 / 0 = 369 / 205",
+   "caption": "분해 그림 — Okc Will Rogers International (OK / Oklahoma City, OK) · EEMD+MFPCA 0.582 (FPCA 0.490) · 1 / 0 = 369 / 205일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/oklahoma_city_temperature_c.webp"
+  },
+  {
+   "label": "Dallas-Fort Worth International (TX / Dallas-Fort Worth-Arlington, TX) · VMD+MFPCA 0.491 · FPCA 0.367 · 1 / 0 = 357 / 279",
+   "caption": "분해 그림 — Dallas-Fort Worth International (TX / Dallas-Fort Worth-Arlington, TX) · VMD+MFPCA 0.491 (FPCA 0.367) · 1 / 0 = 357 / 279일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/dallas_fort_worth_temperature_c.webp"
+  },
+  {
+   "label": "George Bush Intcntl/Houston (TX / Houston-Pasadena-The Woodlands, TX) · EEMD+MFPCA 0.410 · FPCA 0.314 · 1 / 0 = 427 / 259",
+   "caption": "분해 그림 — George Bush Intcntl/Houston (TX / Houston-Pasadena-The Woodlands, TX) · EEMD+MFPCA 0.410 (FPCA 0.314) · 1 / 0 = 427 / 259일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/houston_temperature_c.webp"
+  },
+  {
+   "label": "Tucson International (AZ / Tucson, AZ) · EEMD+MFPCA 0.342 · FPCA 0.324 · 1 / 0 = 158 / 242",
+   "caption": "분해 그림 — Tucson International (AZ / Tucson, AZ) · EEMD+MFPCA 0.342 (FPCA 0.324) · 1 / 0 = 158 / 242일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/tucson_temperature_c.webp"
+  },
+  {
+   "label": "Denver International (CO / Denver-Aurora-Centennial, CO) · EEMD+MFPCA 0.338 · FPCA 0.291 · 1 / 0 = 324 / 218",
+   "caption": "분해 그림 — Denver International (CO / Denver-Aurora-Centennial, CO) · EEMD+MFPCA 0.338 (FPCA 0.291) · 1 / 0 = 324 / 218일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/denver_temperature_c.webp"
+  },
+  {
+   "label": "Chicago O'Hare International (IL / Chicago-Naperville-Elgin, IL-IN) · CEEMDAN+MFPCA 0.332 · FPCA 0.115 · 1 / 0 = 490 / 164",
+   "caption": "분해 그림 — Chicago O'Hare International (IL / Chicago-Naperville-Elgin, IL-IN) · CEEMDAN+MFPCA 0.332 (FPCA 0.115) · 1 / 0 = 490 / 164일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/chicago_ohare_temperature_c.webp"
+  },
+  {
+   "label": "General Mitchell International (WI / Milwaukee-Waukesha, WI) · CEEMDAN+MFPCA 0.323 · FPCA 0.302 · 1 / 0 = 488 / 132",
+   "caption": "분해 그림 — General Mitchell International (WI / Milwaukee-Waukesha, WI) · CEEMDAN+MFPCA 0.323 (FPCA 0.302) · 1 / 0 = 488 / 132일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/milwaukee_temperature_c.webp"
+  },
+  {
+   "label": "Tulsa International (OK / Tulsa, OK) · EEMD+MFPCA 0.318 · FPCA 0.276 · 1 / 0 = 422 / 218",
+   "caption": "분해 그림 — Tulsa International (OK / Tulsa, OK) · EEMD+MFPCA 0.318 (FPCA 0.276) · 1 / 0 = 422 / 218일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/tulsa_temperature_c.webp"
+  },
+  {
+   "label": "Frederick W Smith International/Memphis (TN / Memphis, TN-MS-AR) · EMD+MFPCA 0.317 · FPCA 0.267 · 1 / 0 = 467 / 188",
+   "caption": "분해 그림 — Frederick W Smith International/Memphis (TN / Memphis, TN-MS-AR) · EMD+MFPCA 0.317 (FPCA 0.267) · 1 / 0 = 467 / 188일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/memphis_temperature_c.webp"
+  },
+  {
+   "label": "Nashville International (TN / Nashville-Davidson--Murfreesboro--Franklin, TN) · EEMD+MFPCA 0.299 · FPCA 0.156 · 1 / 0 = 516 / 161",
+   "caption": "분해 그림 — Nashville International (TN / Nashville-Davidson--Murfreesboro--Franklin, TN) · EEMD+MFPCA 0.299 (FPCA 0.156) · 1 / 0 = 516 / 161일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/nashville_temperature_c.webp"
+  },
+  {
+   "label": "Minneapolis-St Paul International/Wold-Chamberlain (MN / Minneapolis-St. Paul-Bloomington, MN-WI) · EMD+MFPCA 0.151 · FPCA 0.137 · 1 / 0 = 441 / 171",
+   "caption": "분해 그림 — Minneapolis-St Paul International/Wold-Chamberlain (MN / Minneapolis-St. Paul-Bloomington, MN-WI) · EMD+MFPCA 0.151 (FPCA 0.137) · 1 / 0 = 441 / 171일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/minneapolis_st_paul_temperature_c.webp"
+  },
+  {
+   "label": "General Edward Lawrence Logan International (MA / Boston-Cambridge-Newton, MA-NH) · EMD+MFPCA 0.143 · FPCA 0.094 · 1 / 0 = 535 / 117",
+   "caption": "분해 그림 — General Edward Lawrence Logan International (MA / Boston-Cambridge-Newton, MA-NH) · EMD+MFPCA 0.143 (FPCA 0.094) · 1 / 0 = 535 / 117일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/boston_temperature_c.webp"
+  },
+  {
+   "label": "Gerald R Ford International (MI / Grand Rapids-Wyoming-Kentwood, MI) · CEEMDAN+MFPCA 0.131 · FPCA 0.120 · 1 / 0 = 560 / 154",
+   "caption": "분해 그림 — Gerald R Ford International (MI / Grand Rapids-Wyoming-Kentwood, MI) · CEEMDAN+MFPCA 0.131 (FPCA 0.120) · 1 / 0 = 560 / 154일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/grand_rapids_temperature_c.webp"
+  },
+  {
+   "label": "Detroit Metro Wayne County (MI / Detroit-Warren-Dearborn, MI) · CEEMDAN+MFPCA 0.130 · FPCA 0.120 · 1 / 0 = 485 / 148",
+   "caption": "분해 그림 — Detroit Metro Wayne County (MI / Detroit-Warren-Dearborn, MI) · CEEMDAN+MFPCA 0.130 (FPCA 0.120) · 1 / 0 = 485 / 148일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/detroit_temperature_c.webp"
+  },
+  {
+   "label": "Frederick Douglass/Greater Rochester International (NY / Rochester, NY) · CEEMDAN+MFPCA 0.110 · FPCA 0.079 · 1 / 0 = 606 / 120",
+   "caption": "분해 그림 — Frederick Douglass/Greater Rochester International (NY / Rochester, NY) · CEEMDAN+MFPCA 0.110 (FPCA 0.079) · 1 / 0 = 606 / 120일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/rochester_temperature_c.webp"
+  },
+  {
+   "label": "Bradley International (CT / Hartford-West Hartford-East Hartford, CT) · VMD+MFPCA 0.105 · FPCA 0.097 · 1 / 0 = 543 / 129",
+   "caption": "분해 그림 — Bradley International (CT / Hartford-West Hartford-East Hartford, CT) · VMD+MFPCA 0.105 (FPCA 0.097) · 1 / 0 = 543 / 129일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/hartford_bradley_temperature_c.webp"
+  },
+  {
+   "label": "John F Kennedy International (NY / New York-Newark-Jersey City, NY-NJ) · CEEMDAN+MFPCA 0.104 · FPCA 0.093 · 1 / 0 = 501 / 96",
+   "caption": "분해 그림 — John F Kennedy International (NY / New York-Newark-Jersey City, NY-NJ) · CEEMDAN+MFPCA 0.104 (FPCA 0.093) · 1 / 0 = 501 / 96일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/new_york_jfk_temperature_c.webp"
+  },
+  {
+   "label": "Cleveland-Hopkins International (OH / Cleveland, OH) · CEEMDAN+MFPCA 0.101 · FPCA 0.097 · 1 / 0 = 612 / 151",
+   "caption": "분해 그림 — Cleveland-Hopkins International (OH / Cleveland, OH) · CEEMDAN+MFPCA 0.101 (FPCA 0.097) · 1 / 0 = 612 / 151일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/cleveland_temperature_c.webp"
+  },
+  {
+   "label": "Rhode Island Tf Green International (RI / Providence-Warwick, RI-MA) · CEEMDAN+MFPCA 0.101 · FPCA 0.082 · 1 / 0 = 518 / 120",
+   "caption": "분해 그림 — Rhode Island Tf Green International (RI / Providence-Warwick, RI-MA) · CEEMDAN+MFPCA 0.101 (FPCA 0.082) · 1 / 0 = 518 / 120일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/providence_temperature_c.webp"
+  },
+  {
+   "label": "Philadelphia International (PA / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD) · EEMD+MFPCA 0.092 · FPCA 0.083 · 1 / 0 = 494 / 122",
+   "caption": "분해 그림 — Philadelphia International (PA / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD) · EEMD+MFPCA 0.092 (FPCA 0.083) · 1 / 0 = 494 / 122일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/philadelphia_temperature_c.webp"
+  },
+  {
+   "label": "Buffalo Niagara International (NY / Buffalo-Cheektowaga, NY) · CEEMDAN+MFPCA 0.090 · FPCA 0.081 · 1 / 0 = 618 / 150",
+   "caption": "분해 그림 — Buffalo Niagara International (NY / Buffalo-Cheektowaga, NY) · CEEMDAN+MFPCA 0.090 (FPCA 0.081) · 1 / 0 = 618 / 150일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/buffalo_temperature_c.webp"
+  },
+  {
+   "label": "Washington Dulles International (VA / Washington-Arlington-Alexandria, DC-VA-MD-WV) · CEEMDAN+MFPCA 0.089 · FPCA 0.036 · 1 / 0 = 481 / 106",
+   "caption": "분해 그림 — Washington Dulles International (VA / Washington-Arlington-Alexandria, DC-VA-MD-WV) · CEEMDAN+MFPCA 0.089 (FPCA 0.036) · 1 / 0 = 481 / 106일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/washington_dulles_temperature_c.webp"
+  },
+  {
+   "label": "St Louis Lambert International (MO / St. Louis, MO-IL) · CEEMDAN+MFPCA 0.087 · FPCA 0.067 · 1 / 0 = 479 / 148",
+   "caption": "분해 그림 — St Louis Lambert International (MO / St. Louis, MO-IL) · CEEMDAN+MFPCA 0.087 (FPCA 0.067) · 1 / 0 = 479 / 148일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/st_louis_temperature_c.webp"
+  },
+  {
+   "label": "John Glenn Columbus International (OH / Columbus, OH) · EMD+MFPCA 0.079 · FPCA 0.064 · 1 / 0 = 561 / 165",
+   "caption": "분해 그림 — John Glenn Columbus International (OH / Columbus, OH) · EMD+MFPCA 0.079 (FPCA 0.064) · 1 / 0 = 561 / 165일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/columbus_temperature_c.webp"
+  },
+  {
+   "label": "Charlotte/Douglas International (NC / Charlotte-Concord-Gastonia, NC-SC) · EMD+MFPCA 0.076 · FPCA -0.013 · 1 / 0 = 461 / 90",
+   "caption": "분해 그림 — Charlotte/Douglas International (NC / Charlotte-Concord-Gastonia, NC-SC) · EMD+MFPCA 0.076 (FPCA -0.013) · 1 / 0 = 461 / 90일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/charlotte_temperature_c.webp"
+  },
+  {
+   "label": "Pittsburgh International (PA / Pittsburgh, PA) · CEEMDAN+MFPCA 0.070 · FPCA 0.052 · 1 / 0 = 582 / 146",
+   "caption": "분해 그림 — Pittsburgh International (PA / Pittsburgh, PA) · CEEMDAN+MFPCA 0.070 (FPCA 0.052) · 1 / 0 = 582 / 146일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/pittsburgh_temperature_c.webp"
+  },
+  {
+   "label": "Indianapolis International (IN / Indianapolis-Carmel-Greenwood, IN) · EEMD+MFPCA 0.065 · FPCA 0.065 · 1 / 0 = 529 / 157",
+   "caption": "분해 그림 — Indianapolis International (IN / Indianapolis-Carmel-Greenwood, IN) · EEMD+MFPCA 0.065 (FPCA 0.065) · 1 / 0 = 529 / 157일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/indianapolis_temperature_c.webp"
+  },
+  {
+   "label": "Baltimore/Washington International Thurgood Marshall (MD / Baltimore-Columbia-Towson, MD) · VMD+MFPCA 0.064 · FPCA 0.060 · 1 / 0 = 476 / 122",
+   "caption": "분해 그림 — Baltimore/Washington International Thurgood Marshall (MD / Baltimore-Columbia-Towson, MD) · VMD+MFPCA 0.064 (FPCA 0.060) · 1 / 0 = 476 / 122일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/baltimore_temperature_c.webp"
+  },
+  {
+   "label": "Louisville Muhammad Ali International (KY / Louisville/Jefferson County, KY-IN) · EMD+MFPCA 0.063 · FPCA 0.050 · 1 / 0 = 523 / 152",
+   "caption": "분해 그림 — Louisville Muhammad Ali International (KY / Louisville/Jefferson County, KY-IN) · EMD+MFPCA 0.063 (FPCA 0.050) · 1 / 0 = 523 / 152일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/louisville_temperature_c.webp"
+  },
+  {
+   "label": "Kansas City International (MO / Kansas City, MO-KS) · CEEMDAN+MFPCA 0.053 · FPCA -0.020 · 1 / 0 = 462 / 126",
+   "caption": "분해 그림 — Kansas City International (MO / Kansas City, MO-KS) · CEEMDAN+MFPCA 0.053 (FPCA -0.020) · 1 / 0 = 462 / 126일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/kansas_city_temperature_c.webp"
+  },
+  {
+   "label": "Luis Munoz Marin International (PR / San Juan-Bayamón-Caguas, PR) · EMD+MFPCA 0.050 · FPCA 0.008 · 1 / 0 = 820 / 75",
+   "caption": "분해 그림 — Luis Munoz Marin International (PR / San Juan-Bayamón-Caguas, PR) · EMD+MFPCA 0.050 (FPCA 0.008) · 1 / 0 = 820 / 75일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/san_juan_temperature_c.webp"
+  },
+  {
+   "label": "Cincinnati/Northern Kentucky International (KY / Cincinnati, OH-KY-IN) · CEEMDAN+MFPCA 0.046 · FPCA 0.039 · 1 / 0 = 559 / 147",
+   "caption": "분해 그림 — Cincinnati/Northern Kentucky International (KY / Cincinnati, OH-KY-IN) · CEEMDAN+MFPCA 0.046 (FPCA 0.039) · 1 / 0 = 559 / 147일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/cincinnati_temperature_c.webp"
+  },
+  {
+   "label": "Eppley Airfield (NE / Omaha, NE-IA) · EEMD+MFPCA 0.036 · FPCA 0.040 · 1 / 0 = 386 / 146",
+   "caption": "분해 그림 — Eppley Airfield (NE / Omaha, NE-IA) · EEMD+MFPCA 0.036 (FPCA 0.040) · 1 / 0 = 386 / 146일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/omaha_temperature_c.webp"
+  },
+  {
+   "label": "Raleigh-Durham International (NC / Raleigh-Cary, NC) · EMD+MFPCA 0.032 · FPCA -0.031 · 1 / 0 = 484 / 110",
+   "caption": "분해 그림 — Raleigh-Durham International (NC / Raleigh-Cary, NC) · EMD+MFPCA 0.032 (FPCA -0.031) · 1 / 0 = 484 / 110일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/raleigh_durham_temperature_c.webp"
+  },
+  {
+   "label": "Orlando International (FL / Orlando-Kissimmee-Sanford, FL) · VMD+MFPCA 0.023 · FPCA -0.107 · 1 / 0 = 430 / 95",
+   "caption": "분해 그림 — Orlando International (FL / Orlando-Kissimmee-Sanford, FL) · VMD+MFPCA 0.023 (FPCA -0.107) · 1 / 0 = 430 / 95일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/orlando_temperature_c.webp"
+  },
+  {
+   "label": "Miami International (FL / Miami-Fort Lauderdale-West Palm Beach, FL) · CEEMDAN+MFPCA 0.022 · FPCA -0.018 · 1 / 0 = 531 / 84",
+   "caption": "분해 그림 — Miami International (FL / Miami-Fort Lauderdale-West Palm Beach, FL) · CEEMDAN+MFPCA 0.022 (FPCA -0.018) · 1 / 0 = 531 / 84일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/miami_temperature_c.webp"
+  },
+  {
+   "label": "Tampa International (FL / Tampa-St. Petersburg-Clearwater, FL) · CEEMDAN+MFPCA 0.017 · FPCA -0.085 · 1 / 0 = 447 / 127",
+   "caption": "분해 그림 — Tampa International (FL / Tampa-St. Petersburg-Clearwater, FL) · CEEMDAN+MFPCA 0.017 (FPCA -0.085) · 1 / 0 = 447 / 127일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/tampa_temperature_c.webp"
+  },
+  {
+   "label": "Hartsfield/Jackson Atlanta International (GA / Atlanta-Sandy Springs-Roswell, GA) · CEEMDAN+MFPCA 0.008 · FPCA -0.054 · 1 / 0 = 489 / 146",
+   "caption": "분해 그림 — Hartsfield/Jackson Atlanta International (GA / Atlanta-Sandy Springs-Roswell, GA) · CEEMDAN+MFPCA 0.008 (FPCA -0.054) · 1 / 0 = 489 / 146일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/atlanta_temperature_c.webp"
+  },
+  {
+   "label": "Birmingham-Shuttlesworth International (AL / Birmingham, AL) · EMD+MFPCA -0.000 · FPCA -0.032 · 1 / 0 = 499 / 171",
+   "caption": "분해 그림 — Birmingham-Shuttlesworth International (AL / Birmingham, AL) · EMD+MFPCA -0.000 (FPCA -0.032) · 1 / 0 = 499 / 171일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/birmingham_temperature_c.webp"
+  },
+  {
+   "label": "Greenville Spartanburg International (SC / Greenville-Anderson-Greer, SC) · CEEMDAN+MFPCA -0.002 · FPCA -0.022 · 1 / 0 = 488 / 102",
+   "caption": "분해 그림 — Greenville Spartanburg International (SC / Greenville-Anderson-Greer, SC) · CEEMDAN+MFPCA -0.002 (FPCA -0.022) · 1 / 0 = 488 / 102일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/greenville_spartanburg_temperature_c.webp"
+  },
+  {
+   "label": "Jacksonville International (FL / Jacksonville, FL) · CEEMDAN+MFPCA -0.002 · FPCA -0.089 · 1 / 0 = 499 / 103",
+   "caption": "분해 그림 — Jacksonville International (FL / Jacksonville, FL) · CEEMDAN+MFPCA -0.002 (FPCA -0.089) · 1 / 0 = 499 / 103일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/jacksonville_temperature_c.webp"
+  },
+  {
+   "label": "Richmond International (VA / Richmond, VA) · EEMD+MFPCA -0.002 · FPCA -0.006 · 1 / 0 = 506 / 97",
+   "caption": "분해 그림 — Richmond International (VA / Richmond, VA) · EEMD+MFPCA -0.002 (FPCA -0.006) · 1 / 0 = 506 / 97일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/richmond_temperature_c.webp"
+  },
+  {
+   "label": "Norfolk International (VA / Virginia Beach-Chesapeake-Norfolk, VA-NC) · CEEMDAN+MFPCA -0.011 · FPCA -0.009 · 1 / 0 = 468 / 96",
+   "caption": "분해 그림 — Norfolk International (VA / Virginia Beach-Chesapeake-Norfolk, VA-NC) · CEEMDAN+MFPCA -0.011 (FPCA -0.009) · 1 / 0 = 468 / 96일",
+   "src": "attachments/261015_c90dd3_r2pick/isd/norfolk_temperature_c.webp"
+  }
+ ]
+}
