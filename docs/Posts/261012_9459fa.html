@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="최규빈">
+<meta name="dcterms.date" content="2026-10-12">
+
+<title>FDecomp — 분해 설계 누적 실험: 기준선 · IMF 재배치 · EBT – 연구진행과정공유(최규빈)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-3e7e090bd1c2cc56a78b0fc4341ea51d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed fullcontent quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">연구진행과정공유(최규빈)</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/miruetoto/msblog"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">FDecomp — 분해 설계 누적 실험: 기준선 · IMF 재배치 · EBT</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>최규빈 </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 12, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="요약" class="level1">
+<h1>1. 요약</h1>
+<p><code>-</code> 기존 코드에서 발전시킨 점</p>
+<ul>
+<li>MFPCA 적용: 기존에는 분해(K=3) 후 IMF 2 한 개만 사용, 지금은 모든 모드 사용. 한 개만 쓰면 (1) 데일리 이펙트를 뽑기 어렵고 (2) baseline 대비 성능 개선이 없음.</li>
+<li>IMF 재배치 알고리즘 적용 (§4, §5.1)</li>
+<li>어퍼 엔벨롭을 먼저 구해 나누어 진폭 변조를 걷어냄 (§5.2)</li>
+</ul>
+</section>
+<section id="data" class="level1">
+<h1>2. Data</h1>
+<p><code>-</code> 기본 아이디어: weekday 와 (weekend, holiday) 를 구분할 수 있는 방법을 설계함</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261012_9459fa_01.png" class="img-fluid figure-img"></p>
+<figcaption>라벨별 하루 곡선</figcaption>
+</figure>
+</div>
+</section>
+<section id="baselines" class="level1">
+<h1>3. Baselines</h1>
+<section id="daily-mean-k-means" class="level2">
+<h2 class="anchored" data-anchor-id="daily-mean-k-means">3.1 Daily mean → k-means</h2>
+<p><code>-</code> 하루 48점을 평균 하나로 줄여 k-means(k=2)를 걸어 보았음 (모양을 전혀 안 보고 수준만 보는 가장 낮은 기준).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261012_9459fa_02.png" class="img-fluid figure-img"></p>
+<figcaption>일평균만 쓴 군집 결과</figcaption>
+</figure>
+</div>
+<p><code>-</code> ARI 가 0.191 로 매우 낮은 수준. 경계가 두 봉우리 사이 골짜기(4,208 MW)가 아니라 그 오른쪽(4,705 MW)에 서 있어서 그러함 (k-means 가 두 중심의 중점으로 자르기 때문임). 쉬는 날은 거의 다 낮은 군집에 들어가지만 평일 280일도 같이 들어감. 부트스트랩 구간 [0.06, 0.42].</p>
+<p><code>-</code> 라벨 정보를 알고 고르는 최적 임계점. 임계를 3,500~6,000 MW 로 훑으며 「임계 아래 = 쉬는 날」로 둘 때의 ARI 를 그린 것이 아래 왼쪽. 4,390 MW 에서 0.576 으로 최대이고, k-means 경계 4,705 MW 는 그 곡선에서 0.191 자리임. 오른쪽은 그 두 경계를 라벨별 분포 위에 그린 것.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261012_9459fa_03.png" class="img-fluid figure-img"></p>
+<figcaption>일평균 임계로 가른 결과</figcaption>
+</figure>
+</div>
+<p><code>-</code> 라벨을 알고 고른 최적 임계(4,390 MW)로도 0.576 이 상한.</p>
+<p><code>-</code> 쉬는 날의 상위 10% 가 평일의 하위 10% 보다 높아 분포가 겹치므로, 수준 하나로는 어떤 경계도 0.6 을 못 넘음.</p>
+<p><code>-</code> 함수의 모양으로 판단해야 함 (FPCA 를 써야 하는 이유).</p>
+<p><code>-</code> 성능요약: ARI 0.576 이 상한</p>
+</section>
+<section id="b-spline-fpca-k-means" class="level2">
+<h2 class="anchored" data-anchor-id="b-spline-fpca-k-means">3.2 B-spline → FPCA → k-means</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261012_9459fa_04.png" class="img-fluid figure-img"></p>
+<figcaption>FPCA 기준선 결과</figcaption>
+</figure>
+</div>
+<p><code>-</code> 나쁘지 않음.</p>
+<p><code>-</code> 그런데 분해를 하고 MFPCA 를 돌리면 결과가 어떨지 궁금함.</p>
+<p><code>-</code> 성능요약: ARI 0.863 (평균만 사용할 경우의 성능 상한인 0.576 보다 높음)</p>
+</section>
+<section id="decompose-b-spline-mfpca-k-means" class="level2">
+<h2 class="anchored" data-anchor-id="decompose-b-spline-mfpca-k-means">3.3 Decompose → B-spline → MFPCA → k-means</h2>
+<p><code>-</code> 결과: EMD 의 결과가 안 좋은 것에 주목</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261012_9459fa_05.png" class="img-fluid figure-img"></p>
+<figcaption>IMF 번호 그대로 분해한 결과</figcaption>
+</figure>
+</div>
+<p><code>-</code> 성능요약: EEMD 와 EMD 는 MFPCA 의 성능이 안 나옴.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>절</th>
+<th>설계</th>
+<th style="text-align: right;">ARI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1</td>
+<td>Daily mean → k-means</td>
+<td style="text-align: right;">0.191</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Daily mean, 라벨로 고른 최적 임계 (상한)</td>
+<td style="text-align: right;">0.576</td>
+</tr>
+<tr class="odd">
+<td>3.2</td>
+<td>B-spline → FPCA → k-means</td>
+<td style="text-align: right;">0.863</td>
+</tr>
+<tr class="even">
+<td>3.3</td>
+<td>VMD → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.923}\)</span></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>CEEMDAN → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;">0.887</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>EEMD → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;">0.856</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>EMD → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;"><strong>0.011</strong></td>
+</tr>
+</tbody>
+</table>
+<p><code>-</code> 까닭: EMD 는 날마다 daily wave 가 다른 IMF 에 할당됨(모드 혼합). 다른 방법도 이러한 현상이 생길 수 있지만 유독 EMD 가 심함 <span class="math inline">\(\Rightarrow\)</span> 4장의 모티브</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261012_9459fa_06.png" class="img-fluid figure-img"></p>
+<figcaption>EMD 모드 혼합 사례</figcaption>
+</figure>
+</div>
+<p><code>-</code> Note: VMD 는 FFT 기반이므로 tone 이 섞이지 않음 (따라서 VMD 와 MFPCA 의 궁합이 좋음).</p>
+</section>
+</section>
+<section id="imf-재배치-알고리즘" class="level1">
+<h1>4. IMF 재배치 알고리즘</h1>
+<p><code>-</code> 모드 혼합을 줄이기 위한 방법: (1) 원신호의 지배주파수 몇 개를 찾아 주파수 칸을 미리 정해 둔다. (2) 날마다 각 IMF 의 지배주파수를 재어 해당 칸에 재배치하고, 같은 칸에 든 IMF 는 더한다.</p>
+<ol type="1">
+<li>원신호의 지배주파수 찾기</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261012_9459fa_07.png" class="img-fluid figure-img"></p>
+<figcaption>원자료의 주기도</figcaption>
+</figure>
+</div>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">보정 후 IMF</th>
+<th>미리 정한 지배주파수</th>
+<th>주기</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td>1 cycle/day</td>
+<td>24시간</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td>2 cycles/day</td>
+<td>12시간</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td>3 cycles/day</td>
+<td>8시간</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td>4 cycles/day 이상</td>
+<td>6시간 이하</td>
+</tr>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li>재배치 과정</li>
+</ol>
+<p><code>-</code> 재배치 과정 예시 1 (하루)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261012_9459fa_08.png" class="img-fluid figure-img"></p>
+<figcaption>하루(월요일)의 재배치 과정</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261012_9459fa_09.png" class="img-fluid figure-img"></p>
+<figcaption>하루(화요일)의 재배치 과정</figcaption>
+</figure>
+</div>
+<p><code>-</code> 재배치 과정 예시 2 (일주일)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261012_9459fa_10.png" class="img-fluid figure-img"></p>
+<figcaption>일주일의 재배치 과정 — 원신호 · EMD · VMD, 정렬 전·후</figcaption>
+</figure>
+</div>
+<p><code>-</code> 자정의 점프 (예시 2 의 화·수 이틀을 확대)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261012_9459fa_11.png" class="img-fluid figure-img"></p>
+<figcaption>화→수 자정의 점프와 합의 연속</figcaption>
+</figure>
+</div>
+<ul>
+<li>IMF 1(빨강)의 <span class="math inline">\(-\)</span> jump 와 IMF 2(파랑)의 <span class="math inline">\(+\)</span> jump 가 서로 상쇄됨</li>
+<li>IMF 를 보정하면서 생기는 어쩔 수 없는 현상.</li>
+</ul>
+</section>
+<section id="proposed" class="level1">
+<h1>5. Proposed</h1>
+<section id="제안하는-방법-1-분해-보정-b스플라인-mfpca-k-means" class="level2">
+<h2 class="anchored" data-anchor-id="제안하는-방법-1-분해-보정-b스플라인-mfpca-k-means">5.1 제안하는 방법 1: 분해 → 보정 → B스플라인 → MFPCA → k-means</h2>
+<p><code>-</code> 절차</p>
+<ol type="1">
+<li><p>분해: EMD·EEMD·CEEMDAN 은 기본값대로 끝까지, VMD 는 K=8. 잔차를 버리고 분산 누적 99% 까지의 IMF 사용.</p></li>
+<li><p>보정: §4 의 방법으로 날마다 IMF 를 1 · 2 · 3 · 4+ cycles/day 칸에 재배치(같은 칸은 더함). 한 날 = 함수 넷.</p></li>
+<li><p>B스플라인: 하루 48점을 nbasis 12 로 평활.</p></li>
+<li><p>MFPCA: 가중 = 칸별 에너지 비율, M=3.</p></li>
+<li><p>k-means: 점수를 표준화해 k=2.</p></li>
+</ol>
+<p><code>-</code> 결과</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261012_9459fa_12.png" class="img-fluid figure-img"></p>
+<figcaption>제안방법1(보정) 결과</figcaption>
+</figure>
+</div>
+<p><code>-</code> 성능요약: CEEMDAN·EEMD·EMD 셋 다 보정 전보다 높아 보정의 효과가 있음 (EMD 는 0.011 → 0.849 로 매우 뚜렷함). 다만 분해의 효과를 보이는 기준선(0.863)보다는 VMD·CEEMDAN·EEMD 셋만 높고 EMD 는 0.849 로 조금 못 미침. VMD 는 보정의 효과가 없음 (0.923 그대로). 결론적으로는 VMD 가 0.923 으로 가장 높음.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>절</th>
+<th>설계</th>
+<th style="text-align: right;">ARI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1</td>
+<td>Daily mean → k-means</td>
+<td style="text-align: right;">0.191</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Daily mean, 라벨로 고른 최적 임계 (상한)</td>
+<td style="text-align: right;">0.576</td>
+</tr>
+<tr class="odd">
+<td>3.2</td>
+<td>B-spline → FPCA → k-means</td>
+<td style="text-align: right;">0.863</td>
+</tr>
+<tr class="even">
+<td>3.3</td>
+<td>VMD → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.923}\)</span></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>CEEMDAN → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;">0.887</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>EEMD → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;">0.856</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>EMD → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;"><strong>0.011</strong></td>
+</tr>
+<tr class="even">
+<td>5.1</td>
+<td>VMD → 보정 → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.923}\)</span></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>CEEMDAN → 보정 → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;">0.891</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>EEMD → 보정 → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;">0.902</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>EMD → 보정 → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;">0.849</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="제안하는-방법-2-ebt-어퍼-엔벨롭-제거-ebt-주기성분-추출-하루-단위로-자름-b스플라인-mfpca-k-means" class="level2">
+<h2 class="anchored" data-anchor-id="제안하는-방법-2-ebt-어퍼-엔벨롭-제거-ebt-주기성분-추출-하루-단위로-자름-b스플라인-mfpca-k-means">5.2 제안하는 방법 2: EBT 어퍼 엔벨롭 제거 → EBT 주기성분 추출 → 하루 단위로 자름 → B스플라인 → MFPCA → k-means</h2>
+<p><code>-</code> 절차 (모형 <span class="math inline">\(f(t) = A(t) \times [p(t)+q(t)]\)</span>, Choi &amp; Oh 2024)</p>
+<ol type="1">
+<li><p>EBT 어퍼 엔벨롭 제거: 어퍼 엔벨롭 <span class="math inline">\(A=u^{f,48}\)</span> (<span class="math inline">\(\tau\)</span> = 48, 하루)로 진폭을 복조해 <span class="math inline">\(r=f/A\)</span>.</p></li>
+<li><p>주기성분 추출: <span class="math inline">\(r\)</span> 에서 <span class="math inline">\(\tau=48\)</span> 로 <span class="math inline">\(p^{(k+1)}=p^{(k)}-m^{p^{(k)},48}\)</span> 을 수렴까지 반복해 주기 48 성분 <span class="math inline">\(p_{48}\)</span>, 나머지 <span class="math inline">\(q=r-p_{48}\)</span>.</p></li>
+<li><p>B스플라인: <span class="math inline">\(p_{48}, q, A\)</span> 를 하루 48점으로 잘라 평활. 한 날 = 함수 셋.</p></li>
+<li><p>MFPCA: 분산 정규화 가중, M=3.</p></li>
+<li><p>k-means: k=2.</p></li>
+</ol>
+<p><code>-</code> EBT를 이용하여 어퍼 엔벨롭을 제거한 뒤 분해하는 예시</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261012_9459fa_13.png" class="img-fluid figure-img"></p>
+<figcaption>일주일 분해 — f = A(p48 + q)</figcaption>
+</figure>
+</div>
+<p><code>-</code> 결과</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261012_9459fa_14.png" class="img-fluid figure-img"></p>
+<figcaption>제안방법2(EBT) 결과</figcaption>
+</figure>
+</div>
+<p><code>-</code> 성능요약: <span class="math inline">\((p_{48}, q, A)\)</span> 셋을 함께 쓴 것이 0.934 로 지금까지 가장 높음.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 3%">
+<col style="width: 70%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>절</th>
+<th>설계</th>
+<th style="text-align: right;">ARI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3.1</td>
+<td>Daily mean → k-means</td>
+<td style="text-align: right;">0.191</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Daily mean, 라벨로 고른 최적 임계 (상한)</td>
+<td style="text-align: right;">0.576</td>
+</tr>
+<tr class="odd">
+<td>3.2</td>
+<td>B-spline → FPCA → k-means</td>
+<td style="text-align: right;">0.863</td>
+</tr>
+<tr class="even">
+<td>3.3</td>
+<td>VMD → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;">0.923</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>CEEMDAN → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;">0.887</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>EEMD → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;">0.856</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>EMD → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;">0.011</td>
+</tr>
+<tr class="even">
+<td>5.1</td>
+<td>VMD → 보정 → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;">0.923</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>CEEMDAN → 보정 → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;">0.891</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>EEMD → 보정 → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;">0.902</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>EMD → 보정 → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;">0.849</td>
+</tr>
+<tr class="even">
+<td>5.2</td>
+<td>EBT → <span class="math inline">\((p_{48}, q, A)\)</span> → B-spline → MFPCA → k-means</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.934}\)</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="discussion" class="level1">
+<h1>6. Discussion</h1>
+<p><code>-</code> 고민 1: 4절에 소개한 IMF 재배치 알고리즘에 뭔가 포인트를 주고 싶었는데 (이론 정리 등) 결과가 좋지 않아서 고민 중임.</p>
+<ul>
+<li>결과적으로 VMD가 5.1의 방법들 중 최고 성능이라 4절의 내용이 무색해짐</li>
+<li>EMD, EEMD, CEEMDAN을 보정하는 효과는 있긴 해서… 아예 쓸모없진 않고 살리고 싶긴 한데, 살리는 방법이 애매함</li>
+</ul>
+<p><code>-</code> 고민 2: 고민 1 때문에 VMD를 이길 방법을 찾다가 예전에 내가 만든 EBT를 적용해 봄. 결과는 VMD보다 조금 더 좋음. 이걸 메인 논리로 가면</p>
+<ul>
+<li>컨트리뷰션 1: 엔벨롭을 미리 구해서 나누고 시작한다는 참신함(?)</li>
+<li>컨트리뷰션 2: EBT는 주기 함수의 형태가 sinusoid 라는 제약이 없어 데일리 웨이브가 깔끔하게 뽑힘. 이게 분류에 도움이 됨.</li>
+</ul>
+<p>이런 식으로 정리됨. 이렇게 갈 경우 단점은 MFPCA가 메인이 느낌이 아니라 이러면 EBT의 후속 논문 느낌이 된다는 것.</p>
+<p><code>-</code> 고민 3: 계절에 따른 모양도 좀 다른데, 이걸로 label을 확장할까 고민 중. 이건 주 고민은 아니고 약간 마이너한 고민임. (사실 계절별로 잠깐 돌려 보긴 했는데 결과가 그닥임. 차라리 여름 vs other 로 나누면 논문의 경쟁력이 좀 더 올라갈 듯한데 이건 아직 시도 안 해 봄)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="attachments/261012_9459fa_15.png" class="img-fluid figure-img"></p>
+<figcaption>계절·라벨별 하루 곡선</figcaption>
+</figure>
+</div>
+<p><code>-</code> 고민 4: 아예 다른 데이터로 시작할까도 고민 중. EBT의 후속 논문 쪽으로 준비한다면 태양광 같은 것을 더해 데이터 2개를 준비하면 될 듯.</p>
+<p><code>-</code> 종합</p>
+<ul>
+<li>IMF 재배치를 살리는 쪽으로 갈지: 여기는 뭐 좀 쓸 게 있을 것 같음. 쓰기도 쉬워 보임. 이것저것 이론 전개를 해 보는 중임.</li>
+<li>EBT의 후속으로 갈지: 결과가 좋긴 한데, 이 결과가 왜 좋은지를 이론적으로 설명할 수 있을지 모르겠음 (시도 안 해 봄)</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
