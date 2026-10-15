@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="최규빈">
+<meta name="dcterms.date" content="2026-10-15">
+
+<title>실자료 지점별 성능 대시보드 – 연구진행과정공유(최규빈)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-3e7e090bd1c2cc56a78b0fc4341ea51d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script type="module" src="../site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="../site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">연구진행과정공유(최규빈)</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/miruetoto/msblog"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">실자료 지점별 성능 대시보드</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>최규빈 </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 15, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>박민수 교수 문서의 실자료를 지점마다 모은 판. 값은 ARI (k-means, k = 2). 설계 이름은 지난 리포트의 절 번호 — §3.1 일평균 (상한 = 라벨을 보고 고른 일평균 임계) · §3.2 B-스플라인 → FPCA · §5.1 분해 → 보정 → MFPCA.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="15" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 14;"><span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>st <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"attachments/261015_7de51b_01.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({<span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span>})</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>pr <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"attachments/261015_7de51b_02.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({<span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span>})</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>info <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"attachments/261015_7de51b_03.json"</span>)<span class="op">.</span><span class="fu">json</span>()</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>base <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"attachments/261015_7de51b_04.json"</span>)<span class="op">.</span><span class="fu">json</span>()</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>RAMP <span class="op">=</span> [<span class="st">"#9ec5f4"</span><span class="op">,</span> <span class="st">"#86b6ef"</span><span class="op">,</span> <span class="st">"#6da7ec"</span><span class="op">,</span> <span class="st">"#5598e7"</span><span class="op">,</span> <span class="st">"#3987e5"</span><span class="op">,</span> <span class="st">"#2a78d6"</span><span class="op">,</span> <span class="st">"#256abf"</span><span class="op">,</span> <span class="st">"#1c5cab"</span><span class="op">,</span> <span class="st">"#184f95"</span><span class="op">,</span> <span class="st">"#104281"</span><span class="op">,</span> <span class="st">"#0d366b"</span>]</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>INK <span class="op">=</span> ({<span class="dt">land</span><span class="op">:</span> <span class="st">"#efeee6"</span><span class="op">,</span> <span class="dt">border</span><span class="op">:</span> <span class="st">"#c9c7bd"</span><span class="op">,</span> <span class="dt">surface</span><span class="op">:</span> <span class="st">"#fcfcf7"</span><span class="op">,</span> <span class="dt">muted</span><span class="op">:</span> <span class="st">"#898781"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> <span class="st">"#0b0b0b"</span><span class="op">,</span> <span class="dt">bar</span><span class="op">:</span> <span class="st">"#2a78d6"</span><span class="op">,</span> <span class="dt">dot</span><span class="op">:</span> <span class="st">"#86b6ef"</span><span class="op">,</span> <span class="dt">mean</span><span class="op">:</span> <span class="st">"#184f95"</span>})</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>KRBOX <span class="op">=</span> ({<span class="dt">type</span><span class="op">:</span> <span class="st">"MultiPoint"</span><span class="op">,</span> <span class="dt">coordinates</span><span class="op">:</span> [[<span class="fl">124.4</span><span class="op">,</span> <span class="fl">33.0</span>]<span class="op">,</span> [<span class="fl">131.2</span><span class="op">,</span> <span class="fl">38.7</span>]]})</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>f3 <span class="op">=</span> x <span class="kw">=&gt;</span> x <span class="op">==</span> <span class="kw">null</span> <span class="op">?</span> <span class="st">""</span> <span class="op">:</span> x<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">3</span>)</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>D1 <span class="op">=</span> [<span class="st">"상한"</span><span class="op">,</span> <span class="st">"FPCA"</span><span class="op">,</span> <span class="st">"VMD"</span><span class="op">,</span> <span class="st">"CEEMDAN"</span><span class="op">,</span> <span class="st">"EEMD"</span><span class="op">,</span> <span class="st">"EMD"</span>]</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>L1 <span class="op">=</span> ({<span class="dt">상한</span><span class="op">:</span> <span class="st">"3.1 상한"</span><span class="op">,</span> <span class="dt">FPCA</span><span class="op">:</span> <span class="st">"3.2 FPCA"</span><span class="op">,</span> <span class="dt">VMD</span><span class="op">:</span> <span class="st">"5.1 VMD"</span><span class="op">,</span> <span class="dt">CEEMDAN</span><span class="op">:</span> <span class="st">"5.1 CEEMDAN"</span><span class="op">,</span> <span class="dt">EEMD</span><span class="op">:</span> <span class="st">"5.1 EEMD"</span><span class="op">,</span> <span class="dt">EMD</span><span class="op">:</span> <span class="st">"5.1 EMD"</span>})</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>D2 <span class="op">=</span> [<span class="st">"일평균"</span><span class="op">,</span> <span class="st">"상한"</span><span class="op">,</span> <span class="st">"FPCA"</span><span class="op">,</span> <span class="st">"FPCA 모양만"</span><span class="op">,</span> <span class="st">"VMD"</span><span class="op">,</span> <span class="st">"CEEMDAN"</span><span class="op">,</span> <span class="st">"EEMD"</span><span class="op">,</span> <span class="st">"EMD"</span><span class="op">,</span> <span class="st">"VMD 모양만"</span><span class="op">,</span> <span class="st">"CEEMDAN 모양만"</span><span class="op">,</span> <span class="st">"EEMD 모양만"</span><span class="op">,</span> <span class="st">"EMD 모양만"</span>]</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>L2 <span class="op">=</span> <span class="bu">Object</span><span class="op">.</span><span class="fu">fromEntries</span>(D2<span class="op">.</span><span class="fu">map</span>(k <span class="kw">=&gt;</span> [k<span class="op">,</span> (k <span class="op">===</span> <span class="st">"일평균"</span> <span class="op">||</span> k <span class="op">===</span> <span class="st">"상한"</span> <span class="op">?</span> <span class="st">"3.1 "</span> <span class="op">:</span> k<span class="op">.</span><span class="fu">startsWith</span>(<span class="st">"FPCA"</span>) <span class="op">?</span> <span class="st">"3.2 "</span> <span class="op">:</span> <span class="st">"5.1 "</span>) <span class="op">+</span> k]))</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>nara <span class="op">=</span> lon <span class="kw">=&gt;</span> lon <span class="op">&gt;</span> <span class="dv">100</span> <span class="op">?</span> <span class="st">"한국"</span> <span class="op">:</span> <span class="st">"미국"</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>inset <span class="op">=</span> (lat<span class="op">,</span> lon) <span class="kw">=&gt;</span> lon <span class="op">&lt;</span> <span class="op">-</span><span class="dv">150</span> <span class="op">||</span> (lat <span class="op">&gt;</span> <span class="dv">50</span> <span class="op">&amp;&amp;</span> lon <span class="op">&lt;</span> <span class="op">-</span><span class="dv">129</span>)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>isPR <span class="op">=</span> (lat<span class="op">,</span> lon) <span class="kw">=&gt;</span> lat <span class="op">&lt;</span> <span class="dv">24</span> <span class="op">&amp;&amp;</span> lon <span class="op">&gt;</span> <span class="op">-</span><span class="dv">70</span> <span class="op">&amp;&amp;</span> lon <span class="op">&lt;</span> <span class="dv">0</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">geoPanel</span>(country<span class="op">,</span> w<span class="op">,</span> marks) {</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    <span class="dt">width</span><span class="op">:</span> w<span class="op">,</span> <span class="dt">height</span><span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(w <span class="op">*</span> (country <span class="op">===</span> <span class="st">"한국"</span> <span class="op">?</span> <span class="fl">1.05</span> <span class="op">:</span> <span class="fl">0.62</span>))<span class="op">,</span> <span class="dt">style</span><span class="op">:</span> {<span class="dt">background</span><span class="op">:</span> INK<span class="op">.</span><span class="at">surface</span>}<span class="op">,</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="dt">projection</span><span class="op">:</span> country <span class="op">===</span> <span class="st">"한국"</span> <span class="op">?</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">"mercator"</span><span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> KRBOX} <span class="op">:</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">"albers-usa"</span>}<span class="op">,</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">"sqrt"</span><span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> <span class="dt">range</span><span class="op">:</span> RAMP<span class="op">,</span> <span class="dt">clamp</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span> <span class="dt">legend</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"ARI"</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(w<span class="op">,</span> <span class="dv">320</span>)}<span class="op">,</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    <span class="dt">marks</span><span class="op">:</span> [Plot<span class="op">.</span><span class="fu">geo</span>(base[country]<span class="op">,</span> {<span class="dt">fill</span><span class="op">:</span> INK<span class="op">.</span><span class="at">land</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> INK<span class="op">.</span><span class="at">border</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.6</span>})<span class="op">,</span> <span class="op">...</span>marks]</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">panels</span>(cs<span class="op">,</span> make) {</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> w <span class="op">=</span> cs<span class="op">.</span><span class="at">length</span> <span class="op">&gt;</span> <span class="dv">1</span> <span class="op">?</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span>(<span class="dv">280</span><span class="op">,</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(<span class="bu">Math</span><span class="op">.</span><span class="fu">floor</span>((width <span class="op">-</span> <span class="dv">72</span>) <span class="op">/</span> <span class="dv">2</span>)<span class="op">,</span> <span class="dv">560</span>)) <span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(width <span class="op">-</span> <span class="dv">16</span><span class="op">,</span> <span class="dv">680</span>)</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="fu">html</span><span class="vs">`&lt;div style="display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start"&gt;</span><span class="sc">${</span>cs<span class="op">.</span><span class="fu">map</span>(c <span class="kw">=&gt;</span> <span class="fu">html</span><span class="vs">`&lt;figure style="margin:0"&gt;&lt;figcaption style="color:</span><span class="sc">${</span>INK<span class="op">.</span><span class="at">muted</span><span class="sc">}</span><span class="vs">;font-size:0.9em"&gt;</span><span class="sc">${</span>c<span class="sc">}</span><span class="vs">&lt;/figcaption&gt;</span><span class="sc">${</span><span class="fu">make</span>(c<span class="op">,</span> w)<span class="sc">}</span><span class="vs">&lt;/figure&gt;`</span>)<span class="sc">}</span><span class="vs">&lt;/div&gt;`</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-6" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-7" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-8" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-9" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-10" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-11" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-12" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-13" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-14" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-15" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-16" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-1-17" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">교수님 라벨 — 지점마다</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">지역 라벨 — 지점 짝</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>문서의 군집화 라벨 (사건 vs 대조) 로 지점마다 따로 군집. 받은 지점 2,410곳 중 2,101곳을 셈 — 못 센 곳은 라벨 부족 (쓴 날 10일 미만이거나 한쪽 라벨만) · 자료 없음 (관측 2점 미만). 지도에서 속이 빈 점이 못 센 지점.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="52" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 51;"><span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>viewof src1 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(info<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">자료</span>)<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"자료"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="st">"에어코리아"</span>})</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>viewof des1 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(D1<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"지도 색"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="st">"VMD"</span><span class="op">,</span> <span class="dt">format</span><span class="op">:</span> d <span class="kw">=&gt;</span> L1[d]})</span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>viewof q1 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">search</span>(st<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">자료</span> <span class="op">===</span> src1)<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"찾기"</span><span class="op">,</span> <span class="dt">placeholder</span><span class="op">:</span> <span class="st">"지점 · 지역"</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="dv">180</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell quarto-layout-panel" data-layout-ncol="3">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div id="ojs-cell-2-1" data-nodetype="declaration">
+
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div id="ojs-cell-2-2" data-nodetype="declaration">
+
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div id="ojs-cell-2-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="58" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 57;"><span id="cb3-58"><a href="#cb3-58" aria-hidden="true" tabindex="-1"></a>all1 <span class="op">=</span> st<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">자료</span> <span class="op">===</span> src1)</span>
+<span id="cb3-59"><a href="#cb3-59" aria-hidden="true" tabindex="-1"></a>ok1 <span class="op">=</span> all1<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">상태</span> <span class="op">===</span> <span class="st">"셈"</span>)</span>
+<span id="cb3-60"><a href="#cb3-60" aria-hidden="true" tabindex="-1"></a>lab1 <span class="op">=</span> info<span class="op">.</span><span class="fu">find</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">자료</span> <span class="op">===</span> src1)</span>
+<span id="cb3-61"><a href="#cb3-61" aria-hidden="true" tabindex="-1"></a><span class="fu">md</span><span class="vs">`**</span><span class="sc">${</span>src1<span class="sc">}</span><span class="vs">** · </span><span class="sc">${</span>lab1<span class="op">.</span><span class="at">변수</span><span class="sc">}</span><span class="vs"> · </span><span class="sc">${</span>lab1<span class="op">.</span><span class="at">기간</span><span class="sc">}</span><span class="vs"> — 지점 </span><span class="sc">${</span>all1<span class="op">.</span><span class="at">length</span><span class="op">.</span><span class="fu">toLocaleString</span>()<span class="sc">}</span><span class="vs">곳 · 셈 </span><span class="sc">${</span>ok1<span class="op">.</span><span class="at">length</span><span class="op">.</span><span class="fu">toLocaleString</span>()<span class="sc">}</span><span class="vs"> · 라벨 부족 </span><span class="sc">${</span>all1<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">상태</span> <span class="op">===</span> <span class="st">"라벨 부족"</span>)<span class="op">.</span><span class="at">length</span><span class="sc">}</span><span class="vs"> · 자료 없음 </span><span class="sc">${</span>all1<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">상태</span> <span class="op">===</span> <span class="st">"자료 없음"</span>)<span class="op">.</span><span class="at">length</span><span class="sc">}</span></span>
+<span id="cb3-62"><a href="#cb3-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-63"><a href="#cb3-63" aria-hidden="true" tabindex="-1"></a><span class="vs">사건 vs 대조 — </span><span class="sc">${</span>lab1<span class="op">.</span><span class="at">라벨</span><span class="sc">}</span><span class="vs">. </span><span class="sc">${</span>lab1<span class="op">.</span><span class="at">규칙</span><span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-3-4" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="67" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 66;"><span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a>avg1 <span class="op">=</span> D1<span class="op">.</span><span class="fu">map</span>(k <span class="kw">=&gt;</span> ({<span class="dt">설계</span><span class="op">:</span> L1[k]<span class="op">,</span> <span class="dt">ARI</span><span class="op">:</span> d3<span class="op">.</span><span class="fu">mean</span>(ok1<span class="op">,</span> d <span class="kw">=&gt;</span> d[k])}))</span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(width<span class="op">,</span> <span class="dv">620</span>)<span class="op">,</span> <span class="dt">height</span><span class="op">:</span> <span class="dv">30</span> <span class="op">*</span> D1<span class="op">.</span><span class="at">length</span> <span class="op">+</span> <span class="dv">44</span><span class="op">,</span> <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">104</span><span class="op">,</span> <span class="dt">marginRight</span><span class="op">:</span> <span class="dv">48</span><span class="op">,</span> <span class="dt">style</span><span class="op">:</span> {<span class="dt">background</span><span class="op">:</span> INK<span class="op">.</span><span class="at">surface</span>}<span class="op">,</span></span>
+<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">1</span>]<span class="op">,</span> <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="vs">`센 지점 </span><span class="sc">${</span>ok1<span class="op">.</span><span class="at">length</span><span class="op">.</span><span class="fu">toLocaleString</span>()<span class="sc">}</span><span class="vs">곳 평균 ARI`</span>}<span class="op">,</span></span>
+<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="kw">null</span><span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> avg1<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">설계</span>)}<span class="op">,</span></span>
+<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">barX</span>(avg1<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"ARI"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"설계"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> INK<span class="op">.</span><span class="at">bar</span><span class="op">,</span> <span class="dt">insetTop</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span> <span class="dt">insetBottom</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span> <span class="dt">tip</span><span class="op">:</span> {<span class="dt">format</span><span class="op">:</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">".3f"</span>}}})<span class="op">,</span></span>
+<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">text</span>(avg1<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"ARI"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"설계"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="fu">f3</span>(d<span class="op">.</span><span class="at">ARI</span>)<span class="op">,</span> <span class="dt">dx</span><span class="op">:</span> <span class="dv">6</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> INK<span class="op">.</span><span class="at">text</span>})<span class="op">,</span></span>
+<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleX</span>([<span class="dv">0</span>]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> INK<span class="op">.</span><span class="at">border</span>})</span>
+<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-4-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-4-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="81" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 80;"><span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a>pts1 <span class="op">=</span> q1<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">위도</span> <span class="op">!=</span> <span class="kw">null</span>)</span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a><span class="fu">panels</span>([<span class="st">"한국"</span><span class="op">,</span> <span class="st">"미국"</span>]<span class="op">.</span><span class="fu">filter</span>(c <span class="kw">=&gt;</span> pts1<span class="op">.</span><span class="fu">some</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">나라</span> <span class="op">===</span> c))<span class="op">,</span> (c<span class="op">,</span> w) <span class="kw">=&gt;</span> <span class="fu">geoPanel</span>(c<span class="op">,</span> w<span class="op">,</span> [</span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a>  Plot<span class="op">.</span><span class="fu">dot</span>(pts1<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">나라</span> <span class="op">===</span> c <span class="op">&amp;&amp;</span> d<span class="op">.</span><span class="at">상태</span> <span class="op">!==</span> <span class="st">"셈"</span>)<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"경도"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"위도"</span><span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> INK<span class="op">.</span><span class="at">muted</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">"none"</span><span class="op">,</span></span>
+<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a>    <span class="dt">tip</span><span class="op">:</span> {<span class="dt">format</span><span class="op">:</span> {<span class="dt">x</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="kw">false</span>}}<span class="op">,</span> <span class="dt">channels</span><span class="op">:</span> {<span class="dt">지점</span><span class="op">:</span> <span class="st">"지점"</span><span class="op">,</span> <span class="dt">지역</span><span class="op">:</span> <span class="st">"지역"</span><span class="op">,</span> <span class="dt">상태</span><span class="op">:</span> <span class="st">"상태"</span>}})<span class="op">,</span></span>
+<span id="cb5-85"><a href="#cb5-85" aria-hidden="true" tabindex="-1"></a>  Plot<span class="op">.</span><span class="fu">dot</span>(pts1<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">나라</span> <span class="op">===</span> c <span class="op">&amp;&amp;</span> d<span class="op">.</span><span class="at">상태</span> <span class="op">===</span> <span class="st">"셈"</span>)<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"경도"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"위도"</span><span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="fl">4.5</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> d <span class="kw">=&gt;</span> d[des1]<span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> INK<span class="op">.</span><span class="at">surface</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.2</span><span class="op">,</span></span>
+<span id="cb5-86"><a href="#cb5-86" aria-hidden="true" tabindex="-1"></a>    <span class="dt">sort</span><span class="op">:</span> d <span class="kw">=&gt;</span> d[des1]<span class="op">,</span> <span class="dt">tip</span><span class="op">:</span> {<span class="dt">format</span><span class="op">:</span> {<span class="dt">x</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> <span class="st">".3f"</span>}}<span class="op">,</span> <span class="dt">channels</span><span class="op">:</span> {<span class="dt">지점</span><span class="op">:</span> <span class="st">"지점"</span><span class="op">,</span> <span class="dt">지역</span><span class="op">:</span> <span class="st">"지역"</span><span class="op">,</span> <span class="dt">물질</span><span class="op">:</span> <span class="st">"물질"</span>}})</span>
+<span id="cb5-87"><a href="#cb5-87" aria-hidden="true" tabindex="-1"></a>]))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="90" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 89;"><span id="cb6-90"><a href="#cb6-90" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(q1<span class="op">,</span> {</span>
+<span id="cb6-91"><a href="#cb6-91" aria-hidden="true" tabindex="-1"></a>  <span class="dt">columns</span><span class="op">:</span> [<span class="st">"지역"</span><span class="op">,</span> <span class="st">"지점"</span><span class="op">,</span> <span class="op">...</span>(src1<span class="op">.</span><span class="fu">includes</span>(<span class="st">"EPA"</span>) <span class="op">?</span> [<span class="st">"물질"</span>] <span class="op">:</span> [])<span class="op">,</span> <span class="st">"사건"</span><span class="op">,</span> <span class="st">"대조"</span><span class="op">,</span> <span class="st">"상태"</span><span class="op">,</span> <span class="op">...</span>D1]<span class="op">,</span></span>
+<span id="cb6-92"><a href="#cb6-92" aria-hidden="true" tabindex="-1"></a>  <span class="dt">header</span><span class="op">:</span> L1<span class="op">,</span> <span class="dt">format</span><span class="op">:</span> <span class="bu">Object</span><span class="op">.</span><span class="fu">fromEntries</span>(D1<span class="op">.</span><span class="fu">map</span>(k <span class="kw">=&gt;</span> [k<span class="op">,</span> f3]))<span class="op">,</span></span>
+<span id="cb6-93"><a href="#cb6-93" aria-hidden="true" tabindex="-1"></a>  <span class="dt">sort</span><span class="op">:</span> des1<span class="op">,</span> <span class="dt">reverse</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span> <span class="dt">rows</span><span class="op">:</span> <span class="dv">16</span><span class="op">,</span> <span class="dt">layout</span><span class="op">:</span> <span class="st">"auto"</span><span class="op">,</span> <span class="dt">maxWidth</span><span class="op">:</span> width</span>
+<span id="cb6-94"><a href="#cb6-94" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-6" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>라벨 = 지점. 한 자료 안에서 같은 변수의 두 지점을 무작위로 짝지어 (지점마다 한 번 · 겹치는 완전한 날 365 이상) 두 지점 다 하루가 온전히 관측된 날만 씀 — 두 쪽의 날 수와 계절이 같음. 1,003짝 · 2,006지점. 모양만 = 그날 평균을 뺌. §3.3 은 뺌 (지점마다 따로 분해한 IMF 를 번호로 짝지으면 주기가 어긋남). 한국–미국 짝 (OpenAQ 1개) · 알래스카와 하와이–본토 짝 · 푸에르토리코 짝은 지도에 없음 (표에는 있음).</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb7" data-startfrom="104" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 103;"><span id="cb7-104"><a href="#cb7-104" aria-hidden="true" tabindex="-1"></a>viewof src2 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>([<span class="st">"전체"</span><span class="op">,</span> <span class="op">...</span><span class="kw">new</span> <span class="bu">Set</span>(pr<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">자료</span>))]<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"자료"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="st">"전체"</span>})</span>
+<span id="cb7-105"><a href="#cb7-105" aria-hidden="true" tabindex="-1"></a>viewof des2 <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(D2<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"설계"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="st">"VMD 모양만"</span><span class="op">,</span> <span class="dt">format</span><span class="op">:</span> d <span class="kw">=&gt;</span> L2[d]})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="ojs-cell-7-1" data-nodetype="declaration">
+
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="ojs-cell-7-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb8" data-startfrom="109" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 108;"><span id="cb8-109"><a href="#cb8-109" aria-hidden="true" tabindex="-1"></a>rows2 <span class="op">=</span> src2 <span class="op">===</span> <span class="st">"전체"</span> <span class="op">?</span> pr <span class="op">:</span> pr<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">자료</span> <span class="op">===</span> src2)</span>
+<span id="cb8-110"><a href="#cb8-110" aria-hidden="true" tabindex="-1"></a><span class="fu">md</span><span class="vs">`**</span><span class="sc">${</span>src2<span class="sc">}</span><span class="vs">** — 짝 </span><span class="sc">${</span>rows2<span class="op">.</span><span class="at">length</span><span class="op">.</span><span class="fu">toLocaleString</span>()<span class="sc">}</span><span class="vs">개 · 거리 중앙값 </span><span class="sc">${</span><span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(d3<span class="op">.</span><span class="fu">median</span>(rows2<span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">거리</span>))<span class="op">.</span><span class="fu">toLocaleString</span>()<span class="sc">}</span><span class="vs"> km · </span><span class="sc">${</span>L2[des2]<span class="sc">}</span><span class="vs"> 평균 </span><span class="sc">${</span><span class="fu">f3</span>(d3<span class="op">.</span><span class="fu">mean</span>(rows2<span class="op">,</span> d <span class="kw">=&gt;</span> d[des2]))<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-8-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-8-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb9" data-startfrom="114" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 113;"><span id="cb9-114"><a href="#cb9-114" aria-hidden="true" tabindex="-1"></a>same2 <span class="op">=</span> rows2<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> <span class="fu">nara</span>(d<span class="op">.</span><span class="at">경도A</span>) <span class="op">===</span> <span class="fu">nara</span>(d<span class="op">.</span><span class="at">경도B</span>) <span class="op">&amp;&amp;</span> <span class="fu">inset</span>(d<span class="op">.</span><span class="at">위도A</span><span class="op">,</span> d<span class="op">.</span><span class="at">경도A</span>) <span class="op">===</span> <span class="fu">inset</span>(d<span class="op">.</span><span class="at">위도B</span><span class="op">,</span> d<span class="op">.</span><span class="at">경도B</span>) <span class="op">&amp;&amp;</span> <span class="op">!</span><span class="fu">isPR</span>(d<span class="op">.</span><span class="at">위도A</span><span class="op">,</span> d<span class="op">.</span><span class="at">경도A</span>) <span class="op">&amp;&amp;</span> <span class="op">!</span><span class="fu">isPR</span>(d<span class="op">.</span><span class="at">위도B</span><span class="op">,</span> d<span class="op">.</span><span class="at">경도B</span>))</span>
+<span id="cb9-115"><a href="#cb9-115" aria-hidden="true" tabindex="-1"></a><span class="fu">panels</span>([<span class="st">"한국"</span><span class="op">,</span> <span class="st">"미국"</span>]<span class="op">.</span><span class="fu">filter</span>(c <span class="kw">=&gt;</span> same2<span class="op">.</span><span class="fu">some</span>(d <span class="kw">=&gt;</span> <span class="fu">nara</span>(d<span class="op">.</span><span class="at">경도A</span>) <span class="op">===</span> c))<span class="op">,</span> (c<span class="op">,</span> w) <span class="kw">=&gt;</span> {</span>
+<span id="cb9-116"><a href="#cb9-116" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> s <span class="op">=</span> same2<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> <span class="fu">nara</span>(d<span class="op">.</span><span class="at">경도A</span>) <span class="op">===</span> c)</span>
+<span id="cb9-117"><a href="#cb9-117" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> ends <span class="op">=</span> s<span class="op">.</span><span class="fu">flatMap</span>(d <span class="kw">=&gt;</span> [{<span class="dt">x</span><span class="op">:</span> d<span class="op">.</span><span class="at">경도A</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> d<span class="op">.</span><span class="at">위도A</span>}<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> d<span class="op">.</span><span class="at">경도B</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> d<span class="op">.</span><span class="at">위도B</span>}])</span>
+<span id="cb9-118"><a href="#cb9-118" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="fu">geoPanel</span>(c<span class="op">,</span> w<span class="op">,</span> [</span>
+<span id="cb9-119"><a href="#cb9-119" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">link</span>(s<span class="op">,</span> {<span class="dt">x1</span><span class="op">:</span> <span class="st">"경도A"</span><span class="op">,</span> <span class="dt">y1</span><span class="op">:</span> <span class="st">"위도A"</span><span class="op">,</span> <span class="dt">x2</span><span class="op">:</span> <span class="st">"경도B"</span><span class="op">,</span> <span class="dt">y2</span><span class="op">:</span> <span class="st">"위도B"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> d <span class="kw">=&gt;</span> d[des2]<span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.8</span><span class="op">,</span> <span class="dt">sort</span><span class="op">:</span> d <span class="kw">=&gt;</span> d[des2]<span class="op">,</span></span>
+<span id="cb9-120"><a href="#cb9-120" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tip</span><span class="op">:</span> {<span class="dt">format</span><span class="op">:</span> {<span class="dt">x1</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span> <span class="dt">y1</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span> <span class="dt">x2</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span> <span class="dt">y2</span><span class="op">:</span> <span class="kw">false</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> <span class="st">".3f"</span>}}<span class="op">,</span> <span class="dt">channels</span><span class="op">:</span> {<span class="dt">지점A</span><span class="op">:</span> <span class="st">"지점A"</span><span class="op">,</span> <span class="dt">지점B</span><span class="op">:</span> <span class="st">"지점B"</span><span class="op">,</span> <span class="dt">거리</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="vs">`</span><span class="sc">${</span><span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(d<span class="op">.</span><span class="at">거리</span>)<span class="sc">}</span><span class="vs"> km`</span>}})<span class="op">,</span></span>
+<span id="cb9-121"><a href="#cb9-121" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(ends<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"x"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"y"</span><span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="dv">2</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> INK<span class="op">.</span><span class="at">muted</span>})</span>
+<span id="cb9-122"><a href="#cb9-122" aria-hidden="true" tabindex="-1"></a>  ])</span>
+<span id="cb9-123"><a href="#cb9-123" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-9-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-9-2" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb10" data-startfrom="127" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 126;"><span id="cb10-127"><a href="#cb10-127" aria-hidden="true" tabindex="-1"></a>BINS <span class="op">=</span> [[<span class="dv">0</span><span class="op">,</span> <span class="dv">100</span><span class="op">,</span> <span class="st">"100 km 안"</span>]<span class="op">,</span> [<span class="dv">100</span><span class="op">,</span> <span class="dv">300</span><span class="op">,</span> <span class="st">"100–300 km"</span>]<span class="op">,</span> [<span class="dv">300</span><span class="op">,</span> <span class="dv">1000</span><span class="op">,</span> <span class="st">"300–1,000 km"</span>]<span class="op">,</span> [<span class="dv">1000</span><span class="op">,</span> <span class="dv">3000</span><span class="op">,</span> <span class="st">"1,000–3,000 km"</span>]<span class="op">,</span> [<span class="dv">3000</span><span class="op">,</span> <span class="kw">Infinity</span><span class="op">,</span> <span class="st">"3,000 km 넘게"</span>]]</span>
+<span id="cb10-128"><a href="#cb10-128" aria-hidden="true" tabindex="-1"></a>cut2 <span class="op">=</span> BINS<span class="op">.</span><span class="fu">map</span>(([lo<span class="op">,</span> hi<span class="op">,</span> name]) <span class="kw">=&gt;</span> ({name<span class="op">,</span> <span class="dt">s</span><span class="op">:</span> rows2<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">거리</span> <span class="op">&gt;=</span> lo <span class="op">&amp;&amp;</span> d<span class="op">.</span><span class="at">거리</span> <span class="op">&lt;</span> hi)}))<span class="op">.</span><span class="fu">filter</span>(b <span class="kw">=&gt;</span> b<span class="op">.</span><span class="at">s</span><span class="op">.</span><span class="at">length</span>)</span>
+<span id="cb10-129"><a href="#cb10-129" aria-hidden="true" tabindex="-1"></a>binned2 <span class="op">=</span> cut2<span class="op">.</span><span class="fu">map</span>(b <span class="kw">=&gt;</span> ({<span class="dt">name</span><span class="op">:</span> b<span class="op">.</span><span class="at">name</span><span class="op">,</span> <span class="dt">n</span><span class="op">:</span> b<span class="op">.</span><span class="at">s</span><span class="op">.</span><span class="at">length</span><span class="op">,</span> <span class="dt">mid</span><span class="op">:</span> d3<span class="op">.</span><span class="fu">median</span>(b<span class="op">.</span><span class="at">s</span><span class="op">,</span> d <span class="kw">=&gt;</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span>(d<span class="op">.</span><span class="at">거리</span><span class="op">,</span> <span class="dv">1</span>))<span class="op">,</span> <span class="dt">ARI</span><span class="op">:</span> d3<span class="op">.</span><span class="fu">mean</span>(b<span class="op">.</span><span class="at">s</span><span class="op">,</span> d <span class="kw">=&gt;</span> d[des2])}))</span>
+<span id="cb10-130"><a href="#cb10-130" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb10-131"><a href="#cb10-131" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(width<span class="op">,</span> <span class="dv">780</span>)<span class="op">,</span> <span class="dt">height</span><span class="op">:</span> <span class="dv">360</span><span class="op">,</span> <span class="dt">marginLeft</span><span class="op">:</span> <span class="dv">48</span><span class="op">,</span> <span class="dt">style</span><span class="op">:</span> {<span class="dt">background</span><span class="op">:</span> INK<span class="op">.</span><span class="at">surface</span>}<span class="op">,</span></span>
+<span id="cb10-132"><a href="#cb10-132" aria-hidden="true" tabindex="-1"></a>  <span class="dt">x</span><span class="op">:</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">"log"</span><span class="op">,</span> <span class="dt">label</span><span class="op">:</span> <span class="st">"두 지점 거리 (km, 로그)"</span><span class="op">,</span> <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
+<span id="cb10-133"><a href="#cb10-133" aria-hidden="true" tabindex="-1"></a>  <span class="dt">y</span><span class="op">:</span> {<span class="dt">label</span><span class="op">:</span> <span class="vs">`ARI — </span><span class="sc">${</span>L2[des2]<span class="sc">}</span><span class="vs">`</span><span class="op">,</span> <span class="dt">grid</span><span class="op">:</span> <span class="kw">true</span>}<span class="op">,</span></span>
+<span id="cb10-134"><a href="#cb10-134" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb10-135"><a href="#cb10-135" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">ruleY</span>([<span class="dv">0</span>]<span class="op">,</span> {<span class="dt">stroke</span><span class="op">:</span> INK<span class="op">.</span><span class="at">border</span>})<span class="op">,</span></span>
+<span id="cb10-136"><a href="#cb10-136" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(rows2<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">max</span>(d<span class="op">.</span><span class="at">거리</span><span class="op">,</span> <span class="dv">1</span>)<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> des2<span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> INK<span class="op">.</span><span class="at">dot</span><span class="op">,</span> <span class="dt">fillOpacity</span><span class="op">:</span> <span class="fl">0.55</span><span class="op">,</span></span>
+<span id="cb10-137"><a href="#cb10-137" aria-hidden="true" tabindex="-1"></a>      <span class="dt">tip</span><span class="op">:</span> {<span class="dt">format</span><span class="op">:</span> {<span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="vs">`</span><span class="sc">${</span><span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(d)<span class="sc">}</span><span class="vs"> km`</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">".3f"</span>}}<span class="op">,</span> <span class="dt">channels</span><span class="op">:</span> {<span class="dt">자료</span><span class="op">:</span> <span class="st">"자료"</span><span class="op">,</span> <span class="dt">지점A</span><span class="op">:</span> <span class="st">"지점A"</span><span class="op">,</span> <span class="dt">지점B</span><span class="op">:</span> <span class="st">"지점B"</span>}})<span class="op">,</span></span>
+<span id="cb10-138"><a href="#cb10-138" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">line</span>(binned2<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"mid"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"ARI"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> INK<span class="op">.</span><span class="at">mean</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">2</span>})<span class="op">,</span></span>
+<span id="cb10-139"><a href="#cb10-139" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(binned2<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"mid"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"ARI"</span><span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="fl">4.5</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> INK<span class="op">.</span><span class="at">mean</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> INK<span class="op">.</span><span class="at">surface</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">2</span>})<span class="op">,</span></span>
+<span id="cb10-140"><a href="#cb10-140" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">text</span>(binned2<span class="op">,</span> {<span class="dt">x</span><span class="op">:</span> <span class="st">"mid"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"ARI"</span><span class="op">,</span> <span class="dt">text</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="vs">`</span><span class="sc">${</span><span class="fu">f3</span>(d<span class="op">.</span><span class="at">ARI</span>)<span class="sc">}</span><span class="vs"> (</span><span class="sc">${</span>d<span class="op">.</span><span class="at">n</span><span class="sc">}</span><span class="vs">)`</span><span class="op">,</span> <span class="dt">dy</span><span class="op">:</span> <span class="op">-</span><span class="dv">14</span><span class="op">,</span> <span class="dt">fill</span><span class="op">:</span> INK<span class="op">.</span><span class="at">text</span>})</span>
+<span id="cb10-141"><a href="#cb10-141" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb10-142"><a href="#cb10-142" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-10-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-10-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-10-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-10-4" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+<p>점 = 짝, 선 = 거리 칸 평균 (괄호 안은 짝 수).</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb11" data-startfrom="147" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 146;"><span id="cb11-147"><a href="#cb11-147" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(D2<span class="op">.</span><span class="fu">map</span>(k <span class="kw">=&gt;</span> <span class="bu">Object</span><span class="op">.</span><span class="fu">fromEntries</span>([[<span class="st">"설계"</span><span class="op">,</span> L2[k]]<span class="op">,</span> <span class="op">...</span>cut2<span class="op">.</span><span class="fu">map</span>(b <span class="kw">=&gt;</span> [<span class="vs">`</span><span class="sc">${</span>b<span class="op">.</span><span class="at">name</span><span class="sc">}</span><span class="vs"> (</span><span class="sc">${</span>b<span class="op">.</span><span class="at">s</span><span class="op">.</span><span class="at">length</span><span class="sc">}</span><span class="vs">)`</span><span class="op">,</span> d3<span class="op">.</span><span class="fu">mean</span>(b<span class="op">.</span><span class="at">s</span><span class="op">,</span> d <span class="kw">=&gt;</span> d[k])])]))<span class="op">,</span> {</span>
+<span id="cb11-148"><a href="#cb11-148" aria-hidden="true" tabindex="-1"></a>  <span class="dt">format</span><span class="op">:</span> <span class="bu">Object</span><span class="op">.</span><span class="fu">fromEntries</span>(cut2<span class="op">.</span><span class="fu">map</span>(b <span class="kw">=&gt;</span> [<span class="vs">`</span><span class="sc">${</span>b<span class="op">.</span><span class="at">name</span><span class="sc">}</span><span class="vs"> (</span><span class="sc">${</span>b<span class="op">.</span><span class="at">s</span><span class="op">.</span><span class="at">length</span><span class="sc">}</span><span class="vs">)`</span><span class="op">,</span> f3]))<span class="op">,</span> <span class="dt">rows</span><span class="op">:</span> <span class="dv">12</span><span class="op">,</span> <span class="dt">layout</span><span class="op">:</span> <span class="st">"auto"</span><span class="op">,</span> <span class="dt">sort</span><span class="op">:</span> <span class="kw">undefined</span></span>
+<span id="cb11-149"><a href="#cb11-149" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-11" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb12" data-startfrom="153" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 152;"><span id="cb12-153"><a href="#cb12-153" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(rows2<span class="op">,</span> {</span>
+<span id="cb12-154"><a href="#cb12-154" aria-hidden="true" tabindex="-1"></a>  <span class="dt">columns</span><span class="op">:</span> [<span class="st">"자료"</span><span class="op">,</span> <span class="st">"지점A"</span><span class="op">,</span> <span class="st">"지역A"</span><span class="op">,</span> <span class="st">"지점B"</span><span class="op">,</span> <span class="st">"지역B"</span><span class="op">,</span> <span class="st">"거리"</span><span class="op">,</span> <span class="st">"같은 시도·주"</span><span class="op">,</span> <span class="st">"쓴 날"</span><span class="op">,</span> <span class="op">...</span>D2]<span class="op">,</span></span>
+<span id="cb12-155"><a href="#cb12-155" aria-hidden="true" tabindex="-1"></a>  <span class="dt">header</span><span class="op">:</span> {<span class="op">...</span>L2<span class="op">,</span> <span class="dt">거리</span><span class="op">:</span> <span class="st">"거리 (km)"</span>}<span class="op">,</span></span>
+<span id="cb12-156"><a href="#cb12-156" aria-hidden="true" tabindex="-1"></a>  <span class="dt">format</span><span class="op">:</span> {<span class="op">...</span><span class="bu">Object</span><span class="op">.</span><span class="fu">fromEntries</span>(D2<span class="op">.</span><span class="fu">map</span>(k <span class="kw">=&gt;</span> [k<span class="op">,</span> f3]))<span class="op">,</span> <span class="dt">거리</span><span class="op">:</span> x <span class="kw">=&gt;</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(x)<span class="op">.</span><span class="fu">toLocaleString</span>()<span class="op">,</span> <span class="st">"같은 시도·주"</span><span class="op">:</span> x <span class="kw">=&gt;</span> (x <span class="op">===</span> <span class="kw">true</span> <span class="op">||</span> x <span class="op">===</span> <span class="st">"True"</span>) <span class="op">?</span> <span class="st">"같음"</span> <span class="op">:</span> <span class="st">"다름"</span>}<span class="op">,</span></span>
+<span id="cb12-157"><a href="#cb12-157" aria-hidden="true" tabindex="-1"></a>  <span class="dt">sort</span><span class="op">:</span> des2<span class="op">,</span> <span class="dt">reverse</span><span class="op">:</span> <span class="kw">true</span><span class="op">,</span> <span class="dt">rows</span><span class="op">:</span> <span class="dv">16</span><span class="op">,</span> <span class="dt">layout</span><span class="op">:</span> <span class="st">"auto"</span><span class="op">,</span> <span class="dt">maxWidth</span><span class="op">:</span> width</span>
+<span id="cb12-158"><a href="#cb12-158" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-12" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>계산 — 교수님 라벨: 지점마다 통째 신호를 분해한 뒤 §3.1 · §3.2 · §5.1 을 돌림 (R, 지난 리포트와 같은 코드). 지역 라벨: 같은 분해를 두 지점 짝에 다시 씀. 지도 밑그림은 Natural Earth (world-atlas 2.0.2 · us-atlas 3.0.1).</p>
+
+
+
+</main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InN0ID0gRmlsZUF0dGFjaG1lbnQoXCJhdHRhY2htZW50cy8yNjEwMTVfN2RlNTFiXzAxLmNzdlwiKS5jc3Yoe3R5cGVkOiB0cnVlfSlcbnByID0gRmlsZUF0dGFjaG1lbnQoXCJhdHRhY2htZW50cy8yNjEwMTVfN2RlNTFiXzAyLmNzdlwiKS5jc3Yoe3R5cGVkOiB0cnVlfSlcbmluZm8gPSBGaWxlQXR0YWNobWVudChcImF0dGFjaG1lbnRzLzI2MTAxNV83ZGU1MWJfMDMuanNvblwiKS5qc29uKClcbmJhc2UgPSBGaWxlQXR0YWNobWVudChcImF0dGFjaG1lbnRzLzI2MTAxNV83ZGU1MWJfMDQuanNvblwiKS5qc29uKClcblJBTVAgPSBbXCIjOWVjNWY0XCIsIFwiIzg2YjZlZlwiLCBcIiM2ZGE3ZWNcIiwgXCIjNTU5OGU3XCIsIFwiIzM5ODdlNVwiLCBcIiMyYTc4ZDZcIiwgXCIjMjU2YWJmXCIsIFwiIzFjNWNhYlwiLCBcIiMxODRmOTVcIiwgXCIjMTA0MjgxXCIsIFwiIzBkMzY2YlwiXVxuSU5LID0gKHtsYW5kOiBcIiNlZmVlZTZcIiwgYm9yZGVyOiBcIiNjOWM3YmRcIiwgc3VyZmFjZTogXCIjZmNmY2Y3XCIsIG11dGVkOiBcIiM4OTg3ODFcIiwgdGV4dDogXCIjMGIwYjBiXCIsIGJhcjogXCIjMmE3OGQ2XCIsIGRvdDogXCIjODZiNmVmXCIsIG1lYW46IFwiIzE4NGY5NVwifSlcbktSQk9YID0gKHt0eXBlOiBcIk11bHRpUG9pbnRcIiwgY29vcmRpbmF0ZXM6IFtbMTI0LjQsIDMzLjBdLCBbMTMxLjIsIDM4LjddXX0pXG5mMyA9IHggPT4geCA9PSBudWxsID8gXCJcIiA6IHgudG9GaXhlZCgzKVxuRDEgPSBbXCLsg4HtlZxcIiwgXCJGUENBXCIsIFwiVk1EXCIsIFwiQ0VFTURBTlwiLCBcIkVFTURcIiwgXCJFTURcIl1cbkwxID0gKHvsg4HtlZw6IFwiMy4xIOyDge2VnFwiLCBGUENBOiBcIjMuMiBGUENBXCIsIFZNRDogXCI1LjEgVk1EXCIsIENFRU1EQU46IFwiNS4xIENFRU1EQU5cIiwgRUVNRDogXCI1LjEgRUVNRFwiLCBFTUQ6IFwiNS4xIEVNRFwifSlcbkQyID0gW1wi7J287Y+J6regXCIsIFwi7IOB7ZWcXCIsIFwiRlBDQVwiLCBcIkZQQ0Eg66qo7JaR66eMXCIsIFwiVk1EXCIsIFwiQ0VFTURBTlwiLCBcIkVFTURcIiwgXCJFTURcIiwgXCJWTUQg66qo7JaR66eMXCIsIFwiQ0VFTURBTiDrqqjslpHrp4xcIiwgXCJFRU1EIOuqqOyWkeunjFwiLCBcIkVNRCDrqqjslpHrp4xcIl1cbkwyID0gT2JqZWN0LmZyb21FbnRyaWVzKEQyLm1hcChrID0+IFtrLCAoayA9PT0gXCLsnbztj4nqt6BcIiB8fCBrID09PSBcIuyDge2VnFwiID8gXCIzLjEgXCIgOiBrLnN0YXJ0c1dpdGgoXCJGUENBXCIpID8gXCIzLjIgXCIgOiBcIjUuMSBcIikgKyBrXSkpXG5uYXJhID0gbG9uID0+IGxvbiA+IDEwMCA/IFwi7ZWc6rWtXCIgOiBcIuuvuOq1rVwiXG5pbnNldCA9IChsYXQsIGxvbikgPT4gbG9uIDwgLTE1MCB8fCAobGF0ID4gNTAgJiYgbG9uIDwgLTEyOSlcbmlzUFIgPSAobGF0LCBsb24pID0+IGxhdCA8IDI0ICYmIGxvbiA+IC03MCAmJiBsb24gPCAwXG5mdW5jdGlvbiBnZW9QYW5lbChjb3VudHJ5LCB3LCBtYXJrcykge1xuICByZXR1cm4gUGxvdC5wbG90KHtcbiAgICB3aWR0aDogdywgaGVpZ2h0OiBNYXRoLnJvdW5kKHcgKiAoY291bnRyeSA9PT0gXCLtlZzqta1cIiA/IDEuMDUgOiAwLjYyKSksIHN0eWxlOiB7YmFja2dyb3VuZDogSU5LLnN1cmZhY2V9LFxuICAgIHByb2plY3Rpb246IGNvdW50cnkgPT09IFwi7ZWc6rWtXCIgPyB7dHlwZTogXCJtZXJjYXRvclwiLCBkb21haW46IEtSQk9YfSA6IHt0eXBlOiBcImFsYmVycy11c2FcIn0sXG4gICAgY29sb3I6IHt0eXBlOiBcInNxcnRcIiwgZG9tYWluOiBbMCwgMV0sIHJhbmdlOiBSQU1QLCBjbGFtcDogdHJ1ZSwgbGVnZW5kOiB0cnVlLCBsYWJlbDogXCJBUklcIiwgd2lkdGg6IE1hdGgubWluKHcsIDMyMCl9LFxuICAgIG1hcmtzOiBbUGxvdC5nZW8oYmFzZVtjb3VudHJ5XSwge2ZpbGw6IElOSy5sYW5kLCBzdHJva2U6IElOSy5ib3JkZXIsIHN0cm9rZVdpZHRoOiAwLjZ9KSwgLi4ubWFya3NdXG4gIH0pXG59XG5mdW5jdGlvbiBwYW5lbHMoY3MsIG1ha2UpIHtcbiAgY29uc3QgdyA9IGNzLmxlbmd0aCA+IDEgPyBNYXRoLm1heCgyODAsIE1hdGgubWluKE1hdGguZmxvb3IoKHdpZHRoIC0gNzIpIC8gMiksIDU2MCkpIDogTWF0aC5taW4od2lkdGggLSAxNiwgNjgwKVxuICByZXR1cm4gaHRtbGA8ZGl2IHN0eWxlPVwiZGlzcGxheTpmbGV4O2ZsZXgtd3JhcDp3cmFwO2dhcDoyNHB4O2FsaWduLWl0ZW1zOmZsZXgtc3RhcnRcIj4ke2NzLm1hcChjID0+IGh0bWxgPGZpZ3VyZSBzdHlsZT1cIm1hcmdpbjowXCI+PGZpZ2NhcHRpb24gc3R5bGU9XCJjb2xvcjoke0lOSy5tdXRlZH07Zm9udC1zaXplOjAuOWVtXCI+JHtjfTwvZmlnY2FwdGlvbj4ke21ha2UoYywgdyl9PC9maWd1cmU+YCl9PC9kaXY+YFxufVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIHNyYzEgPSBJbnB1dHMuc2VsZWN0KGluZm8ubWFwKGQgPT4gZC7snpDro4wpLCB7bGFiZWw6IFwi7J6Q66OMXCIsIHZhbHVlOiBcIuyXkOyWtOy9lOumrOyVhFwifSlcbnZpZXdvZiBkZXMxID0gSW5wdXRzLnNlbGVjdChEMSwge2xhYmVsOiBcIuyngOuPhCDsg4lcIiwgdmFsdWU6IFwiVk1EXCIsIGZvcm1hdDogZCA9PiBMMVtkXX0pXG52aWV3b2YgcTEgPSBJbnB1dHMuc2VhcmNoKHN0LmZpbHRlcihkID0+IGQu7J6Q66OMID09PSBzcmMxKSwge2xhYmVsOiBcIuywvuq4sFwiLCBwbGFjZWhvbGRlcjogXCLsp4DsoJAgwrcg7KeA7JetXCIsIHdpZHRoOiAxODB9KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiYWxsMSA9IHN0LmZpbHRlcihkID0+IGQu7J6Q66OMID09PSBzcmMxKVxub2sxID0gYWxsMS5maWx0ZXIoZCA9PiBkLuyDge2DnCA9PT0gXCLshYhcIilcbmxhYjEgPSBpbmZvLmZpbmQoZCA9PiBkLuyekOujjCA9PT0gc3JjMSlcbm1kYCoqJHtzcmMxfSoqIMK3ICR7bGFiMS7rs4DsiJh9IMK3ICR7bGFiMS7quLDqsIR9IOKAlCDsp4DsoJAgJHthbGwxLmxlbmd0aC50b0xvY2FsZVN0cmluZygpfeqzsyDCtyDshYggJHtvazEubGVuZ3RoLnRvTG9jYWxlU3RyaW5nKCl9IMK3IOudvOuyqCDrtoDsobEgJHthbGwxLmZpbHRlcihkID0+IGQu7IOB7YOcID09PSBcIuudvOuyqCDrtoDsobFcIikubGVuZ3RofSDCtyDsnpDro4wg7JeG7J2MICR7YWxsMS5maWx0ZXIoZCA9PiBkLuyDge2DnCA9PT0gXCLsnpDro4wg7JeG7J2MXCIpLmxlbmd0aH1cblxu7IKs6rG0IHZzIOuMgOyhsCDigJQgJHtsYWIxLuudvOuyqH0uICR7bGFiMS7qt5zsuZl9YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC00IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiYXZnMSA9IEQxLm1hcChrID0+ICh77ISk6rOEOiBMMVtrXSwgQVJJOiBkMy5tZWFuKG9rMSwgZCA9PiBkW2tdKX0pKVxuUGxvdC5wbG90KHtcbiAgd2lkdGg6IE1hdGgubWluKHdpZHRoLCA2MjApLCBoZWlnaHQ6IDMwICogRDEubGVuZ3RoICsgNDQsIG1hcmdpbkxlZnQ6IDEwNCwgbWFyZ2luUmlnaHQ6IDQ4LCBzdHlsZToge2JhY2tncm91bmQ6IElOSy5zdXJmYWNlfSxcbiAgeDoge2RvbWFpbjogWzAsIDFdLCBncmlkOiB0cnVlLCBsYWJlbDogYOyEvCDsp4DsoJAgJHtvazEubGVuZ3RoLnRvTG9jYWxlU3RyaW5nKCl96rOzIO2Pieq3oCBBUklgfSxcbiAgeToge2xhYmVsOiBudWxsLCBkb21haW46IGF2ZzEubWFwKGQgPT4gZC7shKTqs4QpfSxcbiAgbWFya3M6IFtcbiAgICBQbG90LmJhclgoYXZnMSwge3g6IFwiQVJJXCIsIHk6IFwi7ISk6rOEXCIsIGZpbGw6IElOSy5iYXIsIGluc2V0VG9wOiA2LCBpbnNldEJvdHRvbTogNiwgdGlwOiB7Zm9ybWF0OiB7eDogXCIuM2ZcIn19fSksXG4gICAgUGxvdC50ZXh0KGF2ZzEsIHt4OiBcIkFSSVwiLCB5OiBcIuyEpOqzhFwiLCB0ZXh0OiBkID0+IGYzKGQuQVJJKSwgZHg6IDYsIHRleHRBbmNob3I6IFwic3RhcnRcIiwgZmlsbDogSU5LLnRleHR9KSxcbiAgICBQbG90LnJ1bGVYKFswXSwge3N0cm9rZTogSU5LLmJvcmRlcn0pXG4gIF1cbn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTUiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJwdHMxID0gcTEuZmlsdGVyKGQgPT4gZC7snITrj4QgIT0gbnVsbClcbnBhbmVscyhbXCLtlZzqta1cIiwgXCLrr7jqta1cIl0uZmlsdGVyKGMgPT4gcHRzMS5zb21lKGQgPT4gZC7rgpjrnbwgPT09IGMpKSwgKGMsIHcpID0+IGdlb1BhbmVsKGMsIHcsIFtcbiAgUGxvdC5kb3QocHRzMS5maWx0ZXIoZCA9PiBkLuuCmOudvCA9PT0gYyAmJiBkLuyDge2DnCAhPT0gXCLshYhcIiksIHt4OiBcIuqyveuPhFwiLCB5OiBcIuychOuPhFwiLCByOiAzLCBzdHJva2U6IElOSy5tdXRlZCwgc3Ryb2tlV2lkdGg6IDEsIGZpbGw6IFwibm9uZVwiLFxuICAgIHRpcDoge2Zvcm1hdDoge3g6IGZhbHNlLCB5OiBmYWxzZX19LCBjaGFubmVsczoge+yngOygkDogXCLsp4DsoJBcIiwg7KeA7JetOiBcIuyngOyXrVwiLCDsg4Htg5w6IFwi7IOB7YOcXCJ9fSksXG4gIFBsb3QuZG90KHB0czEuZmlsdGVyKGQgPT4gZC7rgpjrnbwgPT09IGMgJiYgZC7sg4Htg5wgPT09IFwi7IWIXCIpLCB7eDogXCLqsr3rj4RcIiwgeTogXCLsnITrj4RcIiwgcjogNC41LCBmaWxsOiBkID0+IGRbZGVzMV0sIHN0cm9rZTogSU5LLnN1cmZhY2UsIHN0cm9rZVdpZHRoOiAxLjIsXG4gICAgc29ydDogZCA9PiBkW2RlczFdLCB0aXA6IHtmb3JtYXQ6IHt4OiBmYWxzZSwgeTogZmFsc2UsIGZpbGw6IFwiLjNmXCJ9fSwgY2hhbm5lbHM6IHvsp4DsoJA6IFwi7KeA7KCQXCIsIOyngOyXrTogXCLsp4Dsl61cIiwg66y87KeIOiBcIuusvOyniFwifX0pXG5dKSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IklucHV0cy50YWJsZShxMSwge1xuICBjb2x1bW5zOiBbXCLsp4Dsl61cIiwgXCLsp4DsoJBcIiwgLi4uKHNyYzEuaW5jbHVkZXMoXCJFUEFcIikgPyBbXCLrrLzsp4hcIl0gOiBbXSksIFwi7IKs6rG0XCIsIFwi64yA7KGwXCIsIFwi7IOB7YOcXCIsIC4uLkQxXSxcbiAgaGVhZGVyOiBMMSwgZm9ybWF0OiBPYmplY3QuZnJvbUVudHJpZXMoRDEubWFwKGsgPT4gW2ssIGYzXSkpLFxuICBzb3J0OiBkZXMxLCByZXZlcnNlOiB0cnVlLCByb3dzOiAxNiwgbGF5b3V0OiBcImF1dG9cIiwgbWF4V2lkdGg6IHdpZHRoXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC03IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIHNyYzIgPSBJbnB1dHMuc2VsZWN0KFtcIuyghOyytFwiLCAuLi5uZXcgU2V0KHByLm1hcChkID0+IGQu7J6Q66OMKSldLCB7bGFiZWw6IFwi7J6Q66OMXCIsIHZhbHVlOiBcIuyghOyytFwifSlcbnZpZXdvZiBkZXMyID0gSW5wdXRzLnNlbGVjdChEMiwge2xhYmVsOiBcIuyEpOqzhFwiLCB2YWx1ZTogXCJWTUQg66qo7JaR66eMXCIsIGZvcm1hdDogZCA9PiBMMltkXX0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTgiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJyb3dzMiA9IHNyYzIgPT09IFwi7KCE7LK0XCIgPyBwciA6IHByLmZpbHRlcihkID0+IGQu7J6Q66OMID09PSBzcmMyKVxubWRgKioke3NyYzJ9Kiog4oCUIOynnSAke3Jvd3MyLmxlbmd0aC50b0xvY2FsZVN0cmluZygpfeqwnCDCtyDqsbDrpqwg7KSR7JWZ6rCSICR7TWF0aC5yb3VuZChkMy5tZWRpYW4ocm93czIsIGQgPT4gZC7qsbDrpqwpKS50b0xvY2FsZVN0cmluZygpfSBrbSDCtyAke0wyW2RlczJdfSDtj4nqt6AgJHtmMyhkMy5tZWFuKHJvd3MyLCBkID0+IGRbZGVzMl0pKX1gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTkiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJzYW1lMiA9IHJvd3MyLmZpbHRlcihkID0+IG5hcmEoZC7qsr3rj4RBKSA9PT0gbmFyYShkLuqyveuPhEIpICYmIGluc2V0KGQu7JyE64+EQSwgZC7qsr3rj4RBKSA9PT0gaW5zZXQoZC7snITrj4RCLCBkLuqyveuPhEIpICYmICFpc1BSKGQu7JyE64+EQSwgZC7qsr3rj4RBKSAmJiAhaXNQUihkLuychOuPhEIsIGQu6rK964+EQikpXG5wYW5lbHMoW1wi7ZWc6rWtXCIsIFwi66+46rWtXCJdLmZpbHRlcihjID0+IHNhbWUyLnNvbWUoZCA9PiBuYXJhKGQu6rK964+EQSkgPT09IGMpKSwgKGMsIHcpID0+IHtcbiAgY29uc3QgcyA9IHNhbWUyLmZpbHRlcihkID0+IG5hcmEoZC7qsr3rj4RBKSA9PT0gYylcbiAgY29uc3QgZW5kcyA9IHMuZmxhdE1hcChkID0+IFt7eDogZC7qsr3rj4RBLCB5OiBkLuychOuPhEF9LCB7eDogZC7qsr3rj4RCLCB5OiBkLuychOuPhEJ9XSlcbiAgcmV0dXJuIGdlb1BhbmVsKGMsIHcsIFtcbiAgICBQbG90Lmxpbmsocywge3gxOiBcIuqyveuPhEFcIiwgeTE6IFwi7JyE64+EQVwiLCB4MjogXCLqsr3rj4RCXCIsIHkyOiBcIuychOuPhEJcIiwgc3Ryb2tlOiBkID0+IGRbZGVzMl0sIHN0cm9rZVdpZHRoOiAxLjgsIHNvcnQ6IGQgPT4gZFtkZXMyXSxcbiAgICAgIHRpcDoge2Zvcm1hdDoge3gxOiBmYWxzZSwgeTE6IGZhbHNlLCB4MjogZmFsc2UsIHkyOiBmYWxzZSwgc3Ryb2tlOiBcIi4zZlwifX0sIGNoYW5uZWxzOiB77KeA7KCQQTogXCLsp4DsoJBBXCIsIOyngOygkEI6IFwi7KeA7KCQQlwiLCDqsbDrpqw6IGQgPT4gYCR7TWF0aC5yb3VuZChkLuqxsOumrCl9IGttYH19KSxcbiAgICBQbG90LmRvdChlbmRzLCB7eDogXCJ4XCIsIHk6IFwieVwiLCByOiAyLCBmaWxsOiBJTksubXV0ZWR9KVxuICBdKVxufSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMTAiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJCSU5TID0gW1swLCAxMDAsIFwiMTAwIGttIOyViFwiXSwgWzEwMCwgMzAwLCBcIjEwMOKAkzMwMCBrbVwiXSwgWzMwMCwgMTAwMCwgXCIzMDDigJMxLDAwMCBrbVwiXSwgWzEwMDAsIDMwMDAsIFwiMSwwMDDigJMzLDAwMCBrbVwiXSwgWzMwMDAsIEluZmluaXR5LCBcIjMsMDAwIGttIOuEmOqyjFwiXV1cbmN1dDIgPSBCSU5TLm1hcCgoW2xvLCBoaSwgbmFtZV0pID0+ICh7bmFtZSwgczogcm93czIuZmlsdGVyKGQgPT4gZC7qsbDrpqwgPj0gbG8gJiYgZC7qsbDrpqwgPCBoaSl9KSkuZmlsdGVyKGIgPT4gYi5zLmxlbmd0aClcbmJpbm5lZDIgPSBjdXQyLm1hcChiID0+ICh7bmFtZTogYi5uYW1lLCBuOiBiLnMubGVuZ3RoLCBtaWQ6IGQzLm1lZGlhbihiLnMsIGQgPT4gTWF0aC5tYXgoZC7qsbDrpqwsIDEpKSwgQVJJOiBkMy5tZWFuKGIucywgZCA9PiBkW2RlczJdKX0pKVxuUGxvdC5wbG90KHtcbiAgd2lkdGg6IE1hdGgubWluKHdpZHRoLCA3ODApLCBoZWlnaHQ6IDM2MCwgbWFyZ2luTGVmdDogNDgsIHN0eWxlOiB7YmFja2dyb3VuZDogSU5LLnN1cmZhY2V9LFxuICB4OiB7dHlwZTogXCJsb2dcIiwgbGFiZWw6IFwi65GQIOyngOygkCDqsbDrpqwgKGttLCDroZzqt7gpXCIsIGdyaWQ6IHRydWV9LFxuICB5OiB7bGFiZWw6IGBBUkkg4oCUICR7TDJbZGVzMl19YCwgZ3JpZDogdHJ1ZX0sXG4gIG1hcmtzOiBbXG4gICAgUGxvdC5ydWxlWShbMF0sIHtzdHJva2U6IElOSy5ib3JkZXJ9KSxcbiAgICBQbG90LmRvdChyb3dzMiwge3g6IGQgPT4gTWF0aC5tYXgoZC7qsbDrpqwsIDEpLCB5OiBkZXMyLCByOiAzLCBmaWxsOiBJTksuZG90LCBmaWxsT3BhY2l0eTogMC41NSxcbiAgICAgIHRpcDoge2Zvcm1hdDoge3g6IGQgPT4gYCR7TWF0aC5yb3VuZChkKX0ga21gLCB5OiBcIi4zZlwifX0sIGNoYW5uZWxzOiB77J6Q66OMOiBcIuyekOujjFwiLCDsp4DsoJBBOiBcIuyngOygkEFcIiwg7KeA7KCQQjogXCLsp4DsoJBCXCJ9fSksXG4gICAgUGxvdC5saW5lKGJpbm5lZDIsIHt4OiBcIm1pZFwiLCB5OiBcIkFSSVwiLCBzdHJva2U6IElOSy5tZWFuLCBzdHJva2VXaWR0aDogMn0pLFxuICAgIFBsb3QuZG90KGJpbm5lZDIsIHt4OiBcIm1pZFwiLCB5OiBcIkFSSVwiLCByOiA0LjUsIGZpbGw6IElOSy5tZWFuLCBzdHJva2U6IElOSy5zdXJmYWNlLCBzdHJva2VXaWR0aDogMn0pLFxuICAgIFBsb3QudGV4dChiaW5uZWQyLCB7eDogXCJtaWRcIiwgeTogXCJBUklcIiwgdGV4dDogZCA9PiBgJHtmMyhkLkFSSSl9ICgke2Qubn0pYCwgZHk6IC0xNCwgZmlsbDogSU5LLnRleHR9KVxuICBdXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0xMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IklucHV0cy50YWJsZShEMi5tYXAoayA9PiBPYmplY3QuZnJvbUVudHJpZXMoW1tcIuyEpOqzhFwiLCBMMltrXV0sIC4uLmN1dDIubWFwKGIgPT4gW2Ake2IubmFtZX0gKCR7Yi5zLmxlbmd0aH0pYCwgZDMubWVhbihiLnMsIGQgPT4gZFtrXSldKV0pKSwge1xuICBmb3JtYXQ6IE9iamVjdC5mcm9tRW50cmllcyhjdXQyLm1hcChiID0+IFtgJHtiLm5hbWV9ICgke2Iucy5sZW5ndGh9KWAsIGYzXSkpLCByb3dzOiAxMiwgbGF5b3V0OiBcImF1dG9cIiwgc29ydDogdW5kZWZpbmVkXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0xMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IklucHV0cy50YWJsZShyb3dzMiwge1xuICBjb2x1bW5zOiBbXCLsnpDro4xcIiwgXCLsp4DsoJBBXCIsIFwi7KeA7JetQVwiLCBcIuyngOygkEJcIiwgXCLsp4Dsl61CXCIsIFwi6rGw66asXCIsIFwi6rCZ7J2AIOyLnOuPhMK37KO8XCIsIFwi7JO0IOuCoFwiLCAuLi5EMl0sXG4gIGhlYWRlcjogey4uLkwyLCDqsbDrpqw6IFwi6rGw66asIChrbSlcIn0sXG4gIGZvcm1hdDogey4uLk9iamVjdC5mcm9tRW50cmllcyhEMi5tYXAoayA9PiBbaywgZjNdKSksIOqxsOumrDogeCA9PiBNYXRoLnJvdW5kKHgpLnRvTG9jYWxlU3RyaW5nKCksIFwi6rCZ7J2AIOyLnOuPhMK37KO8XCI6IHggPT4gKHggPT09IHRydWUgfHwgeCA9PT0gXCJUcnVlXCIpID8gXCLqsJnsnYxcIiA6IFwi64uk66aEXCJ9LFxuICBzb3J0OiBkZXMyLCByZXZlcnNlOiB0cnVlLCByb3dzOiAxNiwgbGF5b3V0OiBcImF1dG9cIiwgbWF4V2lkdGg6IHdpZHRoXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzcmMxJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ2RlczEnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgncTEnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc3JjMicpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdkZXMyJykifV19
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../../Posts";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "..";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

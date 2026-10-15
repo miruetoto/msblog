@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "*.qmd"
+    - "*.md"
+    - "*.ipynb"
+    - "!-*"
+  resources:
+    - "Posts/attachments"
+
+website:
+  title: "연구진행과정공유(최규빈)"
+
+  page-footer:
+    border: true
+
+  navbar:
+    right:
+      - icon: github
+        href: https://github.com/miruetoto/msblog
+
+format:
+  html:
+    theme: cosmo
+    number-sections: false
+    css: styles.css
+    toc: false
+    highlight-style: github

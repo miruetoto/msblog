@@ -1,0 +1,10 @@
+freeze: true
+title-block-banner: false
+
+format:
+  html:
+    theme: cosmo
+    number-sections: false
+    css: styles.css
+    toc: false
+    highlight-style: github

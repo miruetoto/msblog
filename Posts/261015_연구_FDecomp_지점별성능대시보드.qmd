@@ -1,0 +1,164 @@
+---
+title: 실자료 지점별 성능 대시보드
+author: 최규빈
+date: 10/15/2026
+draft: false
+output-file: 261015_7de51b.html
+fontsize: 0.85em
+page-layout: full
+echo: false
+---
+
+박민수 교수 문서의 실자료를 지점마다 모은 판. 값은 ARI (k-means, k = 2). 설계 이름은 지난 리포트의 절 번호 — §3.1 일평균 (상한 = 라벨을 보고 고른 일평균 임계) · §3.2 B-스플라인 → FPCA · §5.1 분해 → 보정 → MFPCA.
+
+```{ojs}
+st = FileAttachment("attachments/261015_7de51b_01.csv").csv({typed: true})
+pr = FileAttachment("attachments/261015_7de51b_02.csv").csv({typed: true})
+info = FileAttachment("attachments/261015_7de51b_03.json").json()
+base = FileAttachment("attachments/261015_7de51b_04.json").json()
+RAMP = ["#9ec5f4", "#86b6ef", "#6da7ec", "#5598e7", "#3987e5", "#2a78d6", "#256abf", "#1c5cab", "#184f95", "#104281", "#0d366b"]
+INK = ({land: "#efeee6", border: "#c9c7bd", surface: "#fcfcf7", muted: "#898781", text: "#0b0b0b", bar: "#2a78d6", dot: "#86b6ef", mean: "#184f95"})
+KRBOX = ({type: "MultiPoint", coordinates: [[124.4, 33.0], [131.2, 38.7]]})
+f3 = x => x == null ? "" : x.toFixed(3)
+D1 = ["상한", "FPCA", "VMD", "CEEMDAN", "EEMD", "EMD"]
+L1 = ({상한: "3.1 상한", FPCA: "3.2 FPCA", VMD: "5.1 VMD", CEEMDAN: "5.1 CEEMDAN", EEMD: "5.1 EEMD", EMD: "5.1 EMD"})
+D2 = ["일평균", "상한", "FPCA", "FPCA 모양만", "VMD", "CEEMDAN", "EEMD", "EMD", "VMD 모양만", "CEEMDAN 모양만", "EEMD 모양만", "EMD 모양만"]
+L2 = Object.fromEntries(D2.map(k => [k, (k === "일평균" || k === "상한" ? "3.1 " : k.startsWith("FPCA") ? "3.2 " : "5.1 ") + k]))
+nara = lon => lon > 100 ? "한국" : "미국"
+inset = (lat, lon) => lon < -150 || (lat > 50 && lon < -129)
+isPR = (lat, lon) => lat < 24 && lon > -70 && lon < 0
+function geoPanel(country, w, marks) {
+  return Plot.plot({
+    width: w, height: Math.round(w * (country === "한국" ? 1.05 : 0.62)), style: {background: INK.surface},
+    projection: country === "한국" ? {type: "mercator", domain: KRBOX} : {type: "albers-usa"},
+    color: {type: "sqrt", domain: [0, 1], range: RAMP, clamp: true, legend: true, label: "ARI", width: Math.min(w, 320)},
+    marks: [Plot.geo(base[country], {fill: INK.land, stroke: INK.border, strokeWidth: 0.6}), ...marks]
+  })
+}
+function panels(cs, make) {
+  const w = cs.length > 1 ? Math.max(280, Math.min(Math.floor((width - 72) / 2), 560)) : Math.min(width - 16, 680)
+  return html`<div style="display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start">${cs.map(c => html`<figure style="margin:0"><figcaption style="color:${INK.muted};font-size:0.9em">${c}</figcaption>${make(c, w)}</figure>`)}</div>`
+}
+```
+
+::: {.panel-tabset}
+
+## 교수님 라벨 — 지점마다
+
+문서의 군집화 라벨 (사건 vs 대조) 로 지점마다 따로 군집. 받은 지점 2,410곳 중 2,101곳을 셈 — 못 센 곳은 라벨 부족 (쓴 날 10일 미만이거나 한쪽 라벨만) · 자료 없음 (관측 2점 미만). 지도에서 속이 빈 점이 못 센 지점.
+
+```{ojs}
+//| layout-ncol: 3
+viewof src1 = Inputs.select(info.map(d => d.자료), {label: "자료", value: "에어코리아"})
+viewof des1 = Inputs.select(D1, {label: "지도 색", value: "VMD", format: d => L1[d]})
+viewof q1 = Inputs.search(st.filter(d => d.자료 === src1), {label: "찾기", placeholder: "지점 · 지역", width: 180})
+```
+
+```{ojs}
+all1 = st.filter(d => d.자료 === src1)
+ok1 = all1.filter(d => d.상태 === "셈")
+lab1 = info.find(d => d.자료 === src1)
+md`**${src1}** · ${lab1.변수} · ${lab1.기간} — 지점 ${all1.length.toLocaleString()}곳 · 셈 ${ok1.length.toLocaleString()} · 라벨 부족 ${all1.filter(d => d.상태 === "라벨 부족").length} · 자료 없음 ${all1.filter(d => d.상태 === "자료 없음").length}
+
+사건 vs 대조 — ${lab1.라벨}. ${lab1.규칙}`
+```
+
+```{ojs}
+avg1 = D1.map(k => ({설계: L1[k], ARI: d3.mean(ok1, d => d[k])}))
+Plot.plot({
+  width: Math.min(width, 620), height: 30 * D1.length + 44, marginLeft: 104, marginRight: 48, style: {background: INK.surface},
+  x: {domain: [0, 1], grid: true, label: `센 지점 ${ok1.length.toLocaleString()}곳 평균 ARI`},
+  y: {label: null, domain: avg1.map(d => d.설계)},
+  marks: [
+    Plot.barX(avg1, {x: "ARI", y: "설계", fill: INK.bar, insetTop: 6, insetBottom: 6, tip: {format: {x: ".3f"}}}),
+    Plot.text(avg1, {x: "ARI", y: "설계", text: d => f3(d.ARI), dx: 6, textAnchor: "start", fill: INK.text}),
+    Plot.ruleX([0], {stroke: INK.border})
+  ]
+})
+```
+
+```{ojs}
+pts1 = q1.filter(d => d.위도 != null)
+panels(["한국", "미국"].filter(c => pts1.some(d => d.나라 === c)), (c, w) => geoPanel(c, w, [
+  Plot.dot(pts1.filter(d => d.나라 === c && d.상태 !== "셈"), {x: "경도", y: "위도", r: 3, stroke: INK.muted, strokeWidth: 1, fill: "none",
+    tip: {format: {x: false, y: false}}, channels: {지점: "지점", 지역: "지역", 상태: "상태"}}),
+  Plot.dot(pts1.filter(d => d.나라 === c && d.상태 === "셈"), {x: "경도", y: "위도", r: 4.5, fill: d => d[des1], stroke: INK.surface, strokeWidth: 1.2,
+    sort: d => d[des1], tip: {format: {x: false, y: false, fill: ".3f"}}, channels: {지점: "지점", 지역: "지역", 물질: "물질"}})
+]))
+```
+
+```{ojs}
+Inputs.table(q1, {
+  columns: ["지역", "지점", ...(src1.includes("EPA") ? ["물질"] : []), "사건", "대조", "상태", ...D1],
+  header: L1, format: Object.fromEntries(D1.map(k => [k, f3])),
+  sort: des1, reverse: true, rows: 16, layout: "auto", maxWidth: width
+})
+```
+
+## 지역 라벨 — 지점 짝
+
+라벨 = 지점. 한 자료 안에서 같은 변수의 두 지점을 무작위로 짝지어 (지점마다 한 번 · 겹치는 완전한 날 365 이상) 두 지점 다 하루가 온전히 관측된 날만 씀 — 두 쪽의 날 수와 계절이 같음. 1,003짝 · 2,006지점. 모양만 = 그날 평균을 뺌. §3.3 은 뺌 (지점마다 따로 분해한 IMF 를 번호로 짝지으면 주기가 어긋남). 한국–미국 짝 (OpenAQ 1개) · 알래스카와 하와이–본토 짝 · 푸에르토리코 짝은 지도에 없음 (표에는 있음).
+
+```{ojs}
+//| layout-ncol: 2
+viewof src2 = Inputs.select(["전체", ...new Set(pr.map(d => d.자료))], {label: "자료", value: "전체"})
+viewof des2 = Inputs.select(D2, {label: "설계", value: "VMD 모양만", format: d => L2[d]})
+```
+
+```{ojs}
+rows2 = src2 === "전체" ? pr : pr.filter(d => d.자료 === src2)
+md`**${src2}** — 짝 ${rows2.length.toLocaleString()}개 · 거리 중앙값 ${Math.round(d3.median(rows2, d => d.거리)).toLocaleString()} km · ${L2[des2]} 평균 ${f3(d3.mean(rows2, d => d[des2]))}`
+```
+
+```{ojs}
+same2 = rows2.filter(d => nara(d.경도A) === nara(d.경도B) && inset(d.위도A, d.경도A) === inset(d.위도B, d.경도B) && !isPR(d.위도A, d.경도A) && !isPR(d.위도B, d.경도B))
+panels(["한국", "미국"].filter(c => same2.some(d => nara(d.경도A) === c)), (c, w) => {
+  const s = same2.filter(d => nara(d.경도A) === c)
+  const ends = s.flatMap(d => [{x: d.경도A, y: d.위도A}, {x: d.경도B, y: d.위도B}])
+  return geoPanel(c, w, [
+    Plot.link(s, {x1: "경도A", y1: "위도A", x2: "경도B", y2: "위도B", stroke: d => d[des2], strokeWidth: 1.8, sort: d => d[des2],
+      tip: {format: {x1: false, y1: false, x2: false, y2: false, stroke: ".3f"}}, channels: {지점A: "지점A", 지점B: "지점B", 거리: d => `${Math.round(d.거리)} km`}}),
+    Plot.dot(ends, {x: "x", y: "y", r: 2, fill: INK.muted})
+  ])
+})
+```
+
+```{ojs}
+BINS = [[0, 100, "100 km 안"], [100, 300, "100–300 km"], [300, 1000, "300–1,000 km"], [1000, 3000, "1,000–3,000 km"], [3000, Infinity, "3,000 km 넘게"]]
+cut2 = BINS.map(([lo, hi, name]) => ({name, s: rows2.filter(d => d.거리 >= lo && d.거리 < hi)})).filter(b => b.s.length)
+binned2 = cut2.map(b => ({name: b.name, n: b.s.length, mid: d3.median(b.s, d => Math.max(d.거리, 1)), ARI: d3.mean(b.s, d => d[des2])}))
+Plot.plot({
+  width: Math.min(width, 780), height: 360, marginLeft: 48, style: {background: INK.surface},
+  x: {type: "log", label: "두 지점 거리 (km, 로그)", grid: true},
+  y: {label: `ARI — ${L2[des2]}`, grid: true},
+  marks: [
+    Plot.ruleY([0], {stroke: INK.border}),
+    Plot.dot(rows2, {x: d => Math.max(d.거리, 1), y: des2, r: 3, fill: INK.dot, fillOpacity: 0.55,
+      tip: {format: {x: d => `${Math.round(d)} km`, y: ".3f"}}, channels: {자료: "자료", 지점A: "지점A", 지점B: "지점B"}}),
+    Plot.line(binned2, {x: "mid", y: "ARI", stroke: INK.mean, strokeWidth: 2}),
+    Plot.dot(binned2, {x: "mid", y: "ARI", r: 4.5, fill: INK.mean, stroke: INK.surface, strokeWidth: 2}),
+    Plot.text(binned2, {x: "mid", y: "ARI", text: d => `${f3(d.ARI)} (${d.n})`, dy: -14, fill: INK.text})
+  ]
+})
+```
+
+점 = 짝, 선 = 거리 칸 평균 (괄호 안은 짝 수).
+
+```{ojs}
+Inputs.table(D2.map(k => Object.fromEntries([["설계", L2[k]], ...cut2.map(b => [`${b.name} (${b.s.length})`, d3.mean(b.s, d => d[k])])])), {
+  format: Object.fromEntries(cut2.map(b => [`${b.name} (${b.s.length})`, f3])), rows: 12, layout: "auto", sort: undefined
+})
+```
+
+```{ojs}
+Inputs.table(rows2, {
+  columns: ["자료", "지점A", "지역A", "지점B", "지역B", "거리", "같은 시도·주", "쓴 날", ...D2],
+  header: {...L2, 거리: "거리 (km)"},
+  format: {...Object.fromEntries(D2.map(k => [k, f3])), 거리: x => Math.round(x).toLocaleString(), "같은 시도·주": x => (x === true || x === "True") ? "같음" : "다름"},
+  sort: des2, reverse: true, rows: 16, layout: "auto", maxWidth: width
+})
+```
+
+:::
+
+계산 — 교수님 라벨: 지점마다 통째 신호를 분해한 뒤 §3.1 · §3.2 · §5.1 을 돌림 (R, 지난 리포트와 같은 코드). 지역 라벨: 같은 분해를 두 지점 짝에 다시 씀. 지도 밑그림은 Natural Earth (world-atlas 2.0.2 · us-atlas 3.0.1).
