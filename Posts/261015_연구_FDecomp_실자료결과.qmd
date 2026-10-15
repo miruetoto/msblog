@@ -15,7 +15,7 @@ format:
     toc-depth: 2
 ---
 
-제안 문서 (`Real_Data_DecompFPCA.docx`) 의 자료 여덟 가지에 리포트 1 (vic_elec) 의 절차를 그대로 돌림. 지점은 문서 범위 안의 것을 전부 받았고, 라벨은 문서의 군집화 라벨대로 날마다 하나씩 만듦. 값은 ARI (k-means, k = 2). 설계 이름은 리포트 1 의 절 번호 — §3.1 일평균 (상한 = 라벨을 보고 고른 일평균 임계) · §3.2 B-스플라인 → FPCA · §5.1 분해 → 보정 → MFPCA.
+제안 문서 (`Real_Data_DecompFPCA.docx`) 의 자료 여덟 가지에 리포트 1 (vic_elec) 의 절차를 그대로 돌림. 지점은 문서 범위 안의 것을 전부 받았고, 라벨은 문서의 군집화 라벨대로 날마다 하나씩 만듦. 값은 ARI (k-means, k = 2). 설계 이름은 리포트 1 의 절 번호 — 일평균 최적 문턱 (오라클 — §3.1 일평균에 라벨을 보고 고른 가장 좋은 문턱을 그어 가른 결과 · 방법이 아니라 비교 기준) · §3.2 B-스플라인 → FPCA · §5.1 분해 → 보정 → MFPCA.
 
 # 1. 원자료 보기
 
@@ -118,7 +118,7 @@ md`이 지점의 사건 날 ${rEvs.length}일 — ${rEvs.slice(0, 40).join(" · 
 
 `-` 계산한 지점의 평균 ARI. 빨강 = 줄에서 가장 높은 값 (0.2 넘을 때). 지점마다의 값과 지도는 아래 «지점마다».
 
-| 자료 | 계산한 지점 | 3.1 상한 | 3.2 FPCA | 5.1 VMD | 5.1 CEEMDAN | 5.1 EEMD | 5.1 EMD |
+| 자료 | 계산한 지점 | 일평균 최적 문턱 (오라클) | 3.2 FPCA | 5.1 VMD | 5.1 CEEMDAN | 5.1 EEMD | 5.1 EMD |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | 에어코리아 | 655 | $\color{red}{0.796}$ | 0.512 | 0.260 | 0.514 | 0.524 | 0.469 |
 | EPA AQS | 815 | $\color{red}{0.610}$ | 0.076 | 0.077 | 0.074 | 0.083 | 0.061 |
@@ -132,53 +132,53 @@ md`이 지점의 사건 날 ${rEvs.length}일 — ${rEvs.slice(0, 40).join(" · 
 
 ## 분포 — 지점이 많은 자료
 
-`-` 평균 · 중앙값 · 아래 / 위 25% · 줄에서 가장 높은 지점 수 (같은 값이면 모두에 하나씩 더함) · 상한을 빼고 가장 높은 지점 수.
+`-` 평균 · 중앙값 · 아래 / 위 25% · 줄에서 가장 높은 지점 수 (같은 값이면 모두에 하나씩 더함) · 오라클을 빼고 가장 높은 지점 수.
 
 ::: {.panel-tabset}
 
 ### 에어코리아 — 655곳
 
-| | 3.1 상한 | 3.2 FPCA | 5.1 VMD | 5.1 CEEMDAN | 5.1 EEMD | 5.1 EMD |
+| | 일평균 최적 문턱 (오라클) | 3.2 FPCA | 5.1 VMD | 5.1 CEEMDAN | 5.1 EEMD | 5.1 EMD |
 |---|---:|---:|---:|---:|---:|---:|
 | 평균 | $\color{red}{0.796}$ | 0.512 | 0.260 | 0.514 | 0.524 | 0.469 |
 | 중앙값 | $\color{red}{0.801}$ | 0.695 | 0.161 | 0.677 | 0.688 | 0.655 |
 | 아래 25% | $\color{red}{0.764}$ | 0.057 | 0.007 | 0.077 | 0.097 | 0.044 |
 | 위 25% | $\color{red}{0.835}$ | 0.761 | 0.528 | 0.756 | 0.762 | 0.750 |
 | 줄에서 가장 높은 지점 수 | 626 | 12 | 3 | 19 | 17 | 19 |
-| 상한을 빼고 가장 높은 지점 수 | — | 268 | 14 | 190 | 200 | 153 |
+| 오라클을 빼고 가장 높은 지점 수 | — | 268 | 14 | 190 | 200 | 153 |
 
 ### EPA AQS — 815곳
 
-| | 3.1 상한 | 3.2 FPCA | 5.1 VMD | 5.1 CEEMDAN | 5.1 EEMD | 5.1 EMD |
+| | 일평균 최적 문턱 (오라클) | 3.2 FPCA | 5.1 VMD | 5.1 CEEMDAN | 5.1 EEMD | 5.1 EMD |
 |---|---:|---:|---:|---:|---:|---:|
 | 평균 | $\color{red}{0.610}$ | 0.076 | 0.077 | 0.074 | 0.083 | 0.061 |
 | 중앙값 | $\color{red}{0.602}$ | 0.011 | 0.010 | 0.010 | 0.015 | 0.009 |
 | 아래 25% | $\color{red}{0.386}$ | 0.001 | 0.002 | 0.001 | 0.002 | 0.000 |
 | 위 25% | $\color{red}{0.881}$ | 0.063 | 0.056 | 0.052 | 0.069 | 0.043 |
 | 줄에서 가장 높은 지점 수 | 797 | 4 | 10 | 9 | 11 | 11 |
-| 상한을 빼고 가장 높은 지점 수 | — | 195 | 231 | 134 | 250 | 155 |
+| 오라클을 빼고 가장 높은 지점 수 | — | 195 | 231 | 134 | 250 | 155 |
 
 ### USGS — 549곳
 
-| | 3.1 상한 | 3.2 FPCA | 5.1 VMD | 5.1 CEEMDAN | 5.1 EEMD | 5.1 EMD |
+| | 일평균 최적 문턱 (오라클) | 3.2 FPCA | 5.1 VMD | 5.1 CEEMDAN | 5.1 EEMD | 5.1 EMD |
 |---|---:|---:|---:|---:|---:|---:|
 | 평균 | $\color{red}{0.214}$ | 0.095 | 0.134 | 0.096 | 0.088 | 0.078 |
 | 중앙값 | 0.173 | 0.028 | 0.068 | 0.030 | 0.026 | 0.026 |
 | 아래 25% | 0.085 | 0.000 | -0.001 | 0.000 | 0.001 | 0.001 |
 | 위 25% | $\color{red}{0.307}$ | 0.117 | 0.234 | 0.112 | 0.112 | 0.101 |
 | 줄에서 가장 높은 지점 수 | 347 | 21 | 123 | 30 | 26 | 19 |
-| 상한을 빼고 가장 높은 지점 수 | — | 81 | 244 | 90 | 71 | 100 |
+| 오라클을 빼고 가장 높은 지점 수 | — | 81 | 244 | 90 | 71 | 100 |
 
 ### NOAA ISD — 57곳
 
-| | 3.1 상한 | 3.2 FPCA | 5.1 VMD | 5.1 CEEMDAN | 5.1 EEMD | 5.1 EMD |
+| | 일평균 최적 문턱 (오라클) | 3.2 FPCA | 5.1 VMD | 5.1 CEEMDAN | 5.1 EEMD | 5.1 EMD |
 |---|---:|---:|---:|---:|---:|---:|
 | 평균 | $\color{red}{0.504}$ | 0.253 | 0.358 | 0.255 | 0.269 | 0.263 |
 | 중앙값 | $\color{red}{0.401}$ | 0.097 | 0.281 | 0.101 | 0.088 | 0.104 |
 | 아래 25% | $\color{red}{0.341}$ | 0.039 | 0.180 | 0.024 | 0.040 | 0.047 |
 | 위 25% | $\color{red}{0.651}$ | 0.324 | 0.451 | 0.330 | 0.452 | 0.350 |
 | 줄에서 가장 높은 지점 수 | 47 | 2 | 5 | 3 | 3 | 0 |
-| 상한을 빼고 가장 높은 지점 수 | — | 4 | 32 | 5 | 12 | 8 |
+| 오라클을 빼고 가장 높은 지점 수 | — | 4 | 32 | 5 | 12 | 8 |
 
 :::
 
@@ -194,7 +194,7 @@ INK = ({land: "#efeee6", border: "#c9c7bd", surface: "#fcfcf7", muted: "#898781"
 KRBOX = ({type: "MultiPoint", coordinates: [[124.4, 33.0], [131.2, 38.7]]})
 f3 = x => x == null ? "" : x.toFixed(3)
 D1 = ["상한", "FPCA", "VMD", "CEEMDAN", "EEMD", "EMD"]
-L1 = ({상한: "3.1 상한", FPCA: "3.2 FPCA", VMD: "5.1 VMD", CEEMDAN: "5.1 CEEMDAN", EEMD: "5.1 EEMD", EMD: "5.1 EMD"})
+L1 = ({상한: "일평균 최적 문턱 (오라클)", FPCA: "3.2 FPCA", VMD: "5.1 VMD", CEEMDAN: "5.1 CEEMDAN", EEMD: "5.1 EEMD", EMD: "5.1 EMD"})
 function geoPanel(country, w, marks) {
   return Plot.plot({
     width: w, height: Math.round(w * (country === "한국" ? 1.05 : 0.62)), style: {background: INK.surface},
@@ -267,7 +267,7 @@ Inputs.table(q1, {
 
 ### 에어코리아
 
-**수지 (경기도)** — PM2.5 · 사건 «주의보» 77일 / 대조 «청정 · 강수» 812일 · ARI — 3.1 상한 0.808 · 3.2 FPCA 0.719 · 5.1 VMD 0.626 · 5.1 CEEMDAN 0.726 · 5.1 EEMD 0.701 · 5.1 EMD 0.742
+**수지 (경기도)** — PM2.5 · 사건 «주의보» 77일 / 대조 «청정 · 강수» 812일 · ARI — 일평균 최적 문턱 (오라클) 0.808 · 3.2 FPCA 0.719 · 5.1 VMD 0.626 · 5.1 CEEMDAN 0.726 · 5.1 EEMD 0.701 · 5.1 EMD 0.742
 
 ![에어코리아 · VMD](attachments/261015_ca1073_05.png)
 
@@ -279,7 +279,7 @@ Inputs.table(q1, {
 
 ### EPA AQS
 
-**Redlands (California / Riverside-San Bernardino-Ontario, CA)** — O3 · 사건 «AQI USG 이상» 579일 / 대조 «Good · Moderate» 1136일 · ARI — 3.1 상한 0.582 · 3.2 FPCA 0.655 · 5.1 VMD 0.611 · 5.1 CEEMDAN 0.665 · 5.1 EEMD 0.657 · 5.1 EMD 0.692
+**Redlands (California / Riverside-San Bernardino-Ontario, CA)** — O3 · 사건 «AQI USG 이상» 579일 / 대조 «Good · Moderate» 1136일 · ARI — 일평균 최적 문턱 (오라클) 0.582 · 3.2 FPCA 0.655 · 5.1 VMD 0.611 · 5.1 CEEMDAN 0.665 · 5.1 EEMD 0.657 · 5.1 EMD 0.692
 
 ![EPA AQS · VMD](attachments/261015_ca1073_09.png)
 
@@ -291,7 +291,7 @@ Inputs.table(q1, {
 
 ### OpenAQ
 
-**Los Angeles – N. Main (California / Los Angeles-Long Beach-Anaheim, CA)** — PM2.5 · 사건 «AQI USG 이상» 24일 / 대조 «Good · Moderate» 436일 · ARI — 3.1 상한 0.903 · 3.2 FPCA 0.203 · 5.1 VMD 0.203 · 5.1 CEEMDAN 0.203 · 5.1 EEMD 0.203 · 5.1 EMD 0.203
+**Los Angeles – N. Main (California / Los Angeles-Long Beach-Anaheim, CA)** — PM2.5 · 사건 «AQI USG 이상» 24일 / 대조 «Good · Moderate» 436일 · ARI — 일평균 최적 문턱 (오라클) 0.903 · 3.2 FPCA 0.203 · 5.1 VMD 0.203 · 5.1 CEEMDAN 0.203 · 5.1 EEMD 0.203 · 5.1 EMD 0.203
 
 ![OpenAQ · VMD](attachments/261015_ca1073_13.png)
 
@@ -303,7 +303,7 @@ Inputs.table(q1, {
 
 ### WEIS
 
-**칠서 (경상남도 · 낙동강 수계)** — DO · 사건 «조류경보» 417일 / 대조 «평상시» 581일 · ARI — 3.1 상한 0.060 · 3.2 FPCA 0.045 · 5.1 VMD 0.061 · 5.1 CEEMDAN 0.070 · 5.1 EEMD 0.051 · 5.1 EMD 0.043
+**칠서 (경상남도 · 낙동강 수계)** — DO · 사건 «조류경보» 417일 / 대조 «평상시» 581일 · ARI — 일평균 최적 문턱 (오라클) 0.060 · 3.2 FPCA 0.045 · 5.1 VMD 0.061 · 5.1 CEEMDAN 0.070 · 5.1 EEMD 0.051 · 5.1 EMD 0.043
 
 ![WEIS · VMD](attachments/261015_ca1073_17.png)
 
@@ -315,7 +315,7 @@ Inputs.table(q1, {
 
 ### USGS
 
-**SOUTH RIVER AT FORREST PARK ROAD, AT ATLANTA, GA (Georgia (GA) · Atlanta-Sandy Springs-Roswell, GA 대도시권)** — DO · 사건 «강우 유출 · 홍수 유입» 368일 / 대조 «기저 유출 평수기» 384일 · ARI — 3.1 상한 0.103 · 3.2 FPCA 0.077 · 5.1 VMD 0.203 · 5.1 CEEMDAN 0.064 · 5.1 EEMD 0.081 · 5.1 EMD 0.031
+**SOUTH RIVER AT FORREST PARK ROAD, AT ATLANTA, GA (Georgia (GA) · Atlanta-Sandy Springs-Roswell, GA 대도시권)** — DO · 사건 «강우 유출 · 홍수 유입» 368일 / 대조 «기저 유출 평수기» 384일 · ARI — 일평균 최적 문턱 (오라클) 0.103 · 3.2 FPCA 0.077 · 5.1 VMD 0.203 · 5.1 CEEMDAN 0.064 · 5.1 EEMD 0.081 · 5.1 EMD 0.031
 
 ![USGS · VMD](attachments/261015_ca1073_21.png)
 
@@ -327,7 +327,7 @@ Inputs.table(q1, {
 
 ### 기상청 ASOS ①
 
-**대구 (대구광역시)** — 기온 · 사건 «폭염 · 열대야» 226일 / 대조 «비폭염» 1598일 · ARI — 3.1 상한 0.801 · 3.2 FPCA 0.082 · 5.1 VMD -0.004 · 5.1 CEEMDAN 0.083 · 5.1 EEMD 0.074 · 5.1 EMD 0.075
+**대구 (대구광역시)** — 기온 · 사건 «폭염 · 열대야» 226일 / 대조 «비폭염» 1598일 · ARI — 일평균 최적 문턱 (오라클) 0.801 · 3.2 FPCA 0.082 · 5.1 VMD -0.004 · 5.1 CEEMDAN 0.083 · 5.1 EEMD 0.074 · 5.1 EMD 0.075
 
 ![기상청 ASOS ① · VMD](attachments/261015_ca1073_25.png)
 
@@ -339,7 +339,7 @@ Inputs.table(q1, {
 
 ### 기상청 ASOS ②
 
-**광주 (전남광주통합특별시)** — 기온 · 사건 «강우 · 흐림» 699일 / 대조 «맑음» 688일 · ARI — 3.1 상한 0.032 · 3.2 FPCA 0.125 · 5.1 VMD 0.492 · 5.1 CEEMDAN 0.167 · 5.1 EEMD 0.143 · 5.1 EMD 0.113
+**광주 (전남광주통합특별시)** — 기온 · 사건 «강우 · 흐림» 699일 / 대조 «맑음» 688일 · ARI — 일평균 최적 문턱 (오라클) 0.032 · 3.2 FPCA 0.125 · 5.1 VMD 0.492 · 5.1 CEEMDAN 0.167 · 5.1 EEMD 0.143 · 5.1 EMD 0.113
 
 ![기상청 ASOS ② · VMD](attachments/261015_ca1073_29.png)
 
@@ -351,7 +351,7 @@ Inputs.table(q1, {
 
 ### NOAA ISD
 
-**Portland International (OR / Portland-Vancouver-Hillsboro, OR-WA)** — 기온 · 사건 «한랭 전선 · 강수» 548일 / 대조 «고온 건조» 373일 · ARI — 3.1 상한 0.874 · 3.2 FPCA 0.927 · 5.1 VMD 0.911 · 5.1 CEEMDAN 0.923 · 5.1 EEMD 0.911 · 5.1 EMD 0.919
+**Portland International (OR / Portland-Vancouver-Hillsboro, OR-WA)** — 기온 · 사건 «한랭 전선 · 강수» 548일 / 대조 «고온 건조» 373일 · ARI — 일평균 최적 문턱 (오라클) 0.874 · 3.2 FPCA 0.927 · 5.1 VMD 0.911 · 5.1 CEEMDAN 0.923 · 5.1 EEMD 0.911 · 5.1 EMD 0.919
 
 ![NOAA ISD · VMD](attachments/261015_ca1073_33.png)
 
