@@ -237,7 +237,7 @@ window.Quarto = {
 </header>
 
 
-<p>제안 문서 (<code>Real_Data_DecompFPCA.docx</code>) 의 자료 여덟 가지에 리포트 1 (vic_elec) 의 절차를 그대로 돌림. 지점은 문서 범위 안의 것을 전부 받았고, 라벨은 문서의 군집화 라벨대로 날마다 하나씩 만듦. 값은 ARI (k-means, k = 2). 설계 이름은 리포트 1 의 절 번호 — 일평균 최적 문턱 (오라클 — §3.1 일평균에 라벨을 보고 고른 가장 좋은 문턱을 그어 가른 결과 · 방법이 아니라 비교 기준) · §3.2 B-스플라인 → FPCA · §5.1 분해 → 보정 → MFPCA.</p>
+<p>제안 문서 (<code>Real_Data_DecompFPCA.docx</code>) 의 자료 여덟 가지에 리포트 1 (vic_elec) 의 절차를 그대로 돌림. 지점은 문서 범위 안의 것을 전부 받았고, 라벨은 문서의 군집화 라벨대로 날마다 하나씩 만듦. 값은 ARI (k-means, k = 2). 설계 — 일평균 최적 문턱 (오라클 — 일평균에 라벨을 보고 고른 가장 좋은 문턱을 그어 가른 결과 · 방법이 아니라 비교 기준) · FPCA (하루 곡선 → B-스플라인 → FPCA) · VMD+MFPCA 등 (분해 → 보정 → B-스플라인 → MFPCA).</p>
 <section id="원자료-보기" class="level1">
 <h1>1. 원자료 보기</h1>
 <p>자료 · 지점 · 기간을 고르면 그 기간의 시간 단위 원자료를 그림. 바탕색은 그날의 라벨 (사건 · 대조, 빈칸은 라벨 없음) — 라벨은 날마다 하나라 하루 (현지 표준시 0 – 24시) 가 한 색. 라벨은 그린 값이 아니라 문서의 기준 (주의보 · AQI · 조류경보 · 유량 · 날씨) 으로 정함 — 예를 들어 에어코리아 사건은 «그 권역에 주의보 · 경보가 걸친 날» 이라 밤에 내려 이튿날 아침에 풀린 주의보는 이틀이 다 사건. 실은 지점 — 작은 자료 (ASOS · OpenAQ · WEIS · ISD) 는 계산한 지점 전부, 큰 자료 (에어코리아 · EPA · USGS) 는 시도 · 주마다 사건 · 대조가 가장 고른 지점부터 30곳 (모두 172곳).</p>
@@ -546,11 +546,11 @@ window.Quarto = {
 <th>자료</th>
 <th style="text-align: right;">계산한 지점</th>
 <th style="text-align: right;">일평균 최적 문턱 (오라클)</th>
-<th style="text-align: right;">3.2 FPCA</th>
-<th style="text-align: right;">5.1 VMD</th>
-<th style="text-align: right;">5.1 CEEMDAN</th>
-<th style="text-align: right;">5.1 EEMD</th>
-<th style="text-align: right;">5.1 EMD</th>
+<th style="text-align: right;">FPCA</th>
+<th style="text-align: right;">VMD+MFPCA</th>
+<th style="text-align: right;">CEEMDAN+MFPCA</th>
+<th style="text-align: right;">EEMD+MFPCA</th>
+<th style="text-align: right;">EMD+MFPCA</th>
 </tr>
 </thead>
 <tbody>
@@ -668,11 +668,11 @@ window.Quarto = {
 <tr class="header">
 <th></th>
 <th style="text-align: right;">일평균 최적 문턱 (오라클)</th>
-<th style="text-align: right;">3.2 FPCA</th>
-<th style="text-align: right;">5.1 VMD</th>
-<th style="text-align: right;">5.1 CEEMDAN</th>
-<th style="text-align: right;">5.1 EEMD</th>
-<th style="text-align: right;">5.1 EMD</th>
+<th style="text-align: right;">FPCA</th>
+<th style="text-align: right;">VMD+MFPCA</th>
+<th style="text-align: right;">CEEMDAN+MFPCA</th>
+<th style="text-align: right;">EEMD+MFPCA</th>
+<th style="text-align: right;">EMD+MFPCA</th>
 </tr>
 </thead>
 <tbody>
@@ -748,11 +748,11 @@ window.Quarto = {
 <tr class="header">
 <th></th>
 <th style="text-align: right;">일평균 최적 문턱 (오라클)</th>
-<th style="text-align: right;">3.2 FPCA</th>
-<th style="text-align: right;">5.1 VMD</th>
-<th style="text-align: right;">5.1 CEEMDAN</th>
-<th style="text-align: right;">5.1 EEMD</th>
-<th style="text-align: right;">5.1 EMD</th>
+<th style="text-align: right;">FPCA</th>
+<th style="text-align: right;">VMD+MFPCA</th>
+<th style="text-align: right;">CEEMDAN+MFPCA</th>
+<th style="text-align: right;">EEMD+MFPCA</th>
+<th style="text-align: right;">EMD+MFPCA</th>
 </tr>
 </thead>
 <tbody>
@@ -828,11 +828,11 @@ window.Quarto = {
 <tr class="header">
 <th></th>
 <th style="text-align: right;">일평균 최적 문턱 (오라클)</th>
-<th style="text-align: right;">3.2 FPCA</th>
-<th style="text-align: right;">5.1 VMD</th>
-<th style="text-align: right;">5.1 CEEMDAN</th>
-<th style="text-align: right;">5.1 EEMD</th>
-<th style="text-align: right;">5.1 EMD</th>
+<th style="text-align: right;">FPCA</th>
+<th style="text-align: right;">VMD+MFPCA</th>
+<th style="text-align: right;">CEEMDAN+MFPCA</th>
+<th style="text-align: right;">EEMD+MFPCA</th>
+<th style="text-align: right;">EMD+MFPCA</th>
 </tr>
 </thead>
 <tbody>
@@ -908,11 +908,11 @@ window.Quarto = {
 <tr class="header">
 <th></th>
 <th style="text-align: right;">일평균 최적 문턱 (오라클)</th>
-<th style="text-align: right;">3.2 FPCA</th>
-<th style="text-align: right;">5.1 VMD</th>
-<th style="text-align: right;">5.1 CEEMDAN</th>
-<th style="text-align: right;">5.1 EEMD</th>
-<th style="text-align: right;">5.1 EMD</th>
+<th style="text-align: right;">FPCA</th>
+<th style="text-align: right;">VMD+MFPCA</th>
+<th style="text-align: right;">CEEMDAN+MFPCA</th>
+<th style="text-align: right;">EEMD+MFPCA</th>
+<th style="text-align: right;">EMD+MFPCA</th>
 </tr>
 </thead>
 <tbody>
@@ -987,7 +987,7 @@ window.Quarto = {
 <span id="cb7-194"><a href="#cb7-194" aria-hidden="true" tabindex="-1"></a>KRBOX <span class="op">=</span> ({<span class="dt">type</span><span class="op">:</span> <span class="st">"MultiPoint"</span><span class="op">,</span> <span class="dt">coordinates</span><span class="op">:</span> [[<span class="fl">124.4</span><span class="op">,</span> <span class="fl">33.0</span>]<span class="op">,</span> [<span class="fl">131.2</span><span class="op">,</span> <span class="fl">38.7</span>]]})</span>
 <span id="cb7-195"><a href="#cb7-195" aria-hidden="true" tabindex="-1"></a>f3 <span class="op">=</span> x <span class="kw">=&gt;</span> x <span class="op">==</span> <span class="kw">null</span> <span class="op">?</span> <span class="st">""</span> <span class="op">:</span> x<span class="op">.</span><span class="fu">toFixed</span>(<span class="dv">3</span>)</span>
 <span id="cb7-196"><a href="#cb7-196" aria-hidden="true" tabindex="-1"></a>D1 <span class="op">=</span> [<span class="st">"상한"</span><span class="op">,</span> <span class="st">"FPCA"</span><span class="op">,</span> <span class="st">"VMD"</span><span class="op">,</span> <span class="st">"CEEMDAN"</span><span class="op">,</span> <span class="st">"EEMD"</span><span class="op">,</span> <span class="st">"EMD"</span>]</span>
-<span id="cb7-197"><a href="#cb7-197" aria-hidden="true" tabindex="-1"></a>L1 <span class="op">=</span> ({<span class="dt">상한</span><span class="op">:</span> <span class="st">"일평균 최적 문턱 (오라클)"</span><span class="op">,</span> <span class="dt">FPCA</span><span class="op">:</span> <span class="st">"3.2 FPCA"</span><span class="op">,</span> <span class="dt">VMD</span><span class="op">:</span> <span class="st">"5.1 VMD"</span><span class="op">,</span> <span class="dt">CEEMDAN</span><span class="op">:</span> <span class="st">"5.1 CEEMDAN"</span><span class="op">,</span> <span class="dt">EEMD</span><span class="op">:</span> <span class="st">"5.1 EEMD"</span><span class="op">,</span> <span class="dt">EMD</span><span class="op">:</span> <span class="st">"5.1 EMD"</span>})</span>
+<span id="cb7-197"><a href="#cb7-197" aria-hidden="true" tabindex="-1"></a>L1 <span class="op">=</span> ({<span class="dt">상한</span><span class="op">:</span> <span class="st">"일평균 최적 문턱 (오라클)"</span><span class="op">,</span> <span class="dt">FPCA</span><span class="op">:</span> <span class="st">"FPCA"</span><span class="op">,</span> <span class="dt">VMD</span><span class="op">:</span> <span class="st">"VMD+MFPCA"</span><span class="op">,</span> <span class="dt">CEEMDAN</span><span class="op">:</span> <span class="st">"CEEMDAN+MFPCA"</span><span class="op">,</span> <span class="dt">EEMD</span><span class="op">:</span> <span class="st">"EEMD+MFPCA"</span><span class="op">,</span> <span class="dt">EMD</span><span class="op">:</span> <span class="st">"EMD+MFPCA"</span>})</span>
 <span id="cb7-198"><a href="#cb7-198" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">geoPanel</span>(country<span class="op">,</span> w<span class="op">,</span> marks) {</span>
 <span id="cb7-199"><a href="#cb7-199" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> Plot<span class="op">.</span><span class="fu">plot</span>({</span>
 <span id="cb7-200"><a href="#cb7-200" aria-hidden="true" tabindex="-1"></a>    <span class="dt">width</span><span class="op">:</span> w<span class="op">,</span> <span class="dt">height</span><span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">round</span>(w <span class="op">*</span> (country <span class="op">===</span> <span class="st">"한국"</span> <span class="op">?</span> <span class="fl">1.05</span> <span class="op">:</span> <span class="fl">0.62</span>))<span class="op">,</span> <span class="dt">style</span><span class="op">:</span> {<span class="dt">background</span><span class="op">:</span> INK<span class="op">.</span><span class="at">surface</span>}<span class="op">,</span></span>
@@ -1201,7 +1201,7 @@ window.Quarto = {
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">에어코리아</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">EPA AQS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">OpenAQ</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">WEIS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false" href="">USGS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false" href="">기상청 ASOS ①</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-7" role="tab" aria-controls="tabset-2-7" aria-selected="false" href="">기상청 ASOS ②</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-8" role="tab" aria-controls="tabset-2-8" aria-selected="false" href="">NOAA ISD</a></li></ul>
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<p><strong>수지 (경기도)</strong> — PM2.5 · 사건 «주의보» 77일 / 대조 «청정 · 강수» 812일 · ARI — 일평균 최적 문턱 (오라클) 0.808 · 3.2 FPCA 0.719 · 5.1 VMD 0.626 · 5.1 CEEMDAN 0.726 · 5.1 EEMD 0.701 · 5.1 EMD 0.742</p>
+<p><strong>수지 (경기도)</strong> — PM2.5 · 사건 «주의보» 77일 / 대조 «청정 · 강수» 812일 · ARI — 일평균 최적 문턱 (오라클) 0.808 · FPCA 0.719 · VMD+MFPCA 0.626 · CEEMDAN+MFPCA 0.726 · EEMD+MFPCA 0.701 · EMD+MFPCA 0.742</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_ca1073_05.png" class="img-fluid figure-img"></p>
@@ -1228,7 +1228,7 @@ window.Quarto = {
 </div>
 </div>
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<p><strong>Redlands (California / Riverside-San Bernardino-Ontario, CA)</strong> — O3 · 사건 «AQI USG 이상» 579일 / 대조 «Good · Moderate» 1136일 · ARI — 일평균 최적 문턱 (오라클) 0.582 · 3.2 FPCA 0.655 · 5.1 VMD 0.611 · 5.1 CEEMDAN 0.665 · 5.1 EEMD 0.657 · 5.1 EMD 0.692</p>
+<p><strong>Redlands (California / Riverside-San Bernardino-Ontario, CA)</strong> — O3 · 사건 «AQI USG 이상» 579일 / 대조 «Good · Moderate» 1136일 · ARI — 일평균 최적 문턱 (오라클) 0.582 · FPCA 0.655 · VMD+MFPCA 0.611 · CEEMDAN+MFPCA 0.665 · EEMD+MFPCA 0.657 · EMD+MFPCA 0.692</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_ca1073_09.png" class="img-fluid figure-img"></p>
@@ -1255,7 +1255,7 @@ window.Quarto = {
 </div>
 </div>
 <div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
-<p><strong>Los Angeles – N. Main (California / Los Angeles-Long Beach-Anaheim, CA)</strong> — PM2.5 · 사건 «AQI USG 이상» 24일 / 대조 «Good · Moderate» 436일 · ARI — 일평균 최적 문턱 (오라클) 0.903 · 3.2 FPCA 0.203 · 5.1 VMD 0.203 · 5.1 CEEMDAN 0.203 · 5.1 EEMD 0.203 · 5.1 EMD 0.203</p>
+<p><strong>Los Angeles – N. Main (California / Los Angeles-Long Beach-Anaheim, CA)</strong> — PM2.5 · 사건 «AQI USG 이상» 24일 / 대조 «Good · Moderate» 436일 · ARI — 일평균 최적 문턱 (오라클) 0.903 · FPCA 0.203 · VMD+MFPCA 0.203 · CEEMDAN+MFPCA 0.203 · EEMD+MFPCA 0.203 · EMD+MFPCA 0.203</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_ca1073_13.png" class="img-fluid figure-img"></p>
@@ -1282,7 +1282,7 @@ window.Quarto = {
 </div>
 </div>
 <div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
-<p><strong>칠서 (경상남도 · 낙동강 수계)</strong> — DO · 사건 «조류경보» 417일 / 대조 «평상시» 581일 · ARI — 일평균 최적 문턱 (오라클) 0.060 · 3.2 FPCA 0.045 · 5.1 VMD 0.061 · 5.1 CEEMDAN 0.070 · 5.1 EEMD 0.051 · 5.1 EMD 0.043</p>
+<p><strong>칠서 (경상남도 · 낙동강 수계)</strong> — DO · 사건 «조류경보» 417일 / 대조 «평상시» 581일 · ARI — 일평균 최적 문턱 (오라클) 0.060 · FPCA 0.045 · VMD+MFPCA 0.061 · CEEMDAN+MFPCA 0.070 · EEMD+MFPCA 0.051 · EMD+MFPCA 0.043</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_ca1073_17.png" class="img-fluid figure-img"></p>
@@ -1309,7 +1309,7 @@ window.Quarto = {
 </div>
 </div>
 <div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
-<p><strong>SOUTH RIVER AT FORREST PARK ROAD, AT ATLANTA, GA (Georgia (GA) · Atlanta-Sandy Springs-Roswell, GA 대도시권)</strong> — DO · 사건 «강우 유출 · 홍수 유입» 368일 / 대조 «기저 유출 평수기» 384일 · ARI — 일평균 최적 문턱 (오라클) 0.103 · 3.2 FPCA 0.077 · 5.1 VMD 0.203 · 5.1 CEEMDAN 0.064 · 5.1 EEMD 0.081 · 5.1 EMD 0.031</p>
+<p><strong>SOUTH RIVER AT FORREST PARK ROAD, AT ATLANTA, GA (Georgia (GA) · Atlanta-Sandy Springs-Roswell, GA 대도시권)</strong> — DO · 사건 «강우 유출 · 홍수 유입» 368일 / 대조 «기저 유출 평수기» 384일 · ARI — 일평균 최적 문턱 (오라클) 0.103 · FPCA 0.077 · VMD+MFPCA 0.203 · CEEMDAN+MFPCA 0.064 · EEMD+MFPCA 0.081 · EMD+MFPCA 0.031</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_ca1073_21.png" class="img-fluid figure-img"></p>
@@ -1336,7 +1336,7 @@ window.Quarto = {
 </div>
 </div>
 <div id="tabset-2-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-6-tab">
-<p><strong>대구 (대구광역시)</strong> — 기온 · 사건 «폭염 · 열대야» 226일 / 대조 «비폭염» 1598일 · ARI — 일평균 최적 문턱 (오라클) 0.801 · 3.2 FPCA 0.082 · 5.1 VMD -0.004 · 5.1 CEEMDAN 0.083 · 5.1 EEMD 0.074 · 5.1 EMD 0.075</p>
+<p><strong>대구 (대구광역시)</strong> — 기온 · 사건 «폭염 · 열대야» 226일 / 대조 «비폭염» 1598일 · ARI — 일평균 최적 문턱 (오라클) 0.801 · FPCA 0.082 · VMD+MFPCA -0.004 · CEEMDAN+MFPCA 0.083 · EEMD+MFPCA 0.074 · EMD+MFPCA 0.075</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_ca1073_25.png" class="img-fluid figure-img"></p>
@@ -1363,7 +1363,7 @@ window.Quarto = {
 </div>
 </div>
 <div id="tabset-2-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-7-tab">
-<p><strong>광주 (전남광주통합특별시)</strong> — 기온 · 사건 «강우 · 흐림» 699일 / 대조 «맑음» 688일 · ARI — 일평균 최적 문턱 (오라클) 0.032 · 3.2 FPCA 0.125 · 5.1 VMD 0.492 · 5.1 CEEMDAN 0.167 · 5.1 EEMD 0.143 · 5.1 EMD 0.113</p>
+<p><strong>광주 (전남광주통합특별시)</strong> — 기온 · 사건 «강우 · 흐림» 699일 / 대조 «맑음» 688일 · ARI — 일평균 최적 문턱 (오라클) 0.032 · FPCA 0.125 · VMD+MFPCA 0.492 · CEEMDAN+MFPCA 0.167 · EEMD+MFPCA 0.143 · EMD+MFPCA 0.113</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_ca1073_29.png" class="img-fluid figure-img"></p>
@@ -1390,7 +1390,7 @@ window.Quarto = {
 </div>
 </div>
 <div id="tabset-2-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-8-tab">
-<p><strong>Portland International (OR / Portland-Vancouver-Hillsboro, OR-WA)</strong> — 기온 · 사건 «한랭 전선 · 강수» 548일 / 대조 «고온 건조» 373일 · ARI — 일평균 최적 문턱 (오라클) 0.874 · 3.2 FPCA 0.927 · 5.1 VMD 0.911 · 5.1 CEEMDAN 0.923 · 5.1 EEMD 0.911 · 5.1 EMD 0.919</p>
+<p><strong>Portland International (OR / Portland-Vancouver-Hillsboro, OR-WA)</strong> — 기온 · 사건 «한랭 전선 · 강수» 548일 / 대조 «고온 건조» 373일 · ARI — 일평균 최적 문턱 (오라클) 0.874 · FPCA 0.927 · VMD+MFPCA 0.911 · CEEMDAN+MFPCA 0.923 · EEMD+MFPCA 0.911 · EMD+MFPCA 0.919</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_ca1073_33.png" class="img-fluid figure-img"></p>
@@ -1421,7 +1421,7 @@ window.Quarto = {
 </section>
 <section id="어블레이션" class="level1">
 <h1>4. 어블레이션</h1>
-<p><code>-</code> 계산한 지점에서 날 · 라벨 · 분해 결과를 그대로 두고 §5.1 의 부품을 한 번에 하나씩 뺌. 값은 평균 ARI, 괄호는 §5.1 대비 평균 차. 빨강 = 열마다 가장 높은 것.</p>
+<p><code>-</code> 계산한 지점에서 날 · 라벨 · 분해 결과를 그대로 두고 분해+MFPCA 의 부품을 한 번에 하나씩 뺌. 값은 평균 ARI, 괄호는 «그대로» 대비 평균 차. 빨강 = 열마다 가장 높은 것.</p>
 <section id="전체-2101곳" class="level2">
 <h2 class="anchored" data-anchor-id="전체-2101곳">전체 — 2,101곳</h2>
 <table class="caption-top table">
@@ -1443,21 +1443,21 @@ window.Quarto = {
 </thead>
 <tbody>
 <tr class="odd">
-<td>§5.1 그대로 (뺀 것 없음)</td>
+<td>분해+MFPCA 그대로 (뺀 것 없음)</td>
 <td style="text-align: right;">0.158</td>
 <td style="text-align: right;">0.222</td>
 <td style="text-align: right;">0.227</td>
 <td style="text-align: right;">0.198</td>
 </tr>
 <tr class="even">
-<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)</td>
+<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (M = 3)</td>
 <td style="text-align: right;">0.152 (-0.006)</td>
 <td style="text-align: right;">0.055 (-0.167)</td>
 <td style="text-align: right;">0.067 (-0.160)</td>
 <td style="text-align: right;">0.042 (-0.156)</td>
 </tr>
 <tr class="odd">
-<td>분해 끄기 — 원곡선 FPCA (= §3.2)</td>
+<td>분해 끄기 — 원곡선 FPCA</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.222}\)</span> (+0.064)</td>
 <td style="text-align: right;">0.222 (-0.000)</td>
 <td style="text-align: right;">0.222 (-0.005)</td>
@@ -1520,21 +1520,21 @@ window.Quarto = {
 </thead>
 <tbody>
 <tr class="odd">
-<td>§5.1 그대로 (뺀 것 없음)</td>
+<td>분해+MFPCA 그대로 (뺀 것 없음)</td>
 <td style="text-align: right;">0.260</td>
 <td style="text-align: right;">0.514</td>
 <td style="text-align: right;">0.524</td>
 <td style="text-align: right;">0.469</td>
 </tr>
 <tr class="even">
-<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)</td>
+<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (M = 3)</td>
 <td style="text-align: right;">0.243 (-0.017)</td>
 <td style="text-align: right;">0.049 (-0.465)</td>
 <td style="text-align: right;">0.065 (-0.459)</td>
 <td style="text-align: right;">0.036 (-0.433)</td>
 </tr>
 <tr class="odd">
-<td>분해 끄기 — 원곡선 FPCA (= §3.2)</td>
+<td>분해 끄기 — 원곡선 FPCA</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.512}\)</span> (+0.251)</td>
 <td style="text-align: right;">0.512 (-0.002)</td>
 <td style="text-align: right;">0.512 (-0.012)</td>
@@ -1591,21 +1591,21 @@ window.Quarto = {
 </thead>
 <tbody>
 <tr class="odd">
-<td>§5.1 그대로 (뺀 것 없음)</td>
+<td>분해+MFPCA 그대로 (뺀 것 없음)</td>
 <td style="text-align: right;">0.077</td>
 <td style="text-align: right;">0.074</td>
 <td style="text-align: right;">0.083</td>
 <td style="text-align: right;">0.061</td>
 </tr>
 <tr class="even">
-<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)</td>
+<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (M = 3)</td>
 <td style="text-align: right;">0.073 (-0.004)</td>
 <td style="text-align: right;">0.035 (-0.038)</td>
 <td style="text-align: right;">0.069 (-0.014)</td>
 <td style="text-align: right;">0.043 (-0.018)</td>
 </tr>
 <tr class="odd">
-<td>분해 끄기 — 원곡선 FPCA (= §3.2)</td>
+<td>분해 끄기 — 원곡선 FPCA</td>
 <td style="text-align: right;">0.076 (-0.001)</td>
 <td style="text-align: right;">0.076 (+0.002)</td>
 <td style="text-align: right;">0.076 (-0.007)</td>
@@ -1662,21 +1662,21 @@ window.Quarto = {
 </thead>
 <tbody>
 <tr class="odd">
-<td>§5.1 그대로 (뺀 것 없음)</td>
+<td>분해+MFPCA 그대로 (뺀 것 없음)</td>
 <td style="text-align: right;">0.244</td>
 <td style="text-align: right;">0.335</td>
 <td style="text-align: right;">0.480</td>
 <td style="text-align: right;">0.402</td>
 </tr>
 <tr class="even">
-<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)</td>
+<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (M = 3)</td>
 <td style="text-align: right;">0.297 (+0.053)</td>
 <td style="text-align: right;">0.143 (-0.193)</td>
 <td style="text-align: right;">-0.025 (-0.505)</td>
 <td style="text-align: right;">-0.010 (-0.412)</td>
 </tr>
 <tr class="odd">
-<td>분해 끄기 — 원곡선 FPCA (= §3.2)</td>
+<td>분해 끄기 — 원곡선 FPCA</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.419}\)</span> (+0.175)</td>
 <td style="text-align: right;">0.419 (+0.083)</td>
 <td style="text-align: right;">0.419 (-0.061)</td>
@@ -1733,21 +1733,21 @@ window.Quarto = {
 </thead>
 <tbody>
 <tr class="odd">
-<td>§5.1 그대로 (뺀 것 없음)</td>
+<td>분해+MFPCA 그대로 (뺀 것 없음)</td>
 <td style="text-align: right;">0.133</td>
 <td style="text-align: right;">0.044</td>
 <td style="text-align: right;">0.033</td>
 <td style="text-align: right;">0.026</td>
 </tr>
 <tr class="even">
-<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)</td>
+<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (M = 3)</td>
 <td style="text-align: right;">0.152 (+0.019)</td>
 <td style="text-align: right;">0.058 (+0.014)</td>
 <td style="text-align: right;">0.029 (-0.005)</td>
 <td style="text-align: right;">0.033 (+0.007)</td>
 </tr>
 <tr class="odd">
-<td>분해 끄기 — 원곡선 FPCA (= §3.2)</td>
+<td>분해 끄기 — 원곡선 FPCA</td>
 <td style="text-align: right;">0.064 (-0.069)</td>
 <td style="text-align: right;">0.064 (+0.021)</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.064}\)</span> (+0.031)</td>
@@ -1804,21 +1804,21 @@ window.Quarto = {
 </thead>
 <tbody>
 <tr class="odd">
-<td>§5.1 그대로 (뺀 것 없음)</td>
+<td>분해+MFPCA 그대로 (뺀 것 없음)</td>
 <td style="text-align: right;">0.134</td>
 <td style="text-align: right;">0.096</td>
 <td style="text-align: right;">0.088</td>
 <td style="text-align: right;">0.078</td>
 </tr>
 <tr class="even">
-<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)</td>
+<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (M = 3)</td>
 <td style="text-align: right;">0.135 (+0.001)</td>
 <td style="text-align: right;">0.073 (-0.023)</td>
 <td style="text-align: right;">0.054 (-0.035)</td>
 <td style="text-align: right;">0.042 (-0.035)</td>
 </tr>
 <tr class="odd">
-<td>분해 끄기 — 원곡선 FPCA (= §3.2)</td>
+<td>분해 끄기 — 원곡선 FPCA</td>
 <td style="text-align: right;">0.095 (-0.039)</td>
 <td style="text-align: right;">0.095 (-0.001)</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.095}\)</span> (+0.006)</td>
@@ -1875,21 +1875,21 @@ window.Quarto = {
 </thead>
 <tbody>
 <tr class="odd">
-<td>§5.1 그대로 (뺀 것 없음)</td>
+<td>분해+MFPCA 그대로 (뺀 것 없음)</td>
 <td style="text-align: right;">0.001</td>
 <td style="text-align: right;">0.073</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.073}\)</span></td>
 <td style="text-align: right;">0.045</td>
 </tr>
 <tr class="even">
-<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)</td>
+<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (M = 3)</td>
 <td style="text-align: right;">0.000 (-0.001)</td>
 <td style="text-align: right;">-0.003 (-0.076)</td>
 <td style="text-align: right;">0.015 (-0.058)</td>
 <td style="text-align: right;">0.002 (-0.043)</td>
 </tr>
 <tr class="odd">
-<td>분해 끄기 — 원곡선 FPCA (= §3.2)</td>
+<td>분해 끄기 — 원곡선 FPCA</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.059}\)</span> (+0.058)</td>
 <td style="text-align: right;">0.059 (-0.014)</td>
 <td style="text-align: right;">0.059 (-0.014)</td>
@@ -1946,21 +1946,21 @@ window.Quarto = {
 </thead>
 <tbody>
 <tr class="odd">
-<td>§5.1 그대로 (뺀 것 없음)</td>
+<td>분해+MFPCA 그대로 (뺀 것 없음)</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.413}\)</span></td>
 <td style="text-align: right;">0.199</td>
 <td style="text-align: right;">0.188</td>
 <td style="text-align: right;">0.162</td>
 </tr>
 <tr class="even">
-<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)</td>
+<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (M = 3)</td>
 <td style="text-align: right;">0.391 (-0.022)</td>
 <td style="text-align: right;">0.022 (-0.178)</td>
 <td style="text-align: right;">0.065 (-0.124)</td>
 <td style="text-align: right;">0.042 (-0.120)</td>
 </tr>
 <tr class="odd">
-<td>분해 끄기 — 원곡선 FPCA (= §3.2)</td>
+<td>분해 끄기 — 원곡선 FPCA</td>
 <td style="text-align: right;">0.192 (-0.221)</td>
 <td style="text-align: right;">0.192 (-0.007)</td>
 <td style="text-align: right;">0.192 (+0.004)</td>
@@ -2017,21 +2017,21 @@ window.Quarto = {
 </thead>
 <tbody>
 <tr class="odd">
-<td>§5.1 그대로 (뺀 것 없음)</td>
+<td>분해+MFPCA 그대로 (뺀 것 없음)</td>
 <td style="text-align: right;">0.358</td>
 <td style="text-align: right;">0.255</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.269}\)</span></td>
 <td style="text-align: right;">0.263</td>
 </tr>
 <tr class="even">
-<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)</td>
+<td>재배치 끄기 — IMF 를 에너지 순서대로 넣음 (M = 3)</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.361}\)</span> (+0.003)</td>
 <td style="text-align: right;">0.230 (-0.025)</td>
 <td style="text-align: right;">0.215 (-0.054)</td>
 <td style="text-align: right;">0.115 (-0.148)</td>
 </tr>
 <tr class="odd">
-<td>분해 끄기 — 원곡선 FPCA (= §3.2)</td>
+<td>분해 끄기 — 원곡선 FPCA</td>
 <td style="text-align: right;">0.253 (-0.105)</td>
 <td style="text-align: right;">0.253 (-0.002)</td>
 <td style="text-align: right;">0.253 (-0.015)</td>
@@ -2071,7 +2071,7 @@ window.Quarto = {
 </div>
 </div>
 <hr>
-<p>계산 — 지점마다 통째 신호를 분해한 뒤 §3.1 · §3.2 · §5.1 을 돌림 (R, 리포트 1 과 같은 코드 · <code>261014_하모니_실자료전체.R</code> · 어블레이션 <code>261014_하모니_어블레이션.R</code>). 3절 그림 <code>261014_아리아_실자료4x7그림.py --tag 교수님라벨_전지점</code> (아리아). 지도 밑그림은 Natural Earth (world-atlas 2.0.2 · us-atlas 3.0.1).</p>
+<p>계산 — 지점마다 통째 신호를 분해한 뒤 오라클 · FPCA · 분해+MFPCA 를 돌림 (R, 리포트 1 과 같은 코드 · <code>261014_하모니_실자료전체.R</code> · 어블레이션 <code>261014_하모니_어블레이션.R</code>). 3절 그림 <code>261014_아리아_실자료4x7그림.py --tag 교수님라벨_전지점</code> (아리아). 지도 밑그림은 Natural Earth (world-atlas 2.0.2 · us-atlas 3.0.1).</p>
 
 
 </section>
@@ -2079,7 +2079,7 @@ window.Quarto = {
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InJJZHggPSBGaWxlQXR0YWNobWVudChcImF0dGFjaG1lbnRzLzI2MTAxNV9jYTEwNzNfcmF3L2luZGV4LmNzdlwiKS5jc3Yoe3R5cGVkOiB0cnVlfSlcbmluZm8gPSBGaWxlQXR0YWNobWVudChcImF0dGFjaG1lbnRzLzI2MTAxNV9jYTEwNzNfMDMuanNvblwiKS5qc29uKClcblJDID0gKHvsgqzqsbQ6IFwiI2ViNjgzNFwiLCDrjIDsobA6IFwiIzJhNzhkNlwiLCDsl4bsnYw6IFwiI2I1YjNhYlwiLCBpbms6IFwiIzBiMGIwYlwiLCBzdXJmYWNlOiBcIiNmY2ZjZjdcIn0pXG5SVU5JVCA9ICh77JeQ7Ja07L2U66as7JWEOiBcIlBNMi41ICjCtWcvbcKzKVwiLCBPcGVuQVE6IFwiUE0yLjUgKMK1Zy9twrMpXCIsIFdFSVM6IFwiRE8gKG1nL0wpXCIsIFVTR1M6IFwiRE8gKG1nL0wpXCIsIFwi6riw7IOB7LKtIEFTT1Mg4pGgXCI6IFwi6riw7JioICjCsEMpXCIsIFwi6riw7IOB7LKtIEFTT1Mg4pGhXCI6IFwi6riw7JioICjCsEMpXCIsIFwiTk9BQSBJU0RcIjogXCLquLDsmKggKMKwQylcIn0pXG5yVW5pdCA9IGQgPT4gZC7snpDro4wgPT09IFwiRVBBIEFRU1wiID8gKGQuc2VyaWVzLmVuZHNXaXRoKFwiX28zXCIpID8gXCJPMyAocHBtKVwiIDogXCJQTTIuNSAowrVnL23CsylcIikgOiBSVU5JVFtkLuyekOujjF1cbnltZCA9IGQgPT4gYCR7ZC5nZXRVVENGdWxsWWVhcigpfS0ke1N0cmluZyhkLmdldFVUQ01vbnRoKCkgKyAxKS5wYWRTdGFydCgyLCBcIjBcIil9LSR7U3RyaW5nKGQuZ2V0VVRDRGF0ZSgpKS5wYWRTdGFydCgyLCBcIjBcIil9YFxuZGF5SW5kZXggPSAocywgZDApID0+IE1hdGgucm91bmQoKERhdGUucGFyc2UocyArIFwiVDAwOjAwOjAwWlwiKSAtIERhdGUucGFyc2UoZDAgKyBcIlQwMDowMDowMFpcIikpIC8gODY0ZTUpXG5STEFCID0gKHtcIjFcIjogXCLsgqzqsbRcIiwgXCIwXCI6IFwi64yA7KGwXCIsIFwiLlwiOiBcIuyXhuydjFwifSlcbmZkID0geCA9PiB4IGluc3RhbmNlb2YgRGF0ZSA/IHltZCh4KSA6IFN0cmluZyh4KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIHJTcmMgPSBJbnB1dHMuc2VsZWN0KFsuLi5uZXcgU2V0KHJJZHgubWFwKGQgPT4gZC7snpDro4wpKV0sIHtsYWJlbDogXCLsnpDro4xcIiwgdmFsdWU6IFwi7JeQ7Ja07L2U66as7JWEXCIsIHdpZHRoOiAxNTB9KVxudmlld29mIHJTdCA9IElucHV0cy5zZWxlY3QocklkeC5maWx0ZXIoZCA9PiBkLuyekOujjCA9PT0gclNyYyksIHtsYWJlbDogXCLsp4DsoJBcIiwgZm9ybWF0OiBkID0+IGAke2Qu7KeA7KCQfSDCtyAke2Qu7KeA7JetfWAsIHdpZHRoOiAxODB9KVxudmlld29mIHJUMCA9IElucHV0cy5kYXRlKHtsYWJlbDogXCLsi5zsnpFcIiwgdmFsdWU6IFwiMjAyMS0wMS0yNlwiLCB3aWR0aDogMTUwfSlcbnZpZXdvZiByVDEgPSBJbnB1dHMuZGF0ZSh7bGFiZWw6IFwi64GdXCIsIHZhbHVlOiBcIjIwMjEtMDItMTVcIiwgd2lkdGg6IDE1MH0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJyUmF3ID0gZDMuanNvbihgYXR0YWNobWVudHMvMjYxMDE1X2NhMTA3M19yYXcvJHtyU3QuZmlsZX1gKVxucldpbiA9IHtcbiAgY29uc3QgYSA9IE1hdGgubWF4KDAsIGRheUluZGV4KHltZChyVDApLCByUmF3LmQwKSksIGIgPSBNYXRoLm1pbihyUmF3Lm4gLSAxLCBkYXlJbmRleCh5bWQoclQxKSwgclJhdy5kMCkpXG4gIGNvbnN0IHQwMCA9IERhdGUucGFyc2UoclJhdy5kMCArIFwiVDAwOjAwOjAwWlwiKSwgSyA9IHJSYXcuUCwgZGF5cyA9IFtdLCBwdHMgPSBbXVxuICBmb3IgKGxldCBpID0gYTsgaSA8PSBiOyBpKyspIHtcbiAgICBjb25zdCBsYWIgPSBSTEFCW3JSYXcubGFiW2ldXSwgdmFscyA9IHJSYXcudi5zbGljZShpICogSywgKGkgKyAxKSAqIEspXG4gICAgZGF5cy5wdXNoKHtpLCB0MDogbmV3IERhdGUodDAwICsgaSAqIDg2NGU1KSwgdDE6IG5ldyBEYXRlKHQwMCArIChpICsgMSkgKiA4NjRlNSksIGxhYiwgdmFsc30pXG4gICAgdmFscy5mb3JFYWNoKCh2LCBoKSA9PiBwdHMucHVzaCh7dDogbmV3IERhdGUodDAwICsgaSAqIDg2NGU1ICsgaCAqIDg2NGU1IC8gSyksIHYsIGg6IGggKiAyNCAvIEssIGRheTogaSwgbGFifSkpXG4gIH1cbiAgcmV0dXJuIHthLCBiLCBkYXlzLCBwdHMsIG9rOiBiID49IGF9XG59XG5yTGFiID0gaW5mby5maW5kKGQgPT4gZC7snpDro4wgPT09IHJTdC7snpDro4wpXG5tZGAqKiR7clN0LuyngOygkH0qKiDCtyAke3JTdC7sp4Dsl619IMK3ICR7clN0LuyekOujjH0gwrcgJHtyVW5pdChyU3QpfSDigJQg7J6Q66OMICR7ZmQoclN0LmQwKX0gfiAke2ZkKHJTdC5kMSl9IMK3IOyTtCDrgqAg7IKs6rG0ICR7clN0Lm4xfSDCtyDrjIDsobAgJHtyU3QubjB9XG4ke3JXaW4ub2sgPyBgwrcg6rOg66W4IOq4sOqwhCAke3JXaW4uZGF5cy5sZW5ndGh97J28ICjsgqzqsbQgJHtyV2luLmRheXMuZmlsdGVyKGQgPT4gZC5sYWIgPT09IFwi7IKs6rG0XCIpLmxlbmd0aH0gwrcg64yA7KGwICR7cldpbi5kYXlzLmZpbHRlcihkID0+IGQubGFiID09PSBcIuuMgOyhsFwiKS5sZW5ndGh9IMK3IOu5iCDsi5zqsIEgJHtyV2luLnB0cy5maWx0ZXIoZCA9PiBkLnYgPT0gbnVsbCkubGVuZ3RofSlgIDogXCLCtyAqKuqzoOuluCDquLDqsITsnbQg7J20IOyngOygkOydmCDsnpDro4wg67CW7J6F64uI64ukKipcIn1cblxu7IKs6rG0IHZzIOuMgOyhsCDigJQgJHtyTGFiID8gckxhYi7rnbzrsqggOiBcIlwifS4gJHtyTGFiID8gckxhYi7qt5zsuZkgOiBcIlwifWBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InJXaW4ub2sgPyBQbG90LnBsb3Qoe1xuICB3aWR0aDogTWF0aC5taW4od2lkdGgsIDExMDApLCBoZWlnaHQ6IDMwMCwgbWFyZ2luTGVmdDogNTIsIHN0eWxlOiB7YmFja2dyb3VuZDogUkMuc3VyZmFjZX0sXG4gIHg6IHt0eXBlOiBcInV0Y1wiLCBsYWJlbDogbnVsbH0sIHk6IHtsYWJlbDogclVuaXQoclN0KSwgZ3JpZDogdHJ1ZX0sXG4gIGNvbG9yOiB7ZG9tYWluOiBbXCLsgqzqsbRcIiwgXCLrjIDsobBcIl0sIHJhbmdlOiBbUkMu7IKs6rG0LCBSQy7rjIDsobBdLCBsZWdlbmQ6IHRydWV9LFxuICBtYXJrczogW1xuICAgIFBsb3QucmVjdFgocldpbi5kYXlzLmZpbHRlcihkID0+IGQubGFiICE9PSBcIuyXhuydjFwiKSwge3gxOiBcInQwXCIsIHgyOiBcInQxXCIsIGZpbGw6IFwibGFiXCIsIGZpbGxPcGFjaXR5OiAwLjE2fSksXG4gICAgUGxvdC5saW5lWShyV2luLnB0cywge3g6IFwidFwiLCB5OiBcInZcIiwgc3Ryb2tlOiBSQy5pbmssIHN0cm9rZVdpZHRoOiAxLjIsIHRpcDoge2Zvcm1hdDoge3g6IGQgPT4gZC50b0lTT1N0cmluZygpLnNsaWNlKDAsIDE2KS5yZXBsYWNlKFwiVFwiLCBcIiBcIiksIHk6IHRydWV9fX0pXG4gIF1cbn0pIDogaHRtbGA8cD7si5zsnpHqs7wg64Gd7J2EICR7ZmQoclN0LmQwKX0gfiAke2ZkKHJTdC5kMSl9IOyViOyXkOyEnCDqs6DrpbTsi63si5zsmKQuPC9wPmBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InJDdXJ2ZXMgPSByV2luLm9rID8gcldpbi5kYXlzLmZpbHRlcihkID0+IGQudmFscy5zb21lKHYgPT4gdiAhPSBudWxsKSkuZmxhdE1hcChkID0+IGQudmFscy5tYXAoKHYsIGgpID0+ICh7aDogaCAqIDI0IC8gclJhdy5QLCB2LCBkYXk6IGQuaSwgbGFiOiBkLmxhYn0pKSkgOiBbXVxuck1lYW5zID0gW1wi7IKs6rG0XCIsIFwi64yA7KGwXCJdLmZsYXRNYXAobCA9PiB7XG4gIGNvbnN0IGRzID0gcldpbi5vayA/IHJXaW4uZGF5cy5maWx0ZXIoZCA9PiBkLmxhYiA9PT0gbCkgOiBbXVxuICBpZiAoIWRzLmxlbmd0aCkgcmV0dXJuIFtdXG4gIHJldHVybiBkMy5yYW5nZShyUmF3LlApLm1hcChoID0+ICh7aDogaCAqIDI0IC8gclJhdy5QLCB2OiBkMy5tZWFuKGRzLCBkID0+IGQudmFsc1toXSksIGxhYjogbH0pKVxufSlcbnJXaW4ub2sgPyBQbG90LnBsb3Qoe1xuICB3aWR0aDogTWF0aC5taW4od2lkdGgsIDcwMCksIGhlaWdodDogMzIwLCBtYXJnaW5MZWZ0OiA1Miwgc3R5bGU6IHtiYWNrZ3JvdW5kOiBSQy5zdXJmYWNlfSxcbiAgeDoge2xhYmVsOiBcIuyLnOqwgSAo7ZiE7KeAIO2RnOykgOyLnClcIiwgZG9tYWluOiBbMCwgMjRdLCB0aWNrczogWzAsIDYsIDEyLCAxOCwgMjRdfSwgeToge2xhYmVsOiByVW5pdChyU3QpLCBncmlkOiB0cnVlfSxcbiAgY29sb3I6IHtkb21haW46IFtcIuyCrOqxtFwiLCBcIuuMgOyhsFwiLCBcIuyXhuydjFwiXSwgcmFuZ2U6IFtSQy7sgqzqsbQsIFJDLuuMgOyhsCwgUkMu7JeG7J2MXSwgbGVnZW5kOiB0cnVlfSxcbiAgbWFya3M6IFtcbiAgICBQbG90LmxpbmVZKHJDdXJ2ZXMsIHt4OiBcImhcIiwgeTogXCJ2XCIsIHo6IFwiZGF5XCIsIHN0cm9rZTogXCJsYWJcIiwgc3Ryb2tlV2lkdGg6IDAuOCwgc3Ryb2tlT3BhY2l0eTogMC40NX0pLFxuICAgIFBsb3QubGluZVkock1lYW5zLCB7eDogXCJoXCIsIHk6IFwidlwiLCB6OiBcImxhYlwiLCBzdHJva2U6IFwibGFiXCIsIHN0cm9rZVdpZHRoOiAzfSksXG4gIF1cbn0pIDogaHRtbGBgXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTYiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJyRXZzID0gZDMucmFuZ2UoclJhdy5uKS5maWx0ZXIoaSA9PiByUmF3LmxhYltpXSA9PT0gXCIxXCIpLm1hcChpID0+IHltZChuZXcgRGF0ZShEYXRlLnBhcnNlKHJSYXcuZDAgKyBcIlQwMDowMDowMFpcIikgKyBpICogODY0ZTUpKSlcbm1kYOydtCDsp4DsoJDsnZgg7IKs6rG0IOuCoCAke3JFdnMubGVuZ3RofeydvCDigJQgJHtyRXZzLnNsaWNlKDAsIDQwKS5qb2luKFwiIMK3IFwiKX0ke3JFdnMubGVuZ3RoID4gNDAgPyBcIiDigKZcIiA6IFwiXCJ9YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC03IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoic3QgPSBGaWxlQXR0YWNobWVudChcImF0dGFjaG1lbnRzLzI2MTAxNV9jYTEwNzNfMDEuY3N2XCIpLmNzdih7dHlwZWQ6IHRydWV9KVxuYmFzZSA9IEZpbGVBdHRhY2htZW50KFwiYXR0YWNobWVudHMvMjYxMDE1X2NhMTA3M18wNC5qc29uXCIpLmpzb24oKVxuUkFNUCA9IFtcIiM5ZWM1ZjRcIiwgXCIjODZiNmVmXCIsIFwiIzZkYTdlY1wiLCBcIiM1NTk4ZTdcIiwgXCIjMzk4N2U1XCIsIFwiIzJhNzhkNlwiLCBcIiMyNTZhYmZcIiwgXCIjMWM1Y2FiXCIsIFwiIzE4NGY5NVwiLCBcIiMxMDQyODFcIiwgXCIjMGQzNjZiXCJdXG5JTksgPSAoe2xhbmQ6IFwiI2VmZWVlNlwiLCBib3JkZXI6IFwiI2M5YzdiZFwiLCBzdXJmYWNlOiBcIiNmY2ZjZjdcIiwgbXV0ZWQ6IFwiIzg5ODc4MVwiLCB0ZXh0OiBcIiMwYjBiMGJcIiwgYmFyOiBcIiMyYTc4ZDZcIiwgZG90OiBcIiM4NmI2ZWZcIiwgbWVhbjogXCIjMTg0Zjk1XCJ9KVxuS1JCT1ggPSAoe3R5cGU6IFwiTXVsdGlQb2ludFwiLCBjb29yZGluYXRlczogW1sxMjQuNCwgMzMuMF0sIFsxMzEuMiwgMzguN11dfSlcbmYzID0geCA9PiB4ID09IG51bGwgPyBcIlwiIDogeC50b0ZpeGVkKDMpXG5EMSA9IFtcIuyDge2VnFwiLCBcIkZQQ0FcIiwgXCJWTURcIiwgXCJDRUVNREFOXCIsIFwiRUVNRFwiLCBcIkVNRFwiXVxuTDEgPSAoe+yDge2VnDogXCLsnbztj4nqt6Ag7LWc7KCBIOusuO2EsSAo7Jik65287YG0KVwiLCBGUENBOiBcIjMuMiBGUENBXCIsIFZNRDogXCI1LjEgVk1EXCIsIENFRU1EQU46IFwiNS4xIENFRU1EQU5cIiwgRUVNRDogXCI1LjEgRUVNRFwiLCBFTUQ6IFwiNS4xIEVNRFwifSlcbmZ1bmN0aW9uIGdlb1BhbmVsKGNvdW50cnksIHcsIG1hcmtzKSB7XG4gIHJldHVybiBQbG90LnBsb3Qoe1xuICAgIHdpZHRoOiB3LCBoZWlnaHQ6IE1hdGgucm91bmQodyAqIChjb3VudHJ5ID09PSBcIu2VnOq1rVwiID8gMS4wNSA6IDAuNjIpKSwgc3R5bGU6IHtiYWNrZ3JvdW5kOiBJTksuc3VyZmFjZX0sXG4gICAgcHJvamVjdGlvbjogY291bnRyeSA9PT0gXCLtlZzqta1cIiA/IHt0eXBlOiBcIm1lcmNhdG9yXCIsIGRvbWFpbjogS1JCT1h9IDoge3R5cGU6IFwiYWxiZXJzLXVzYVwifSxcbiAgICBjb2xvcjoge3R5cGU6IFwic3FydFwiLCBkb21haW46IFswLCAxXSwgcmFuZ2U6IFJBTVAsIGNsYW1wOiB0cnVlLCBsZWdlbmQ6IHRydWUsIGxhYmVsOiBcIkFSSVwiLCB3aWR0aDogTWF0aC5taW4odywgMzIwKX0sXG4gICAgbWFya3M6IFtQbG90LmdlbyhiYXNlW2NvdW50cnldLCB7ZmlsbDogSU5LLmxhbmQsIHN0cm9rZTogSU5LLmJvcmRlciwgc3Ryb2tlV2lkdGg6IDAuNn0pLCAuLi5tYXJrc11cbiAgfSlcbn1cbmZ1bmN0aW9uIHBhbmVscyhjcywgbWFrZSkge1xuICBjb25zdCB3ID0gY3MubGVuZ3RoID4gMSA/IE1hdGgubWF4KDI4MCwgTWF0aC5taW4oTWF0aC5mbG9vcigod2lkdGggLSA3MikgLyAyKSwgNTYwKSkgOiBNYXRoLm1pbih3aWR0aCAtIDE2LCA2ODApXG4gIHJldHVybiBodG1sYDxkaXYgc3R5bGU9XCJkaXNwbGF5OmZsZXg7ZmxleC13cmFwOndyYXA7Z2FwOjI0cHg7YWxpZ24taXRlbXM6ZmxleC1zdGFydFwiPiR7Y3MubWFwKGMgPT4gaHRtbGA8ZmlndXJlIHN0eWxlPVwibWFyZ2luOjBcIj48ZmlnY2FwdGlvbiBzdHlsZT1cImNvbG9yOiR7SU5LLm11dGVkfTtmb250LXNpemU6MC45ZW1cIj4ke2N9PC9maWdjYXB0aW9uPiR7bWFrZShjLCB3KX08L2ZpZ3VyZT5gKX08L2Rpdj5gXG59XG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTgiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ2aWV3b2Ygc3JjMSA9IElucHV0cy5zZWxlY3QoaW5mby5tYXAoZCA9PiBkLuyekOujjCksIHtsYWJlbDogXCLsnpDro4xcIiwgdmFsdWU6IFwi7JeQ7Ja07L2U66as7JWEXCJ9KVxudmlld29mIGRlczEgPSBJbnB1dHMuc2VsZWN0KEQxLCB7bGFiZWw6IFwi7KeA64+EIOyDiVwiLCB2YWx1ZTogXCJWTURcIiwgZm9ybWF0OiBkID0+IEwxW2RdfSlcbnZpZXdvZiBxMSA9IElucHV0cy5zZWFyY2goc3QuZmlsdGVyKGQgPT4gZC7snpDro4wgPT09IHNyYzEpLCB7bGFiZWw6IFwi7LC+6riwXCIsIHBsYWNlaG9sZGVyOiBcIuyngOygkCDCtyDsp4Dsl61cIiwgd2lkdGg6IDE1MH0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTkiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJhbGwxID0gc3QuZmlsdGVyKGQgPT4gZC7snpDro4wgPT09IHNyYzEpXG5vazEgPSBhbGwxLmZpbHRlcihkID0+IGQu7IOB7YOcID09PSBcIuqzhOyCsFwiKVxubGFiMSA9IGluZm8uZmluZChkID0+IGQu7J6Q66OMID09PSBzcmMxKVxubWRgKioke3NyYzF9KiogwrcgJHtsYWIxLuuzgOyImH0gwrcgJHtsYWIxLuq4sOqwhH0g4oCUIOyngOygkCAke2FsbDEubGVuZ3RoLnRvTG9jYWxlU3RyaW5nKCl96rOzIMK3IOqzhOyCsCAke29rMS5sZW5ndGgudG9Mb2NhbGVTdHJpbmcoKX0gwrcg652867KoIOu2gOyhsSAke2FsbDEuZmlsdGVyKGQgPT4gZC7sg4Htg5wgPT09IFwi652867KoIOu2gOyhsVwiKS5sZW5ndGh9IMK3IOyekOujjCDsl4bsnYwgJHthbGwxLmZpbHRlcihkID0+IGQu7IOB7YOcID09PSBcIuyekOujjCDsl4bsnYxcIikubGVuZ3RofVxuXG7sgqzqsbQgdnMg64yA7KGwIOKAlCAke2xhYjEu652867KofS4gJHtsYWIxLuq3nOy5mX1gXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTEwIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiYXZnMSA9IEQxLm1hcChrID0+ICh77ISk6rOEOiBMMVtrXSwgQVJJOiBkMy5tZWFuKG9rMSwgZCA9PiBkW2tdKX0pKVxuUGxvdC5wbG90KHtcbiAgd2lkdGg6IE1hdGgubWluKHdpZHRoLCA2MjApLCBoZWlnaHQ6IDMwICogRDEubGVuZ3RoICsgNDQsIG1hcmdpbkxlZnQ6IDEwNCwgbWFyZ2luUmlnaHQ6IDQ4LCBzdHlsZToge2JhY2tncm91bmQ6IElOSy5zdXJmYWNlfSxcbiAgeDoge2RvbWFpbjogWzAsIDFdLCBncmlkOiB0cnVlLCBsYWJlbDogYOqzhOyCsO2VnCDsp4DsoJAgJHtvazEubGVuZ3RoLnRvTG9jYWxlU3RyaW5nKCl96rOzIO2Pieq3oCBBUklgfSxcbiAgeToge2xhYmVsOiBudWxsLCBkb21haW46IGF2ZzEubWFwKGQgPT4gZC7shKTqs4QpfSxcbiAgbWFya3M6IFtcbiAgICBQbG90LmJhclgoYXZnMSwge3g6IFwiQVJJXCIsIHk6IFwi7ISk6rOEXCIsIGZpbGw6IElOSy5iYXIsIGluc2V0VG9wOiA2LCBpbnNldEJvdHRvbTogNiwgdGlwOiB7Zm9ybWF0OiB7eDogXCIuM2ZcIn19fSksXG4gICAgUGxvdC50ZXh0KGF2ZzEsIHt4OiBcIkFSSVwiLCB5OiBcIuyEpOqzhFwiLCB0ZXh0OiBkID0+IGYzKGQuQVJJKSwgZHg6IDYsIHRleHRBbmNob3I6IFwic3RhcnRcIiwgZmlsbDogSU5LLnRleHR9KSxcbiAgICBQbG90LnJ1bGVYKFswXSwge3N0cm9rZTogSU5LLmJvcmRlcn0pXG4gIF1cbn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTExIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoicHRzMSA9IHExLmZpbHRlcihkID0+IGQu7JyE64+EICE9IG51bGwpXG5wYW5lbHMoW1wi7ZWc6rWtXCIsIFwi66+46rWtXCJdLmZpbHRlcihjID0+IHB0czEuc29tZShkID0+IGQu64KY6528ID09PSBjKSksIChjLCB3KSA9PiBnZW9QYW5lbChjLCB3LCBbXG4gIFBsb3QuZG90KHB0czEuZmlsdGVyKGQgPT4gZC7rgpjrnbwgPT09IGMgJiYgZC7sg4Htg5wgIT09IFwi6rOE7IKwXCIpLCB7eDogXCLqsr3rj4RcIiwgeTogXCLsnITrj4RcIiwgcjogMywgc3Ryb2tlOiBJTksubXV0ZWQsIHN0cm9rZVdpZHRoOiAxLCBmaWxsOiBcIm5vbmVcIixcbiAgICB0aXA6IHtmb3JtYXQ6IHt4OiBmYWxzZSwgeTogZmFsc2V9fSwgY2hhbm5lbHM6IHvsp4DsoJA6IFwi7KeA7KCQXCIsIOyngOyXrTogXCLsp4Dsl61cIiwg7IOB7YOcOiBcIuyDge2DnFwifX0pLFxuICBQbG90LmRvdChwdHMxLmZpbHRlcihkID0+IGQu64KY6528ID09PSBjICYmIGQu7IOB7YOcID09PSBcIuqzhOyCsFwiKSwge3g6IFwi6rK964+EXCIsIHk6IFwi7JyE64+EXCIsIHI6IDQuNSwgZmlsbDogZCA9PiBkW2RlczFdLCBzdHJva2U6IElOSy5zdXJmYWNlLCBzdHJva2VXaWR0aDogMS4yLFxuICAgIHNvcnQ6IGQgPT4gZFtkZXMxXSwgdGlwOiB7Zm9ybWF0OiB7eDogZmFsc2UsIHk6IGZhbHNlLCBmaWxsOiBcIi4zZlwifX0sIGNoYW5uZWxzOiB77KeA7KCQOiBcIuyngOygkFwiLCDsp4Dsl606IFwi7KeA7JetXCIsIOusvOyniDogXCLrrLzsp4hcIn19KVxuXSkpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTEyIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiSW5wdXRzLnRhYmxlKHExLCB7XG4gIGNvbHVtbnM6IFtcIuyngOyXrVwiLCBcIuyngOygkFwiLCAuLi4oc3JjMS5pbmNsdWRlcyhcIkVQQVwiKSA/IFtcIuusvOyniFwiXSA6IFtdKSwgXCLsgqzqsbRcIiwgXCLrjIDsobBcIiwgXCLsg4Htg5xcIiwgLi4uRDFdLFxuICBoZWFkZXI6IEwxLCBmb3JtYXQ6IE9iamVjdC5mcm9tRW50cmllcyhEMS5tYXAoayA9PiBbaywgZjNdKSksXG4gIHNvcnQ6IGRlczEsIHJldmVyc2U6IHRydWUsIHJvd3M6IDE2LCBsYXlvdXQ6IFwiYXV0b1wiLCBtYXhXaWR0aDogd2lkdGhcbn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3JTcmMnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnclN0JykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3JUMCcpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdyVDEnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc3JjMScpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdkZXMxJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3ExJykifV19
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InJJZHggPSBGaWxlQXR0YWNobWVudChcImF0dGFjaG1lbnRzLzI2MTAxNV9jYTEwNzNfcmF3L2luZGV4LmNzdlwiKS5jc3Yoe3R5cGVkOiB0cnVlfSlcbmluZm8gPSBGaWxlQXR0YWNobWVudChcImF0dGFjaG1lbnRzLzI2MTAxNV9jYTEwNzNfMDMuanNvblwiKS5qc29uKClcblJDID0gKHvsgqzqsbQ6IFwiI2ViNjgzNFwiLCDrjIDsobA6IFwiIzJhNzhkNlwiLCDsl4bsnYw6IFwiI2I1YjNhYlwiLCBpbms6IFwiIzBiMGIwYlwiLCBzdXJmYWNlOiBcIiNmY2ZjZjdcIn0pXG5SVU5JVCA9ICh77JeQ7Ja07L2U66as7JWEOiBcIlBNMi41ICjCtWcvbcKzKVwiLCBPcGVuQVE6IFwiUE0yLjUgKMK1Zy9twrMpXCIsIFdFSVM6IFwiRE8gKG1nL0wpXCIsIFVTR1M6IFwiRE8gKG1nL0wpXCIsIFwi6riw7IOB7LKtIEFTT1Mg4pGgXCI6IFwi6riw7JioICjCsEMpXCIsIFwi6riw7IOB7LKtIEFTT1Mg4pGhXCI6IFwi6riw7JioICjCsEMpXCIsIFwiTk9BQSBJU0RcIjogXCLquLDsmKggKMKwQylcIn0pXG5yVW5pdCA9IGQgPT4gZC7snpDro4wgPT09IFwiRVBBIEFRU1wiID8gKGQuc2VyaWVzLmVuZHNXaXRoKFwiX28zXCIpID8gXCJPMyAocHBtKVwiIDogXCJQTTIuNSAowrVnL23CsylcIikgOiBSVU5JVFtkLuyekOujjF1cbnltZCA9IGQgPT4gYCR7ZC5nZXRVVENGdWxsWWVhcigpfS0ke1N0cmluZyhkLmdldFVUQ01vbnRoKCkgKyAxKS5wYWRTdGFydCgyLCBcIjBcIil9LSR7U3RyaW5nKGQuZ2V0VVRDRGF0ZSgpKS5wYWRTdGFydCgyLCBcIjBcIil9YFxuZGF5SW5kZXggPSAocywgZDApID0+IE1hdGgucm91bmQoKERhdGUucGFyc2UocyArIFwiVDAwOjAwOjAwWlwiKSAtIERhdGUucGFyc2UoZDAgKyBcIlQwMDowMDowMFpcIikpIC8gODY0ZTUpXG5STEFCID0gKHtcIjFcIjogXCLsgqzqsbRcIiwgXCIwXCI6IFwi64yA7KGwXCIsIFwiLlwiOiBcIuyXhuydjFwifSlcbmZkID0geCA9PiB4IGluc3RhbmNlb2YgRGF0ZSA/IHltZCh4KSA6IFN0cmluZyh4KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIHJTcmMgPSBJbnB1dHMuc2VsZWN0KFsuLi5uZXcgU2V0KHJJZHgubWFwKGQgPT4gZC7snpDro4wpKV0sIHtsYWJlbDogXCLsnpDro4xcIiwgdmFsdWU6IFwi7JeQ7Ja07L2U66as7JWEXCIsIHdpZHRoOiAxNTB9KVxudmlld29mIHJTdCA9IElucHV0cy5zZWxlY3QocklkeC5maWx0ZXIoZCA9PiBkLuyekOujjCA9PT0gclNyYyksIHtsYWJlbDogXCLsp4DsoJBcIiwgZm9ybWF0OiBkID0+IGAke2Qu7KeA7KCQfSDCtyAke2Qu7KeA7JetfWAsIHdpZHRoOiAxODB9KVxudmlld29mIHJUMCA9IElucHV0cy5kYXRlKHtsYWJlbDogXCLsi5zsnpFcIiwgdmFsdWU6IFwiMjAyMS0wMS0yNlwiLCB3aWR0aDogMTUwfSlcbnZpZXdvZiByVDEgPSBJbnB1dHMuZGF0ZSh7bGFiZWw6IFwi64GdXCIsIHZhbHVlOiBcIjIwMjEtMDItMTVcIiwgd2lkdGg6IDE1MH0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJyUmF3ID0gZDMuanNvbihgYXR0YWNobWVudHMvMjYxMDE1X2NhMTA3M19yYXcvJHtyU3QuZmlsZX1gKVxucldpbiA9IHtcbiAgY29uc3QgYSA9IE1hdGgubWF4KDAsIGRheUluZGV4KHltZChyVDApLCByUmF3LmQwKSksIGIgPSBNYXRoLm1pbihyUmF3Lm4gLSAxLCBkYXlJbmRleCh5bWQoclQxKSwgclJhdy5kMCkpXG4gIGNvbnN0IHQwMCA9IERhdGUucGFyc2UoclJhdy5kMCArIFwiVDAwOjAwOjAwWlwiKSwgSyA9IHJSYXcuUCwgZGF5cyA9IFtdLCBwdHMgPSBbXVxuICBmb3IgKGxldCBpID0gYTsgaSA8PSBiOyBpKyspIHtcbiAgICBjb25zdCBsYWIgPSBSTEFCW3JSYXcubGFiW2ldXSwgdmFscyA9IHJSYXcudi5zbGljZShpICogSywgKGkgKyAxKSAqIEspXG4gICAgZGF5cy5wdXNoKHtpLCB0MDogbmV3IERhdGUodDAwICsgaSAqIDg2NGU1KSwgdDE6IG5ldyBEYXRlKHQwMCArIChpICsgMSkgKiA4NjRlNSksIGxhYiwgdmFsc30pXG4gICAgdmFscy5mb3JFYWNoKCh2LCBoKSA9PiBwdHMucHVzaCh7dDogbmV3IERhdGUodDAwICsgaSAqIDg2NGU1ICsgaCAqIDg2NGU1IC8gSyksIHYsIGg6IGggKiAyNCAvIEssIGRheTogaSwgbGFifSkpXG4gIH1cbiAgcmV0dXJuIHthLCBiLCBkYXlzLCBwdHMsIG9rOiBiID49IGF9XG59XG5yTGFiID0gaW5mby5maW5kKGQgPT4gZC7snpDro4wgPT09IHJTdC7snpDro4wpXG5tZGAqKiR7clN0LuyngOygkH0qKiDCtyAke3JTdC7sp4Dsl619IMK3ICR7clN0LuyekOujjH0gwrcgJHtyVW5pdChyU3QpfSDigJQg7J6Q66OMICR7ZmQoclN0LmQwKX0gfiAke2ZkKHJTdC5kMSl9IMK3IOyTtCDrgqAg7IKs6rG0ICR7clN0Lm4xfSDCtyDrjIDsobAgJHtyU3QubjB9XG4ke3JXaW4ub2sgPyBgwrcg6rOg66W4IOq4sOqwhCAke3JXaW4uZGF5cy5sZW5ndGh97J28ICjsgqzqsbQgJHtyV2luLmRheXMuZmlsdGVyKGQgPT4gZC5sYWIgPT09IFwi7IKs6rG0XCIpLmxlbmd0aH0gwrcg64yA7KGwICR7cldpbi5kYXlzLmZpbHRlcihkID0+IGQubGFiID09PSBcIuuMgOyhsFwiKS5sZW5ndGh9IMK3IOu5iCDsi5zqsIEgJHtyV2luLnB0cy5maWx0ZXIoZCA9PiBkLnYgPT0gbnVsbCkubGVuZ3RofSlgIDogXCLCtyAqKuqzoOuluCDquLDqsITsnbQg7J20IOyngOygkOydmCDsnpDro4wg67CW7J6F64uI64ukKipcIn1cblxu7IKs6rG0IHZzIOuMgOyhsCDigJQgJHtyTGFiID8gckxhYi7rnbzrsqggOiBcIlwifS4gJHtyTGFiID8gckxhYi7qt5zsuZkgOiBcIlwifWBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InJXaW4ub2sgPyBQbG90LnBsb3Qoe1xuICB3aWR0aDogTWF0aC5taW4od2lkdGgsIDExMDApLCBoZWlnaHQ6IDMwMCwgbWFyZ2luTGVmdDogNTIsIHN0eWxlOiB7YmFja2dyb3VuZDogUkMuc3VyZmFjZX0sXG4gIHg6IHt0eXBlOiBcInV0Y1wiLCBsYWJlbDogbnVsbH0sIHk6IHtsYWJlbDogclVuaXQoclN0KSwgZ3JpZDogdHJ1ZX0sXG4gIGNvbG9yOiB7ZG9tYWluOiBbXCLsgqzqsbRcIiwgXCLrjIDsobBcIl0sIHJhbmdlOiBbUkMu7IKs6rG0LCBSQy7rjIDsobBdLCBsZWdlbmQ6IHRydWV9LFxuICBtYXJrczogW1xuICAgIFBsb3QucmVjdFgocldpbi5kYXlzLmZpbHRlcihkID0+IGQubGFiICE9PSBcIuyXhuydjFwiKSwge3gxOiBcInQwXCIsIHgyOiBcInQxXCIsIGZpbGw6IFwibGFiXCIsIGZpbGxPcGFjaXR5OiAwLjE2fSksXG4gICAgUGxvdC5saW5lWShyV2luLnB0cywge3g6IFwidFwiLCB5OiBcInZcIiwgc3Ryb2tlOiBSQy5pbmssIHN0cm9rZVdpZHRoOiAxLjIsIHRpcDoge2Zvcm1hdDoge3g6IGQgPT4gZC50b0lTT1N0cmluZygpLnNsaWNlKDAsIDE2KS5yZXBsYWNlKFwiVFwiLCBcIiBcIiksIHk6IHRydWV9fX0pXG4gIF1cbn0pIDogaHRtbGA8cD7si5zsnpHqs7wg64Gd7J2EICR7ZmQoclN0LmQwKX0gfiAke2ZkKHJTdC5kMSl9IOyViOyXkOyEnCDqs6DrpbTsi63si5zsmKQuPC9wPmBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InJDdXJ2ZXMgPSByV2luLm9rID8gcldpbi5kYXlzLmZpbHRlcihkID0+IGQudmFscy5zb21lKHYgPT4gdiAhPSBudWxsKSkuZmxhdE1hcChkID0+IGQudmFscy5tYXAoKHYsIGgpID0+ICh7aDogaCAqIDI0IC8gclJhdy5QLCB2LCBkYXk6IGQuaSwgbGFiOiBkLmxhYn0pKSkgOiBbXVxuck1lYW5zID0gW1wi7IKs6rG0XCIsIFwi64yA7KGwXCJdLmZsYXRNYXAobCA9PiB7XG4gIGNvbnN0IGRzID0gcldpbi5vayA/IHJXaW4uZGF5cy5maWx0ZXIoZCA9PiBkLmxhYiA9PT0gbCkgOiBbXVxuICBpZiAoIWRzLmxlbmd0aCkgcmV0dXJuIFtdXG4gIHJldHVybiBkMy5yYW5nZShyUmF3LlApLm1hcChoID0+ICh7aDogaCAqIDI0IC8gclJhdy5QLCB2OiBkMy5tZWFuKGRzLCBkID0+IGQudmFsc1toXSksIGxhYjogbH0pKVxufSlcbnJXaW4ub2sgPyBQbG90LnBsb3Qoe1xuICB3aWR0aDogTWF0aC5taW4od2lkdGgsIDcwMCksIGhlaWdodDogMzIwLCBtYXJnaW5MZWZ0OiA1Miwgc3R5bGU6IHtiYWNrZ3JvdW5kOiBSQy5zdXJmYWNlfSxcbiAgeDoge2xhYmVsOiBcIuyLnOqwgSAo7ZiE7KeAIO2RnOykgOyLnClcIiwgZG9tYWluOiBbMCwgMjRdLCB0aWNrczogWzAsIDYsIDEyLCAxOCwgMjRdfSwgeToge2xhYmVsOiByVW5pdChyU3QpLCBncmlkOiB0cnVlfSxcbiAgY29sb3I6IHtkb21haW46IFtcIuyCrOqxtFwiLCBcIuuMgOyhsFwiLCBcIuyXhuydjFwiXSwgcmFuZ2U6IFtSQy7sgqzqsbQsIFJDLuuMgOyhsCwgUkMu7JeG7J2MXSwgbGVnZW5kOiB0cnVlfSxcbiAgbWFya3M6IFtcbiAgICBQbG90LmxpbmVZKHJDdXJ2ZXMsIHt4OiBcImhcIiwgeTogXCJ2XCIsIHo6IFwiZGF5XCIsIHN0cm9rZTogXCJsYWJcIiwgc3Ryb2tlV2lkdGg6IDAuOCwgc3Ryb2tlT3BhY2l0eTogMC40NX0pLFxuICAgIFBsb3QubGluZVkock1lYW5zLCB7eDogXCJoXCIsIHk6IFwidlwiLCB6OiBcImxhYlwiLCBzdHJva2U6IFwibGFiXCIsIHN0cm9rZVdpZHRoOiAzfSksXG4gIF1cbn0pIDogaHRtbGBgXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTYiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJyRXZzID0gZDMucmFuZ2UoclJhdy5uKS5maWx0ZXIoaSA9PiByUmF3LmxhYltpXSA9PT0gXCIxXCIpLm1hcChpID0+IHltZChuZXcgRGF0ZShEYXRlLnBhcnNlKHJSYXcuZDAgKyBcIlQwMDowMDowMFpcIikgKyBpICogODY0ZTUpKSlcbm1kYOydtCDsp4DsoJDsnZgg7IKs6rG0IOuCoCAke3JFdnMubGVuZ3RofeydvCDigJQgJHtyRXZzLnNsaWNlKDAsIDQwKS5qb2luKFwiIMK3IFwiKX0ke3JFdnMubGVuZ3RoID4gNDAgPyBcIiDigKZcIiA6IFwiXCJ9YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC03IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoic3QgPSBGaWxlQXR0YWNobWVudChcImF0dGFjaG1lbnRzLzI2MTAxNV9jYTEwNzNfMDEuY3N2XCIpLmNzdih7dHlwZWQ6IHRydWV9KVxuYmFzZSA9IEZpbGVBdHRhY2htZW50KFwiYXR0YWNobWVudHMvMjYxMDE1X2NhMTA3M18wNC5qc29uXCIpLmpzb24oKVxuUkFNUCA9IFtcIiM5ZWM1ZjRcIiwgXCIjODZiNmVmXCIsIFwiIzZkYTdlY1wiLCBcIiM1NTk4ZTdcIiwgXCIjMzk4N2U1XCIsIFwiIzJhNzhkNlwiLCBcIiMyNTZhYmZcIiwgXCIjMWM1Y2FiXCIsIFwiIzE4NGY5NVwiLCBcIiMxMDQyODFcIiwgXCIjMGQzNjZiXCJdXG5JTksgPSAoe2xhbmQ6IFwiI2VmZWVlNlwiLCBib3JkZXI6IFwiI2M5YzdiZFwiLCBzdXJmYWNlOiBcIiNmY2ZjZjdcIiwgbXV0ZWQ6IFwiIzg5ODc4MVwiLCB0ZXh0OiBcIiMwYjBiMGJcIiwgYmFyOiBcIiMyYTc4ZDZcIiwgZG90OiBcIiM4NmI2ZWZcIiwgbWVhbjogXCIjMTg0Zjk1XCJ9KVxuS1JCT1ggPSAoe3R5cGU6IFwiTXVsdGlQb2ludFwiLCBjb29yZGluYXRlczogW1sxMjQuNCwgMzMuMF0sIFsxMzEuMiwgMzguN11dfSlcbmYzID0geCA9PiB4ID09IG51bGwgPyBcIlwiIDogeC50b0ZpeGVkKDMpXG5EMSA9IFtcIuyDge2VnFwiLCBcIkZQQ0FcIiwgXCJWTURcIiwgXCJDRUVNREFOXCIsIFwiRUVNRFwiLCBcIkVNRFwiXVxuTDEgPSAoe+yDge2VnDogXCLsnbztj4nqt6Ag7LWc7KCBIOusuO2EsSAo7Jik65287YG0KVwiLCBGUENBOiBcIkZQQ0FcIiwgVk1EOiBcIlZNRCtNRlBDQVwiLCBDRUVNREFOOiBcIkNFRU1EQU4rTUZQQ0FcIiwgRUVNRDogXCJFRU1EK01GUENBXCIsIEVNRDogXCJFTUQrTUZQQ0FcIn0pXG5mdW5jdGlvbiBnZW9QYW5lbChjb3VudHJ5LCB3LCBtYXJrcykge1xuICByZXR1cm4gUGxvdC5wbG90KHtcbiAgICB3aWR0aDogdywgaGVpZ2h0OiBNYXRoLnJvdW5kKHcgKiAoY291bnRyeSA9PT0gXCLtlZzqta1cIiA/IDEuMDUgOiAwLjYyKSksIHN0eWxlOiB7YmFja2dyb3VuZDogSU5LLnN1cmZhY2V9LFxuICAgIHByb2plY3Rpb246IGNvdW50cnkgPT09IFwi7ZWc6rWtXCIgPyB7dHlwZTogXCJtZXJjYXRvclwiLCBkb21haW46IEtSQk9YfSA6IHt0eXBlOiBcImFsYmVycy11c2FcIn0sXG4gICAgY29sb3I6IHt0eXBlOiBcInNxcnRcIiwgZG9tYWluOiBbMCwgMV0sIHJhbmdlOiBSQU1QLCBjbGFtcDogdHJ1ZSwgbGVnZW5kOiB0cnVlLCBsYWJlbDogXCJBUklcIiwgd2lkdGg6IE1hdGgubWluKHcsIDMyMCl9LFxuICAgIG1hcmtzOiBbUGxvdC5nZW8oYmFzZVtjb3VudHJ5XSwge2ZpbGw6IElOSy5sYW5kLCBzdHJva2U6IElOSy5ib3JkZXIsIHN0cm9rZVdpZHRoOiAwLjZ9KSwgLi4ubWFya3NdXG4gIH0pXG59XG5mdW5jdGlvbiBwYW5lbHMoY3MsIG1ha2UpIHtcbiAgY29uc3QgdyA9IGNzLmxlbmd0aCA+IDEgPyBNYXRoLm1heCgyODAsIE1hdGgubWluKE1hdGguZmxvb3IoKHdpZHRoIC0gNzIpIC8gMiksIDU2MCkpIDogTWF0aC5taW4od2lkdGggLSAxNiwgNjgwKVxuICByZXR1cm4gaHRtbGA8ZGl2IHN0eWxlPVwiZGlzcGxheTpmbGV4O2ZsZXgtd3JhcDp3cmFwO2dhcDoyNHB4O2FsaWduLWl0ZW1zOmZsZXgtc3RhcnRcIj4ke2NzLm1hcChjID0+IGh0bWxgPGZpZ3VyZSBzdHlsZT1cIm1hcmdpbjowXCI+PGZpZ2NhcHRpb24gc3R5bGU9XCJjb2xvcjoke0lOSy5tdXRlZH07Zm9udC1zaXplOjAuOWVtXCI+JHtjfTwvZmlnY2FwdGlvbj4ke21ha2UoYywgdyl9PC9maWd1cmU+YCl9PC9kaXY+YFxufVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC04IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIHNyYzEgPSBJbnB1dHMuc2VsZWN0KGluZm8ubWFwKGQgPT4gZC7snpDro4wpLCB7bGFiZWw6IFwi7J6Q66OMXCIsIHZhbHVlOiBcIuyXkOyWtOy9lOumrOyVhFwifSlcbnZpZXdvZiBkZXMxID0gSW5wdXRzLnNlbGVjdChEMSwge2xhYmVsOiBcIuyngOuPhCDsg4lcIiwgdmFsdWU6IFwiVk1EXCIsIGZvcm1hdDogZCA9PiBMMVtkXX0pXG52aWV3b2YgcTEgPSBJbnB1dHMuc2VhcmNoKHN0LmZpbHRlcihkID0+IGQu7J6Q66OMID09PSBzcmMxKSwge2xhYmVsOiBcIuywvuq4sFwiLCBwbGFjZWhvbGRlcjogXCLsp4DsoJAgwrcg7KeA7JetXCIsIHdpZHRoOiAxNTB9KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC05IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiYWxsMSA9IHN0LmZpbHRlcihkID0+IGQu7J6Q66OMID09PSBzcmMxKVxub2sxID0gYWxsMS5maWx0ZXIoZCA9PiBkLuyDge2DnCA9PT0gXCLqs4TsgrBcIilcbmxhYjEgPSBpbmZvLmZpbmQoZCA9PiBkLuyekOujjCA9PT0gc3JjMSlcbm1kYCoqJHtzcmMxfSoqIMK3ICR7bGFiMS7rs4DsiJh9IMK3ICR7bGFiMS7quLDqsIR9IOKAlCDsp4DsoJAgJHthbGwxLmxlbmd0aC50b0xvY2FsZVN0cmluZygpfeqzsyDCtyDqs4TsgrAgJHtvazEubGVuZ3RoLnRvTG9jYWxlU3RyaW5nKCl9IMK3IOudvOuyqCDrtoDsobEgJHthbGwxLmZpbHRlcihkID0+IGQu7IOB7YOcID09PSBcIuudvOuyqCDrtoDsobFcIikubGVuZ3RofSDCtyDsnpDro4wg7JeG7J2MICR7YWxsMS5maWx0ZXIoZCA9PiBkLuyDge2DnCA9PT0gXCLsnpDro4wg7JeG7J2MXCIpLmxlbmd0aH1cblxu7IKs6rG0IHZzIOuMgOyhsCDigJQgJHtsYWIxLuudvOuyqH0uICR7bGFiMS7qt5zsuZl9YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0xMCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImF2ZzEgPSBEMS5tYXAoayA9PiAoe+yEpOqzhDogTDFba10sIEFSSTogZDMubWVhbihvazEsIGQgPT4gZFtrXSl9KSlcblBsb3QucGxvdCh7XG4gIHdpZHRoOiBNYXRoLm1pbih3aWR0aCwgNjIwKSwgaGVpZ2h0OiAzMCAqIEQxLmxlbmd0aCArIDQ0LCBtYXJnaW5MZWZ0OiAxMDQsIG1hcmdpblJpZ2h0OiA0OCwgc3R5bGU6IHtiYWNrZ3JvdW5kOiBJTksuc3VyZmFjZX0sXG4gIHg6IHtkb21haW46IFswLCAxXSwgZ3JpZDogdHJ1ZSwgbGFiZWw6IGDqs4TsgrDtlZwg7KeA7KCQICR7b2sxLmxlbmd0aC50b0xvY2FsZVN0cmluZygpfeqzsyDtj4nqt6AgQVJJYH0sXG4gIHk6IHtsYWJlbDogbnVsbCwgZG9tYWluOiBhdmcxLm1hcChkID0+IGQu7ISk6rOEKX0sXG4gIG1hcmtzOiBbXG4gICAgUGxvdC5iYXJYKGF2ZzEsIHt4OiBcIkFSSVwiLCB5OiBcIuyEpOqzhFwiLCBmaWxsOiBJTksuYmFyLCBpbnNldFRvcDogNiwgaW5zZXRCb3R0b206IDYsIHRpcDoge2Zvcm1hdDoge3g6IFwiLjNmXCJ9fX0pLFxuICAgIFBsb3QudGV4dChhdmcxLCB7eDogXCJBUklcIiwgeTogXCLshKTqs4RcIiwgdGV4dDogZCA9PiBmMyhkLkFSSSksIGR4OiA2LCB0ZXh0QW5jaG9yOiBcInN0YXJ0XCIsIGZpbGw6IElOSy50ZXh0fSksXG4gICAgUGxvdC5ydWxlWChbMF0sIHtzdHJva2U6IElOSy5ib3JkZXJ9KVxuICBdXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0xMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InB0czEgPSBxMS5maWx0ZXIoZCA9PiBkLuychOuPhCAhPSBudWxsKVxucGFuZWxzKFtcIu2VnOq1rVwiLCBcIuuvuOq1rVwiXS5maWx0ZXIoYyA9PiBwdHMxLnNvbWUoZCA9PiBkLuuCmOudvCA9PT0gYykpLCAoYywgdykgPT4gZ2VvUGFuZWwoYywgdywgW1xuICBQbG90LmRvdChwdHMxLmZpbHRlcihkID0+IGQu64KY6528ID09PSBjICYmIGQu7IOB7YOcICE9PSBcIuqzhOyCsFwiKSwge3g6IFwi6rK964+EXCIsIHk6IFwi7JyE64+EXCIsIHI6IDMsIHN0cm9rZTogSU5LLm11dGVkLCBzdHJva2VXaWR0aDogMSwgZmlsbDogXCJub25lXCIsXG4gICAgdGlwOiB7Zm9ybWF0OiB7eDogZmFsc2UsIHk6IGZhbHNlfX0sIGNoYW5uZWxzOiB77KeA7KCQOiBcIuyngOygkFwiLCDsp4Dsl606IFwi7KeA7JetXCIsIOyDge2DnDogXCLsg4Htg5xcIn19KSxcbiAgUGxvdC5kb3QocHRzMS5maWx0ZXIoZCA9PiBkLuuCmOudvCA9PT0gYyAmJiBkLuyDge2DnCA9PT0gXCLqs4TsgrBcIiksIHt4OiBcIuqyveuPhFwiLCB5OiBcIuychOuPhFwiLCByOiA0LjUsIGZpbGw6IGQgPT4gZFtkZXMxXSwgc3Ryb2tlOiBJTksuc3VyZmFjZSwgc3Ryb2tlV2lkdGg6IDEuMixcbiAgICBzb3J0OiBkID0+IGRbZGVzMV0sIHRpcDoge2Zvcm1hdDoge3g6IGZhbHNlLCB5OiBmYWxzZSwgZmlsbDogXCIuM2ZcIn19LCBjaGFubmVsczoge+yngOygkDogXCLsp4DsoJBcIiwg7KeA7JetOiBcIuyngOyXrVwiLCDrrLzsp4g6IFwi66y87KeIXCJ9fSlcbl0pKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0xMiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IklucHV0cy50YWJsZShxMSwge1xuICBjb2x1bW5zOiBbXCLsp4Dsl61cIiwgXCLsp4DsoJBcIiwgLi4uKHNyYzEuaW5jbHVkZXMoXCJFUEFcIikgPyBbXCLrrLzsp4hcIl0gOiBbXSksIFwi7IKs6rG0XCIsIFwi64yA7KGwXCIsIFwi7IOB7YOcXCIsIC4uLkQxXSxcbiAgaGVhZGVyOiBMMSwgZm9ybWF0OiBPYmplY3QuZnJvbUVudHJpZXMoRDEubWFwKGsgPT4gW2ssIGYzXSkpLFxuICBzb3J0OiBkZXMxLCByZXZlcnNlOiB0cnVlLCByb3dzOiAxNiwgbGF5b3V0OiBcImF1dG9cIiwgbWF4V2lkdGg6IHdpZHRoXG59KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdyU3JjJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3JTdCcpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdyVDAnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnclQxJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NyYzEnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnZGVzMScpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdxMScpIn1dfQ==
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
