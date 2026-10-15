@@ -244,7 +244,7 @@ window.Quarto = {
 <section id="성능-비교-지점별" class="level1">
 <h1>3. 성능 비교 — 지점별</h1>
 <p><code>-</code> 일평균 최적 문턱 (오라클) = 하루 평균 하나에, 라벨을 보고 고른 가장 좋은 문턱을 그어 가른 결과. 라벨을 미리 보므로 방법이 아니라 비교 기준.</p>
-<p><code>-</code> FPCA = 하루 곡선을 B-스플라인 → FPCA. VMD+MFPCA (CEEMDAN · EEMD · EMD 도 같음) = 그 분해로 나눈 성분을 하루 주기에 맞게 보정한 뒤 B-스플라인 → MFPCA. 모두 k-means (k = 2) 이고 값은 ARI.</p>
+<p><code>-</code> FPCA = 하루 곡선을 B-스플라인 → FPCA. VMD+MFPCA (CEEMDAN · EEMD · EMD 도 같음) = 그 분해로 나눈 성분마다 이틀보다 느린 변동을 걷어내고 (네 분해 모두 같은 필터) 하루 주기에 맞게 보정한 뒤 B-스플라인 → MFPCA, 그 점수에 하루 평균 (수준 점수) 을 더해 k-means. 모두 k-means (k = 2) 이고 값은 ARI.</p>
 <p><code>-</code> 탭마다 표 아래에 지점 지도와 ARI 상자 그림, 그 아래에 분해 그림 (리포트 1 의 4 × 7 꼴) — 분해 그림 지점은 그 자료에서 X+MFPCA 넷 중 가장 높은 ARI 가 가장 큰 곳 (사건 · 대조 각 30일 이상 — 그보다 적으면 사건 하루짜리가 ARI 1 로 뽑힘).</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">에어코리아</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">EPA AQS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">OpenAQ</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">WEIS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">USGS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false" href="">기상청 ASOS ①</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false" href="">기상청 ASOS ②</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-8" role="tab" aria-controls="tabset-1-8" aria-selected="false" href="">NOAA ISD</a></li></ul>
@@ -277,55 +277,55 @@ window.Quarto = {
 <td><strong>평균</strong></td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.796}\)</span></td>
 <td style="text-align: right;">0.512</td>
-<td style="text-align: right;">0.260</td>
-<td style="text-align: right;">0.514</td>
-<td style="text-align: right;">0.524</td>
-<td style="text-align: right;">0.469</td>
+<td style="text-align: right;">0.503</td>
+<td style="text-align: right;">0.509</td>
+<td style="text-align: right;">0.512</td>
+<td style="text-align: right;">0.507</td>
 </tr>
 <tr class="even">
 <td>중앙값</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.801}\)</span></td>
 <td style="text-align: right;">0.695</td>
-<td style="text-align: right;">0.161</td>
-<td style="text-align: right;">0.677</td>
-<td style="text-align: right;">0.688</td>
-<td style="text-align: right;">0.655</td>
+<td style="text-align: right;">0.661</td>
+<td style="text-align: right;">0.656</td>
+<td style="text-align: right;">0.664</td>
+<td style="text-align: right;">0.660</td>
 </tr>
 <tr class="odd">
 <td>아래 25%</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.764}\)</span></td>
 <td style="text-align: right;">0.057</td>
-<td style="text-align: right;">0.007</td>
-<td style="text-align: right;">0.077</td>
-<td style="text-align: right;">0.097</td>
-<td style="text-align: right;">0.044</td>
+<td style="text-align: right;">0.090</td>
+<td style="text-align: right;">0.132</td>
+<td style="text-align: right;">0.140</td>
+<td style="text-align: right;">0.149</td>
 </tr>
 <tr class="even">
 <td>위 25%</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.835}\)</span></td>
 <td style="text-align: right;">0.761</td>
-<td style="text-align: right;">0.528</td>
-<td style="text-align: right;">0.756</td>
-<td style="text-align: right;">0.762</td>
-<td style="text-align: right;">0.750</td>
+<td style="text-align: right;">0.741</td>
+<td style="text-align: right;">0.737</td>
+<td style="text-align: right;">0.741</td>
+<td style="text-align: right;">0.738</td>
 </tr>
 <tr class="odd">
 <td>1등 지점 수</td>
-<td style="text-align: right;">626</td>
+<td style="text-align: right;">619</td>
 <td style="text-align: right;">12</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;">17</td>
-<td style="text-align: right;">19</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">14</td>
 </tr>
 <tr class="even">
 <td>1등 지점 수 (오라클 빼고)</td>
 <td style="text-align: right;">—</td>
-<td style="text-align: right;">268</td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">190</td>
-<td style="text-align: right;">200</td>
-<td style="text-align: right;">153</td>
+<td style="text-align: right;">319</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">111</td>
+<td style="text-align: right;">132</td>
+<td style="text-align: right;">122</td>
 </tr>
 </tbody>
 </table>
@@ -354,7 +354,7 @@ window.Quarto = {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_c90dd3_03.png" class="img-fluid figure-img"></p>
-<figcaption>분해 그림 — 조치원읍 (세종특별자치시) · CEEMDAN+MFPCA 0.868 (FPCA 0.825) · 사건 33 / 대조 719 · 이 자료에서 X+MFPCA 가 가장 높은 곳</figcaption>
+<figcaption>분해 그림 — 노송동 (전북특별자치도) · CEEMDAN+MFPCA 0.887 (FPCA 0.820) · 사건 48 / 대조 790 · 이 자료에서 X+MFPCA 가 가장 높은 곳</figcaption>
 </figure>
 </div>
 </div>
@@ -389,73 +389,73 @@ window.Quarto = {
 <td><strong>평균</strong></td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.610}\)</span></td>
 <td style="text-align: right;">0.076</td>
-<td style="text-align: right;">0.077</td>
-<td style="text-align: right;">0.074</td>
-<td style="text-align: right;">0.083</td>
-<td style="text-align: right;">0.061</td>
+<td style="text-align: right;">0.105</td>
+<td style="text-align: right;">0.106</td>
+<td style="text-align: right;">0.108</td>
+<td style="text-align: right;">0.105</td>
 </tr>
 <tr class="even">
 <td>평균 PM2.5</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.801}\)</span></td>
 <td style="text-align: right;">0.130</td>
-<td style="text-align: right;">0.117</td>
-<td style="text-align: right;">0.128</td>
-<td style="text-align: right;">0.133</td>
-<td style="text-align: right;">0.093</td>
+<td style="text-align: right;">0.175</td>
+<td style="text-align: right;">0.177</td>
+<td style="text-align: right;">0.176</td>
+<td style="text-align: right;">0.175</td>
 </tr>
 <tr class="odd">
 <td>평균 O3</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.440}\)</span></td>
 <td style="text-align: right;">0.027</td>
-<td style="text-align: right;">0.041</td>
-<td style="text-align: right;">0.025</td>
-<td style="text-align: right;">0.038</td>
-<td style="text-align: right;">0.032</td>
+<td style="text-align: right;">0.043</td>
+<td style="text-align: right;">0.042</td>
+<td style="text-align: right;">0.047</td>
+<td style="text-align: right;">0.043</td>
 </tr>
 <tr class="even">
 <td>중앙값</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.602}\)</span></td>
 <td style="text-align: right;">0.011</td>
-<td style="text-align: right;">0.010</td>
-<td style="text-align: right;">0.010</td>
-<td style="text-align: right;">0.015</td>
-<td style="text-align: right;">0.009</td>
+<td style="text-align: right;">0.016</td>
+<td style="text-align: right;">0.016</td>
+<td style="text-align: right;">0.019</td>
+<td style="text-align: right;">0.017</td>
 </tr>
 <tr class="odd">
 <td>아래 25%</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.386}\)</span></td>
 <td style="text-align: right;">0.001</td>
 <td style="text-align: right;">0.002</td>
-<td style="text-align: right;">0.001</td>
 <td style="text-align: right;">0.002</td>
-<td style="text-align: right;">0.000</td>
+<td style="text-align: right;">0.003</td>
+<td style="text-align: right;">0.002</td>
 </tr>
 <tr class="even">
 <td>위 25%</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.881}\)</span></td>
 <td style="text-align: right;">0.063</td>
-<td style="text-align: right;">0.056</td>
-<td style="text-align: right;">0.052</td>
-<td style="text-align: right;">0.069</td>
-<td style="text-align: right;">0.043</td>
+<td style="text-align: right;">0.089</td>
+<td style="text-align: right;">0.099</td>
+<td style="text-align: right;">0.108</td>
+<td style="text-align: right;">0.108</td>
 </tr>
 <tr class="odd">
 <td>1등 지점 수</td>
 <td style="text-align: right;">797</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">11</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">13</td>
 <td style="text-align: right;">10</td>
 </tr>
 <tr class="even">
 <td>1등 지점 수 (오라클 빼고)</td>
 <td style="text-align: right;">—</td>
+<td style="text-align: right;">230</td>
+<td style="text-align: right;">160</td>
+<td style="text-align: right;">149</td>
+<td style="text-align: right;">248</td>
 <td style="text-align: right;">194</td>
-<td style="text-align: right;">229</td>
-<td style="text-align: right;">133</td>
-<td style="text-align: right;">244</td>
-<td style="text-align: right;">150</td>
 </tr>
 </tbody>
 </table>
@@ -484,7 +484,7 @@ window.Quarto = {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_c90dd3_06.png" class="img-fluid figure-img"></p>
-<figcaption>분해 그림 — Table Mountain Air Monitoring Site (California / Fresno, CA) · VMD+MFPCA 0.438 (FPCA 0.190) · 사건 92 / 대조 1308 · 이 자료에서 X+MFPCA 가 가장 높은 곳</figcaption>
+<figcaption>분해 그림 — Eliza Howell-NR (Michigan / Detroit-Warren-Dearborn, MI) · CEEMDAN+MFPCA 0.512 (FPCA 0.087) · 사건 33 / 대조 1537 · 이 자료에서 X+MFPCA 가 가장 높은 곳</figcaption>
 </figure>
 </div>
 </div>
@@ -514,7 +514,7 @@ window.Quarto = {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_c90dd3_09.png" class="img-fluid figure-img"></p>
-<figcaption>분해 그림 — Redlands (California / Riverside-San Bernardino-Ontario, CA) · EMD+MFPCA 0.692 (FPCA 0.655) · 사건 579 / 대조 1136 · 이 자료에서 X+MFPCA 가 가장 높은 곳</figcaption>
+<figcaption>분해 그림 — Redlands (California / Riverside-San Bernardino-Ontario, CA) · CEEMDAN+MFPCA 0.722 (FPCA 0.655) · 사건 579 / 대조 1136 · 이 자료에서 X+MFPCA 가 가장 높은 곳</figcaption>
 </figure>
 </div>
 </div>
@@ -558,10 +558,10 @@ window.Quarto = {
 <td style="text-align: right;"></td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.878}\)</span></td>
 <td style="text-align: right;">0.419</td>
-<td style="text-align: right;">0.244</td>
-<td style="text-align: right;">0.335</td>
-<td style="text-align: right;">0.480</td>
-<td style="text-align: right;">0.402</td>
+<td style="text-align: right;">0.500</td>
+<td style="text-align: right;">0.430</td>
+<td style="text-align: right;">0.468</td>
+<td style="text-align: right;">0.468</td>
 </tr>
 <tr class="even">
 <td>California / Los Angeles-Long Beach-Anaheim, CA</td>
@@ -571,9 +571,9 @@ window.Quarto = {
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.903}\)</span></td>
 <td style="text-align: right;">0.203</td>
 <td style="text-align: right;">0.203</td>
-<td style="text-align: right;">0.203</td>
-<td style="text-align: right;">0.203</td>
-<td style="text-align: right;">0.203</td>
+<td style="text-align: right;">0.140</td>
+<td style="text-align: right;">0.140</td>
+<td style="text-align: right;">0.140</td>
 </tr>
 <tr class="odd">
 <td>서울특별시</td>
@@ -582,10 +582,10 @@ window.Quarto = {
 <td style="text-align: right;">11 / 258</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.853}\)</span></td>
 <td style="text-align: right;">0.635</td>
-<td style="text-align: right;">0.284</td>
-<td style="text-align: right;">0.468</td>
-<td style="text-align: right;">0.757</td>
-<td style="text-align: right;">0.601</td>
+<td style="text-align: right;">0.797</td>
+<td style="text-align: right;">0.720</td>
+<td style="text-align: right;">0.797</td>
+<td style="text-align: right;">0.797</td>
 </tr>
 </tbody>
 </table>
@@ -593,7 +593,7 @@ window.Quarto = {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_c90dd3_10.png" class="img-fluid figure-img"></p>
-<figcaption>분해 그림 — 서울 종로구 (서울특별시) · EEMD+MFPCA 0.757 (FPCA 0.635) · 사건 11 / 대조 258 · 두 곳 중 X+MFPCA 가 더 높은 곳</figcaption>
+<figcaption>분해 그림 — 서울 종로구 (서울특별시) · VMD+MFPCA 0.797 (FPCA 0.635) · 사건 11 / 대조 258 · 두 곳 중 X+MFPCA 가 더 높은 곳</figcaption>
 </figure>
 </div>
 </div>
@@ -631,10 +631,10 @@ window.Quarto = {
 <td style="text-align: right;"></td>
 <td style="text-align: right;">0.163</td>
 <td style="text-align: right;">0.064</td>
-<td style="text-align: right;">0.133</td>
-<td style="text-align: right;">0.044</td>
-<td style="text-align: right;">0.033</td>
-<td style="text-align: right;">0.026</td>
+<td style="text-align: right;">0.062</td>
+<td style="text-align: right;">0.062</td>
+<td style="text-align: right;">0.054</td>
+<td style="text-align: right;">0.058</td>
 </tr>
 <tr class="even">
 <td>강원특별자치도 · 한강 수계</td>
@@ -642,10 +642,10 @@ window.Quarto = {
 <td style="text-align: right;">20 / 907</td>
 <td style="text-align: right;">0.109</td>
 <td style="text-align: right;">-0.009</td>
-<td style="text-align: right;">0.065</td>
-<td style="text-align: right;">-0.006</td>
-<td style="text-align: right;">-0.006</td>
-<td style="text-align: right;">-0.006</td>
+<td style="text-align: right;">-0.001</td>
+<td style="text-align: right;">0.006</td>
+<td style="text-align: right;">-0.001</td>
+<td style="text-align: right;">0.002</td>
 </tr>
 <tr class="odd">
 <td>경상남도 · 낙동강 수계</td>
@@ -653,10 +653,10 @@ window.Quarto = {
 <td style="text-align: right;">312 / 520</td>
 <td style="text-align: right;">0.119</td>
 <td style="text-align: right;">0.082</td>
-<td style="text-align: right;">0.080</td>
-<td style="text-align: right;">0.100</td>
-<td style="text-align: right;">0.095</td>
+<td style="text-align: right;">0.082</td>
 <td style="text-align: right;">0.081</td>
+<td style="text-align: right;">0.075</td>
+<td style="text-align: right;">0.085</td>
 </tr>
 <tr class="even">
 <td>경상남도 · 낙동강 수계</td>
@@ -664,10 +664,10 @@ window.Quarto = {
 <td style="text-align: right;">382 / 575</td>
 <td style="text-align: right;">0.055</td>
 <td style="text-align: right;">0.064</td>
-<td style="text-align: right;">0.127</td>
-<td style="text-align: right;">0.063</td>
-<td style="text-align: right;">0.062</td>
-<td style="text-align: right;">0.075</td>
+<td style="text-align: right;">0.076</td>
+<td style="text-align: right;">0.074</td>
+<td style="text-align: right;">0.068</td>
+<td style="text-align: right;">0.065</td>
 </tr>
 <tr class="odd">
 <td>경상남도 · 낙동강 수계</td>
@@ -675,10 +675,10 @@ window.Quarto = {
 <td style="text-align: right;">417 / 581</td>
 <td style="text-align: right;">0.060</td>
 <td style="text-align: right;">0.045</td>
-<td style="text-align: right;">0.061</td>
-<td style="text-align: right;">0.070</td>
+<td style="text-align: right;">0.054</td>
 <td style="text-align: right;">0.051</td>
-<td style="text-align: right;">0.043</td>
+<td style="text-align: right;">0.048</td>
+<td style="text-align: right;">0.049</td>
 </tr>
 <tr class="even">
 <td>경상북도 · 낙동강 수계</td>
@@ -686,10 +686,10 @@ window.Quarto = {
 <td style="text-align: right;">179 / 646</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.269}\)</span></td>
 <td style="text-align: right;">0.027</td>
-<td style="text-align: right;">0.199</td>
-<td style="text-align: right;">0.021</td>
-<td style="text-align: right;">0.050</td>
-<td style="text-align: right;">0.001</td>
+<td style="text-align: right;">0.059</td>
+<td style="text-align: right;">0.054</td>
+<td style="text-align: right;">0.048</td>
+<td style="text-align: right;">0.044</td>
 </tr>
 <tr class="odd">
 <td>경상북도 · 낙동강 수계</td>
@@ -697,10 +697,10 @@ window.Quarto = {
 <td style="text-align: right;">142 / 784</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.353}\)</span></td>
 <td style="text-align: right;">0.015</td>
-<td style="text-align: right;">0.154</td>
-<td style="text-align: right;">0.032</td>
-<td style="text-align: right;">-0.032</td>
-<td style="text-align: right;">-0.024</td>
+<td style="text-align: right;">0.055</td>
+<td style="text-align: right;">0.050</td>
+<td style="text-align: right;">0.048</td>
+<td style="text-align: right;">0.056</td>
 </tr>
 <tr class="even">
 <td>전라남도 · 영산·섬진 수계</td>
@@ -708,10 +708,10 @@ window.Quarto = {
 <td style="text-align: right;">14 / 996</td>
 <td style="text-align: right;">0.002</td>
 <td style="text-align: right;">0.000</td>
-<td style="text-align: right;">0.002</td>
-<td style="text-align: right;">0.002</td>
-<td style="text-align: right;">0.001</td>
-<td style="text-align: right;">0.003</td>
+<td style="text-align: right;">-0.006</td>
+<td style="text-align: right;">-0.004</td>
+<td style="text-align: right;">-0.006</td>
+<td style="text-align: right;">-0.006</td>
 </tr>
 <tr class="odd">
 <td>전북특별자치도 · 금강 수계</td>
@@ -719,10 +719,10 @@ window.Quarto = {
 <td style="text-align: right;">71 / 1074</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.216}\)</span></td>
 <td style="text-align: right;">-0.001</td>
-<td style="text-align: right;">0.203</td>
-<td style="text-align: right;">0.001</td>
-<td style="text-align: right;">0.001</td>
-<td style="text-align: right;">-0.000</td>
+<td style="text-align: right;">-0.002</td>
+<td style="text-align: right;">-0.002</td>
+<td style="text-align: right;">-0.002</td>
+<td style="text-align: right;">-0.002</td>
 </tr>
 <tr class="even">
 <td>충청북도 · 금강 수계</td>
@@ -730,10 +730,10 @@ window.Quarto = {
 <td style="text-align: right;">178 / 986</td>
 <td style="text-align: right;">0.280</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.357}\)</span></td>
-<td style="text-align: right;">0.306</td>
-<td style="text-align: right;">0.110</td>
-<td style="text-align: right;">0.079</td>
-<td style="text-align: right;">0.059</td>
+<td style="text-align: right;">0.243</td>
+<td style="text-align: right;">0.249</td>
+<td style="text-align: right;">0.203</td>
+<td style="text-align: right;">0.233</td>
 </tr>
 </tbody>
 </table>
@@ -762,7 +762,7 @@ window.Quarto = {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_c90dd3_13.png" class="img-fluid figure-img"></p>
-<figcaption>분해 그림 — 대청호 (충청북도 · 금강 수계) · VMD+MFPCA 0.306 (FPCA 0.357) · 사건 178 / 대조 986 · 이 자료에서 X+MFPCA 가 가장 높은 곳</figcaption>
+<figcaption>분해 그림 — 대청호 (충청북도 · 금강 수계) · CEEMDAN+MFPCA 0.249 (FPCA 0.357) · 사건 178 / 대조 986 · 이 자료에서 X+MFPCA 가 가장 높은 곳</figcaption>
 </figure>
 </div>
 </div>
@@ -797,55 +797,55 @@ window.Quarto = {
 <td><strong>평균</strong></td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.214}\)</span></td>
 <td style="text-align: right;">0.095</td>
-<td style="text-align: right;">0.134</td>
-<td style="text-align: right;">0.096</td>
-<td style="text-align: right;">0.088</td>
-<td style="text-align: right;">0.078</td>
+<td style="text-align: right;">0.093</td>
+<td style="text-align: right;">0.097</td>
+<td style="text-align: right;">0.097</td>
+<td style="text-align: right;">0.097</td>
 </tr>
 <tr class="even">
 <td>중앙값</td>
 <td style="text-align: right;">0.173</td>
 <td style="text-align: right;">0.028</td>
-<td style="text-align: right;">0.068</td>
 <td style="text-align: right;">0.030</td>
-<td style="text-align: right;">0.026</td>
-<td style="text-align: right;">0.026</td>
+<td style="text-align: right;">0.032</td>
+<td style="text-align: right;">0.033</td>
+<td style="text-align: right;">0.036</td>
 </tr>
 <tr class="odd">
 <td>아래 25%</td>
 <td style="text-align: right;">0.085</td>
 <td style="text-align: right;">0.000</td>
-<td style="text-align: right;">-0.001</td>
-<td style="text-align: right;">0.000</td>
-<td style="text-align: right;">0.001</td>
-<td style="text-align: right;">0.001</td>
+<td style="text-align: right;">-0.000</td>
+<td style="text-align: right;">-0.000</td>
+<td style="text-align: right;">-0.000</td>
+<td style="text-align: right;">-0.000</td>
 </tr>
 <tr class="even">
 <td>위 25%</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.307}\)</span></td>
 <td style="text-align: right;">0.117</td>
-<td style="text-align: right;">0.234</td>
-<td style="text-align: right;">0.112</td>
-<td style="text-align: right;">0.112</td>
-<td style="text-align: right;">0.101</td>
+<td style="text-align: right;">0.123</td>
+<td style="text-align: right;">0.126</td>
+<td style="text-align: right;">0.131</td>
+<td style="text-align: right;">0.134</td>
 </tr>
 <tr class="odd">
 <td>1등 지점 수</td>
-<td style="text-align: right;">347</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;">123</td>
-<td style="text-align: right;">30</td>
-<td style="text-align: right;">24</td>
-<td style="text-align: right;">19</td>
+<td style="text-align: right;">413</td>
+<td style="text-align: right;">49</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">26</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">23</td>
 </tr>
 <tr class="even">
 <td>1등 지점 수 (오라클 빼고)</td>
 <td style="text-align: right;">—</td>
-<td style="text-align: right;">79</td>
-<td style="text-align: right;">244</td>
-<td style="text-align: right;">89</td>
-<td style="text-align: right;">69</td>
-<td style="text-align: right;">99</td>
+<td style="text-align: right;">223</td>
+<td style="text-align: right;">95</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">100</td>
 </tr>
 </tbody>
 </table>
@@ -874,7 +874,7 @@ window.Quarto = {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_c90dd3_16.png" class="img-fluid figure-img"></p>
-<figcaption>분해 그림 — Spavinaw Creek near Colcord, OK (Oklahoma (OK) · CBSA 경계상 대응 없음) · EMD+MFPCA 0.878 (FPCA 0.878) · 사건 58 / 대조 103 · 이 자료에서 X+MFPCA 가 가장 높은 곳</figcaption>
+<figcaption>분해 그림 — MIDDLE FORK WILLAMETTE RIVER NEAR DEXTER, OR (Oregon (OR) · Eugene-Springfield, OR 대도시권) · VMD+MFPCA 0.816 (FPCA 0.816) · 사건 61 / 대조 85 · 이 자료에서 X+MFPCA 가 가장 높은 곳</figcaption>
 </figure>
 </div>
 </div>
@@ -915,10 +915,10 @@ window.Quarto = {
 <td style="text-align: right;"></td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.798}\)</span></td>
 <td style="text-align: right;">0.059</td>
-<td style="text-align: right;">0.001</td>
-<td style="text-align: right;">0.073</td>
-<td style="text-align: right;">0.073</td>
-<td style="text-align: right;">0.045</td>
+<td style="text-align: right;">-0.023</td>
+<td style="text-align: right;">-0.019</td>
+<td style="text-align: right;">-0.020</td>
+<td style="text-align: right;">-0.017</td>
 </tr>
 <tr class="even">
 <td>대구광역시</td>
@@ -927,9 +927,9 @@ window.Quarto = {
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.801}\)</span></td>
 <td style="text-align: right;">0.082</td>
 <td style="text-align: right;">-0.004</td>
-<td style="text-align: right;">0.083</td>
-<td style="text-align: right;">0.074</td>
-<td style="text-align: right;">0.075</td>
+<td style="text-align: right;">0.004</td>
+<td style="text-align: right;">-0.001</td>
+<td style="text-align: right;">-0.001</td>
 </tr>
 <tr class="odd">
 <td>대전광역시</td>
@@ -937,10 +937,10 @@ window.Quarto = {
 <td style="text-align: right;">179 / 1644</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.833}\)</span></td>
 <td style="text-align: right;">0.053</td>
-<td style="text-align: right;">-0.000</td>
-<td style="text-align: right;">0.069</td>
-<td style="text-align: right;">0.081</td>
-<td style="text-align: right;">0.040</td>
+<td style="text-align: right;">-0.015</td>
+<td style="text-align: right;">-0.002</td>
+<td style="text-align: right;">-0.008</td>
+<td style="text-align: right;">0.013</td>
 </tr>
 <tr class="even">
 <td>부산광역시</td>
@@ -948,10 +948,10 @@ window.Quarto = {
 <td style="text-align: right;">188 / 1637</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.866}\)</span></td>
 <td style="text-align: right;">0.086</td>
-<td style="text-align: right;">-0.001</td>
-<td style="text-align: right;">0.066</td>
-<td style="text-align: right;">0.083</td>
-<td style="text-align: right;">0.054</td>
+<td style="text-align: right;">-0.047</td>
+<td style="text-align: right;">-0.049</td>
+<td style="text-align: right;">-0.045</td>
+<td style="text-align: right;">-0.043</td>
 </tr>
 <tr class="odd">
 <td>서울특별시</td>
@@ -959,10 +959,10 @@ window.Quarto = {
 <td style="text-align: right;">186 / 1640</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.807}\)</span></td>
 <td style="text-align: right;">0.064</td>
-<td style="text-align: right;">0.016</td>
-<td style="text-align: right;">0.131</td>
-<td style="text-align: right;">0.102</td>
-<td style="text-align: right;">0.055</td>
+<td style="text-align: right;">-0.024</td>
+<td style="text-align: right;">-0.021</td>
+<td style="text-align: right;">-0.023</td>
+<td style="text-align: right;">-0.026</td>
 </tr>
 <tr class="even">
 <td>울산광역시</td>
@@ -970,10 +970,10 @@ window.Quarto = {
 <td style="text-align: right;">105 / 1721</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.706}\)</span></td>
 <td style="text-align: right;">0.022</td>
-<td style="text-align: right;">-0.001</td>
-<td style="text-align: right;">0.025</td>
-<td style="text-align: right;">0.020</td>
-<td style="text-align: right;">0.013</td>
+<td style="text-align: right;">-0.023</td>
+<td style="text-align: right;">-0.024</td>
+<td style="text-align: right;">-0.021</td>
+<td style="text-align: right;">-0.020</td>
 </tr>
 <tr class="odd">
 <td>인천광역시</td>
@@ -981,10 +981,10 @@ window.Quarto = {
 <td style="text-align: right;">150 / 1676</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.799}\)</span></td>
 <td style="text-align: right;">0.061</td>
-<td style="text-align: right;">0.005</td>
-<td style="text-align: right;">0.058</td>
-<td style="text-align: right;">0.051</td>
-<td style="text-align: right;">0.051</td>
+<td style="text-align: right;">-0.030</td>
+<td style="text-align: right;">-0.032</td>
+<td style="text-align: right;">-0.029</td>
+<td style="text-align: right;">-0.027</td>
 </tr>
 <tr class="even">
 <td>전남광주통합특별시</td>
@@ -992,10 +992,10 @@ window.Quarto = {
 <td style="text-align: right;">181 / 1642</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.775}\)</span></td>
 <td style="text-align: right;">0.046</td>
-<td style="text-align: right;">-0.006</td>
-<td style="text-align: right;">0.078</td>
-<td style="text-align: right;">0.098</td>
-<td style="text-align: right;">0.029</td>
+<td style="text-align: right;">-0.016</td>
+<td style="text-align: right;">-0.010</td>
+<td style="text-align: right;">-0.015</td>
+<td style="text-align: right;">-0.014</td>
 </tr>
 </tbody>
 </table>
@@ -1023,7 +1023,7 @@ window.Quarto = {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_c90dd3_19.png" class="img-fluid figure-img"></p>
-<figcaption>분해 그림 — 서울 (서울특별시) · CEEMDAN+MFPCA 0.131 (FPCA 0.064) · 사건 186 / 대조 1640 · 이 자료에서 X+MFPCA 가 가장 높은 곳</figcaption>
+<figcaption>분해 그림 — 대전 (대전광역시) · EMD+MFPCA 0.013 (FPCA 0.053) · 사건 179 / 대조 1644 · 이 자료에서 X+MFPCA 가 가장 높은 곳</figcaption>
 </figure>
 </div>
 </div>
@@ -1064,21 +1064,21 @@ window.Quarto = {
 <td style="text-align: right;"></td>
 <td style="text-align: right;">0.066</td>
 <td style="text-align: right;">0.192</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.413}\)</span></td>
-<td style="text-align: right;">0.199</td>
-<td style="text-align: right;">0.188</td>
-<td style="text-align: right;">0.162</td>
+<td style="text-align: right;">0.041</td>
+<td style="text-align: right;">0.037</td>
+<td style="text-align: right;">0.028</td>
+<td style="text-align: right;">0.035</td>
 </tr>
 <tr class="even">
 <td>대구광역시</td>
 <td>대구</td>
 <td style="text-align: right;">575 / 851</td>
 <td style="text-align: right;">0.084</td>
-<td style="text-align: right;">0.228</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.236}\)</span></td>
-<td style="text-align: right;">0.215</td>
-<td style="text-align: right;">0.228</td>
-<td style="text-align: right;">0.225</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.228}\)</span></td>
+<td style="text-align: right;">0.032</td>
+<td style="text-align: right;">0.045</td>
+<td style="text-align: right;">0.036</td>
+<td style="text-align: right;">0.045</td>
 </tr>
 <tr class="odd">
 <td>대전광역시</td>
@@ -1086,43 +1086,43 @@ window.Quarto = {
 <td style="text-align: right;">646 / 742</td>
 <td style="text-align: right;">0.040</td>
 <td style="text-align: right;">0.117</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.468}\)</span></td>
-<td style="text-align: right;">0.140</td>
-<td style="text-align: right;">0.150</td>
-<td style="text-align: right;">0.106</td>
+<td style="text-align: right;">0.033</td>
+<td style="text-align: right;">0.038</td>
+<td style="text-align: right;">0.015</td>
+<td style="text-align: right;">0.042</td>
 </tr>
 <tr class="even">
 <td>부산광역시</td>
 <td>부산</td>
 <td style="text-align: right;">579 / 877</td>
 <td style="text-align: right;">0.088</td>
-<td style="text-align: right;">0.217</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.477}\)</span></td>
-<td style="text-align: right;">0.247</td>
-<td style="text-align: right;">0.229</td>
-<td style="text-align: right;">0.195</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.217}\)</span></td>
+<td style="text-align: right;">0.086</td>
+<td style="text-align: right;">0.073</td>
+<td style="text-align: right;">0.058</td>
+<td style="text-align: right;">0.077</td>
 </tr>
 <tr class="odd">
 <td>서울특별시</td>
 <td>서울</td>
 <td style="text-align: right;">654 / 786</td>
 <td style="text-align: right;">0.061</td>
-<td style="text-align: right;">0.225</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.417}\)</span></td>
-<td style="text-align: right;">0.199</td>
-<td style="text-align: right;">0.209</td>
-<td style="text-align: right;">0.148</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.225}\)</span></td>
+<td style="text-align: right;">0.022</td>
+<td style="text-align: right;">0.011</td>
+<td style="text-align: right;">0.004</td>
+<td style="text-align: right;">0.006</td>
 </tr>
 <tr class="even">
 <td>울산광역시</td>
 <td>울산</td>
 <td style="text-align: right;">586 / 857</td>
 <td style="text-align: right;">0.088</td>
-<td style="text-align: right;">0.266</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.424}\)</span></td>
-<td style="text-align: right;">0.263</td>
-<td style="text-align: right;">0.215</td>
-<td style="text-align: right;">0.208</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.266}\)</span></td>
+<td style="text-align: right;">0.075</td>
+<td style="text-align: right;">0.067</td>
+<td style="text-align: right;">0.068</td>
+<td style="text-align: right;">0.060</td>
 </tr>
 <tr class="odd">
 <td>인천광역시</td>
@@ -1130,10 +1130,10 @@ window.Quarto = {
 <td style="text-align: right;">597 / 781</td>
 <td style="text-align: right;">0.070</td>
 <td style="text-align: right;">0.167</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.376}\)</span></td>
-<td style="text-align: right;">0.165</td>
-<td style="text-align: right;">0.144</td>
-<td style="text-align: right;">0.141</td>
+<td style="text-align: right;">0.019</td>
+<td style="text-align: right;">0.004</td>
+<td style="text-align: right;">0.006</td>
+<td style="text-align: right;">0.010</td>
 </tr>
 <tr class="even">
 <td>전남광주통합특별시</td>
@@ -1141,10 +1141,10 @@ window.Quarto = {
 <td style="text-align: right;">699 / 688</td>
 <td style="text-align: right;">0.032</td>
 <td style="text-align: right;">0.125</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.492}\)</span></td>
-<td style="text-align: right;">0.167</td>
-<td style="text-align: right;">0.143</td>
-<td style="text-align: right;">0.113</td>
+<td style="text-align: right;">0.023</td>
+<td style="text-align: right;">0.017</td>
+<td style="text-align: right;">0.010</td>
+<td style="text-align: right;">0.006</td>
 </tr>
 </tbody>
 </table>
@@ -1172,7 +1172,7 @@ window.Quarto = {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_c90dd3_22.png" class="img-fluid figure-img"></p>
-<figcaption>분해 그림 — 광주 (전남광주통합특별시) · VMD+MFPCA 0.492 (FPCA 0.125) · 사건 699 / 대조 688 · 이 자료에서 X+MFPCA 가 가장 높은 곳</figcaption>
+<figcaption>분해 그림 — 부산 (부산광역시) · VMD+MFPCA 0.086 (FPCA 0.217) · 사건 579 / 대조 877 · 이 자료에서 X+MFPCA 가 가장 높은 곳</figcaption>
 </figure>
 </div>
 </div>
@@ -1207,55 +1207,55 @@ window.Quarto = {
 <td><strong>평균</strong></td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.504}\)</span></td>
 <td style="text-align: right;">0.253</td>
-<td style="text-align: right;">0.358</td>
-<td style="text-align: right;">0.255</td>
-<td style="text-align: right;">0.269</td>
-<td style="text-align: right;">0.263</td>
+<td style="text-align: right;">0.307</td>
+<td style="text-align: right;">0.328</td>
+<td style="text-align: right;">0.348</td>
+<td style="text-align: right;">0.330</td>
 </tr>
 <tr class="even">
 <td>중앙값</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.401}\)</span></td>
 <td style="text-align: right;">0.097</td>
-<td style="text-align: right;">0.281</td>
-<td style="text-align: right;">0.101</td>
-<td style="text-align: right;">0.088</td>
-<td style="text-align: right;">0.105</td>
+<td style="text-align: right;">0.160</td>
+<td style="text-align: right;">0.188</td>
+<td style="text-align: right;">0.195</td>
+<td style="text-align: right;">0.193</td>
 </tr>
 <tr class="odd">
 <td>아래 25%</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.341}\)</span></td>
 <td style="text-align: right;">0.039</td>
-<td style="text-align: right;">0.180</td>
-<td style="text-align: right;">0.024</td>
-<td style="text-align: right;">0.040</td>
-<td style="text-align: right;">0.047</td>
+<td style="text-align: right;">0.103</td>
+<td style="text-align: right;">0.122</td>
+<td style="text-align: right;">0.136</td>
+<td style="text-align: right;">0.123</td>
 </tr>
 <tr class="even">
 <td>위 25%</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.651}\)</span></td>
 <td style="text-align: right;">0.324</td>
-<td style="text-align: right;">0.451</td>
-<td style="text-align: right;">0.330</td>
-<td style="text-align: right;">0.452</td>
-<td style="text-align: right;">0.350</td>
+<td style="text-align: right;">0.431</td>
+<td style="text-align: right;">0.475</td>
+<td style="text-align: right;">0.565</td>
+<td style="text-align: right;">0.521</td>
 </tr>
 <tr class="odd">
 <td>1등 지점 수</td>
-<td style="text-align: right;">47</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">4</td>
 <td style="text-align: right;">2</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
 <td style="text-align: right;">3</td>
 <td style="text-align: right;">0</td>
 </tr>
 <tr class="even">
 <td>1등 지점 수 (오라클 빼고)</td>
 <td style="text-align: right;">—</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">32</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">8</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">11</td>
 </tr>
 </tbody>
 </table>
@@ -1284,7 +1284,7 @@ window.Quarto = {
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="attachments/261015_c90dd3_25.png" class="img-fluid figure-img"></p>
-<figcaption>분해 그림 — Sacramento International (CA / Sacramento-Roseville-Folsom, CA) · CEEMDAN+MFPCA 0.993 (FPCA 0.986) · 사건 192 / 대조 409 · 이 자료에서 X+MFPCA 가 가장 높은 곳</figcaption>
+<figcaption>분해 그림 — Sacramento International (CA / Sacramento-Roseville-Folsom, CA) · EMD+MFPCA 0.993 (FPCA 0.986) · 사건 192 / 대조 409 · 이 자료에서 X+MFPCA 가 가장 높은 곳</figcaption>
 </figure>
 </div>
 </div>
@@ -1317,63 +1317,87 @@ window.Quarto = {
 <tbody>
 <tr class="odd">
 <td>그대로</td>
-<td style="text-align: right;">0.158</td>
-<td style="text-align: right;">0.222</td>
-<td style="text-align: right;">0.227</td>
-<td style="text-align: right;">0.198</td>
+<td style="text-align: right;">0.231</td>
+<td style="text-align: right;">0.234</td>
+<td style="text-align: right;">0.237</td>
+<td style="text-align: right;">0.234</td>
 </tr>
 <tr class="even">
-<td>재배치 끄기</td>
-<td style="text-align: right;">0.152 (-0.006)</td>
-<td style="text-align: right;">0.055 (-0.167)</td>
-<td style="text-align: right;">0.067 (-0.160)</td>
-<td style="text-align: right;">0.042 (-0.156)</td>
+<td>수준 끄기</td>
+<td style="text-align: right;">0.082 (-0.149)</td>
+<td style="text-align: right;">0.085 (-0.149)</td>
+<td style="text-align: right;">0.090 (-0.147)</td>
+<td style="text-align: right;">0.083 (-0.151)</td>
+</tr>
+<tr class="odd">
+<td>거르기 끄기</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.243}\)</span> (+0.012)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.248}\)</span> (+0.013)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.248}\)</span> (+0.011)</td>
+<td style="text-align: right;">0.239 (+0.005)</td>
+</tr>
+<tr class="even">
+<td>평균 보정 끄기</td>
+<td style="text-align: right;">0.158 (-0.073)</td>
+<td style="text-align: right;">0.222 (-0.012)</td>
+<td style="text-align: right;">0.227 (-0.010)</td>
+<td style="text-align: right;">0.198 (-0.036)</td>
 </tr>
 <tr class="odd">
 <td>분해 끄기</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.222}\)</span> (+0.064)</td>
-<td style="text-align: right;">0.222 (-0.000)</td>
-<td style="text-align: right;">0.222 (-0.005)</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.222}\)</span> (+0.024)</td>
+<td style="text-align: right;">0.233 (+0.002)</td>
+<td style="text-align: right;">0.233 (-0.002)</td>
+<td style="text-align: right;">0.233 (-0.004)</td>
+<td style="text-align: right;">0.233 (-0.001)</td>
 </tr>
 <tr class="even">
+<td>재배치 끄기</td>
+<td style="text-align: right;">0.237 (+0.006)</td>
+<td style="text-align: right;">0.247 (+0.012)</td>
+<td style="text-align: right;">0.244 (+0.007)</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.246}\)</span> (+0.011)</td>
+</tr>
+<tr class="odd">
 <td>다변량 끄기</td>
-<td style="text-align: right;">0.158 (+0.000)</td>
-<td style="text-align: right;">0.223 (+0.001)</td>
-<td style="text-align: right;">0.229 (+0.002)</td>
-<td style="text-align: right;">0.200 (+0.002)</td>
-</tr>
-<tr class="odd">
-<td>칸 가중치 끄기</td>
-<td style="text-align: right;">0.159 (+0.001)</td>
-<td style="text-align: right;">0.223 (+0.000)</td>
-<td style="text-align: right;">0.229 (+0.002)</td>
-<td style="text-align: right;">0.201 (+0.003)</td>
+<td style="text-align: right;">0.232 (+0.001)</td>
+<td style="text-align: right;">0.232 (-0.003)</td>
+<td style="text-align: right;">0.236 (-0.001)</td>
+<td style="text-align: right;">0.235 (+0.001)</td>
 </tr>
 <tr class="even">
-<td>에너지 자르기 끄기</td>
-<td style="text-align: right;">0.158 (-0.000)</td>
-<td style="text-align: right;">0.222 (-0.000)</td>
-<td style="text-align: right;">0.226 (-0.001)</td>
-<td style="text-align: right;">0.201 (+0.002)</td>
+<td>칸 가중치 끄기</td>
+<td style="text-align: right;">0.236 (+0.006)</td>
+<td style="text-align: right;">0.241 (+0.007)</td>
+<td style="text-align: right;">0.244 (+0.007)</td>
+<td style="text-align: right;">0.239 (+0.005)</td>
 </tr>
 <tr class="odd">
+<td>에너지 자르기 끄기</td>
+<td style="text-align: right;">0.232 (+0.001)</td>
+<td style="text-align: right;">0.235 (+0.001)</td>
+<td style="text-align: right;">0.238 (+0.001)</td>
+<td style="text-align: right;">0.234 (-0.000)</td>
+</tr>
+<tr class="even">
 <td>표준화 끄기</td>
-<td style="text-align: right;">0.185 (+0.027)</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.239}\)</span> (+0.017)</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.248}\)</span> (+0.021)</td>
-<td style="text-align: right;">0.217 (+0.019)</td>
+<td style="text-align: right;">0.228 (-0.003)</td>
+<td style="text-align: right;">0.213 (-0.022)</td>
+<td style="text-align: right;">0.217 (-0.020)</td>
+<td style="text-align: right;">0.209 (-0.025)</td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li>그대로: 분해+MFPCA, 뺀 것 없음</li>
-<li>재배치 끄기: IMF 를 주파수 칸 대신 에너지 순서대로 넣음 (M = 3)</li>
-<li>분해 끄기: 분해 없이 원곡선 FPCA</li>
+<li>그대로: 성분마다 이틀보다 느린 변동을 걷어내고 → 주기 칸 → MFPCA, 그 점수에 하루 평균을 더해 k-means</li>
+<li>수준 끄기: 하루 평균을 안 더함</li>
+<li>거르기 끄기: 느린 변동을 안 걷어냄 (하루 평균은 더함)</li>
+<li>평균 보정 끄기: 둘 다 끔 — 옛 설계</li>
+<li>분해 끄기: 분해 없이 걸러낸 원곡선 FPCA + 하루 평균 (네 열 같음)</li>
+<li>재배치 끄기: 주기 칸 대신 성분을 그대로 MFPCA</li>
 <li>다변량 끄기: 1 cycle/day 칸 하나만</li>
 <li>칸 가중치 끄기: 칸 가중치를 모두 1</li>
-<li>에너지 자르기 끄기: IMF 를 99 % 에서 자르지 않고 전부</li>
-<li>표준화 끄기: 점수를 표준화하지 않고 k-means</li>
+<li>에너지 자르기 끄기: 성분을 99 % 에서 자르지 않고 전부</li>
+<li>표준화 끄기: 점수와 하루 평균을 표준화하지 않고 k-means</li>
 </ul>
 
 
