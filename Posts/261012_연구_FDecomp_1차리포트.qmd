@@ -1,5 +1,6 @@
 ---
-title: "FDecomp — 분해 설계 누적 실험: 기준선 · IMF 재배치 · EBT"
+title: 리포트 1
+subtitle: "FDecomp — 분해 설계 누적 실험: 기준선 · IMF 재배치 · EBT"
 author: 최규빈
 date: 10/12/2026
 draft: false

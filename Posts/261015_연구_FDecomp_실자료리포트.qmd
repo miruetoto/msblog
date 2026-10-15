@@ -1,11 +1,14 @@
 ---
-title: "FDecomp — 실자료 결과 (대기질 · 수질 · 기상)"
+title: 리포트 2
+subtitle: "FDecomp — 실자료 결과 (대기질 · 수질 · 기상)"
 author: 최규빈
 date: 10/15/2026
 draft: false
 output-file: 261015_c90dd3.html
 fontsize: 0.85em
 ---
+
+`-` EBT는 폐기 
 
 `-` 제안 문서 (`Real_Data_DecompFPCA.docx`) 의 자료 여덟 가지에 지난 리포트 (vic_elec) 의 절차를 그대로 돌림. 지점은 문서 범위 안의 것을 전부 받았고, 라벨은 문서의 군집화 라벨대로 만듦. 시뮬레이션은 넣지 않음.
 

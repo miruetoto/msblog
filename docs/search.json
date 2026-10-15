@@ -4,159 +4,159 @@
     "href": "index.html",
     "title": "연구진행과정공유(최규빈)",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nOct 15, 2026\n\n\nFDecomp — 실자료 결과 (대기질 · 수질 · 기상)\n\n\n최규빈 \n\n\n\n\n\n\nOct 15, 2026\n\n\nFDecomp 실자료 결과 — 원자료 · 지점마다 (대화형)\n\n\n최규빈 \n\n\n\n\n\n\nOct 12, 2026\n\n\nFDecomp — 분해 설계 누적 실험: 기준선 · IMF 재배치 · EBT\n\n\n최규빈 \n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\nOct 15, 2026\n\n\n리포트 2\n\n\n최규빈 \n\n\n\n\n\n\nOct 15, 2026\n\n\n리포트 2 부록\n\n\n최규빈 \n\n\n\n\n\n\nOct 12, 2026\n\n\n리포트 1\n\n\n최규빈 \n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "Posts/261015_ca1073.html",
     "href": "Posts/261015_ca1073.html",
-    "title": "FDecomp 실자료 결과 — 원자료 · 지점마다 (대화형)",
+    "title": "리포트 2 부록",
     "section": "",
     "text": "제안 문서 (Real_Data_DecompFPCA.docx) 의 자료 여덟 가지에 지난 리포트 (vic_elec) 의 절차를 그대로 돌림. 지점은 문서 범위 안의 것을 전부 받았고, 라벨은 문서의 군집화 라벨대로 날마다 하나씩 만듦. 값은 ARI (k-means, k = 2). 설계 이름은 지난 리포트의 절 번호 — §3.1 일평균 (상한 = 라벨을 보고 고른 일평균 임계) · §3.2 B-스플라인 → FPCA · §5.1 분해 → 보정 → MFPCA."
   },
   {
     "objectID": "Posts/261015_ca1073.html#자료와-라벨",
     "href": "Posts/261015_ca1073.html#자료와-라벨",
-    "title": "FDecomp 실자료 결과 — 원자료 · 지점마다 (대화형)",
+    "title": "리포트 2 부록",
     "section": "자료와 라벨",
     "text": "자료와 라벨\n\n\n\n\n\n\n\n\n\n\n\n자료\n지점 (받은 곳 / 계산한 곳)\n변수 · 간격\n기간\n문서의 라벨\n판정 규칙\n\n\n\n\n에어코리아\n676 / 655\nPM2.5 (µg/m³) · 1시간\n2021–2025\n대기 정체 · 고농도 미세먼지 주의보 발령일 vs 청정 대기 확산 · 강수일\n1 = 지점이 속한 권역에 PM2.5 주의보 · 경보가 걸친 날 / 0 = 그 밖의 날 중 그 권역의 PM2.5 예보 (당일 최종 발표) 가 «좋음» 이거나 가장 가까운 ASOS 일강수 ≥ 1 mm 인 날\n\n\nEPA AQS\n1,018 / 815\nPM2.5 (µg/m³) · O3 (ppm) · 1시간\n2021–2025\nAQI USG 이상 vs Good · Moderate\n1 = 카운티 일 AQI ≥ 101 이고 그날 AQI 를 정한 물질이 이 지점의 물질인 날 / 0 = 카운티 일 AQI 가 Good · Moderate 인 날\n\n\nOpenAQ\n2 / 2\nPM2.5 (µg/m³) · 1시간\n2024–2025\n(라벨 없음)\nLA: EPA 규칙 (LA 카운티 · PM2.5) / 서울 종로구: 에어코리아 규칙\n\n\nWEIS\n77 / 9\nDO (mg/L) · 1시간\n2021–2025\n조류경보제 발령 기간 vs 평상시 정상일\n1 = 대응하는 조류경보 지점에 경보 (관심 이상) 가 걸린 날 / 0 = 경보가 아님이 확인된 날 (모든 달). 대응하는 경보 지점이 없는 곳은 라벨 없음\n\n\nUSGS\n563 / 549\nDO (mg/L) · 1시간 평균\n2021–2025\n강우 유출 · 홍수 유입일 vs 기저 유출 평수기\n일유량 Q 를 Lyne–Hollick 필터 (α 0.925, 앞 · 뒤 · 앞) 로 기저 유출과 직접 유출 D 로 나눔. 1 = D / Q ≥ 0.5 인 날 / 0 = D / Q ≤ 0.1 이고 Q 가 지점의 P25 – P75 안인 날\n\n\n기상청 ASOS ①\n7 / 7\n기온 (°C) · 1시간\n2021–2025\n폭염 · 열대야 발생일 vs 비폭염 정상일\n1 = 기상청 공식 폭염일 (일최고 ≥ 33 °C) 또는 열대야일 (18:01 – 익일 09:00 최저 ≥ 25 °C) / 0 = 둘 다 아닌 날\n\n\n기상청 ASOS ②\n7 / 7\n기온 (°C) · 1시간\n2021–2025\n청명일 (맑음) vs 강우 · 운량 8 이상 흐린 날\n1 = 일강수 ≥ 0.1 mm 이거나 일평균 전운량 ≥ 8 인 날 / 0 = 일평균 전운량 0 – 5 (기상청 하늘상태 «맑음») 이고 강수 보고가 없는 날\n\n\nNOAA ISD\n60 / 57\n기온 (°C) · 1시간\n2021 – 2025-08\n고온 건조 기후일 vs 한랭 전선 통과 · 강수일\n1 = 강수 ≥ 1 mm 이거나 한랭 전선이 지난 날 (일평균 기온이 전날보다 5 °C 이상 내리고 일평균 해면기압이 3 hPa 이상 오름) / 0 = 강수 0 이고 일최고 ≥ 지점 P75 · 일평균 습도 ≤ 지점 중앙값인 날\n\n\n\n- 문서의 라벨과 판정 규칙: EPA · WEIS · 기상청 ① ② 는 문서 그대로. USGS · NOAA ISD 는 문서의 두 부류를 따르되 문턱값 (USGS α 0.925 · D / Q 0.5 · 0.1 · P25 – P75 / ISD 일최고 P75 · 습도 중앙값 · −5 °C · +3 hPa) 은 문서에 없어 정함. OpenAQ 는 문서에 라벨이 없어 서울은 에어코리아, LA 는 EPA 규칙을 씀. 에어코리아는 문서의 «주의보 발령일» 을 «주의보 · 경보가 한 시간이라도 걸친 날» 로 넓게 잡음 — 밤에 내려 이튿날 아침에 푼 주의보는 이틀이 다 사건이 되어, 쓴 날의 사건 20,127일 (655곳 합) 중 4,041일 (20.1%) 은 일평균이 35 µg/m³ 이하 («보통» 이하).\n- 쓴 날: 하루 24점이 다 관측되고 라벨이 있는 날. 시각은 현지 표준시. 분해는 첫 관측부터 끝 관측까지의 신호 전체에 한 번에 함 (빈 시각은 선형 보간).\n- 받은 곳 = 자료를 받은 지점 전부, 계산한 곳 = 그중 ARI 를 낸 지점. 못 낸 지점은 «라벨 부족» (쓴 날이 10일 미만이거나 한쪽 라벨만 있음) · «자료 없음» (관측이 2점 미만)."
   },
   {
     "objectID": "Posts/261015_ca1073.html#자료마다-평균",
     "href": "Posts/261015_ca1073.html#자료마다-평균",
-    "title": "FDecomp 실자료 결과 — 원자료 · 지점마다 (대화형)",
+    "title": "리포트 2 부록",
     "section": "자료마다 평균",
     "text": "자료마다 평균\n- 계산한 지점의 평균 ARI. 빨강 = 줄에서 가장 높은 값 (0.2 넘을 때). 지점마다의 값과 지도는 아래 «지점마다».\n\n\n\n\n\n\n\n\n\n\n\n\n\n자료\n계산한 지점\n3.1 상한\n3.2 FPCA\n5.1 VMD\n5.1 CEEMDAN\n5.1 EEMD\n5.1 EMD\n\n\n\n\n에어코리아\n655\n\\(\\color{red}{0.796}\\)\n0.512\n0.260\n0.514\n0.524\n0.469\n\n\nEPA AQS\n815\n\\(\\color{red}{0.610}\\)\n0.076\n0.077\n0.074\n0.083\n0.061\n\n\nOpenAQ\n2\n\\(\\color{red}{0.878}\\)\n0.419\n0.243\n0.335\n0.480\n0.402\n\n\nWEIS\n9\n0.163\n0.064\n0.133\n0.044\n0.033\n0.026\n\n\nUSGS\n549\n\\(\\color{red}{0.214}\\)\n0.095\n0.134\n0.096\n0.088\n0.078\n\n\n기상청 ASOS ①\n7\n\\(\\color{red}{0.798}\\)\n0.059\n0.001\n0.073\n0.073\n0.045\n\n\n기상청 ASOS ②\n7\n0.066\n0.192\n\\(\\color{red}{0.413}\\)\n0.199\n0.188\n0.162\n\n\nNOAA ISD\n57\n\\(\\color{red}{0.504}\\)\n0.253\n0.358\n0.255\n0.269\n0.263\n\n\n전체\n2,101\n\\(\\color{red}{0.559}\\)\n0.222\n0.158\n0.222\n0.227\n0.198"
   },
   {
     "objectID": "Posts/261015_ca1073.html#분포-지점이-많은-자료",
     "href": "Posts/261015_ca1073.html#분포-지점이-많은-자료",
-    "title": "FDecomp 실자료 결과 — 원자료 · 지점마다 (대화형)",
+    "title": "리포트 2 부록",
     "section": "분포 — 지점이 많은 자료",
     "text": "분포 — 지점이 많은 자료\n- 평균 · 중앙값 · 아래 / 위 25% · 줄에서 가장 높은 지점 수 (같은 값이면 모두에 하나씩 더함) · 상한을 빼고 가장 높은 지점 수.\n\n에어코리아 — 655곳EPA AQS — 815곳USGS — 549곳NOAA ISD — 57곳\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.1 상한\n3.2 FPCA\n5.1 VMD\n5.1 CEEMDAN\n5.1 EEMD\n5.1 EMD\n\n\n\n\n평균\n\\(\\color{red}{0.796}\\)\n0.512\n0.260\n0.514\n0.524\n0.469\n\n\n중앙값\n\\(\\color{red}{0.801}\\)\n0.695\n0.161\n0.677\n0.688\n0.655\n\n\n아래 25%\n\\(\\color{red}{0.764}\\)\n0.057\n0.007\n0.077\n0.097\n0.044\n\n\n위 25%\n\\(\\color{red}{0.835}\\)\n0.761\n0.528\n0.756\n0.762\n0.750\n\n\n줄에서 가장 높은 지점 수\n626\n12\n3\n19\n17\n19\n\n\n상한을 빼고 가장 높은 지점 수\n—\n268\n14\n190\n200\n153\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.1 상한\n3.2 FPCA\n5.1 VMD\n5.1 CEEMDAN\n5.1 EEMD\n5.1 EMD\n\n\n\n\n평균\n\\(\\color{red}{0.610}\\)\n0.076\n0.077\n0.074\n0.083\n0.061\n\n\n중앙값\n\\(\\color{red}{0.602}\\)\n0.011\n0.010\n0.010\n0.015\n0.009\n\n\n아래 25%\n\\(\\color{red}{0.386}\\)\n0.001\n0.002\n0.001\n0.002\n0.000\n\n\n위 25%\n\\(\\color{red}{0.881}\\)\n0.063\n0.056\n0.052\n0.069\n0.043\n\n\n줄에서 가장 높은 지점 수\n797\n4\n10\n9\n11\n11\n\n\n상한을 빼고 가장 높은 지점 수\n—\n195\n231\n134\n250\n155\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.1 상한\n3.2 FPCA\n5.1 VMD\n5.1 CEEMDAN\n5.1 EEMD\n5.1 EMD\n\n\n\n\n평균\n\\(\\color{red}{0.214}\\)\n0.095\n0.134\n0.096\n0.088\n0.078\n\n\n중앙값\n0.173\n0.028\n0.068\n0.030\n0.026\n0.026\n\n\n아래 25%\n0.085\n0.000\n-0.001\n0.000\n0.001\n0.001\n\n\n위 25%\n\\(\\color{red}{0.307}\\)\n0.117\n0.234\n0.112\n0.112\n0.101\n\n\n줄에서 가장 높은 지점 수\n347\n21\n123\n30\n26\n19\n\n\n상한을 빼고 가장 높은 지점 수\n—\n81\n244\n90\n71\n100\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.1 상한\n3.2 FPCA\n5.1 VMD\n5.1 CEEMDAN\n5.1 EEMD\n5.1 EMD\n\n\n\n\n평균\n\\(\\color{red}{0.504}\\)\n0.253\n0.358\n0.255\n0.269\n0.263\n\n\n중앙값\n\\(\\color{red}{0.401}\\)\n0.097\n0.281\n0.101\n0.088\n0.104\n\n\n아래 25%\n\\(\\color{red}{0.341}\\)\n0.039\n0.180\n0.024\n0.040\n0.047\n\n\n위 25%\n\\(\\color{red}{0.651}\\)\n0.324\n0.451\n0.330\n0.452\n0.350\n\n\n줄에서 가장 높은 지점 수\n47\n2\n5\n3\n3\n0\n\n\n상한을 빼고 가장 높은 지점 수\n—\n4\n32\n5\n12\n8"
   },
   {
     "objectID": "Posts/261015_ca1073.html#per-station",
     "href": "Posts/261015_ca1073.html#per-station",
-    "title": "FDecomp 실자료 결과 — 원자료 · 지점마다 (대화형)",
+    "title": "리포트 2 부록",
     "section": "지점마다",
     "text": "지점마다\n문서의 라벨 (사건 vs 대조) 로 지점마다 따로 군집. 받은 지점 2,410곳 중 2,101곳에서 ARI 를 냄 — 못 낸 곳은 라벨 부족 (쓴 날 10일 미만이거나 한쪽 라벨만) · 자료 없음 (관측 2점 미만). 지도에서 속이 빈 점이 못 낸 지점.\n\nst = FileAttachment(\"attachments/261015_ca1073_01.csv\").csv({typed: true})\nbase = FileAttachment(\"attachments/261015_ca1073_04.json\").json()\nRAMP = [\"#9ec5f4\", \"#86b6ef\", \"#6da7ec\", \"#5598e7\", \"#3987e5\", \"#2a78d6\", \"#256abf\", \"#1c5cab\", \"#184f95\", \"#104281\", \"#0d366b\"]\nINK = ({land: \"#efeee6\", border: \"#c9c7bd\", surface: \"#fcfcf7\", muted: \"#898781\", text: \"#0b0b0b\", bar: \"#2a78d6\", dot: \"#86b6ef\", mean: \"#184f95\"})\nKRBOX = ({type: \"MultiPoint\", coordinates: [[124.4, 33.0], [131.2, 38.7]]})\nf3 = x =&gt; x == null ? \"\" : x.toFixed(3)\nD1 = [\"상한\", \"FPCA\", \"VMD\", \"CEEMDAN\", \"EEMD\", \"EMD\"]\nL1 = ({상한: \"3.1 상한\", FPCA: \"3.2 FPCA\", VMD: \"5.1 VMD\", CEEMDAN: \"5.1 CEEMDAN\", EEMD: \"5.1 EEMD\", EMD: \"5.1 EMD\"})\nfunction geoPanel(country, w, marks) {\n  return Plot.plot({\n    width: w, height: Math.round(w * (country === \"한국\" ? 1.05 : 0.62)), style: {background: INK.surface},\n    projection: country === \"한국\" ? {type: \"mercator\", domain: KRBOX} : {type: \"albers-usa\"},\n    color: {type: \"sqrt\", domain: [0, 1], range: RAMP, clamp: true, legend: true, label: \"ARI\", width: Math.min(w, 320)},\n    marks: [Plot.geo(base[country], {fill: INK.land, stroke: INK.border, strokeWidth: 0.6}), ...marks]\n  })\n}\nfunction panels(cs, make) {\n  const w = cs.length &gt; 1 ? Math.max(280, Math.min(Math.floor((width - 72) / 2), 560)) : Math.min(width - 16, 680)\n  return html`&lt;div style=\"display:flex;flex-wrap:wrap;gap:24px;align-items:flex-start\"&gt;${cs.map(c =&gt; html`&lt;figure style=\"margin:0\"&gt;&lt;figcaption style=\"color:${INK.muted};font-size:0.9em\"&gt;${c}&lt;/figcaption&gt;${make(c, w)}&lt;/figure&gt;`)}&lt;/div&gt;`\n}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nviewof src1 = Inputs.select(info.map(d =&gt; d.자료), {label: \"자료\", value: \"에어코리아\"})\nviewof des1 = Inputs.select(D1, {label: \"지도 색\", value: \"VMD\", format: d =&gt; L1[d]})\nviewof q1 = Inputs.search(st.filter(d =&gt; d.자료 === src1), {label: \"찾기\", placeholder: \"지점 · 지역\", width: 150})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nall1 = st.filter(d =&gt; d.자료 === src1)\nok1 = all1.filter(d =&gt; d.상태 === \"계산\")\nlab1 = info.find(d =&gt; d.자료 === src1)\nmd`**${src1}** · ${lab1.변수} · ${lab1.기간} — 지점 ${all1.length.toLocaleString()}곳 · 계산 ${ok1.length.toLocaleString()} · 라벨 부족 ${all1.filter(d =&gt; d.상태 === \"라벨 부족\").length} · 자료 없음 ${all1.filter(d =&gt; d.상태 === \"자료 없음\").length}\n\n사건 vs 대조 — ${lab1.라벨}. ${lab1.규칙}`\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\navg1 = D1.map(k =&gt; ({설계: L1[k], ARI: d3.mean(ok1, d =&gt; d[k])}))\nPlot.plot({\n  width: Math.min(width, 620), height: 30 * D1.length + 44, marginLeft: 104, marginRight: 48, style: {background: INK.surface},\n  x: {domain: [0, 1], grid: true, label: `계산한 지점 ${ok1.length.toLocaleString()}곳 평균 ARI`},\n  y: {label: null, domain: avg1.map(d =&gt; d.설계)},\n  marks: [\n    Plot.barX(avg1, {x: \"ARI\", y: \"설계\", fill: INK.bar, insetTop: 6, insetBottom: 6, tip: {format: {x: \".3f\"}}}),\n    Plot.text(avg1, {x: \"ARI\", y: \"설계\", text: d =&gt; f3(d.ARI), dx: 6, textAnchor: \"start\", fill: INK.text}),\n    Plot.ruleX([0], {stroke: INK.border})\n  ]\n})\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\npts1 = q1.filter(d =&gt; d.위도 != null)\npanels([\"한국\", \"미국\"].filter(c =&gt; pts1.some(d =&gt; d.나라 === c)), (c, w) =&gt; geoPanel(c, w, [\n  Plot.dot(pts1.filter(d =&gt; d.나라 === c && d.상태 !== \"계산\"), {x: \"경도\", y: \"위도\", r: 3, stroke: INK.muted, strokeWidth: 1, fill: \"none\",\n    tip: {format: {x: false, y: false}}, channels: {지점: \"지점\", 지역: \"지역\", 상태: \"상태\"}}),\n  Plot.dot(pts1.filter(d =&gt; d.나라 === c && d.상태 === \"계산\"), {x: \"경도\", y: \"위도\", r: 4.5, fill: d =&gt; d[des1], stroke: INK.surface, strokeWidth: 1.2,\n    sort: d =&gt; d[des1], tip: {format: {x: false, y: false, fill: \".3f\"}}, channels: {지점: \"지점\", 지역: \"지역\", 물질: \"물질\"}})\n]))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInputs.table(q1, {\n  columns: [\"지역\", \"지점\", ...(src1.includes(\"EPA\") ? [\"물질\"] : []), \"사건\", \"대조\", \"상태\", ...D1],\n  header: L1, format: Object.fromEntries(D1.map(k =&gt; [k, f3])),\n  sort: des1, reverse: true, rows: 16, layout: \"auto\", maxWidth: width\n})"
   },
   {
     "objectID": "Posts/261015_ca1073.html#전체-2101곳",
     "href": "Posts/261015_ca1073.html#전체-2101곳",
-    "title": "FDecomp 실자료 결과 — 원자료 · 지점마다 (대화형)",
+    "title": "리포트 2 부록",
     "section": "전체 — 2,101곳",
     "text": "전체 — 2,101곳\n\n\n\n\n\n\n\n\n\n\n바꾼 것\nVMD\nCEEMDAN\nEEMD\nEMD\n\n\n\n\n§5.1 그대로 (뺀 것 없음)\n0.158\n0.222\n0.227\n0.198\n\n\n재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)\n0.152 (-0.006)\n0.055 (-0.167)\n0.067 (-0.160)\n0.042 (-0.156)\n\n\n분해 끄기 — 원곡선 FPCA (= §3.2)\n\\(\\color{red}{0.222}\\) (+0.064)\n0.222 (-0.000)\n0.222 (-0.005)\n\\(\\color{red}{0.222}\\) (+0.024)\n\n\n다변량 끄기 — 1 cycle/day 칸 하나만\n0.158 (+0.000)\n0.223 (+0.001)\n0.229 (+0.002)\n0.200 (+0.002)\n\n\n칸 가중치 끄기 — 가중 1\n0.159 (+0.001)\n0.223 (+0.000)\n0.229 (+0.002)\n0.201 (+0.003)\n\n\n에너지 자르기 끄기 — IMF 전부\n0.158 (-0.000)\n0.222 (-0.000)\n0.226 (-0.001)\n0.201 (+0.002)\n\n\n표준화 끄기 — 점수 그대로 k-means\n0.185 (+0.027)\n\\(\\color{red}{0.239}\\) (+0.017)\n\\(\\color{red}{0.248}\\) (+0.021)\n0.217 (+0.019)\n\n\n\n- 전체 평균은 지점이 많은 에어코리아 · EPA · USGS 가 정함 — 자료마다는 아래."
   },
   {
     "objectID": "Posts/261015_ca1073.html#자료마다",
     "href": "Posts/261015_ca1073.html#자료마다",
-    "title": "FDecomp 실자료 결과 — 원자료 · 지점마다 (대화형)",
+    "title": "리포트 2 부록",
     "section": "자료마다",
     "text": "자료마다\n\n에어코리아 — 655곳EPA AQS — 815곳OpenAQ — 2곳WEIS — 9곳USGS — 549곳기상청 ASOS ① — 7곳기상청 ASOS ② — 7곳NOAA ISD — 57곳\n\n\n\n\n\n\n\n\n\n\n\n\n바꾼 것\nVMD\nCEEMDAN\nEEMD\nEMD\n\n\n\n\n§5.1 그대로 (뺀 것 없음)\n0.260\n0.514\n0.524\n0.469\n\n\n재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)\n0.243 (-0.017)\n0.049 (-0.465)\n0.065 (-0.459)\n0.036 (-0.433)\n\n\n분해 끄기 — 원곡선 FPCA (= §3.2)\n\\(\\color{red}{0.512}\\) (+0.251)\n0.512 (-0.002)\n0.512 (-0.012)\n0.512 (+0.043)\n\n\n다변량 끄기 — 1 cycle/day 칸 하나만\n0.267 (+0.007)\n0.514 (+0.000)\n0.528 (+0.004)\n0.472 (+0.004)\n\n\n칸 가중치 끄기 — 가중 1\n0.270 (+0.010)\n0.514 (+0.000)\n0.525 (+0.001)\n0.472 (+0.003)\n\n\n에너지 자르기 끄기 — IMF 전부\n0.260 (+0.000)\n0.514 (+0.000)\n0.526 (+0.003)\n0.475 (+0.006)\n\n\n표준화 끄기 — 점수 그대로 k-means\n0.333 (+0.073)\n\\(\\color{red}{0.585}\\) (+0.071)\n\\(\\color{red}{0.598}\\) (+0.074)\n\\(\\color{red}{0.537}\\) (+0.068)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n바꾼 것\nVMD\nCEEMDAN\nEEMD\nEMD\n\n\n\n\n§5.1 그대로 (뺀 것 없음)\n0.077\n0.074\n0.083\n0.061\n\n\n재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)\n0.073 (-0.004)\n0.035 (-0.038)\n0.069 (-0.014)\n0.043 (-0.018)\n\n\n분해 끄기 — 원곡선 FPCA (= §3.2)\n0.076 (-0.001)\n0.076 (+0.002)\n0.076 (-0.007)\n\\(\\color{red}{0.076}\\) (+0.015)\n\n\n다변량 끄기 — 1 cycle/day 칸 하나만\n0.071 (-0.006)\n0.075 (+0.001)\n0.083 (-0.000)\n0.062 (+0.001)\n\n\n칸 가중치 끄기 — 가중 1\n0.076 (-0.001)\n0.074 (+0.001)\n0.086 (+0.003)\n0.063 (+0.002)\n\n\n에너지 자르기 끄기 — IMF 전부\n0.077 (-0.000)\n0.073 (-0.000)\n0.082 (-0.001)\n0.060 (-0.000)\n\n\n표준화 끄기 — 점수 그대로 k-means\n\\(\\color{red}{0.089}\\) (+0.012)\n\\(\\color{red}{0.081}\\) (+0.007)\n\\(\\color{red}{0.094}\\) (+0.011)\n0.072 (+0.011)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n바꾼 것\nVMD\nCEEMDAN\nEEMD\nEMD\n\n\n\n\n§5.1 그대로 (뺀 것 없음)\n0.244\n0.335\n0.480\n0.402\n\n\n재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)\n0.297 (+0.053)\n0.143 (-0.193)\n-0.025 (-0.505)\n-0.010 (-0.412)\n\n\n분해 끄기 — 원곡선 FPCA (= §3.2)\n\\(\\color{red}{0.419}\\) (+0.175)\n0.419 (+0.083)\n0.419 (-0.061)\n0.419 (+0.017)\n\n\n다변량 끄기 — 1 cycle/day 칸 하나만\n0.297 (+0.053)\n0.335 (+0.000)\n0.480 (+0.000)\n0.402 (+0.000)\n\n\n칸 가중치 끄기 — 가중 1\n0.297 (+0.053)\n\\(\\color{red}{0.515}\\) (+0.180)\n0.415 (-0.065)\n0.402 (+0.000)\n\n\n에너지 자르기 끄기 — IMF 전부\n0.244 (+0.000)\n0.335 (+0.000)\n0.480 (+0.000)\n0.402 (+0.000)\n\n\n표준화 끄기 — 점수 그대로 k-means\n0.401 (+0.157)\n0.510 (+0.174)\n\\(\\color{red}{0.736}\\) (+0.256)\n\\(\\color{red}{0.455}\\) (+0.053)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n바꾼 것\nVMD\nCEEMDAN\nEEMD\nEMD\n\n\n\n\n§5.1 그대로 (뺀 것 없음)\n0.133\n0.044\n0.033\n0.026\n\n\n재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)\n0.152 (+0.019)\n0.058 (+0.014)\n0.029 (-0.005)\n0.033 (+0.007)\n\n\n분해 끄기 — 원곡선 FPCA (= §3.2)\n0.064 (-0.069)\n0.064 (+0.021)\n\\(\\color{red}{0.064}\\) (+0.031)\n\\(\\color{red}{0.064}\\) (+0.038)\n\n\n다변량 끄기 — 1 cycle/day 칸 하나만\n\\(\\color{red}{0.154}\\) (+0.020)\n\\(\\color{red}{0.066}\\) (+0.023)\n0.034 (+0.000)\n0.026 (-0.000)\n\n\n칸 가중치 끄기 — 가중 1\n0.131 (-0.002)\n0.044 (+0.000)\n0.033 (-0.000)\n0.027 (+0.002)\n\n\n에너지 자르기 끄기 — IMF 전부\n0.133 (+0.000)\n0.044 (+0.000)\n0.032 (-0.002)\n0.028 (+0.002)\n\n\n표준화 끄기 — 점수 그대로 k-means\n0.064 (-0.069)\n0.036 (-0.008)\n0.029 (-0.005)\n0.025 (-0.001)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n바꾼 것\nVMD\nCEEMDAN\nEEMD\nEMD\n\n\n\n\n§5.1 그대로 (뺀 것 없음)\n0.134\n0.096\n0.088\n0.078\n\n\n재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)\n0.135 (+0.001)\n0.073 (-0.023)\n0.054 (-0.035)\n0.042 (-0.035)\n\n\n분해 끄기 — 원곡선 FPCA (= §3.2)\n0.095 (-0.039)\n0.095 (-0.001)\n\\(\\color{red}{0.095}\\) (+0.006)\n\\(\\color{red}{0.095}\\) (+0.017)\n\n\n다변량 끄기 — 1 cycle/day 칸 하나만\n0.135 (+0.001)\n\\(\\color{red}{0.098}\\) (+0.002)\n0.090 (+0.002)\n0.078 (+0.000)\n\n\n칸 가중치 끄기 — 가중 1\n0.130 (-0.004)\n0.095 (-0.001)\n0.091 (+0.002)\n0.081 (+0.003)\n\n\n에너지 자르기 끄기 — IMF 전부\n0.134 (-0.000)\n0.095 (-0.001)\n0.083 (-0.005)\n0.079 (+0.002)\n\n\n표준화 끄기 — 점수 그대로 k-means\n\\(\\color{red}{0.135}\\) (+0.001)\n0.070 (-0.026)\n0.071 (-0.017)\n0.059 (-0.019)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n바꾼 것\nVMD\nCEEMDAN\nEEMD\nEMD\n\n\n\n\n§5.1 그대로 (뺀 것 없음)\n0.001\n0.073\n\\(\\color{red}{0.073}\\)\n0.045\n\n\n재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)\n0.000 (-0.001)\n-0.003 (-0.076)\n0.015 (-0.058)\n0.002 (-0.043)\n\n\n분해 끄기 — 원곡선 FPCA (= §3.2)\n\\(\\color{red}{0.059}\\) (+0.058)\n0.059 (-0.014)\n0.059 (-0.014)\n\\(\\color{red}{0.059}\\) (+0.014)\n\n\n다변량 끄기 — 1 cycle/day 칸 하나만\n0.001 (-0.001)\n0.070 (-0.003)\n0.052 (-0.021)\n0.019 (-0.026)\n\n\n칸 가중치 끄기 — 가중 1\n0.001 (-0.000)\n\\(\\color{red}{0.074}\\) (+0.001)\n0.049 (-0.024)\n0.028 (-0.017)\n\n\n에너지 자르기 끄기 — IMF 전부\n0.001 (+0.000)\n0.073 (-0.000)\n0.070 (-0.003)\n0.048 (+0.003)\n\n\n표준화 끄기 — 점수 그대로 k-means\n0.003 (+0.002)\n0.002 (-0.071)\n-0.002 (-0.075)\n-0.002 (-0.048)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n바꾼 것\nVMD\nCEEMDAN\nEEMD\nEMD\n\n\n\n\n§5.1 그대로 (뺀 것 없음)\n\\(\\color{red}{0.413}\\)\n0.199\n0.188\n0.162\n\n\n재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)\n0.391 (-0.022)\n0.022 (-0.178)\n0.065 (-0.124)\n0.042 (-0.120)\n\n\n분해 끄기 — 원곡선 FPCA (= §3.2)\n0.192 (-0.221)\n0.192 (-0.007)\n0.192 (+0.004)\n\\(\\color{red}{0.192}\\) (+0.030)\n\n\n다변량 끄기 — 1 cycle/day 칸 하나만\n0.410 (-0.003)\n\\(\\color{red}{0.202}\\) (+0.003)\n0.188 (-0.001)\n0.158 (-0.004)\n\n\n칸 가중치 끄기 — 가중 1\n0.202 (-0.210)\n0.199 (+0.000)\n\\(\\color{red}{0.199}\\) (+0.011)\n0.158 (-0.005)\n\n\n에너지 자르기 끄기 — IMF 전부\n\\(\\color{red}{0.413}\\) (+0.000)\n0.199 (-0.000)\n0.191 (+0.003)\n0.159 (-0.004)\n\n\n표준화 끄기 — 점수 그대로 k-means\n0.406 (-0.007)\n0.039 (-0.160)\n0.039 (-0.149)\n0.038 (-0.125)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n바꾼 것\nVMD\nCEEMDAN\nEEMD\nEMD\n\n\n\n\n§5.1 그대로 (뺀 것 없음)\n0.358\n0.255\n\\(\\color{red}{0.269}\\)\n0.263\n\n\n재배치 끄기 — IMF 를 에너지 순서대로 넣음 (= §3.3, M = 3)\n\\(\\color{red}{0.361}\\) (+0.003)\n0.230 (-0.025)\n0.215 (-0.054)\n0.115 (-0.148)\n\n\n분해 끄기 — 원곡선 FPCA (= §3.2)\n0.253 (-0.105)\n0.253 (-0.002)\n0.253 (-0.015)\n0.253 (-0.010)\n\n\n다변량 끄기 — 1 cycle/day 칸 하나만\n0.357 (-0.001)\n0.253 (-0.003)\n0.264 (-0.005)\n0.263 (-0.000)\n\n\n칸 가중치 끄기 — 가중 1\n0.355 (-0.003)\n\\(\\color{red}{0.256}\\) (+0.000)\n0.269 (-0.000)\n0.268 (+0.005)\n\n\n에너지 자르기 끄기 — IMF 전부\n0.358 (+0.000)\n0.255 (-0.000)\n0.267 (-0.002)\n\\(\\color{red}{0.269}\\) (+0.006)\n\n\n표준화 끄기 — 점수 그대로 k-means\n0.355 (-0.003)\n0.218 (-0.037)\n0.218 (-0.050)\n0.205 (-0.059)\n\n\n\n\n\n\n\n계산 — 지점마다 통째 신호를 분해한 뒤 §3.1 · §3.2 · §5.1 을 돌림 (R, 지난 리포트와 같은 코드 · 261014_하모니_실자료전체.R · 어블레이션 261014_하모니_어블레이션.R). 3절 그림 261014_아리아_실자료4x7그림.py --tag 교수님라벨_전지점 (아리아). 지도 밑그림은 Natural Earth (world-atlas 2.0.2 · us-atlas 3.0.1)."
   },
   {
     "objectID": "Posts/261012_9459fa.html",
     "href": "Posts/261012_9459fa.html",
-    "title": "FDecomp — 분해 설계 누적 실험: 기준선 · IMF 재배치 · EBT",
+    "title": "리포트 1",
     "section": "",
     "text": "- 기존 코드에서 발전시킨 점\n\nMFPCA 적용: 기존에는 분해(K=3) 후 IMF 2 한 개만 사용, 지금은 모든 모드 사용. 한 개만 쓰면 (1) 데일리 이펙트를 뽑기 어렵고 (2) baseline 대비 성능 개선이 없음.\nIMF 재배치 알고리즘 적용 (§4, §5.1)\n어퍼 엔벨롭을 먼저 구해 나누어 진폭 변조를 걷어냄 (§5.2)"
   },
   {
     "objectID": "Posts/261012_9459fa.html#daily-mean-k-means",
     "href": "Posts/261012_9459fa.html#daily-mean-k-means",
-    "title": "FDecomp — 분해 설계 누적 실험: 기준선 · IMF 재배치 · EBT",
+    "title": "리포트 1",
     "section": "3.1 Daily mean → k-means",
     "text": "3.1 Daily mean → k-means\n- 하루 48점을 평균 하나로 줄여 k-means(k=2)를 걸어 보았음 (모양을 전혀 안 보고 수준만 보는 가장 낮은 기준).\n\n\n\n일평균만 쓴 군집 결과\n\n\n- ARI 가 0.191 로 매우 낮은 수준. 경계가 두 봉우리 사이 골짜기(4,208 MW)가 아니라 그 오른쪽(4,705 MW)에 서 있어서 그러함 (k-means 가 두 중심의 중점으로 자르기 때문임). 쉬는 날은 거의 다 낮은 군집에 들어가지만 평일 280일도 같이 들어감. 부트스트랩 구간 [0.06, 0.42].\n- 라벨 정보를 알고 고르는 최적 임계점. 임계를 3,500~6,000 MW 로 훑으며 「임계 아래 = 쉬는 날」로 둘 때의 ARI 를 그린 것이 아래 왼쪽. 4,390 MW 에서 0.576 으로 최대이고, k-means 경계 4,705 MW 는 그 곡선에서 0.191 자리임. 오른쪽은 그 두 경계를 라벨별 분포 위에 그린 것.\n\n\n\n일평균 임계로 가른 결과\n\n\n- 라벨을 알고 고른 최적 임계(4,390 MW)로도 0.576 이 상한.\n- 쉬는 날의 상위 10% 가 평일의 하위 10% 보다 높아 분포가 겹치므로, 수준 하나로는 어떤 경계도 0.6 을 못 넘음.\n- 함수의 모양으로 판단해야 함 (FPCA 를 써야 하는 이유).\n- 성능요약: ARI 0.576 이 상한"
   },
   {
     "objectID": "Posts/261012_9459fa.html#b-spline-fpca-k-means",
     "href": "Posts/261012_9459fa.html#b-spline-fpca-k-means",
-    "title": "FDecomp — 분해 설계 누적 실험: 기준선 · IMF 재배치 · EBT",
+    "title": "리포트 1",
     "section": "3.2 B-spline → FPCA → k-means",
     "text": "3.2 B-spline → FPCA → k-means\n\n\n\nFPCA 기준선 결과\n\n\n- 나쁘지 않음.\n- 그런데 분해를 하고 MFPCA 를 돌리면 결과가 어떨지 궁금함.\n- 성능요약: ARI 0.863 (평균만 사용할 경우의 성능 상한인 0.576 보다 높음)"
   },
   {
     "objectID": "Posts/261012_9459fa.html#decompose-b-spline-mfpca-k-means",
     "href": "Posts/261012_9459fa.html#decompose-b-spline-mfpca-k-means",
-    "title": "FDecomp — 분해 설계 누적 실험: 기준선 · IMF 재배치 · EBT",
+    "title": "리포트 1",
     "section": "3.3 Decompose → B-spline → MFPCA → k-means",
     "text": "3.3 Decompose → B-spline → MFPCA → k-means\n- 결과: EMD 의 결과가 안 좋은 것에 주목\n\n\n\nIMF 번호 그대로 분해한 결과\n\n\n- 성능요약: EEMD 와 EMD 는 MFPCA 의 성능이 안 나옴.\n\n\n\n절\n설계\nARI\n\n\n\n\n3.1\nDaily mean → k-means\n0.191\n\n\n\nDaily mean, 라벨로 고른 최적 임계 (상한)\n0.576\n\n\n3.2\nB-spline → FPCA → k-means\n0.863\n\n\n3.3\nVMD → B-spline → MFPCA → k-means\n\\(\\color{red}{0.923}\\)\n\n\n\nCEEMDAN → B-spline → MFPCA → k-means\n0.887\n\n\n\nEEMD → B-spline → MFPCA → k-means\n0.856\n\n\n\nEMD → B-spline → MFPCA → k-means\n0.011\n\n\n\n- 까닭: EMD 는 날마다 daily wave 가 다른 IMF 에 할당됨(모드 혼합). 다른 방법도 이러한 현상이 생길 수 있지만 유독 EMD 가 심함 \\(\\Rightarrow\\) 4장의 모티브\n\n\n\nEMD 모드 혼합 사례\n\n\n- Note: VMD 는 FFT 기반이므로 tone 이 섞이지 않음 (따라서 VMD 와 MFPCA 의 궁합이 좋음)."
   },
   {
     "objectID": "Posts/261012_9459fa.html#제안하는-방법-1-분해-보정-b스플라인-mfpca-k-means",
     "href": "Posts/261012_9459fa.html#제안하는-방법-1-분해-보정-b스플라인-mfpca-k-means",
-    "title": "FDecomp — 분해 설계 누적 실험: 기준선 · IMF 재배치 · EBT",
+    "title": "리포트 1",
     "section": "5.1 제안하는 방법 1: 분해 → 보정 → B스플라인 → MFPCA → k-means",
     "text": "5.1 제안하는 방법 1: 분해 → 보정 → B스플라인 → MFPCA → k-means\n- 절차\n\n분해: EMD·EEMD·CEEMDAN 은 기본값대로 끝까지, VMD 는 K=8. 잔차를 버리고 분산 누적 99% 까지의 IMF 사용.\n보정: §4 의 방법으로 날마다 IMF 를 1 · 2 · 3 · 4+ cycles/day 칸에 재배치(같은 칸은 더함). 한 날 = 함수 넷.\nB스플라인: 하루 48점을 nbasis 12 로 평활.\nMFPCA: 가중 = 칸별 에너지 비율, M=3.\nk-means: 점수를 표준화해 k=2.\n\n- 결과\n\n\n\n제안방법1(보정) 결과\n\n\n- 성능요약: CEEMDAN·EEMD·EMD 셋 다 보정 전보다 높아 보정의 효과가 있음 (EMD 는 0.011 → 0.849 로 매우 뚜렷함). 다만 분해의 효과를 보이는 기준선(0.863)보다는 VMD·CEEMDAN·EEMD 셋만 높고 EMD 는 0.849 로 조금 못 미침. VMD 는 보정의 효과가 없음 (0.923 그대로). 결론적으로는 VMD 가 0.923 으로 가장 높음.\n\n\n\n절\n설계\nARI\n\n\n\n\n3.1\nDaily mean → k-means\n0.191\n\n\n\nDaily mean, 라벨로 고른 최적 임계 (상한)\n0.576\n\n\n3.2\nB-spline → FPCA → k-means\n0.863\n\n\n3.3\nVMD → B-spline → MFPCA → k-means\n\\(\\color{red}{0.923}\\)\n\n\n\nCEEMDAN → B-spline → MFPCA → k-means\n0.887\n\n\n\nEEMD → B-spline → MFPCA → k-means\n0.856\n\n\n\nEMD → B-spline → MFPCA → k-means\n0.011\n\n\n5.1\nVMD → 보정 → B-spline → MFPCA → k-means\n\\(\\color{red}{0.923}\\)\n\n\n\nCEEMDAN → 보정 → B-spline → MFPCA → k-means\n0.891\n\n\n\nEEMD → 보정 → B-spline → MFPCA → k-means\n0.902\n\n\n\nEMD → 보정 → B-spline → MFPCA → k-means\n0.849"
   },
   {
     "objectID": "Posts/261012_9459fa.html#제안하는-방법-2-ebt-어퍼-엔벨롭-제거-ebt-주기성분-추출-하루-단위로-자름-b스플라인-mfpca-k-means",
     "href": "Posts/261012_9459fa.html#제안하는-방법-2-ebt-어퍼-엔벨롭-제거-ebt-주기성분-추출-하루-단위로-자름-b스플라인-mfpca-k-means",
-    "title": "FDecomp — 분해 설계 누적 실험: 기준선 · IMF 재배치 · EBT",
+    "title": "리포트 1",
     "section": "5.2 제안하는 방법 2: EBT 어퍼 엔벨롭 제거 → EBT 주기성분 추출 → 하루 단위로 자름 → B스플라인 → MFPCA → k-means",
     "text": "5.2 제안하는 방법 2: EBT 어퍼 엔벨롭 제거 → EBT 주기성분 추출 → 하루 단위로 자름 → B스플라인 → MFPCA → k-means\n- 절차 (모형 \\(f(t) = A(t) \\times [p(t)+q(t)]\\), Choi & Oh 2024)\n\nEBT 어퍼 엔벨롭 제거: 어퍼 엔벨롭 \\(A=u^{f,48}\\) (\\(\\tau\\) = 48, 하루)로 진폭을 복조해 \\(r=f/A\\).\n주기성분 추출: \\(r\\) 에서 \\(\\tau=48\\) 로 \\(p^{(k+1)}=p^{(k)}-m^{p^{(k)},48}\\) 을 수렴까지 반복해 주기 48 성분 \\(p_{48}\\), 나머지 \\(q=r-p_{48}\\).\nB스플라인: \\(p_{48}, q, A\\) 를 하루 48점으로 잘라 평활. 한 날 = 함수 셋.\nMFPCA: 분산 정규화 가중, M=3.\nk-means: k=2.\n\n- EBT를 이용하여 어퍼 엔벨롭을 제거한 뒤 분해하는 예시\n\n\n\n일주일 분해 — f = A(p48 + q)\n\n\n- 결과\n\n\n\n제안방법2(EBT) 결과\n\n\n- 성능요약: \\((p_{48}, q, A)\\) 셋을 함께 쓴 것이 0.934 로 지금까지 가장 높음.\n\n\n\n\n\n\n\n\n절\n설계\nARI\n\n\n\n\n3.1\nDaily mean → k-means\n0.191\n\n\n\nDaily mean, 라벨로 고른 최적 임계 (상한)\n0.576\n\n\n3.2\nB-spline → FPCA → k-means\n0.863\n\n\n3.3\nVMD → B-spline → MFPCA → k-means\n0.923\n\n\n\nCEEMDAN → B-spline → MFPCA → k-means\n0.887\n\n\n\nEEMD → B-spline → MFPCA → k-means\n0.856\n\n\n\nEMD → B-spline → MFPCA → k-means\n0.011\n\n\n5.1\nVMD → 보정 → B-spline → MFPCA → k-means\n0.923\n\n\n\nCEEMDAN → 보정 → B-spline → MFPCA → k-means\n0.891\n\n\n\nEEMD → 보정 → B-spline → MFPCA → k-means\n0.902\n\n\n\nEMD → 보정 → B-spline → MFPCA → k-means\n0.849\n\n\n5.2\nEBT → \\((p_{48}, q, A)\\) → B-spline → MFPCA → k-means\n\\(\\color{red}{0.934}\\)"
   },
   {
     "objectID": "Posts/261015_c90dd3.html",
     "href": "Posts/261015_c90dd3.html",
-    "title": "FDecomp — 실자료 결과 (대기질 · 수질 · 기상)",
+    "title": "리포트 2",
     "section": "",
-    "text": "- 제안 문서 (Real_Data_DecompFPCA.docx) 의 자료 여덟 가지에 지난 리포트 (vic_elec) 의 절차를 그대로 돌림. 지점은 문서 범위 안의 것을 전부 받았고, 라벨은 문서의 군집화 라벨대로 만듦. 시뮬레이션은 넣지 않음.\n- 설계 이름 §3.1 · §3.2 · §5.1 은 지난 리포트의 절 번호. 값은 ARI (k-means, k = 2)."
+    "text": "- EBT는 폐기\n- 제안 문서 (Real_Data_DecompFPCA.docx) 의 자료 여덟 가지에 지난 리포트 (vic_elec) 의 절차를 그대로 돌림. 지점은 문서 범위 안의 것을 전부 받았고, 라벨은 문서의 군집화 라벨대로 만듦. 시뮬레이션은 넣지 않음.\n- 설계 이름 §3.1 · §3.2 · §5.1 은 지난 리포트의 절 번호. 값은 ARI (k-means, k = 2)."
   },
   {
     "objectID": "Posts/261015_c90dd3.html#에어코리아-676곳-계산-655-라벨-부족-20-자료-없음-1",
     "href": "Posts/261015_c90dd3.html#에어코리아-676곳-계산-655-라벨-부족-20-자료-없음-1",
-    "title": "FDecomp — 실자료 결과 (대기질 · 수질 · 기상)",
+    "title": "리포트 2",
     "section": "에어코리아 — 676곳 (계산 655 · 라벨 부족 20 · 자료 없음 1)",
     "text": "에어코리아 — 676곳 (계산 655 · 라벨 부족 20 · 자료 없음 1)\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.1 상한\n3.2 FPCA\n5.1 VMD\n5.1 CEEMDAN\n5.1 EEMD\n5.1 EMD\n\n\n\n\n평균 (655곳)\n\\(\\color{red}{0.796}\\)\n0.512\n0.260\n0.514\n0.524\n0.469\n\n\n중앙값\n\\(\\color{red}{0.801}\\)\n0.695\n0.161\n0.677\n0.688\n0.655\n\n\n아래 25%\n\\(\\color{red}{0.764}\\)\n0.057\n0.007\n0.077\n0.097\n0.044\n\n\n위 25%\n\\(\\color{red}{0.835}\\)\n0.761\n0.528\n0.756\n0.762\n0.750\n\n\n줄에서 가장 높은 지점 수\n626\n12\n3\n19\n17\n19\n\n\n상한을 빼고 가장 높은 지점 수\n—\n268\n14\n190\n200\n153"
   },
   {
     "objectID": "Posts/261015_c90dd3.html#epa-aqs-1018곳-계산-815-라벨-부족-156-자료-없음-47",
     "href": "Posts/261015_c90dd3.html#epa-aqs-1018곳-계산-815-라벨-부족-156-자료-없음-47",
-    "title": "FDecomp — 실자료 결과 (대기질 · 수질 · 기상)",
+    "title": "리포트 2",
     "section": "EPA AQS — 1,018곳 (계산 815 · 라벨 부족 156 · 자료 없음 47)",
     "text": "EPA AQS — 1,018곳 (계산 815 · 라벨 부족 156 · 자료 없음 47)\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.1 상한\n3.2 FPCA\n5.1 VMD\n5.1 CEEMDAN\n5.1 EEMD\n5.1 EMD\n\n\n\n\n평균 (815곳)\n\\(\\color{red}{0.610}\\)\n0.076\n0.077\n0.074\n0.083\n0.061\n\n\n평균 — PM2.5 (384곳)\n\\(\\color{red}{0.801}\\)\n0.130\n0.117\n0.128\n0.133\n0.093\n\n\n평균 — O3 (431곳)\n\\(\\color{red}{0.440}\\)\n0.027\n0.041\n0.025\n0.038\n0.032\n\n\n중앙값\n\\(\\color{red}{0.602}\\)\n0.011\n0.010\n0.010\n0.015\n0.009\n\n\n아래 25%\n\\(\\color{red}{0.386}\\)\n0.001\n0.002\n0.001\n0.002\n0.000\n\n\n위 25%\n\\(\\color{red}{0.881}\\)\n0.063\n0.056\n0.052\n0.069\n0.043\n\n\n줄에서 가장 높은 지점 수\n797\n4\n10\n9\n11\n10\n\n\n상한을 빼고 가장 높은 지점 수\n—\n194\n229\n133\n244\n150"
   },
   {
     "objectID": "Posts/261015_c90dd3.html#openaq-2곳",
     "href": "Posts/261015_c90dd3.html#openaq-2곳",
-    "title": "FDecomp — 실자료 결과 (대기질 · 수질 · 기상)",
+    "title": "리포트 2",
     "section": "OpenAQ — 2곳",
     "text": "OpenAQ — 2곳\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n지역\n지점\n물질\n사건 / 대조\n3.1 상한\n3.2 FPCA\n5.1 VMD\n5.1 CEEMDAN\n5.1 EEMD\n5.1 EMD\n\n\n\n\n평균 (2곳)\n\n\n\n\\(\\color{red}{0.878}\\)\n0.419\n0.244\n0.335\n0.480\n0.402\n\n\nCalifornia / Los Angeles-Long Beach-Anaheim, CA\nLos Angeles – N. Main\nPM2.5\n24 / 436\n\\(\\color{red}{0.903}\\)\n0.203\n0.203\n0.203\n0.203\n0.203\n\n\n서울특별시\n서울 종로구\nPM2.5\n11 / 258\n\\(\\color{red}{0.853}\\)\n0.635\n0.284\n0.468\n0.757\n0.601"
   },
   {
     "objectID": "Posts/261015_c90dd3.html#weis-77곳-계산-9-라벨-부족-68",
     "href": "Posts/261015_c90dd3.html#weis-77곳-계산-9-라벨-부족-68",
-    "title": "FDecomp — 실자료 결과 (대기질 · 수질 · 기상)",
+    "title": "리포트 2",
     "section": "WEIS — 77곳 (계산 9 · 라벨 부족 68)",
     "text": "WEIS — 77곳 (계산 9 · 라벨 부족 68)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n지역\n지점\n사건 / 대조\n3.1 상한\n3.2 FPCA\n5.1 VMD\n5.1 CEEMDAN\n5.1 EEMD\n5.1 EMD\n\n\n\n\n평균 (9곳)\n\n\n0.163\n0.064\n0.133\n0.044\n0.033\n0.026\n\n\n강원특별자치도 · 한강 수계\n의암호\n20 / 907\n0.109\n-0.009\n0.065\n-0.006\n-0.006\n-0.006\n\n\n경상남도 · 낙동강 수계\n상동\n312 / 520\n0.119\n0.082\n0.080\n0.100\n0.095\n0.081\n\n\n경상남도 · 낙동강 수계\n청암\n382 / 575\n0.055\n0.064\n0.127\n0.063\n0.062\n0.075\n\n\n경상남도 · 낙동강 수계\n칠서\n417 / 581\n0.060\n0.045\n0.061\n0.070\n0.051\n0.043\n\n\n경상북도 · 낙동강 수계\n다산\n179 / 646\n\\(\\color{red}{0.269}\\)\n0.027\n0.199\n0.021\n0.050\n0.001\n\n\n경상북도 · 낙동강 수계\n해평\n142 / 784\n\\(\\color{red}{0.353}\\)\n0.015\n0.154\n0.032\n-0.032\n-0.024\n\n\n전라남도 · 영산·섬진 수계\n주암호\n14 / 996\n0.002\n0.000\n0.002\n0.002\n0.001\n0.003\n\n\n전북특별자치도 · 금강 수계\n용담호\n71 / 1074\n\\(\\color{red}{0.216}\\)\n-0.001\n0.203\n0.001\n0.001\n-0.000\n\n\n충청북도 · 금강 수계\n대청호\n178 / 986\n0.280\n\\(\\color{red}{0.357}\\)\n0.306\n0.110\n0.079\n0.059\n\n\n\n- 라벨 부족 68곳은 표에서 뺌."
   },
   {
     "objectID": "Posts/261015_c90dd3.html#usgs-563곳-계산-549-라벨-부족-14",
     "href": "Posts/261015_c90dd3.html#usgs-563곳-계산-549-라벨-부족-14",
-    "title": "FDecomp — 실자료 결과 (대기질 · 수질 · 기상)",
+    "title": "리포트 2",
     "section": "USGS — 563곳 (계산 549 · 라벨 부족 14)",
     "text": "USGS — 563곳 (계산 549 · 라벨 부족 14)\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.1 상한\n3.2 FPCA\n5.1 VMD\n5.1 CEEMDAN\n5.1 EEMD\n5.1 EMD\n\n\n\n\n평균 (549곳)\n\\(\\color{red}{0.214}\\)\n0.095\n0.134\n0.096\n0.088\n0.078\n\n\n중앙값\n0.173\n0.028\n0.068\n0.030\n0.026\n0.026\n\n\n아래 25%\n0.085\n0.000\n-0.001\n0.000\n0.001\n0.001\n\n\n위 25%\n\\(\\color{red}{0.307}\\)\n0.117\n0.234\n0.112\n0.112\n0.101\n\n\n줄에서 가장 높은 지점 수\n347\n19\n123\n30\n24\n19\n\n\n상한을 빼고 가장 높은 지점 수\n—\n79\n244\n89\n69\n99"
   },
   {
     "objectID": "Posts/261015_c90dd3.html#기상청-asos-①-7곳",
     "href": "Posts/261015_c90dd3.html#기상청-asos-①-7곳",
-    "title": "FDecomp — 실자료 결과 (대기질 · 수질 · 기상)",
+    "title": "리포트 2",
     "section": "기상청 ASOS ① — 7곳",
     "text": "기상청 ASOS ① — 7곳\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n지역\n지점\n사건 / 대조\n3.1 상한\n3.2 FPCA\n5.1 VMD\n5.1 CEEMDAN\n5.1 EEMD\n5.1 EMD\n\n\n\n\n평균 (7곳)\n\n\n\\(\\color{red}{0.798}\\)\n0.059\n0.001\n0.073\n0.073\n0.045\n\n\n대구광역시\n대구\n226 / 1598\n\\(\\color{red}{0.801}\\)\n0.082\n-0.004\n0.083\n0.074\n0.075\n\n\n대전광역시\n대전\n179 / 1644\n\\(\\color{red}{0.833}\\)\n0.053\n-0.000\n0.069\n0.081\n0.040\n\n\n부산광역시\n부산\n188 / 1637\n\\(\\color{red}{0.866}\\)\n0.086\n-0.001\n0.066\n0.083\n0.054\n\n\n서울특별시\n서울\n186 / 1640\n\\(\\color{red}{0.807}\\)\n0.064\n0.016\n0.131\n0.102\n0.055\n\n\n울산광역시\n울산\n105 / 1721\n\\(\\color{red}{0.706}\\)\n0.022\n-0.001\n0.025\n0.020\n0.013\n\n\n인천광역시\n인천\n150 / 1676\n\\(\\color{red}{0.799}\\)\n0.061\n0.005\n0.058\n0.051\n0.051\n\n\n전남광주통합특별시\n광주\n181 / 1642\n\\(\\color{red}{0.775}\\)\n0.046\n-0.006\n0.078\n0.098\n0.029"
   },
   {
     "objectID": "Posts/261015_c90dd3.html#기상청-asos-②-7곳",
     "href": "Posts/261015_c90dd3.html#기상청-asos-②-7곳",
-    "title": "FDecomp — 실자료 결과 (대기질 · 수질 · 기상)",
+    "title": "리포트 2",
     "section": "기상청 ASOS ② — 7곳",
     "text": "기상청 ASOS ② — 7곳\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n지역\n지점\n사건 / 대조\n3.1 상한\n3.2 FPCA\n5.1 VMD\n5.1 CEEMDAN\n5.1 EEMD\n5.1 EMD\n\n\n\n\n평균 (7곳)\n\n\n0.066\n0.192\n\\(\\color{red}{0.413}\\)\n0.199\n0.188\n0.162\n\n\n대구광역시\n대구\n575 / 851\n0.084\n0.228\n\\(\\color{red}{0.236}\\)\n0.215\n0.228\n0.225\n\n\n대전광역시\n대전\n646 / 742\n0.040\n0.117\n\\(\\color{red}{0.468}\\)\n0.140\n0.150\n0.106\n\n\n부산광역시\n부산\n579 / 877\n0.088\n0.217\n\\(\\color{red}{0.477}\\)\n0.247\n0.229\n0.195\n\n\n서울특별시\n서울\n654 / 786\n0.061\n0.225\n\\(\\color{red}{0.417}\\)\n0.199\n0.209\n0.148\n\n\n울산광역시\n울산\n586 / 857\n0.088\n0.266\n\\(\\color{red}{0.424}\\)\n0.263\n0.215\n0.208\n\n\n인천광역시\n인천\n597 / 781\n0.070\n0.167\n\\(\\color{red}{0.376}\\)\n0.165\n0.144\n0.141\n\n\n전남광주통합특별시\n광주\n699 / 688\n0.032\n0.125\n\\(\\color{red}{0.492}\\)\n0.167\n0.143\n0.113"
   },
   {
     "objectID": "Posts/261015_c90dd3.html#noaa-isd-60곳-계산-57-라벨-부족-3",
     "href": "Posts/261015_c90dd3.html#noaa-isd-60곳-계산-57-라벨-부족-3",
-    "title": "FDecomp — 실자료 결과 (대기질 · 수질 · 기상)",
+    "title": "리포트 2",
     "section": "NOAA ISD — 60곳 (계산 57 · 라벨 부족 3)",
     "text": "NOAA ISD — 60곳 (계산 57 · 라벨 부족 3)\n\n\n\n\n\n\n\n\n\n\n\n\n\n3.1 상한\n3.2 FPCA\n5.1 VMD\n5.1 CEEMDAN\n5.1 EEMD\n5.1 EMD\n\n\n\n\n평균 (57곳)\n\\(\\color{red}{0.504}\\)\n0.253\n0.358\n0.255\n0.269\n0.263\n\n\n중앙값\n\\(\\color{red}{0.401}\\)\n0.097\n0.281\n0.101\n0.088\n0.105\n\n\n아래 25%\n\\(\\color{red}{0.341}\\)\n0.039\n0.180\n0.024\n0.040\n0.047\n\n\n위 25%\n\\(\\color{red}{0.651}\\)\n0.324\n0.451\n0.330\n0.452\n0.350\n\n\n줄에서 가장 높은 지점 수\n47\n2\n5\n2\n3\n0\n\n\n상한을 빼고 가장 높은 지점 수\n—\n4\n32\n5\n12\n8"
   }

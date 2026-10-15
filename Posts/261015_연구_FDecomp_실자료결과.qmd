@@ -1,5 +1,6 @@
 ---
-title: FDecomp 실자료 결과 — 원자료 · 지점마다 (대화형)
+title: 리포트 2 부록
+subtitle: "FDecomp 실자료 결과 — 원자료 · 지점마다 (대화형)"
 author: 최규빈
 date: 10/15/2026
 draft: false
