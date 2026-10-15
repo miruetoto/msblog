@@ -176,26 +176,22 @@ window.Quarto = {
 </header>
 
 
-<p><code>-</code> EBT는 폐기</p>
-<p><code>-</code> 제안 문서 (<code>Real_Data_DecompFPCA.docx</code>) 의 자료 여덟 가지에 지난 리포트 (vic_elec) 의 절차를 그대로 돌림. 지점은 문서 범위 안의 것을 전부 받았고, 라벨은 문서의 군집화 라벨대로 만듦. 시뮬레이션은 넣지 않음.</p>
-<p><code>-</code> 설계 이름 §3.1 · §3.2 · §5.1 은 지난 리포트의 절 번호. 값은 ARI (k-means, k = 2).</p>
+<section id="진행사항" class="level1">
+<h1>1. 진행사항</h1>
+<p><code>-</code> EBT 는 폐기.</p>
+<p><code>-</code> 제안 문서 (<code>Real_Data_DecompFPCA.docx</code>) 의 자료 여덟 가지에 리포트 1 (vic_elec) 의 절차를 그대로 돌림.</p>
+</section>
 <section id="자료와-라벨" class="level1">
-<h1>1. 자료와 라벨</h1>
+<h1>2. 자료와 라벨</h1>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 15%">
-<col style="width: 21%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
+<col style="width: 5%">
+<col style="width: 22%">
+<col style="width: 71%">
 </colgroup>
 <thead>
 <tr class="header">
 <th>자료</th>
-<th style="text-align: right;">지점 (받은 곳 / 계산한 곳)</th>
-<th>변수 · 간격</th>
-<th>기간</th>
 <th>문서의 라벨</th>
 <th>판정 규칙</th>
 </tr>
@@ -203,80 +199,55 @@ window.Quarto = {
 <tbody>
 <tr class="odd">
 <td>에어코리아</td>
-<td style="text-align: right;">676 / 655</td>
-<td>PM2.5 (µg/m³) · 1시간</td>
-<td>2021–2025</td>
 <td>대기 정체 · 고농도 미세먼지 주의보 발령일 vs 청정 대기 확산 · 강수일</td>
 <td>1 = 지점이 속한 권역에 PM2.5 주의보 · 경보가 걸친 날 / 0 = 그 밖의 날 중 그 권역의 PM2.5 예보 (당일 최종 발표) 가 «좋음» 이거나 가장 가까운 ASOS 일강수 ≥ 1 mm 인 날</td>
 </tr>
 <tr class="even">
 <td>EPA AQS</td>
-<td style="text-align: right;">1,018 / 815</td>
-<td>PM2.5 (µg/m³) · O3 (ppm) · 1시간</td>
-<td>2021–2025</td>
 <td>AQI USG 이상 vs Good · Moderate</td>
 <td>1 = 카운티 일 AQI ≥ 101 이고 그날 AQI 를 정한 물질이 이 지점의 물질인 날 / 0 = 카운티 일 AQI 가 Good · Moderate 인 날</td>
 </tr>
 <tr class="odd">
 <td>OpenAQ</td>
-<td style="text-align: right;">2 / 2</td>
-<td>PM2.5 (µg/m³) · 1시간</td>
-<td>2024–2025</td>
 <td>(라벨 없음)</td>
 <td>LA: EPA 규칙 (LA 카운티 · PM2.5) / 서울 종로구: 에어코리아 규칙</td>
 </tr>
 <tr class="even">
 <td>WEIS</td>
-<td style="text-align: right;">77 / 9</td>
-<td>DO (mg/L) · 1시간</td>
-<td>2021–2025</td>
 <td>조류경보제 발령 기간 vs 평상시 정상일</td>
 <td>1 = 대응하는 조류경보 지점에 경보 (관심 이상) 가 걸린 날 / 0 = 경보가 아님이 확인된 날 (모든 달). 대응하는 경보 지점이 없는 곳은 라벨 없음</td>
 </tr>
 <tr class="odd">
 <td>USGS</td>
-<td style="text-align: right;">563 / 549</td>
-<td>DO (mg/L) · 1시간 평균</td>
-<td>2021–2025</td>
 <td>강우 유출 · 홍수 유입일 vs 기저 유출 평수기</td>
 <td>일유량 Q 를 Lyne–Hollick 필터 (α 0.925, 앞 · 뒤 · 앞) 로 기저 유출과 직접 유출 D 로 나눔. 1 = D / Q ≥ 0.5 인 날 / 0 = D / Q ≤ 0.1 이고 Q 가 지점의 P25 – P75 안인 날</td>
 </tr>
 <tr class="even">
 <td>기상청 ASOS ①</td>
-<td style="text-align: right;">7 / 7</td>
-<td>기온 (°C) · 1시간</td>
-<td>2021–2025</td>
 <td>폭염 · 열대야 발생일 vs 비폭염 정상일</td>
 <td>1 = 기상청 공식 폭염일 (일최고 ≥ 33 °C) 또는 열대야일 (18:01 – 익일 09:00 최저 ≥ 25 °C) / 0 = 둘 다 아닌 날</td>
 </tr>
 <tr class="odd">
 <td>기상청 ASOS ②</td>
-<td style="text-align: right;">7 / 7</td>
-<td>기온 (°C) · 1시간</td>
-<td>2021–2025</td>
 <td>청명일 (맑음) vs 강우 · 운량 8 이상 흐린 날</td>
 <td>1 = 일강수 ≥ 0.1 mm 이거나 일평균 전운량 ≥ 8 인 날 / 0 = 일평균 전운량 0 – 5 (기상청 하늘상태 «맑음») 이고 강수 보고가 없는 날</td>
 </tr>
 <tr class="even">
 <td>NOAA ISD</td>
-<td style="text-align: right;">60 / 57</td>
-<td>기온 (°C) · 1시간</td>
-<td>2021 – 2025-08</td>
 <td>고온 건조 기후일 vs 한랭 전선 통과 · 강수일</td>
 <td>1 = 강수 ≥ 1 mm 이거나 한랭 전선이 지난 날 (일평균 기온이 전날보다 5 °C 이상 내리고 일평균 해면기압이 3 hPa 이상 오름) / 0 = 강수 0 이고 일최고 ≥ 지점 P75 · 일평균 습도 ≤ 지점 중앙값인 날</td>
 </tr>
 </tbody>
 </table>
-<p><code>-</code> 문서의 라벨과 판정 규칙: EPA · WEIS · 기상청 ① ② 는 문서 그대로. USGS · NOAA ISD 는 문서의 두 부류를 따르되 문턱값 (USGS α 0.925 · D / Q 0.5 · 0.1 · P25 – P75 / ISD 일최고 P75 · 습도 중앙값 · −5 °C · +3 hPa) 은 문서에 없어 정함. OpenAQ 는 문서에 라벨이 없어 서울은 에어코리아, LA 는 EPA 규칙을 씀. 에어코리아는 문서의 «주의보 발령일» 을 «주의보 · 경보가 한 시간이라도 걸친 날» 로 넓게 잡음 — 밤에 내려 이튿날 아침에 푼 주의보는 이틀이 다 사건이 되어, 쓴 날의 사건 20,127일 (655곳 합) 중 4,041일 (20.1%) 은 일평균이 35 µg/m³ 이하 («보통» 이하).</p>
-<p><code>-</code> 쓴 날: 하루 24점이 다 관측되고 라벨이 있는 날. 시각은 현지 표준시. 분해는 첫 관측부터 끝 관측까지의 신호 전체에 한 번에 함 (빈 시각은 선형 보간).</p>
-<p><code>-</code> 받은 곳 = 자료를 받은 지점 전부, 계산한 곳 = 그중 ARI 를 낸 지점. 못 낸 지점은 «라벨 부족» (쓴 날이 10일 미만이거나 한쪽 라벨만 있음) · «자료 없음» (관측이 2점 미만). 2절에는 그 수만 적음.</p>
+<!-- colwidths: 6.850962 8.052885 8.894231 -->
 </section>
 <section id="성능-비교-지점별" class="level1">
-<h1>2. 성능 비교 — 지점별</h1>
-<p><code>-</code> 자료마다 표 하나. 계산한 지점이 20곳 넘는 자료 (에어코리아 · EPA · USGS · ISD) 는 분포만 적음 — 평균 · 중앙값 · 아래 / 위 25% · 줄에서 가장 높은 지점 수 (같은 값이면 모두에 하나씩 더함). 나머지는 계산한 지점을 한 줄씩 적음 (대기질은 지점 · 물질마다). 사건 / 대조 = 쓴 날 수 (라벨 1 / 0). 3.1 상한 = 라벨을 보고 고른 일평균 임계로 가른 값 (라벨을 미리 보므로 상한). 빨강 = 줄에서 가장 높은 값 (0.2 넘을 때).</p>
-<p><code>-</code> 지점마다의 값과 지도는 msblog (https://miruetoto.github.io/msblog/Posts/261015_ca1073.html#per-station).</p>
-<section id="에어코리아-676곳-계산-655-라벨-부족-20-자료-없음-1" class="level2">
-<h2 class="anchored" data-anchor-id="에어코리아-676곳-계산-655-라벨-부족-20-자료-없음-1">에어코리아 — 676곳 (계산 655 · 라벨 부족 20 · 자료 없음 1)</h2>
+<h1>3. 성능 비교 — 지점별</h1>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">에어코리아</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">EPA AQS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">OpenAQ</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">WEIS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">USGS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false" href="">기상청 ASOS ①</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false" href="">기상청 ASOS ②</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-8" role="tab" aria-controls="tabset-1-8" aria-selected="false" href="">NOAA ISD</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p><code>-</code> 676곳 — 계산 655 · 라벨 부족 20 · 자료 없음 1.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 11%">
@@ -355,9 +326,9 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-</section>
-<section id="epa-aqs-1018곳-계산-815-라벨-부족-156-자료-없음-47" class="level2">
-<h2 class="anchored" data-anchor-id="epa-aqs-1018곳-계산-815-라벨-부족-156-자료-없음-47">EPA AQS — 1,018곳 (계산 815 · 라벨 부족 156 · 자료 없음 47)</h2>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><code>-</code> 1,018곳 — 계산 815 · 라벨 부족 156 · 자료 없음 47.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 11%">
@@ -454,9 +425,9 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-</section>
-<section id="openaq-2곳" class="level2">
-<h2 class="anchored" data-anchor-id="openaq-2곳">OpenAQ — 2곳</h2>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p><code>-</code> 2곳.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 8%">
@@ -523,9 +494,9 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-</section>
-<section id="weis-77곳-계산-9-라벨-부족-68" class="level2">
-<h2 class="anchored" data-anchor-id="weis-77곳-계산-9-라벨-부족-68">WEIS — 77곳 (계산 9 · 라벨 부족 68)</h2>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<p><code>-</code> 77곳 — 계산 9 · 라벨 부족 68.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 8%">
@@ -665,9 +636,9 @@ window.Quarto = {
 </tbody>
 </table>
 <p><code>-</code> 라벨 부족 68곳은 표에서 뺌.</p>
-</section>
-<section id="usgs-563곳-계산-549-라벨-부족-14" class="level2">
-<h2 class="anchored" data-anchor-id="usgs-563곳-계산-549-라벨-부족-14">USGS — 563곳 (계산 549 · 라벨 부족 14)</h2>
+</div>
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
+<p><code>-</code> 563곳 — 계산 549 · 라벨 부족 14.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 11%">
@@ -746,9 +717,9 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-</section>
-<section id="기상청-asos-①-7곳" class="level2">
-<h2 class="anchored" data-anchor-id="기상청-asos-①-7곳">기상청 ASOS ① — 7곳</h2>
+</div>
+<div id="tabset-1-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-6-tab">
+<p><code>-</code> 7곳.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 8%">
@@ -865,9 +836,9 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-</section>
-<section id="기상청-asos-②-7곳" class="level2">
-<h2 class="anchored" data-anchor-id="기상청-asos-②-7곳">기상청 ASOS ② — 7곳</h2>
+</div>
+<div id="tabset-1-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-7-tab">
+<p><code>-</code> 7곳.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 8%">
@@ -984,9 +955,9 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-</section>
-<section id="noaa-isd-60곳-계산-57-라벨-부족-3" class="level2">
-<h2 class="anchored" data-anchor-id="noaa-isd-60곳-계산-57-라벨-부족-3">NOAA ISD — 60곳 (계산 57 · 라벨 부족 3)</h2>
+</div>
+<div id="tabset-1-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-8-tab">
+<p><code>-</code> 60곳 — 계산 57 · 라벨 부족 3.</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 11%">
@@ -1065,10 +1036,12 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-</section>
+</div>
+</div>
+</div>
 </section>
 <section id="어블레이션-부품을-하나씩-빼면" class="level1">
-<h1>3. 어블레이션 — 부품을 하나씩 빼면</h1>
+<h1>4. 어블레이션 — 부품을 하나씩 빼면</h1>
 <p><code>-</code> 계산한 지점 전부 (2,101곳) 에서 날 · 라벨 · 분해 결과를 그대로 두고 §5.1 의 부품을 한 번에 하나씩 뺌. 값은 평균 ARI, 괄호는 §5.1 대비 평균 차. 빨강 = 열마다 가장 높은 값.</p>
 <table class="caption-top table">
 <colgroup>
@@ -1139,7 +1112,6 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<p><code>-</code> 계산 <code>261014_하모니_실자료전체.R</code> · <code>261014_하모니_어블레이션.R</code> (s185 · s182 · s183 · s186) · 자료 정리 <code>data/261014_민수데이터/_분석입력/</code> (아리아 · 선율 · 새결) · 표 <code>책상/codes/261015_리포트분리/fd6_station_tables.py</code> · <code>fd6_doc.py</code>.</p>
 
 
 </section>
