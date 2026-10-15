@@ -1,5 +1,5 @@
 ---
-title: 실자료 지점별 성능 대시보드
+title: FDecomp 실자료 5 — 지점별 성능 대시보드
 author: 최규빈
 date: 10/15/2026
 draft: false
