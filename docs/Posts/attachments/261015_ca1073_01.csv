@@ -1694,7 +1694,7 @@ EPA AQS,epa_550890009_pm25,"Wisconsin / Milwaukee-Waukesha, WI",HARRINGTON BEACH
 EPA AQS,epa_551330027_o3,"Wisconsin / Milwaukee-Waukesha, WI",WAUKESHA - CLEVELAND AVE,O3,미국,43.02007,-88.21507,18,743,셈,0.6805,0.0191,0.0075,0.016,0.0146,0.0205
 EPA AQS,epa_551330027_pm25,"Wisconsin / Milwaukee-Waukesha, WI",WAUKESHA - CLEVELAND AVE,PM2.5,미국,43.02007,-88.21507,9,842,셈,1.0,0.1964,0.1964,0.1964,0.1964,0.1964
 OpenAQ,openaq_7936_pm25,"California / Los Angeles-Long Beach-Anaheim, CA",Los Angeles – N. Main,PM2.5,미국,34.06643,-118.22675,24,436,셈,0.9033,0.2027,0.2027,0.2027,0.2027,0.2027
-OpenAQ,openaq_2623321_pm25,서울특별시,서울 종로구,PM2.5,한국,37.57202,127.00503,11,335,셈,0.1034,-0.0434,-0.0434,-0.0241,-0.0241,-0.0426
+OpenAQ,openaq_2623321_pm25,서울특별시,서울 종로구,PM2.5,한국,37.57202,127.00503,11,258,셈,0.8532,0.6347,0.2843,0.4677,0.7572,0.6007
 WEIS,WEIS_S01001_DO,경기도 · 한강 수계,가평,,한국,37.658,127.379,0,0,라벨 부족,,,,,,
 WEIS,WEIS_S01002_DO,경기도 · 한강 수계,흥천,,한국,37.39,127.535,0,0,라벨 부족,,,,,,
 WEIS,WEIS_S01003_DO,경기도 · 한강 수계,경안천,,한국,37.442,127.31,0,0,라벨 부족,,,,,,

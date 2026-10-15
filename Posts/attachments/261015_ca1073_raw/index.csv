@@ -60,7 +60,7 @@ EPA AQS,Rutgers University,"New Jersey / New York-Newark-Jersey City, NY-NJ",epa
 EPA AQS,"BELLEVUE STATE PARK, FIELD IN SE PORTION OF PARK","Delaware / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",epa_100031013_o3,,9,1359,2021-01-01,2025-12-31,59_epa_100031013_o3.json
 EPA AQS,FALL RIVER,"Massachusetts / Providence-Warwick, RI-MA",epa_250051004_o3,,8,1133,2021-01-01,2025-12-31,60_epa_250051004_o3.json
 OpenAQ,Los Angeles – N. Main,"California / Los Angeles-Long Beach-Anaheim, CA",openaq_7936_pm25,,24,436,2024-01-01,2025-12-31,61_openaq_7936_pm25.json
-OpenAQ,서울 종로구,서울특별시,openaq_2623321_pm25,,11,335,2024-01-01,2025-12-31,62_openaq_2623321_pm25.json
+OpenAQ,서울 종로구,서울특별시,openaq_2623321_pm25,,11,258,2024-01-01,2025-12-31,62_openaq_2623321_pm25.json
 WEIS,칠서,경상남도 · 낙동강 수계,WEIS_S02007_DO,,417,581,2021-01-01,2025-12-31,63_WEIS_S02007_DO.json
 WEIS,청암,경상남도 · 낙동강 수계,WEIS_S02006_DO,,382,575,2021-01-01,2025-12-31,64_WEIS_S02006_DO.json
 WEIS,상동,경상남도 · 낙동강 수계,WEIS_S02017_DO,,312,520,2021-01-01,2025-12-31,65_WEIS_S02017_DO.json
