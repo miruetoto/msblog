@@ -1,5 +1,5 @@
 ---
-title: "리포트 2 — 실자료 (대기질 · 수질 · 기상)"
+title: "리포트 2 — 다양한 자료"
 author: 최규빈
 date: 10/15/2026
 draft: false
