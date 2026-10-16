@@ -68,7 +68,7 @@ fontsize: 0.85em
 | 3.1 | Daily mean → k-means | 0.191 |
 |  | Daily mean, 라벨로 고른 최적 임계 (상한) | 0.576 |
 | 3.2 | B-spline → FPCA → k-means | 0.863 |
-| 3.3 | VMD → B-spline → MFPCA → k-means | $\color{red}{0.923}$ |
+| 3.3 | VMD → B-spline → MFPCA → k-means | <span class="hi">0.923</span> |
 |  | CEEMDAN → B-spline → MFPCA → k-means | 0.887 |
 |  | EEMD → B-spline → MFPCA → k-means | 0.856 |
 |  | EMD → B-spline → MFPCA → k-means | **0.011** |
@@ -142,11 +142,11 @@ fontsize: 0.85em
 | 3.1 | Daily mean → k-means | 0.191 |
 |  | Daily mean, 라벨로 고른 최적 임계 (상한) | 0.576 |
 | 3.2 | B-spline → FPCA → k-means | 0.863 |
-| 3.3 | VMD → B-spline → MFPCA → k-means | $\color{red}{0.923}$ |
+| 3.3 | VMD → B-spline → MFPCA → k-means | <span class="hi">0.923</span> |
 |  | CEEMDAN → B-spline → MFPCA → k-means | 0.887 |
 |  | EEMD → B-spline → MFPCA → k-means | 0.856 |
 |  | EMD → B-spline → MFPCA → k-means | **0.011** |
-| 5.1 | VMD → 보정 → B-spline → MFPCA → k-means | $\color{red}{0.923}$ |
+| 5.1 | VMD → 보정 → B-spline → MFPCA → k-means | <span class="hi">0.923</span> |
 |  | CEEMDAN → 보정 → B-spline → MFPCA → k-means | 0.891 |
 |  | EEMD → 보정 → B-spline → MFPCA → k-means | 0.902 |
 |  | EMD → 보정 → B-spline → MFPCA → k-means | 0.849 |
@@ -188,7 +188,7 @@ fontsize: 0.85em
 |     | CEEMDAN → 보정 → B-spline → MFPCA → k-means               | 0.891                |
 |     | EEMD → 보정 → B-spline → MFPCA → k-means                  | 0.902                |
 |     | EMD → 보정 → B-spline → MFPCA → k-means                   | 0.849                |
-| 5.2 | EBT → $(p_{48}, q, A)$ → B-spline → MFPCA → k-means | $\color{red}{0.934}$ |
+| 5.2 | EBT → $(p_{48}, q, A)$ → B-spline → MFPCA → k-means | <span class="hi">0.934</span> |
 
 
 # 6. Discussion

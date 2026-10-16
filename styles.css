@@ -69,3 +69,10 @@ a:hover {
     text-decoration: underline;
     color: #d64b40;
 }
+
+/* 표 — 한글을 낱자 사이에서 끊지 않고, 숫자 칸은 한 줄로, 강조 숫자는 본문 글꼴 그대로 빨강 (대표 2026-10-16 18:26 「표 가독이 많이 떨어짐」) */
+table th, table td { word-break: keep-all; }
+table td[style*="right"] { white-space: nowrap; }
+table { font-size: 0.92em; }
+span.hi { color: #d62728; }
+@media (max-width: 600px) { table { font-size: 0.78em; } }
