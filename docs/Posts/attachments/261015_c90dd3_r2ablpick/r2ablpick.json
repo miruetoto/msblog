@@ -3,7 +3,7 @@
   {
    "label": "전체 평균 (655곳)",
    "caption": "에어코리아 — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
-   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/_all.webp"
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/mean_all.webp"
   },
   {
    "label": "별양동 (경기도)",
@@ -165,7 +165,7 @@
   {
    "label": "전체 평균 (384곳)",
    "caption": "EPA AQS · PM2.5 — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
-   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/_all.webp"
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/mean_all.webp"
   },
   {
    "label": "DARRINGTON - FIR ST (Darrington High School) (Washington / Seattle-Tacoma-Bellevue, WA)",
@@ -322,7 +322,7 @@
   {
    "label": "전체 평균 (431곳)",
    "caption": "EPA AQS · O3 — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
-   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/_all.webp"
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/mean_all.webp"
   },
   {
    "label": "Redlands (California / Riverside-San Bernardino-Ontario, CA)",
@@ -479,7 +479,7 @@
   {
    "label": "전체 평균 (2곳)",
    "caption": "OpenAQ — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
-   "src": "attachments/261015_c90dd3_r2ablpick/openaq/_all.webp"
+   "src": "attachments/261015_c90dd3_r2ablpick/openaq/mean_all.webp"
   },
   {
    "label": "서울 종로구 (서울특별시)",
@@ -496,7 +496,7 @@
   {
    "label": "전체 평균 (9곳)",
    "caption": "WEIS — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
-   "src": "attachments/261015_c90dd3_r2ablpick/weis/_all.webp"
+   "src": "attachments/261015_c90dd3_r2ablpick/weis/mean_all.webp"
   },
   {
    "label": "대청호 (충청북도 · 금강 수계)",
@@ -548,7 +548,7 @@
   {
    "label": "전체 평균 (549곳)",
    "caption": "USGS — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
-   "src": "attachments/261015_c90dd3_r2ablpick/usgs/_all.webp"
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/mean_all.webp"
   },
   {
    "label": "MIDDLE FORK WILLAMETTE RIVER NEAR DEXTER, OR (Oregon (OR) · Eugene-Springfield, OR 대도시권)",
@@ -710,7 +710,7 @@
   {
    "label": "전체 평균 (7곳)",
    "caption": "기상청 ASOS ① — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
-   "src": "attachments/261015_c90dd3_r2ablpick/asos1/_all.webp"
+   "src": "attachments/261015_c90dd3_r2ablpick/asos1/mean_all.webp"
   },
   {
    "label": "서울 (서울특별시)",
@@ -752,7 +752,7 @@
   {
    "label": "전체 평균 (7곳)",
    "caption": "기상청 ASOS ② — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
-   "src": "attachments/261015_c90dd3_r2ablpick/asos2/_all.webp"
+   "src": "attachments/261015_c90dd3_r2ablpick/asos2/mean_all.webp"
   },
   {
    "label": "울산 (울산광역시)",
@@ -794,7 +794,7 @@
   {
    "label": "전체 평균 (57곳)",
    "caption": "NOAA ISD — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
-   "src": "attachments/261015_c90dd3_r2ablpick/isd/_all.webp"
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/mean_all.webp"
   },
   {
    "label": "Sacramento International (CA / Sacramento-Roseville-Folsom, CA)",
