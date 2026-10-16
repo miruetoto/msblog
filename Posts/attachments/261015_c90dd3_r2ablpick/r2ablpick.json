@@ -1,0 +1,1085 @@
+{
+ "airkorea": [
+  {
+   "label": "전체 평균 (655곳)",
+   "caption": "에어코리아 — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/_all.webp"
+  },
+  {
+   "label": "별양동 (경기도)",
+   "caption": "에어코리아 — 어블레이션 · 별양동 (경기도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_131201_pm25.webp"
+  },
+  {
+   "label": "청계천로 (서울특별시)",
+   "caption": "에어코리아 — 어블레이션 · 청계천로 (서울특별시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_111124_pm25.webp"
+  },
+  {
+   "label": "무전동 (경상남도)",
+   "caption": "에어코리아 — 어블레이션 · 무전동 (경상남도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_238411_pm25.webp"
+  },
+  {
+   "label": "신방동 (충청남도)",
+   "caption": "에어코리아 — 어블레이션 · 신방동 (충청남도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_534116_pm25.webp"
+  },
+  {
+   "label": "봉산동 (경기도)",
+   "caption": "에어코리아 — 어블레이션 · 봉산동 (경기도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_131581_pm25.webp"
+  },
+  {
+   "label": "노대동 (광주광역시)",
+   "caption": "에어코리아 — 어블레이션 · 노대동 (광주광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_324124_pm25.webp"
+  },
+  {
+   "label": "모종동 (충청남도)",
+   "caption": "에어코리아 — 어블레이션 · 모종동 (충청남도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_534441_pm25.webp"
+  },
+  {
+   "label": "송북동 (경기도)",
+   "caption": "에어코리아 — 어블레이션 · 송북동 (경기도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_131344_pm25.webp"
+  },
+  {
+   "label": "고덕동 (경기도)",
+   "caption": "에어코리아 — 어블레이션 · 고덕동 (경기도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_131346_pm25.webp"
+  },
+  {
+   "label": "청북읍 (경기도)",
+   "caption": "에어코리아 — 어블레이션 · 청북읍 (경기도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_131345_pm25.webp"
+  },
+  {
+   "label": "송천동 (전북특별자치도)",
+   "caption": "에어코리아 — 어블레이션 · 송천동 (전북특별자치도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_735115_pm25.webp"
+  },
+  {
+   "label": "중부대로(구갈동) (경기도)",
+   "caption": "에어코리아 — 어블레이션 · 중부대로(구갈동) (경기도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_131414_pm25.webp"
+  },
+  {
+   "label": "괴산읍 (충청북도)",
+   "caption": "에어코리아 — 어블레이션 · 괴산읍 (충청북도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_633362_pm25.webp"
+  },
+  {
+   "label": "둔포면 (충청남도)",
+   "caption": "에어코리아 — 어블레이션 · 둔포면 (충청남도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_534444_pm25.webp"
+  },
+  {
+   "label": "창전동 (경기도)",
+   "caption": "에어코리아 — 어블레이션 · 창전동 (경기도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_131442_pm25.webp"
+  },
+  {
+   "label": "한솔동 (세종특별자치시)",
+   "caption": "에어코리아 — 어블레이션 · 한솔동 (세종특별자치시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_541113_pm25.webp"
+  },
+  {
+   "label": "인주면 (충청남도)",
+   "caption": "에어코리아 — 어블레이션 · 인주면 (충청남도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_534445_pm25.webp"
+  },
+  {
+   "label": "함평읍 (전라남도)",
+   "caption": "에어코리아 — 어블레이션 · 함평읍 (전라남도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_336501_pm25.webp"
+  },
+  {
+   "label": "배방읍 (충청남도)",
+   "caption": "에어코리아 — 어블레이션 · 배방읍 (충청남도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_534442_pm25.webp"
+  },
+  {
+   "label": "당동 (경기도)",
+   "caption": "에어코리아 — 어블레이션 · 당동 (경기도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_131501_pm25.webp"
+  },
+  {
+   "label": "수지 (경기도)",
+   "caption": "에어코리아 — 어블레이션 · 수지 (경기도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_131412_pm25.webp"
+  },
+  {
+   "label": "운서 (인천광역시)",
+   "caption": "에어코리아 — 어블레이션 · 운서 (인천광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_823702_pm25.webp"
+  },
+  {
+   "label": "가남읍 (경기도)",
+   "caption": "에어코리아 — 어블레이션 · 가남읍 (경기도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_131593_pm25.webp"
+  },
+  {
+   "label": "영종 (인천광역시)",
+   "caption": "에어코리아 — 어블레이션 · 영종 (인천광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_823613_pm25.webp"
+  },
+  {
+   "label": "당리동 (부산광역시)",
+   "caption": "에어코리아 — 어블레이션 · 당리동 (부산광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_221284_pm25.webp"
+  },
+  {
+   "label": "문경시 (경상북도)",
+   "caption": "에어코리아 — 어블레이션 · 문경시 (경상북도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_437211_pm25.webp"
+  },
+  {
+   "label": "읍내동 (대전광역시)",
+   "caption": "에어코리아 — 어블레이션 · 읍내동 (대전광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_525111_pm25.webp"
+  },
+  {
+   "label": "노형로 (제주특별자치도)",
+   "caption": "에어코리아 — 어블레이션 · 노형로 (제주특별자치도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_339211_pm25.webp"
+  },
+  {
+   "label": "이곡동 (대구광역시)",
+   "caption": "에어코리아 — 어블레이션 · 이곡동 (대구광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_422202_pm25.webp"
+  },
+  {
+   "label": "평창읍 (강원특별자치도)",
+   "caption": "에어코리아 — 어블레이션 · 평창읍 (강원특별자치도) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_632171_pm25.webp"
+  },
+  {
+   "label": "무거동 (울산광역시)",
+   "caption": "에어코리아 — 어블레이션 · 무거동 (울산광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/airkorea/airkorea_238129_pm25.webp"
+  }
+ ],
+ "epa_pm25": [
+  {
+   "label": "전체 평균 (384곳)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/_all.webp"
+  },
+  {
+   "label": "DARRINGTON - FIR ST (Darrington High School) (Washington / Seattle-Tacoma-Bellevue, WA)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · DARRINGTON - FIR ST (Darrington High School) (Washington / Seattle-Tacoma-Bellevue, WA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_530610020_pm25.webp"
+  },
+  {
+   "label": "Huntley Place-Hartford (Connecticut / Hartford-West Hartford-East Hartford, CT)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Huntley Place-Hartford (Connecticut / Hartford-West Hartford-East Hartford, CT) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_090030025_pm25.webp"
+  },
+  {
+   "label": "Anoka County Airport (Minnesota / Minneapolis-St. Paul-Bloomington, MN-WI)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Anoka County Airport (Minnesota / Minneapolis-St. Paul-Bloomington, MN-WI) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_270031002_pm25.webp"
+  },
+  {
+   "label": "MCMILLAN  NCore-PAMS (District Of Columbia / Washington-Arlington-Alexandria, DC-VA-MD-WV)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · MCMILLAN  NCore-PAMS (District Of Columbia / Washington-Arlington-Alexandria, DC-VA-MD-WV) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_110010043_pm25.webp"
+  },
+  {
+   "label": "Buffalo Near-Road (New York / Buffalo-Cheektowaga, NY)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Buffalo Near-Road (New York / Buffalo-Cheektowaga, NY) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_360290023_pm25.webp"
+  },
+  {
+   "label": "LYNN WATER TREATMENT PLANT (Massachusetts / Boston-Cambridge-Newton, MA-NH)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · LYNN WATER TREATMENT PLANT (Massachusetts / Boston-Cambridge-Newton, MA-NH) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_250092006_pm25.webp"
+  },
+  {
+   "label": "Lee District Park (Virginia / Washington-Arlington-Alexandria, DC-VA-MD-WV)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Lee District Park (Virginia / Washington-Arlington-Alexandria, DC-VA-MD-WV) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_510590030_pm25.webp"
+  },
+  {
+   "label": "MLK  CORNER OF MLK BLVD AND JUSTISON ST (Delaware / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · MLK  CORNER OF MLK BLVD AND JUSTISON ST (Delaware / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_100032004_pm25.webp"
+  },
+  {
+   "label": "Clovis-Villa (California / Fresno, CA)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Clovis-Villa (California / Fresno, CA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_060195001_pm25.webp"
+  },
+  {
+   "label": "Utah Technical Center (Utah / Salt Lake City-Murray, UT)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Utah Technical Center (Utah / Salt Lake City-Murray, UT) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_490353015_pm25.webp"
+  },
+  {
+   "label": "Rutgers University (New Jersey / New York-Newark-Jersey City, NY-NJ)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Rutgers University (New Jersey / New York-Newark-Jersey City, NY-NJ) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_340230011_pm25.webp"
+  },
+  {
+   "label": "WAUKESHA - CLEVELAND AVE (Wisconsin / Milwaukee-Waukesha, WI)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · WAUKESHA - CLEVELAND AVE (Wisconsin / Milwaukee-Waukesha, WI) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_551330027_pm25.webp"
+  },
+  {
+   "label": "Liberty (Pennsylvania / Pittsburgh, PA)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Liberty (Pennsylvania / Pittsburgh, PA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_420030064_pm25.webp"
+  },
+  {
+   "label": "Indpls- W. 18th St./ Ernie Pyle School 90 (Indiana / Indianapolis-Carmel-Greenwood, IN)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Indpls- W. 18th St./ Ernie Pyle School 90 (Indiana / Indianapolis-Carmel-Greenwood, IN) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_180970081_pm25.webp"
+  },
+  {
+   "label": "4102 Woolworth Ave. on Healthcenter Warehouse (Nebraska / Omaha, NE-IA)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · 4102 Woolworth Ave. on Healthcenter Warehouse (Nebraska / Omaha, NE-IA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_310550019_pm25.webp"
+  },
+  {
+   "label": "Eliza Howell-NR (Michigan / Detroit-Warren-Dearborn, MI)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Eliza Howell-NR (Michigan / Detroit-Warren-Dearborn, MI) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_261630093_pm25.webp"
+  },
+  {
+   "label": "TEMPE (Arizona / Phoenix-Mesa-Chandler, AZ)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · TEMPE (Arizona / Phoenix-Mesa-Chandler, AZ) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_040134005_pm25.webp"
+  },
+  {
+   "label": "Troost (Missouri / Kansas City, MO-KS)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Troost (Missouri / Kansas City, MO-KS) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_290950034_pm25.webp"
+  },
+  {
+   "label": "Calaveras Lake (Texas / San Antonio-New Braunfels, TX)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Calaveras Lake (Texas / San Antonio-New Braunfels, TX) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_480290059_pm25.webp"
+  },
+  {
+   "label": "REGIONAL OFFICE BUILDING (Illinois / Chicago-Naperville-Elgin, IL-IN)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · REGIONAL OFFICE BUILDING (Illinois / Chicago-Naperville-Elgin, IL-IN) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_170314007_pm25.webp"
+  },
+  {
+   "label": "Glenpool (Oklahoma / Tulsa, OK)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Glenpool (Oklahoma / Tulsa, OK) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_401430174_pm25.webp"
+  },
+  {
+   "label": "DENVER - CAMP (Colorado / Denver-Aurora-Centennial, CO)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · DENVER - CAMP (Colorado / Denver-Aurora-Centennial, CO) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_080310002_pm25.webp"
+  },
+  {
+   "label": "Leeds (Alabama / Birmingham, AL)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Leeds (Alabama / Birmingham, AL) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_010731010_pm25.webp"
+  },
+  {
+   "label": "Palo Verde (Nevada / Las Vegas-Henderson-North Las Vegas, NV)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Palo Verde (Nevada / Las Vegas-Henderson-North Las Vegas, NV) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_320030073_pm25.webp"
+  },
+  {
+   "label": "Watson Lane (Kentucky / Louisville/Jefferson County, KY-IN)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Watson Lane (Kentucky / Louisville/Jefferson County, KY-IN) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_211110051_pm25.webp"
+  },
+  {
+   "label": "Fair Hill Natural Resource Management Area (Maryland / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Fair Hill Natural Resource Management Area (Maryland / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_240150003_pm25.webp"
+  },
+  {
+   "label": "CCRI Liston Campus ROOFTOP (Rhode Island / Providence-Warwick, RI-MA)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · CCRI Liston Campus ROOFTOP (Rhode Island / Providence-Warwick, RI-MA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_440070022_pm25.webp"
+  },
+  {
+   "label": "Cincinnati Near Road (Ohio / Cincinnati, OH-KY-IN)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Cincinnati Near Road (Ohio / Cincinnati, OH-KY-IN) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_390610048_pm25.webp"
+  },
+  {
+   "label": "Triple Oak (North Carolina / Raleigh-Cary, NC)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Triple Oak (North Carolina / Raleigh-Cary, NC) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_371830021_pm25.webp"
+  },
+  {
+   "label": "Near Road Site (Tennessee / Nashville-Davidson--Murfreesboro--Franklin, TN)",
+   "caption": "EPA AQS · PM2.5 — 어블레이션 · Near Road Site (Tennessee / Nashville-Davidson--Murfreesboro--Franklin, TN) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_pm25/epa_470370040_pm25.webp"
+  }
+ ],
+ "epa_o3": [
+  {
+   "label": "전체 평균 (431곳)",
+   "caption": "EPA AQS · O3 — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/_all.webp"
+  },
+  {
+   "label": "Redlands (California / Riverside-San Bernardino-Ontario, CA)",
+   "caption": "EPA AQS · O3 — 어블레이션 · Redlands (California / Riverside-San Bernardino-Ontario, CA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_060714003_o3.webp"
+  },
+  {
+   "label": "Houston Deer Park #2 (Texas / Houston-Pasadena-The Woodlands, TX)",
+   "caption": "EPA AQS · O3 — 어블레이션 · Houston Deer Park #2 (Texas / Houston-Pasadena-The Woodlands, TX) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_482011039_o3.webp"
+  },
+  {
+   "label": "NATIONAL RENEWABLE ENERGY LABS - NREL (Colorado / Denver-Aurora-Centennial, CO)",
+   "caption": "EPA AQS · O3 — 어블레이션 · NATIONAL RENEWABLE ENERGY LABS - NREL (Colorado / Denver-Aurora-Centennial, CO) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_080590011_o3.webp"
+  },
+  {
+   "label": "High School Air Monitoring Station (Arizona / Phoenix-Mesa-Chandler, AZ)",
+   "caption": "EPA AQS · O3 — 어블레이션 · High School Air Monitoring Station (Arizona / Phoenix-Mesa-Chandler, AZ) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_040137024_o3.webp"
+  },
+  {
+   "label": "GRAFTON (Wisconsin / Milwaukee-Waukesha, WI)",
+   "caption": "EPA AQS · O3 — 어블레이션 · GRAFTON (Wisconsin / Milwaukee-Waukesha, WI) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_550890008_o3.webp"
+  },
+  {
+   "label": "REGIONAL OFFICE BUILDING (Illinois / Chicago-Naperville-Elgin, IL-IN)",
+   "caption": "EPA AQS · O3 — 어블레이션 · REGIONAL OFFICE BUILDING (Illinois / Chicago-Naperville-Elgin, IL-IN) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_170314007_o3.webp"
+  },
+  {
+   "label": "Sycamore (Ohio / Cincinnati, OH-KY-IN)",
+   "caption": "EPA AQS · O3 — 어블레이션 · Sycamore (Ohio / Cincinnati, OH-KY-IN) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_390610006_o3.webp"
+  },
+  {
+   "label": "VALPARAISO (Indiana / Chicago-Naperville-Elgin, IL-IN)",
+   "caption": "EPA AQS · O3 — 어블레이션 · VALPARAISO (Indiana / Chicago-Naperville-Elgin, IL-IN) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_181270026_o3.webp"
+  },
+  {
+   "label": "BABYLON (New York / New York-Newark-Jersey City, NY-NJ)",
+   "caption": "EPA AQS · O3 — 어블레이션 · BABYLON (New York / New York-Newark-Jersey City, NY-NJ) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_361030002_o3.webp"
+  },
+  {
+   "label": "MCMILLAN  NCore-PAMS (District Of Columbia / Washington-Arlington-Alexandria, DC-VA-MD-WV)",
+   "caption": "EPA AQS · O3 — 어블레이션 · MCMILLAN  NCore-PAMS (District Of Columbia / Washington-Arlington-Alexandria, DC-VA-MD-WV) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_110010043_o3.webp"
+  },
+  {
+   "label": "Tarrant Elementary School (Alabama / Birmingham, AL)",
+   "caption": "EPA AQS · O3 — 어블레이션 · Tarrant Elementary School (Alabama / Birmingham, AL) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_010736002_o3.webp"
+  },
+  {
+   "label": "CANNONS LANE (Kentucky / Louisville/Jefferson County, KY-IN)",
+   "caption": "EPA AQS · O3 — 어블레이션 · CANNONS LANE (Kentucky / Louisville/Jefferson County, KY-IN) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_211110067_o3.webp"
+  },
+  {
+   "label": "Whitmore (Nebraska / Omaha, NE-IA)",
+   "caption": "EPA AQS · O3 — 어블레이션 · Whitmore (Nebraska / Omaha, NE-IA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_310550053_o3.webp"
+  },
+  {
+   "label": "FALL RIVER (Massachusetts / Providence-Warwick, RI-MA)",
+   "caption": "EPA AQS · O3 — 어블레이션 · FALL RIVER (Massachusetts / Providence-Warwick, RI-MA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_250051004_o3.webp"
+  },
+  {
+   "label": "Snowbird (Utah / Salt Lake City-Murray, UT)",
+   "caption": "EPA AQS · O3 — 어블레이션 · Snowbird (Utah / Salt Lake City-Murray, UT) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_490350015_o3.webp"
+  },
+  {
+   "label": "TULSA CENTRAL (Oklahoma / Tulsa, OK)",
+   "caption": "EPA AQS · O3 — 어블레이션 · TULSA CENTRAL (Oklahoma / Tulsa, OK) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_401431127_o3.webp"
+  },
+  {
+   "label": "JFK (Kansas / Kansas City, MO-KS)",
+   "caption": "EPA AQS · O3 — 어블레이션 · JFK (Kansas / Kansas City, MO-KS) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_202090021_o3.webp"
+  },
+  {
+   "label": "US-EPA Laboratory (Rhode Island / Providence-Warwick, RI-MA)",
+   "caption": "EPA AQS · O3 — 어블레이션 · US-EPA Laboratory (Rhode Island / Providence-Warwick, RI-MA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_440090007_o3.webp"
+  },
+  {
+   "label": "BELLEVUE STATE PARK, FIELD IN SE PORTION OF PARK (Delaware / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD)",
+   "caption": "EPA AQS · O3 — 어블레이션 · BELLEVUE STATE PARK, FIELD IN SE PORTION OF PARK (Delaware / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_100031013_o3.webp"
+  },
+  {
+   "label": "Cedar Creek (Minnesota / Minneapolis-St. Paul-Bloomington, MN-WI)",
+   "caption": "EPA AQS · O3 — 어블레이션 · Cedar Creek (Minnesota / Minneapolis-St. Paul-Bloomington, MN-WI) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_270031001_o3.webp"
+  },
+  {
+   "label": "Liberty (Missouri / Kansas City, MO-KS)",
+   "caption": "EPA AQS · O3 — 어블레이션 · Liberty (Missouri / Kansas City, MO-KS) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_290470005_o3.webp"
+  },
+  {
+   "label": "Carus - Spangler Road (SPR) (Oregon / Portland-Vancouver-Hillsboro, OR-WA)",
+   "caption": "EPA AQS · O3 — 어블레이션 · Carus - Spangler Road (SPR) (Oregon / Portland-Vancouver-Hillsboro, OR-WA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_410050004_o3.webp"
+  },
+  {
+   "label": "East Health Center (Tennessee / Nashville-Davidson--Murfreesboro--Franklin, TN)",
+   "caption": "EPA AQS · O3 — 어블레이션 · East Health Center (Tennessee / Nashville-Davidson--Murfreesboro--Franklin, TN) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_470370011_o3.webp"
+  },
+  {
+   "label": "Lawrenceville (Pennsylvania / Pittsburgh, PA)",
+   "caption": "EPA AQS · O3 — 어블레이션 · Lawrenceville (Pennsylvania / Pittsburgh, PA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_420030008_o3.webp"
+  },
+  {
+   "label": "Padonia (Maryland / Baltimore-Columbia-Towson, MD)",
+   "caption": "EPA AQS · O3 — 어블레이션 · Padonia (Maryland / Baltimore-Columbia-Towson, MD) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_240051007_o3.webp"
+  },
+  {
+   "label": "SEATTLE - BEACON HILL (Washington / Seattle-Tacoma-Bellevue, WA)",
+   "caption": "EPA AQS · O3 — 어블레이션 · SEATTLE - BEACON HILL (Washington / Seattle-Tacoma-Bellevue, WA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_530330080_o3.webp"
+  },
+  {
+   "label": "Rutgers University (New Jersey / New York-Newark-Jersey City, NY-NJ)",
+   "caption": "EPA AQS · O3 — 어블레이션 · Rutgers University (New Jersey / New York-Newark-Jersey City, NY-NJ) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_340230011_o3.webp"
+  },
+  {
+   "label": "Hernando (Mississippi / Memphis, TN-MS-AR)",
+   "caption": "EPA AQS · O3 — 어블레이션 · Hernando (Mississippi / Memphis, TN-MS-AR) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_280330002_o3.webp"
+  },
+  {
+   "label": "United Avenue (Georgia / Atlanta-Sandy Springs-Roswell, GA)",
+   "caption": "EPA AQS · O3 — 어블레이션 · United Avenue (Georgia / Atlanta-Sandy Springs-Roswell, GA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_131210055_o3.webp"
+  },
+  {
+   "label": "Green Valley (Nevada / Las Vegas-Henderson-North Las Vegas, NV)",
+   "caption": "EPA AQS · O3 — 어블레이션 · Green Valley (Nevada / Las Vegas-Henderson-North Las Vegas, NV) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/epa_o3/epa_320030298_o3.webp"
+  }
+ ],
+ "openaq": [
+  {
+   "label": "전체 평균 (2곳)",
+   "caption": "OpenAQ — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
+   "src": "attachments/261015_c90dd3_r2ablpick/openaq/_all.webp"
+  },
+  {
+   "label": "서울 종로구 (서울특별시)",
+   "caption": "OpenAQ — 어블레이션 · 서울 종로구 (서울특별시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/openaq/openaq_2623321_pm25.webp"
+  },
+  {
+   "label": "Los Angeles – N. Main (California / Los Angeles-Long Beach-Anaheim, CA)",
+   "caption": "OpenAQ — 어블레이션 · Los Angeles – N. Main (California / Los Angeles-Long Beach-Anaheim, CA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/openaq/openaq_7936_pm25.webp"
+  }
+ ],
+ "weis": [
+  {
+   "label": "전체 평균 (9곳)",
+   "caption": "WEIS — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
+   "src": "attachments/261015_c90dd3_r2ablpick/weis/_all.webp"
+  },
+  {
+   "label": "대청호 (충청북도 · 금강 수계)",
+   "caption": "WEIS — 어블레이션 · 대청호 (충청북도 · 금강 수계) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/weis/WEIS_S03003_DO.webp"
+  },
+  {
+   "label": "주암호 (전라남도 · 영산·섬진 수계)",
+   "caption": "WEIS — 어블레이션 · 주암호 (전라남도 · 영산·섬진 수계) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/weis/WEIS_S04001_DO.webp"
+  },
+  {
+   "label": "상동 (경상남도 · 낙동강 수계)",
+   "caption": "WEIS — 어블레이션 · 상동 (경상남도 · 낙동강 수계) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/weis/WEIS_S02017_DO.webp"
+  },
+  {
+   "label": "청암 (경상남도 · 낙동강 수계)",
+   "caption": "WEIS — 어블레이션 · 청암 (경상남도 · 낙동강 수계) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/weis/WEIS_S02006_DO.webp"
+  },
+  {
+   "label": "다산 (경상북도 · 낙동강 수계)",
+   "caption": "WEIS — 어블레이션 · 다산 (경상북도 · 낙동강 수계) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/weis/WEIS_S02009_DO.webp"
+  },
+  {
+   "label": "칠서 (경상남도 · 낙동강 수계)",
+   "caption": "WEIS — 어블레이션 · 칠서 (경상남도 · 낙동강 수계) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/weis/WEIS_S02007_DO.webp"
+  },
+  {
+   "label": "해평 (경상북도 · 낙동강 수계)",
+   "caption": "WEIS — 어블레이션 · 해평 (경상북도 · 낙동강 수계) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/weis/WEIS_S02012_DO.webp"
+  },
+  {
+   "label": "용담호 (전북특별자치도 · 금강 수계)",
+   "caption": "WEIS — 어블레이션 · 용담호 (전북특별자치도 · 금강 수계) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/weis/WEIS_S03008_DO.webp"
+  },
+  {
+   "label": "의암호 (강원특별자치도 · 한강 수계)",
+   "caption": "WEIS — 어블레이션 · 의암호 (강원특별자치도 · 한강 수계) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/weis/WEIS_S01012_DO.webp"
+  }
+ ],
+ "usgs": [
+  {
+   "label": "전체 평균 (549곳)",
+   "caption": "USGS — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/_all.webp"
+  },
+  {
+   "label": "MIDDLE FORK WILLAMETTE RIVER NEAR DEXTER, OR (Oregon (OR) · Eugene-Springfield, OR 대도시권)",
+   "caption": "USGS — 어블레이션 · MIDDLE FORK WILLAMETTE RIVER NEAR DEXTER, OR (Oregon (OR) · Eugene-Springfield, OR 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_14150000_DO.webp"
+  },
+  {
+   "label": "SAN JUAN RIVER NEAR BLUFF, UT (Utah (UT) · CBSA 경계상 대응 없음)",
+   "caption": "USGS — 어블레이션 · SAN JUAN RIVER NEAR BLUFF, UT (Utah (UT) · CBSA 경계상 대응 없음) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_09379500_DO.webp"
+  },
+  {
+   "label": "FALL CREEK BLW WINBERRY CREEK, NEAR FALL CREEK, OR (Oregon (OR) · Eugene-Springfield, OR 대도시권)",
+   "caption": "USGS — 어블레이션 · FALL CREEK BLW WINBERRY CREEK, NEAR FALL CREEK, OR (Oregon (OR) · Eugene-Springfield, OR 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_14151000_DO.webp"
+  },
+  {
+   "label": "RUSSIAN R NR HOPLAND CA (California (CA) · Ukiah, CA 소도시권)",
+   "caption": "USGS — 어블레이션 · RUSSIAN R NR HOPLAND CA (California (CA) · Ukiah, CA 소도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_11462500_DO.webp"
+  },
+  {
+   "label": "L ARKANSAS R NR SEDGWICK, KS (Kansas (KS) · Wichita, KS 대도시권)",
+   "caption": "USGS — 어블레이션 · L ARKANSAS R NR SEDGWICK, KS (Kansas (KS) · Wichita, KS 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_07144100_DO.webp"
+  },
+  {
+   "label": "SNAKE RIVER AT MOOSE, WY (Wyoming (WY) · Jackson, WY-ID 소도시권)",
+   "caption": "USGS — 어블레이션 · SNAKE RIVER AT MOOSE, WY (Wyoming (WY) · Jackson, WY-ID 소도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_13013650_DO.webp"
+  },
+  {
+   "label": "CEDAR CREEK AT THIXTON ROAD NEAR LOUISVILLE, KY (Kentucky (KY) · Louisville/Jefferson County, KY-IN 대도시권)",
+   "caption": "USGS — 어블레이션 · CEDAR CREEK AT THIXTON ROAD NEAR LOUISVILLE, KY (Kentucky (KY) · Louisville/Jefferson County, KY-IN 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_03298250_DO.webp"
+  },
+  {
+   "label": "LOWER RIVER ROUGE AT DEARBORN, MI (Michigan (MI) · Detroit-Warren-Dearborn, MI 대도시권)",
+   "caption": "USGS — 어블레이션 · LOWER RIVER ROUGE AT DEARBORN, MI (Michigan (MI) · Detroit-Warren-Dearborn, MI 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_04168400_DO.webp"
+  },
+  {
+   "label": "FRENCH BROAD RIVER NEAR FLETCHER, NC (North Carolina (NC) · Asheville, NC 대도시권)",
+   "caption": "USGS — 어블레이션 · FRENCH BROAD RIVER NEAR FLETCHER, NC (North Carolina (NC) · Asheville, NC 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_03447687_DO.webp"
+  },
+  {
+   "label": "FOX RIVER AT OIL TANK DEPOT AT GREEN BAY, WI (Wisconsin (WI) · Green Bay, WI 대도시권)",
+   "caption": "USGS — 어블레이션 · FOX RIVER AT OIL TANK DEPOT AT GREEN BAY, WI (Wisconsin (WI) · Green Bay, WI 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_040851385_DO.webp"
+  },
+  {
+   "label": "Little Blue River near Lake City, MO (Missouri (MO) · Kansas City, MO-KS 대도시권)",
+   "caption": "USGS — 어블레이션 · Little Blue River near Lake City, MO (Missouri (MO) · Kansas City, MO-KS 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_06894000_DO.webp"
+  },
+  {
+   "label": "MUDDY CRK BLW WOLFORD MTN RESER. NR KREMMLING, CO (Colorado (CO) · CBSA 경계상 대응 없음)",
+   "caption": "USGS — 어블레이션 · MUDDY CRK BLW WOLFORD MTN RESER. NR KREMMLING, CO (Colorado (CO) · CBSA 경계상 대응 없음) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_09041400_DO.webp"
+  },
+  {
+   "label": "PAINT BRANCH NEAR COLLEGE PARK, MD (Maryland (MD) · Washington-Arlington-Alexandria, DC-VA-MD-WV 대도시권)",
+   "caption": "USGS — 어블레이션 · PAINT BRANCH NEAR COLLEGE PARK, MD (Maryland (MD) · Washington-Arlington-Alexandria, DC-VA-MD-WV 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_01649190_DO.webp"
+  },
+  {
+   "label": "APALACHICOLA RIVER AT CHATTAHOOCHEE FLA (Florida (FL) · CBSA 경계상 대응 없음)",
+   "caption": "USGS — 어블레이션 · APALACHICOLA RIVER AT CHATTAHOOCHEE FLA (Florida (FL) · CBSA 경계상 대응 없음) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_02358000_DO.webp"
+  },
+  {
+   "label": "Rock Creek at Joyce Rd Washington, DC (District of Columbia (DC) · Washington-Arlington-Alexandria, DC-VA-MD-WV 대도시권)",
+   "caption": "USGS — 어블레이션 · Rock Creek at Joyce Rd Washington, DC (District of Columbia (DC) · Washington-Arlington-Alexandria, DC-VA-MD-WV 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_01648010_DO.webp"
+  },
+  {
+   "label": "SOUTH RIVER AT FORREST PARK ROAD, AT ATLANTA, GA (Georgia (GA) · Atlanta-Sandy Springs-Roswell, GA 대도시권)",
+   "caption": "USGS — 어블레이션 · SOUTH RIVER AT FORREST PARK ROAD, AT ATLANTA, GA (Georgia (GA) · Atlanta-Sandy Springs-Roswell, GA 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_02203655_DO.webp"
+  },
+  {
+   "label": "Cobbs Creek at Mt. Moriah Cemetery, Philadelphia (Pennsylvania (PA) · Philadelphia-Camden-Wilmington, PA-NJ-DE-MD 대도시권)",
+   "caption": "USGS — 어블레이션 · Cobbs Creek at Mt. Moriah Cemetery, Philadelphia (Pennsylvania (PA) · Philadelphia-Camden-Wilmington, PA-NJ-DE-MD 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_01475548_DO.webp"
+  },
+  {
+   "label": "WEST FORK R BL STONEWALL JACKSON DAM NR WESTON, WV (West Virginia (WV) · CBSA 경계상 대응 없음)",
+   "caption": "USGS — 어블레이션 · WEST FORK R BL STONEWALL JACKSON DAM NR WESTON, WV (West Virginia (WV) · CBSA 경계상 대응 없음) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_03058000_DO.webp"
+  },
+  {
+   "label": "San Antonio Rv nr Elmendorf, TX (Texas (TX) · San Antonio-New Braunfels, TX 대도시권)",
+   "caption": "USGS — 어블레이션 · San Antonio Rv nr Elmendorf, TX (Texas (TX) · San Antonio-New Braunfels, TX 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_08181800_DO.webp"
+  },
+  {
+   "label": "LAKE TAPPS DIVERSION AT DIERINGER, WA (Washington (WA) · Seattle-Tacoma-Bellevue, WA 대도시권)",
+   "caption": "USGS — 어블레이션 · LAKE TAPPS DIVERSION AT DIERINGER, WA (Washington (WA) · Seattle-Tacoma-Bellevue, WA 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_12101100_DO.webp"
+  },
+  {
+   "label": "TURKEY CREEK AT SEWAGE PLANT NEAR PINSON AL (Alabama (AL) · Birmingham, AL 대도시권)",
+   "caption": "USGS — 어블레이션 · TURKEY CREEK AT SEWAGE PLANT NEAR PINSON AL (Alabama (AL) · Birmingham, AL 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_02455980_DO.webp"
+  },
+  {
+   "label": "Bird Ck at State Highway 266 near Catoosa, OK (Oklahoma (OK) · Tulsa, OK 대도시권)",
+   "caption": "USGS — 어블레이션 · Bird Ck at State Highway 266 near Catoosa, OK (Oklahoma (OK) · Tulsa, OK 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_07178200_DO.webp"
+  },
+  {
+   "label": "NORTH BRANCH PARK RIVER AT HARTFORD, CT (Connecticut (CT) · Hartford-West Hartford-East Hartford, CT 대도시권)",
+   "caption": "USGS — 어블레이션 · NORTH BRANCH PARK RIVER AT HARTFORD, CT (Connecticut (CT) · Hartford-West Hartford-East Hartford, CT 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_01191000_DO.webp"
+  },
+  {
+   "label": "DIFFICULT RUN ABOVE FOX LAKE NEAR FAIRFAX, VA (Virginia (VA) · Washington-Arlington-Alexandria, DC-VA-MD-WV 대도시권)",
+   "caption": "USGS — 어블레이션 · DIFFICULT RUN ABOVE FOX LAKE NEAR FAIRFAX, VA (Virginia (VA) · Washington-Arlington-Alexandria, DC-VA-MD-WV 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_01645704_DO.webp"
+  },
+  {
+   "label": "EAST FORK WHITEWATER RIVER AT RICHMOND, IN (Indiana (IN) · Richmond, IN 소도시권)",
+   "caption": "USGS — 어블레이션 · EAST FORK WHITEWATER RIVER AT RICHMOND, IN (Indiana (IN) · Richmond, IN 소도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_03275500_DO.webp"
+  },
+  {
+   "label": "BRANDYWINE CREEK AT WILMINGTON, DE (Delaware (DE) · Philadelphia-Camden-Wilmington, PA-NJ-DE-MD 대도시권)",
+   "caption": "USGS — 어블레이션 · BRANDYWINE CREEK AT WILMINGTON, DE (Delaware (DE) · Philadelphia-Camden-Wilmington, PA-NJ-DE-MD 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_01481500_DO.webp"
+  },
+  {
+   "label": "TAKU R NR JUNEAU AK (Alaska (AK) · Juneau, AK 소도시권)",
+   "caption": "USGS — 어블레이션 · TAKU R NR JUNEAU AK (Alaska (AK) · Juneau, AK 소도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_15041200_DO.webp"
+  },
+  {
+   "label": "HOBBS BK BELOW CAMBRIDGE RES NR KENDALL GREEN, MA (Massachusetts (MA) · Boston-Cambridge-Newton, MA-NH 대도시권)",
+   "caption": "USGS — 어블레이션 · HOBBS BK BELOW CAMBRIDGE RES NR KENDALL GREEN, MA (Massachusetts (MA) · Boston-Cambridge-Newton, MA-NH 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_01104430_DO.webp"
+  },
+  {
+   "label": "MONGAUP R BELOW SWINGING BRIDGE RESERVOIR NY (New York (NY) · Monticello, NY 소도시권)",
+   "caption": "USGS — 어블레이션 · MONGAUP R BELOW SWINGING BRIDGE RESERVOIR NY (New York (NY) · Monticello, NY 소도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_01433005_DO.webp"
+  },
+  {
+   "label": "Raritan River at Manville NJ (New Jersey (NJ) · New York-Newark-Jersey City, NY-NJ 대도시권)",
+   "caption": "USGS — 어블레이션 · Raritan River at Manville NJ (New Jersey (NJ) · New York-Newark-Jersey City, NY-NJ 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_01400500_DO.webp"
+  },
+  {
+   "label": "SALUDA RIVER BELOW LK MURRAY DAM NR COLUMBIA, SC (South Carolina (SC) · Columbia, SC 대도시권)",
+   "caption": "USGS — 어블레이션 · SALUDA RIVER BELOW LK MURRAY DAM NR COLUMBIA, SC (South Carolina (SC) · Columbia, SC 대도시권) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/usgs/USGS_02168504_DO.webp"
+  }
+ ],
+ "asos1": [
+  {
+   "label": "전체 평균 (7곳)",
+   "caption": "기상청 ASOS ① — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
+   "src": "attachments/261015_c90dd3_r2ablpick/asos1/_all.webp"
+  },
+  {
+   "label": "서울 (서울특별시)",
+   "caption": "기상청 ASOS ① — 어블레이션 · 서울 (서울특별시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/asos1/seoul_temperature_c.webp"
+  },
+  {
+   "label": "광주 (전남광주통합특별시)",
+   "caption": "기상청 ASOS ① — 어블레이션 · 광주 (전남광주통합특별시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/asos1/gwangju_temperature_c.webp"
+  },
+  {
+   "label": "대구 (대구광역시)",
+   "caption": "기상청 ASOS ① — 어블레이션 · 대구 (대구광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/asos1/daegu_temperature_c.webp"
+  },
+  {
+   "label": "부산 (부산광역시)",
+   "caption": "기상청 ASOS ① — 어블레이션 · 부산 (부산광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/asos1/busan_temperature_c.webp"
+  },
+  {
+   "label": "대전 (대전광역시)",
+   "caption": "기상청 ASOS ① — 어블레이션 · 대전 (대전광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/asos1/daejeon_temperature_c.webp"
+  },
+  {
+   "label": "인천 (인천광역시)",
+   "caption": "기상청 ASOS ① — 어블레이션 · 인천 (인천광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/asos1/incheon_temperature_c.webp"
+  },
+  {
+   "label": "울산 (울산광역시)",
+   "caption": "기상청 ASOS ① — 어블레이션 · 울산 (울산광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/asos1/ulsan_temperature_c.webp"
+  }
+ ],
+ "asos2": [
+  {
+   "label": "전체 평균 (7곳)",
+   "caption": "기상청 ASOS ② — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
+   "src": "attachments/261015_c90dd3_r2ablpick/asos2/_all.webp"
+  },
+  {
+   "label": "울산 (울산광역시)",
+   "caption": "기상청 ASOS ② — 어블레이션 · 울산 (울산광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/asos2/ulsan_temperature_c.webp"
+  },
+  {
+   "label": "부산 (부산광역시)",
+   "caption": "기상청 ASOS ② — 어블레이션 · 부산 (부산광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/asos2/busan_temperature_c.webp"
+  },
+  {
+   "label": "대구 (대구광역시)",
+   "caption": "기상청 ASOS ② — 어블레이션 · 대구 (대구광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/asos2/daegu_temperature_c.webp"
+  },
+  {
+   "label": "서울 (서울특별시)",
+   "caption": "기상청 ASOS ② — 어블레이션 · 서울 (서울특별시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/asos2/seoul_temperature_c.webp"
+  },
+  {
+   "label": "인천 (인천광역시)",
+   "caption": "기상청 ASOS ② — 어블레이션 · 인천 (인천광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/asos2/incheon_temperature_c.webp"
+  },
+  {
+   "label": "대전 (대전광역시)",
+   "caption": "기상청 ASOS ② — 어블레이션 · 대전 (대전광역시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/asos2/daejeon_temperature_c.webp"
+  },
+  {
+   "label": "광주 (전남광주통합특별시)",
+   "caption": "기상청 ASOS ② — 어블레이션 · 광주 (전남광주통합특별시) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/asos2/gwangju_temperature_c.webp"
+  }
+ ],
+ "isd": [
+  {
+   "label": "전체 평균 (57곳)",
+   "caption": "NOAA ISD — 어블레이션 (전체 평균, Full model 대비 평균 ARI 차)",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/_all.webp"
+  },
+  {
+   "label": "Sacramento International (CA / Sacramento-Roseville-Folsom, CA)",
+   "caption": "NOAA ISD — 어블레이션 · Sacramento International (CA / Sacramento-Roseville-Folsom, CA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/sacramento_temperature_c.webp"
+  },
+  {
+   "label": "Mineta San Jose International (CA / San Jose-Sunnyvale-Santa Clara, CA)",
+   "caption": "NOAA ISD — 어블레이션 · Mineta San Jose International (CA / San Jose-Sunnyvale-Santa Clara, CA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/san_jose_temperature_c.webp"
+  },
+  {
+   "label": "Fresno Yosemite International (CA / Fresno, CA)",
+   "caption": "NOAA ISD — 어블레이션 · Fresno Yosemite International (CA / Fresno, CA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/fresno_temperature_c.webp"
+  },
+  {
+   "label": "Los Angeles International (CA / Los Angeles-Long Beach-Anaheim, CA)",
+   "caption": "NOAA ISD — 어블레이션 · Los Angeles International (CA / Los Angeles-Long Beach-Anaheim, CA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/los_angeles_temperature_c.webp"
+  },
+  {
+   "label": "Portland International (OR / Portland-Vancouver-Hillsboro, OR-WA)",
+   "caption": "NOAA ISD — 어블레이션 · Portland International (OR / Portland-Vancouver-Hillsboro, OR-WA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/portland_temperature_c.webp"
+  },
+  {
+   "label": "Ontario International (CA / Riverside-San Bernardino-Ontario, CA)",
+   "caption": "NOAA ISD — 어블레이션 · Ontario International (CA / Riverside-San Bernardino-Ontario, CA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/riverside_ontario_temperature_c.webp"
+  },
+  {
+   "label": "San Francisco International (CA / San Francisco-Oakland-Fremont, CA)",
+   "caption": "NOAA ISD — 어블레이션 · San Francisco International (CA / San Francisco-Oakland-Fremont, CA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/san_francisco_temperature_c.webp"
+  },
+  {
+   "label": "Seattle-Tacoma International (WA / Seattle-Tacoma-Bellevue, WA)",
+   "caption": "NOAA ISD — 어블레이션 · Seattle-Tacoma International (WA / Seattle-Tacoma-Bellevue, WA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/seattle_tacoma_temperature_c.webp"
+  },
+  {
+   "label": "San Diego International (CA / San Diego-Chula Vista-Carlsbad, CA)",
+   "caption": "NOAA ISD — 어블레이션 · San Diego International (CA / San Diego-Chula Vista-Carlsbad, CA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/san_diego_temperature_c.webp"
+  },
+  {
+   "label": "Harry Reid International (NV / Las Vegas-Henderson-North Las Vegas, NV)",
+   "caption": "NOAA ISD — 어블레이션 · Harry Reid International (NV / Las Vegas-Henderson-North Las Vegas, NV) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/las_vegas_temperature_c.webp"
+  },
+  {
+   "label": "Salt Lake City International (UT / Salt Lake City-Murray, UT)",
+   "caption": "NOAA ISD — 어블레이션 · Salt Lake City International (UT / Salt Lake City-Murray, UT) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/salt_lake_city_temperature_c.webp"
+  },
+  {
+   "label": "Austin-Bergstrom International (TX / Austin-Round Rock-San Marcos, TX)",
+   "caption": "NOAA ISD — 어블레이션 · Austin-Bergstrom International (TX / Austin-Round Rock-San Marcos, TX) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/austin_temperature_c.webp"
+  },
+  {
+   "label": "Phoenix Sky Harbor International (AZ / Phoenix-Mesa-Chandler, AZ)",
+   "caption": "NOAA ISD — 어블레이션 · Phoenix Sky Harbor International (AZ / Phoenix-Mesa-Chandler, AZ) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/phoenix_temperature_c.webp"
+  },
+  {
+   "label": "San Antonio International (TX / San Antonio-New Braunfels, TX)",
+   "caption": "NOAA ISD — 어블레이션 · San Antonio International (TX / San Antonio-New Braunfels, TX) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/san_antonio_temperature_c.webp"
+  },
+  {
+   "label": "Okc Will Rogers International (OK / Oklahoma City, OK)",
+   "caption": "NOAA ISD — 어블레이션 · Okc Will Rogers International (OK / Oklahoma City, OK) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/oklahoma_city_temperature_c.webp"
+  },
+  {
+   "label": "Dallas-Fort Worth International (TX / Dallas-Fort Worth-Arlington, TX)",
+   "caption": "NOAA ISD — 어블레이션 · Dallas-Fort Worth International (TX / Dallas-Fort Worth-Arlington, TX) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/dallas_fort_worth_temperature_c.webp"
+  },
+  {
+   "label": "George Bush Intcntl/Houston (TX / Houston-Pasadena-The Woodlands, TX)",
+   "caption": "NOAA ISD — 어블레이션 · George Bush Intcntl/Houston (TX / Houston-Pasadena-The Woodlands, TX) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/houston_temperature_c.webp"
+  },
+  {
+   "label": "Tucson International (AZ / Tucson, AZ)",
+   "caption": "NOAA ISD — 어블레이션 · Tucson International (AZ / Tucson, AZ) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/tucson_temperature_c.webp"
+  },
+  {
+   "label": "Denver International (CO / Denver-Aurora-Centennial, CO)",
+   "caption": "NOAA ISD — 어블레이션 · Denver International (CO / Denver-Aurora-Centennial, CO) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/denver_temperature_c.webp"
+  },
+  {
+   "label": "Chicago O'Hare International (IL / Chicago-Naperville-Elgin, IL-IN)",
+   "caption": "NOAA ISD — 어블레이션 · Chicago O'Hare International (IL / Chicago-Naperville-Elgin, IL-IN) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/chicago_ohare_temperature_c.webp"
+  },
+  {
+   "label": "General Mitchell International (WI / Milwaukee-Waukesha, WI)",
+   "caption": "NOAA ISD — 어블레이션 · General Mitchell International (WI / Milwaukee-Waukesha, WI) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/milwaukee_temperature_c.webp"
+  },
+  {
+   "label": "Tulsa International (OK / Tulsa, OK)",
+   "caption": "NOAA ISD — 어블레이션 · Tulsa International (OK / Tulsa, OK) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/tulsa_temperature_c.webp"
+  },
+  {
+   "label": "Frederick W Smith International/Memphis (TN / Memphis, TN-MS-AR)",
+   "caption": "NOAA ISD — 어블레이션 · Frederick W Smith International/Memphis (TN / Memphis, TN-MS-AR) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/memphis_temperature_c.webp"
+  },
+  {
+   "label": "Nashville International (TN / Nashville-Davidson--Murfreesboro--Franklin, TN)",
+   "caption": "NOAA ISD — 어블레이션 · Nashville International (TN / Nashville-Davidson--Murfreesboro--Franklin, TN) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/nashville_temperature_c.webp"
+  },
+  {
+   "label": "Minneapolis-St Paul International/Wold-Chamberlain (MN / Minneapolis-St. Paul-Bloomington, MN-WI)",
+   "caption": "NOAA ISD — 어블레이션 · Minneapolis-St Paul International/Wold-Chamberlain (MN / Minneapolis-St. Paul-Bloomington, MN-WI) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/minneapolis_st_paul_temperature_c.webp"
+  },
+  {
+   "label": "General Edward Lawrence Logan International (MA / Boston-Cambridge-Newton, MA-NH)",
+   "caption": "NOAA ISD — 어블레이션 · General Edward Lawrence Logan International (MA / Boston-Cambridge-Newton, MA-NH) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/boston_temperature_c.webp"
+  },
+  {
+   "label": "Gerald R Ford International (MI / Grand Rapids-Wyoming-Kentwood, MI)",
+   "caption": "NOAA ISD — 어블레이션 · Gerald R Ford International (MI / Grand Rapids-Wyoming-Kentwood, MI) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/grand_rapids_temperature_c.webp"
+  },
+  {
+   "label": "Detroit Metro Wayne County (MI / Detroit-Warren-Dearborn, MI)",
+   "caption": "NOAA ISD — 어블레이션 · Detroit Metro Wayne County (MI / Detroit-Warren-Dearborn, MI) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/detroit_temperature_c.webp"
+  },
+  {
+   "label": "Frederick Douglass/Greater Rochester International (NY / Rochester, NY)",
+   "caption": "NOAA ISD — 어블레이션 · Frederick Douglass/Greater Rochester International (NY / Rochester, NY) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/rochester_temperature_c.webp"
+  },
+  {
+   "label": "Bradley International (CT / Hartford-West Hartford-East Hartford, CT)",
+   "caption": "NOAA ISD — 어블레이션 · Bradley International (CT / Hartford-West Hartford-East Hartford, CT) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/hartford_bradley_temperature_c.webp"
+  },
+  {
+   "label": "John F Kennedy International (NY / New York-Newark-Jersey City, NY-NJ)",
+   "caption": "NOAA ISD — 어블레이션 · John F Kennedy International (NY / New York-Newark-Jersey City, NY-NJ) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/new_york_jfk_temperature_c.webp"
+  },
+  {
+   "label": "Cleveland-Hopkins International (OH / Cleveland, OH)",
+   "caption": "NOAA ISD — 어블레이션 · Cleveland-Hopkins International (OH / Cleveland, OH) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/cleveland_temperature_c.webp"
+  },
+  {
+   "label": "Rhode Island Tf Green International (RI / Providence-Warwick, RI-MA)",
+   "caption": "NOAA ISD — 어블레이션 · Rhode Island Tf Green International (RI / Providence-Warwick, RI-MA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/providence_temperature_c.webp"
+  },
+  {
+   "label": "Philadelphia International (PA / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD)",
+   "caption": "NOAA ISD — 어블레이션 · Philadelphia International (PA / Philadelphia-Camden-Wilmington, PA-NJ-DE-MD) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/philadelphia_temperature_c.webp"
+  },
+  {
+   "label": "Buffalo Niagara International (NY / Buffalo-Cheektowaga, NY)",
+   "caption": "NOAA ISD — 어블레이션 · Buffalo Niagara International (NY / Buffalo-Cheektowaga, NY) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/buffalo_temperature_c.webp"
+  },
+  {
+   "label": "Washington Dulles International (VA / Washington-Arlington-Alexandria, DC-VA-MD-WV)",
+   "caption": "NOAA ISD — 어블레이션 · Washington Dulles International (VA / Washington-Arlington-Alexandria, DC-VA-MD-WV) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/washington_dulles_temperature_c.webp"
+  },
+  {
+   "label": "St Louis Lambert International (MO / St. Louis, MO-IL)",
+   "caption": "NOAA ISD — 어블레이션 · St Louis Lambert International (MO / St. Louis, MO-IL) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/st_louis_temperature_c.webp"
+  },
+  {
+   "label": "John Glenn Columbus International (OH / Columbus, OH)",
+   "caption": "NOAA ISD — 어블레이션 · John Glenn Columbus International (OH / Columbus, OH) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/columbus_temperature_c.webp"
+  },
+  {
+   "label": "Charlotte/Douglas International (NC / Charlotte-Concord-Gastonia, NC-SC)",
+   "caption": "NOAA ISD — 어블레이션 · Charlotte/Douglas International (NC / Charlotte-Concord-Gastonia, NC-SC) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/charlotte_temperature_c.webp"
+  },
+  {
+   "label": "Pittsburgh International (PA / Pittsburgh, PA)",
+   "caption": "NOAA ISD — 어블레이션 · Pittsburgh International (PA / Pittsburgh, PA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/pittsburgh_temperature_c.webp"
+  },
+  {
+   "label": "Indianapolis International (IN / Indianapolis-Carmel-Greenwood, IN)",
+   "caption": "NOAA ISD — 어블레이션 · Indianapolis International (IN / Indianapolis-Carmel-Greenwood, IN) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/indianapolis_temperature_c.webp"
+  },
+  {
+   "label": "Baltimore/Washington International Thurgood Marshall (MD / Baltimore-Columbia-Towson, MD)",
+   "caption": "NOAA ISD — 어블레이션 · Baltimore/Washington International Thurgood Marshall (MD / Baltimore-Columbia-Towson, MD) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/baltimore_temperature_c.webp"
+  },
+  {
+   "label": "Louisville Muhammad Ali International (KY / Louisville/Jefferson County, KY-IN)",
+   "caption": "NOAA ISD — 어블레이션 · Louisville Muhammad Ali International (KY / Louisville/Jefferson County, KY-IN) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/louisville_temperature_c.webp"
+  },
+  {
+   "label": "Kansas City International (MO / Kansas City, MO-KS)",
+   "caption": "NOAA ISD — 어블레이션 · Kansas City International (MO / Kansas City, MO-KS) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/kansas_city_temperature_c.webp"
+  },
+  {
+   "label": "Luis Munoz Marin International (PR / San Juan-Bayamón-Caguas, PR)",
+   "caption": "NOAA ISD — 어블레이션 · Luis Munoz Marin International (PR / San Juan-Bayamón-Caguas, PR) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/san_juan_temperature_c.webp"
+  },
+  {
+   "label": "Cincinnati/Northern Kentucky International (KY / Cincinnati, OH-KY-IN)",
+   "caption": "NOAA ISD — 어블레이션 · Cincinnati/Northern Kentucky International (KY / Cincinnati, OH-KY-IN) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/cincinnati_temperature_c.webp"
+  },
+  {
+   "label": "Eppley Airfield (NE / Omaha, NE-IA)",
+   "caption": "NOAA ISD — 어블레이션 · Eppley Airfield (NE / Omaha, NE-IA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/omaha_temperature_c.webp"
+  },
+  {
+   "label": "Raleigh-Durham International (NC / Raleigh-Cary, NC)",
+   "caption": "NOAA ISD — 어블레이션 · Raleigh-Durham International (NC / Raleigh-Cary, NC) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/raleigh_durham_temperature_c.webp"
+  },
+  {
+   "label": "Orlando International (FL / Orlando-Kissimmee-Sanford, FL)",
+   "caption": "NOAA ISD — 어블레이션 · Orlando International (FL / Orlando-Kissimmee-Sanford, FL) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/orlando_temperature_c.webp"
+  },
+  {
+   "label": "Miami International (FL / Miami-Fort Lauderdale-West Palm Beach, FL)",
+   "caption": "NOAA ISD — 어블레이션 · Miami International (FL / Miami-Fort Lauderdale-West Palm Beach, FL) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/miami_temperature_c.webp"
+  },
+  {
+   "label": "Tampa International (FL / Tampa-St. Petersburg-Clearwater, FL)",
+   "caption": "NOAA ISD — 어블레이션 · Tampa International (FL / Tampa-St. Petersburg-Clearwater, FL) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/tampa_temperature_c.webp"
+  },
+  {
+   "label": "Hartsfield/Jackson Atlanta International (GA / Atlanta-Sandy Springs-Roswell, GA)",
+   "caption": "NOAA ISD — 어블레이션 · Hartsfield/Jackson Atlanta International (GA / Atlanta-Sandy Springs-Roswell, GA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/atlanta_temperature_c.webp"
+  },
+  {
+   "label": "Birmingham-Shuttlesworth International (AL / Birmingham, AL)",
+   "caption": "NOAA ISD — 어블레이션 · Birmingham-Shuttlesworth International (AL / Birmingham, AL) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/birmingham_temperature_c.webp"
+  },
+  {
+   "label": "Greenville Spartanburg International (SC / Greenville-Anderson-Greer, SC)",
+   "caption": "NOAA ISD — 어블레이션 · Greenville Spartanburg International (SC / Greenville-Anderson-Greer, SC) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/greenville_spartanburg_temperature_c.webp"
+  },
+  {
+   "label": "Jacksonville International (FL / Jacksonville, FL)",
+   "caption": "NOAA ISD — 어블레이션 · Jacksonville International (FL / Jacksonville, FL) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/jacksonville_temperature_c.webp"
+  },
+  {
+   "label": "Richmond International (VA / Richmond, VA)",
+   "caption": "NOAA ISD — 어블레이션 · Richmond International (VA / Richmond, VA) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/richmond_temperature_c.webp"
+  },
+  {
+   "label": "Norfolk International (VA / Virginia Beach-Chesapeake-Norfolk, VA-NC)",
+   "caption": "NOAA ISD — 어블레이션 · Norfolk International (VA / Virginia Beach-Chesapeake-Norfolk, VA-NC) · Full model 대비 ARI 차",
+   "src": "attachments/261015_c90dd3_r2ablpick/isd/norfolk_temperature_c.webp"
+  }
+ ]
+}

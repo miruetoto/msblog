@@ -1279,11 +1279,9 @@ window.Quarto = {
 <section id="어블레이션" class="level1">
 <h1>4. 어블레이션</h1>
 <p><code>-</code> 표의 줄 — Full model 에서 부품을 하나씩 뺌 (w/o = without). 값은 평균 ARI, 괄호는 Full model 과의 차.</p>
-<p><code>-</code> 탭마다 표 · 그림 (자료 평균) 아래에 지점별 — 지점마다 바꾼 뒤 ARI − Full model ARI 를 네 분해로 평균한 값 (지도 · 상자, 작은 자료는 표).</p>
 <ul>
-<li>Full model: 분해 성분 (느린 변동까지 — VMD 는 DC 모드, EMD 계열은 마지막 잔차) 을 에너지 큰 것부터 99 % 까지 남기고, 날마다 성분을 지배주파수에 따라 1 · 2 · 3 · 4+ cycles/day 칸 (band) 에 모아 더한 뒤 칸 에너지를 가중치로 MFPCA (점수 3개) → 점수를 표준화해 k-means (k = 2). 하루 평균은 더하지 않음</li>
-<li>w/o decomposition: 분해 없이 하루 원곡선을 FPCA (= 3절 FPCA — 네 분해 열이 같은 값)</li>
-<li>w/o band regrouping: 성분을 주파수 칸에 모으지 않고 성분 하나하나를 그대로 MFPCA 변수로 (가중치는 성분 에너지)</li>
+<li>w/o decomposition: 분해 없이 하루 원곡선을 FPCA</li>
+<li>w/o band regrouping: 재배치 알고리즘 제거</li>
 <li>w/o band weighting: MFPCA 의 칸 가중치를 모두 1</li>
 <li>w/o energy truncation: 99 % 에서 자르지 않고 성분을 전부 넣음</li>
 <li>w/o score standardization: MFPCA 점수를 표준화하지 않고 바로 k-means</li>
@@ -1354,29 +1352,11 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_17.png" class="img-fluid figure-img"></p>
-<figcaption>에어코리아 — 어블레이션 (Full model 대비 평균 ARI 차)</figcaption>
-</figure>
-</div>
-<div class="quarto-layout-panel" data-layout="[[62,38]]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 62.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_18.png" class="img-fluid figure-img"></p>
-<figcaption>에어코리아 — 지점마다 바꾼 뒤 ARI − Full model ARI (네 분해 평균, 빈 점은 계산 못 한 곳)</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 38.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_19.png" class="img-fluid figure-img"></p>
-<figcaption>에어코리아 — 지점별 분포</figcaption>
-</figure>
-</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb10" data-startfrom="249" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 248;"><span id="cb10-249"><a href="#cb10-249" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"airkorea"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-10" data-nodetype="expression">
+
 </div>
 </div>
 </div>
@@ -1444,29 +1424,11 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_20.png" class="img-fluid figure-img"></p>
-<figcaption>EPA AQS · PM2.5 — 어블레이션 (Full model 대비 평균 ARI 차)</figcaption>
-</figure>
-</div>
-<div class="quarto-layout-panel" data-layout="[[62,38]]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 62.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_21.png" class="img-fluid figure-img"></p>
-<figcaption>EPA AQS · PM2.5 — 지점마다 바꾼 뒤 ARI − Full model ARI (네 분해 평균, 빈 점은 계산 못 한 곳)</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 38.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_22.png" class="img-fluid figure-img"></p>
-<figcaption>EPA AQS · PM2.5 — 지점별 분포</figcaption>
-</figure>
-</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb11" data-startfrom="265" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 264;"><span id="cb11-265"><a href="#cb11-265" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"epa_pm25"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-11" data-nodetype="expression">
+
 </div>
 </div>
 </div>
@@ -1534,29 +1496,11 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_23.png" class="img-fluid figure-img"></p>
-<figcaption>EPA AQS · O3 — 어블레이션 (Full model 대비 평균 ARI 차)</figcaption>
-</figure>
-</div>
-<div class="quarto-layout-panel" data-layout="[[62,38]]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 62.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_24.png" class="img-fluid figure-img"></p>
-<figcaption>EPA AQS · O3 — 지점마다 바꾼 뒤 ARI − Full model ARI (네 분해 평균, 빈 점은 계산 못 한 곳)</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 38.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_25.png" class="img-fluid figure-img"></p>
-<figcaption>EPA AQS · O3 — 지점별 분포</figcaption>
-</figure>
-</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb12" data-startfrom="281" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 280;"><span id="cb12-281"><a href="#cb12-281" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"epa_o3"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-12" data-nodetype="expression">
+
 </div>
 </div>
 </div>
@@ -1624,54 +1568,14 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_26.png" class="img-fluid figure-img"></p>
-<figcaption>OpenAQ — 어블레이션 (Full model 대비 평균 ARI 차)</figcaption>
-</figure>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb13" data-startfrom="297" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 296;"><span id="cb13-297"><a href="#cb13-297" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"openaq"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-13" data-nodetype="expression">
+
 </div>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>지역</th>
-<th>지점</th>
-<th style="text-align: right;">w/o decomposition</th>
-<th style="text-align: right;">w/o band regrouping</th>
-<th style="text-align: right;">w/o band weighting</th>
-<th style="text-align: right;">w/o energy truncation</th>
-<th style="text-align: right;">w/o score standardization</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>California / Los Angeles-Long Beach-Anaheim, CA</td>
-<td>Los Angeles – N. Main</td>
-<td style="text-align: right;">+0.000</td>
-<td style="text-align: right;">-0.086</td>
-<td style="text-align: right;">+0.114</td>
-<td style="text-align: right;">+0.000</td>
-<td style="text-align: right;">+0.438</td>
-</tr>
-<tr class="even">
-<td>서울특별시</td>
-<td>서울 종로구</td>
-<td style="text-align: right;">-0.122</td>
-<td style="text-align: right;">-0.767</td>
-<td style="text-align: right;">+0.000</td>
-<td style="text-align: right;">+0.000</td>
-<td style="text-align: right;">+0.086</td>
-</tr>
-</tbody>
-</table>
+</div>
+</div>
 </div>
 <div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
 <table class="caption-top table">
@@ -1736,137 +1640,14 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_27.png" class="img-fluid figure-img"></p>
-<figcaption>WEIS — 어블레이션 (Full model 대비 평균 ARI 차)</figcaption>
-</figure>
-</div>
-<div class="quarto-layout-panel" data-layout="[[62,38]]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 62.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_28.png" class="img-fluid figure-img"></p>
-<figcaption>WEIS — 지점마다 바꾼 뒤 ARI − Full model ARI (네 분해 평균, 빈 점은 계산 못 한 곳)</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 38.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_29.png" class="img-fluid figure-img"></p>
-<figcaption>WEIS — 지점별 분포</figcaption>
-</figure>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb14" data-startfrom="313" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 312;"><span id="cb14-313"><a href="#cb14-313" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"weis"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-14" data-nodetype="expression">
+
 </div>
 </div>
 </div>
-</div>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>지역</th>
-<th>지점</th>
-<th style="text-align: right;">w/o decomposition</th>
-<th style="text-align: right;">w/o band regrouping</th>
-<th style="text-align: right;">w/o band weighting</th>
-<th style="text-align: right;">w/o energy truncation</th>
-<th style="text-align: right;">w/o score standardization</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>강원특별자치도 · 한강 수계</td>
-<td>의암호</td>
-<td style="text-align: right;">-0.001</td>
-<td style="text-align: right;">+0.006</td>
-<td style="text-align: right;">+0.000</td>
-<td style="text-align: right;">+0.000</td>
-<td style="text-align: right;">+0.004</td>
-</tr>
-<tr class="even">
-<td>경상남도 · 낙동강 수계</td>
-<td>상동</td>
-<td style="text-align: right;">+0.024</td>
-<td style="text-align: right;">-0.001</td>
-<td style="text-align: right;">-0.001</td>
-<td style="text-align: right;">+0.000</td>
-<td style="text-align: right;">+0.020</td>
-</tr>
-<tr class="odd">
-<td>경상남도 · 낙동강 수계</td>
-<td>청암</td>
-<td style="text-align: right;">-0.000</td>
-<td style="text-align: right;">-0.017</td>
-<td style="text-align: right;">+0.003</td>
-<td style="text-align: right;">+0.002</td>
-<td style="text-align: right;">-0.017</td>
-</tr>
-<tr class="even">
-<td>경상남도 · 낙동강 수계</td>
-<td>칠서</td>
-<td style="text-align: right;">-0.001</td>
-<td style="text-align: right;">-0.003</td>
-<td style="text-align: right;">+0.000</td>
-<td style="text-align: right;">+0.002</td>
-<td style="text-align: right;">-0.015</td>
-</tr>
-<tr class="odd">
-<td>경상북도 · 낙동강 수계</td>
-<td>다산</td>
-<td style="text-align: right;">-0.007</td>
-<td style="text-align: right;">+0.077</td>
-<td style="text-align: right;">-0.009</td>
-<td style="text-align: right;">-0.007</td>
-<td style="text-align: right;">+0.020</td>
-</tr>
-<tr class="even">
-<td>경상북도 · 낙동강 수계</td>
-<td>해평</td>
-<td style="text-align: right;">-0.002</td>
-<td style="text-align: right;">-0.005</td>
-<td style="text-align: right;">-0.005</td>
-<td style="text-align: right;">-0.004</td>
-<td style="text-align: right;">-0.016</td>
-</tr>
-<tr class="odd">
-<td>전라남도 · 영산·섬진 수계</td>
-<td>주암호</td>
-<td style="text-align: right;">-0.028</td>
-<td style="text-align: right;">-0.030</td>
-<td style="text-align: right;">-0.000</td>
-<td style="text-align: right;">-0.001</td>
-<td style="text-align: right;">-0.028</td>
-</tr>
-<tr class="even">
-<td>전북특별자치도 · 금강 수계</td>
-<td>용담호</td>
-<td style="text-align: right;">+0.001</td>
-<td style="text-align: right;">+0.003</td>
-<td style="text-align: right;">+0.000</td>
-<td style="text-align: right;">+0.000</td>
-<td style="text-align: right;">+0.001</td>
-</tr>
-<tr class="odd">
-<td>충청북도 · 금강 수계</td>
-<td>대청호</td>
-<td style="text-align: right;">+0.272</td>
-<td style="text-align: right;">-0.041</td>
-<td style="text-align: right;">-0.025</td>
-<td style="text-align: right;">+0.004</td>
-<td style="text-align: right;">+0.014</td>
-</tr>
-</tbody>
-</table>
 </div>
 <div id="tabset-2-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-6-tab">
 <table class="caption-top table">
@@ -1931,29 +1712,11 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_30.png" class="img-fluid figure-img"></p>
-<figcaption>USGS — 어블레이션 (Full model 대비 평균 ARI 차)</figcaption>
-</figure>
-</div>
-<div class="quarto-layout-panel" data-layout="[[62,38]]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 62.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_31.png" class="img-fluid figure-img"></p>
-<figcaption>USGS — 지점마다 바꾼 뒤 ARI − Full model ARI (네 분해 평균, 빈 점은 계산 못 한 곳)</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 38.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_32.png" class="img-fluid figure-img"></p>
-<figcaption>USGS — 지점별 분포</figcaption>
-</figure>
-</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb15" data-startfrom="329" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 328;"><span id="cb15-329"><a href="#cb15-329" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"usgs"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-15" data-nodetype="expression">
+
 </div>
 </div>
 </div>
@@ -2021,119 +1784,14 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_33.png" class="img-fluid figure-img"></p>
-<figcaption>기상청 ASOS ① — 어블레이션 (Full model 대비 평균 ARI 차)</figcaption>
-</figure>
-</div>
-<div class="quarto-layout-panel" data-layout="[[62,38]]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 62.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_34.png" class="img-fluid figure-img"></p>
-<figcaption>기상청 ASOS ① — 지점마다 바꾼 뒤 ARI − Full model ARI (네 분해 평균, 빈 점은 계산 못 한 곳)</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 38.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_35.png" class="img-fluid figure-img"></p>
-<figcaption>기상청 ASOS ① — 지점별 분포</figcaption>
-</figure>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb16" data-startfrom="345" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 344;"><span id="cb16-345"><a href="#cb16-345" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"asos1"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-16" data-nodetype="expression">
+
 </div>
 </div>
 </div>
-</div>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>지역</th>
-<th>지점</th>
-<th style="text-align: right;">w/o decomposition</th>
-<th style="text-align: right;">w/o band regrouping</th>
-<th style="text-align: right;">w/o band weighting</th>
-<th style="text-align: right;">w/o energy truncation</th>
-<th style="text-align: right;">w/o score standardization</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>대구광역시</td>
-<td>대구</td>
-<td style="text-align: right;">-0.004</td>
-<td style="text-align: right;">-0.095</td>
-<td style="text-align: right;">-0.021</td>
-<td style="text-align: right;">+0.003</td>
-<td style="text-align: right;">-0.067</td>
-</tr>
-<tr class="even">
-<td>대전광역시</td>
-<td>대전</td>
-<td style="text-align: right;">-0.005</td>
-<td style="text-align: right;">-0.034</td>
-<td style="text-align: right;">-0.006</td>
-<td style="text-align: right;">-0.001</td>
-<td style="text-align: right;">-0.059</td>
-</tr>
-<tr class="odd">
-<td>부산광역시</td>
-<td>부산</td>
-<td style="text-align: right;">+0.011</td>
-<td style="text-align: right;">-0.071</td>
-<td style="text-align: right;">-0.056</td>
-<td style="text-align: right;">-0.003</td>
-<td style="text-align: right;">-0.081</td>
-</tr>
-<tr class="even">
-<td>서울특별시</td>
-<td>서울</td>
-<td style="text-align: right;">+0.002</td>
-<td style="text-align: right;">-0.071</td>
-<td style="text-align: right;">-0.064</td>
-<td style="text-align: right;">+0.029</td>
-<td style="text-align: right;">-0.072</td>
-</tr>
-<tr class="odd">
-<td>울산광역시</td>
-<td>울산</td>
-<td style="text-align: right;">-0.004</td>
-<td style="text-align: right;">-0.031</td>
-<td style="text-align: right;">-0.018</td>
-<td style="text-align: right;">-0.002</td>
-<td style="text-align: right;">-0.036</td>
-</tr>
-<tr class="even">
-<td>인천광역시</td>
-<td>인천</td>
-<td style="text-align: right;">+0.005</td>
-<td style="text-align: right;">-0.063</td>
-<td style="text-align: right;">-0.015</td>
-<td style="text-align: right;">+0.004</td>
-<td style="text-align: right;">-0.062</td>
-</tr>
-<tr class="odd">
-<td>전남광주통합특별시</td>
-<td>광주</td>
-<td style="text-align: right;">-0.020</td>
-<td style="text-align: right;">-0.043</td>
-<td style="text-align: right;">-0.033</td>
-<td style="text-align: right;">+0.000</td>
-<td style="text-align: right;">-0.069</td>
-</tr>
-</tbody>
-</table>
 </div>
 <div id="tabset-2-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-8-tab">
 <table class="caption-top table">
@@ -2198,119 +1856,14 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_36.png" class="img-fluid figure-img"></p>
-<figcaption>기상청 ASOS ② — 어블레이션 (Full model 대비 평균 ARI 차)</figcaption>
-</figure>
-</div>
-<div class="quarto-layout-panel" data-layout="[[62,38]]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 62.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_37.png" class="img-fluid figure-img"></p>
-<figcaption>기상청 ASOS ② — 지점마다 바꾼 뒤 ARI − Full model ARI (네 분해 평균, 빈 점은 계산 못 한 곳)</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 38.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_38.png" class="img-fluid figure-img"></p>
-<figcaption>기상청 ASOS ② — 지점별 분포</figcaption>
-</figure>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb17" data-startfrom="361" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 360;"><span id="cb17-361"><a href="#cb17-361" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"asos2"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-17" data-nodetype="expression">
+
 </div>
 </div>
 </div>
-</div>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 11%">
-<col style="width: 11%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-<col style="width: 15%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>지역</th>
-<th>지점</th>
-<th style="text-align: right;">w/o decomposition</th>
-<th style="text-align: right;">w/o band regrouping</th>
-<th style="text-align: right;">w/o band weighting</th>
-<th style="text-align: right;">w/o energy truncation</th>
-<th style="text-align: right;">w/o score standardization</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>대구광역시</td>
-<td>대구</td>
-<td style="text-align: right;">-0.001</td>
-<td style="text-align: right;">-0.159</td>
-<td style="text-align: right;">-0.012</td>
-<td style="text-align: right;">+0.001</td>
-<td style="text-align: right;">-0.164</td>
-</tr>
-<tr class="even">
-<td>대전광역시</td>
-<td>대전</td>
-<td style="text-align: right;">-0.012</td>
-<td style="text-align: right;">-0.085</td>
-<td style="text-align: right;">-0.010</td>
-<td style="text-align: right;">+0.004</td>
-<td style="text-align: right;">-0.103</td>
-</tr>
-<tr class="odd">
-<td>부산광역시</td>
-<td>부산</td>
-<td style="text-align: right;">+0.003</td>
-<td style="text-align: right;">-0.141</td>
-<td style="text-align: right;">-0.040</td>
-<td style="text-align: right;">-0.002</td>
-<td style="text-align: right;">-0.153</td>
-</tr>
-<tr class="even">
-<td>서울특별시</td>
-<td>서울</td>
-<td style="text-align: right;">+0.039</td>
-<td style="text-align: right;">-0.121</td>
-<td style="text-align: right;">-0.092</td>
-<td style="text-align: right;">+0.011</td>
-<td style="text-align: right;">-0.158</td>
-</tr>
-<tr class="odd">
-<td>울산광역시</td>
-<td>울산</td>
-<td style="text-align: right;">+0.027</td>
-<td style="text-align: right;">-0.130</td>
-<td style="text-align: right;">-0.022</td>
-<td style="text-align: right;">-0.005</td>
-<td style="text-align: right;">-0.176</td>
-</tr>
-<tr class="even">
-<td>인천광역시</td>
-<td>인천</td>
-<td style="text-align: right;">+0.018</td>
-<td style="text-align: right;">-0.129</td>
-<td style="text-align: right;">-0.039</td>
-<td style="text-align: right;">+0.003</td>
-<td style="text-align: right;">-0.117</td>
-</tr>
-<tr class="odd">
-<td>전남광주통합특별시</td>
-<td>광주</td>
-<td style="text-align: right;">+0.004</td>
-<td style="text-align: right;">-0.066</td>
-<td style="text-align: right;">-0.018</td>
-<td style="text-align: right;">-0.000</td>
-<td style="text-align: right;">-0.100</td>
-</tr>
-</tbody>
-</table>
 </div>
 <div id="tabset-2-9" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-9-tab">
 <table class="caption-top table">
@@ -2375,29 +1928,11 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_39.png" class="img-fluid figure-img"></p>
-<figcaption>NOAA ISD — 어블레이션 (Full model 대비 평균 ARI 차)</figcaption>
-</figure>
-</div>
-<div class="quarto-layout-panel" data-layout="[[62,38]]">
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell" style="flex-basis: 62.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_40.png" class="img-fluid figure-img"></p>
-<figcaption>NOAA ISD — 지점마다 바꾼 뒤 ARI − Full model ARI (네 분해 평균, 빈 점은 계산 못 한 곳)</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell" style="flex-basis: 38.0%;justify-content: flex-start;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="attachments/261015_c90dd3_41.png" class="img-fluid figure-img"></p>
-<figcaption>NOAA ISD — 지점별 분포</figcaption>
-</figure>
-</div>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb18" data-startfrom="377" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 376;"><span id="cb18-377"><a href="#cb18-377" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"isd"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-18" data-nodetype="expression">
+
 </div>
 </div>
 </div>
@@ -2405,25 +1940,48 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell hidden">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb10" data-startfrom="456" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 455;"><span id="cb10-456"><a href="#cb10-456" aria-hidden="true" tabindex="-1"></a>decData <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"attachments/261015_c90dd3_r2pick/r2pick.json"</span>)<span class="op">.</span><span class="fu">json</span>()</span>
-<span id="cb10-457"><a href="#cb10-457" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">decPick</span>(key) {</span>
-<span id="cb10-458"><a href="#cb10-458" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> L <span class="op">=</span> decData[key]<span class="op">;</span></span>
-<span id="cb10-459"><a href="#cb10-459" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sel <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(L<span class="op">.</span><span class="fu">map</span>((d<span class="op">,</span> i) <span class="kw">=&gt;</span> i)<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="vs">`지점 (</span><span class="sc">${</span>L<span class="op">.</span><span class="at">length</span><span class="sc">}</span><span class="vs">곳)`</span><span class="op">,</span> <span class="dt">format</span><span class="op">:</span> i <span class="kw">=&gt;</span> L[i]<span class="op">.</span><span class="at">label</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="st">"100%"</span>})<span class="op">;</span></span>
-<span id="cb10-460"><a href="#cb10-460" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> img <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;img src="</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">src</span><span class="sc">}</span><span class="vs">" style="width:100%"&gt;`</span><span class="op">;</span></span>
-<span id="cb10-461"><a href="#cb10-461" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cap <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;figcaption class="figure-caption"&gt;</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">caption</span><span class="sc">}</span><span class="vs">&lt;/figcaption&gt;`</span><span class="op">;</span></span>
-<span id="cb10-462"><a href="#cb10-462" aria-hidden="true" tabindex="-1"></a>  sel<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"input"</span><span class="op">,</span> () <span class="kw">=&gt;</span> { <span class="kw">const</span> d <span class="op">=</span> L[sel<span class="op">.</span><span class="at">value</span>]<span class="op">;</span> img<span class="op">.</span><span class="at">src</span> <span class="op">=</span> d<span class="op">.</span><span class="at">src</span><span class="op">;</span> cap<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> d<span class="op">.</span><span class="at">caption</span><span class="op">;</span> })<span class="op">;</span></span>
-<span id="cb10-463"><a href="#cb10-463" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="fu">html</span><span class="vs">`&lt;figure class="figure"&gt;</span><span class="sc">${</span>sel<span class="sc">}${</span>img<span class="sc">}${</span>cap<span class="sc">}</span><span class="vs">&lt;/figure&gt;`</span><span class="op">;</span></span>
-<span id="cb10-464"><a href="#cb10-464" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb19" data-startfrom="386" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 385;"><span id="cb19-386"><a href="#cb19-386" aria-hidden="true" tabindex="-1"></a>decData <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"attachments/261015_c90dd3_r2pick/r2pick.json"</span>)<span class="op">.</span><span class="fu">json</span>()</span>
+<span id="cb19-387"><a href="#cb19-387" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">decPick</span>(key) {</span>
+<span id="cb19-388"><a href="#cb19-388" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> L <span class="op">=</span> decData[key]<span class="op">;</span></span>
+<span id="cb19-389"><a href="#cb19-389" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sel <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(L<span class="op">.</span><span class="fu">map</span>((d<span class="op">,</span> i) <span class="kw">=&gt;</span> i)<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="vs">`지점 (</span><span class="sc">${</span>L<span class="op">.</span><span class="at">length</span><span class="sc">}</span><span class="vs">곳)`</span><span class="op">,</span> <span class="dt">format</span><span class="op">:</span> i <span class="kw">=&gt;</span> L[i]<span class="op">.</span><span class="at">label</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="st">"100%"</span>})<span class="op">;</span></span>
+<span id="cb19-390"><a href="#cb19-390" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> img <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;img src="</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">src</span><span class="sc">}</span><span class="vs">" style="width:100%"&gt;`</span><span class="op">;</span></span>
+<span id="cb19-391"><a href="#cb19-391" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cap <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;figcaption class="figure-caption"&gt;</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">caption</span><span class="sc">}</span><span class="vs">&lt;/figcaption&gt;`</span><span class="op">;</span></span>
+<span id="cb19-392"><a href="#cb19-392" aria-hidden="true" tabindex="-1"></a>  sel<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"input"</span><span class="op">,</span> () <span class="kw">=&gt;</span> { <span class="kw">const</span> d <span class="op">=</span> L[sel<span class="op">.</span><span class="at">value</span>]<span class="op">;</span> img<span class="op">.</span><span class="at">src</span> <span class="op">=</span> d<span class="op">.</span><span class="at">src</span><span class="op">;</span> cap<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> d<span class="op">.</span><span class="at">caption</span><span class="op">;</span> })<span class="op">;</span></span>
+<span id="cb19-393"><a href="#cb19-393" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="fu">html</span><span class="vs">`&lt;figure class="figure"&gt;</span><span class="sc">${</span>sel<span class="sc">}${</span>img<span class="sc">}${</span>cap<span class="sc">}</span><span class="vs">&lt;/figure&gt;`</span><span class="op">;</span></span>
+<span id="cb19-394"><a href="#cb19-394" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb19-395"><a href="#cb19-395" aria-hidden="true" tabindex="-1"></a>ablData <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"attachments/261015_c90dd3_r2ablpick/r2ablpick.json"</span>)<span class="op">.</span><span class="fu">json</span>()</span>
+<span id="cb19-396"><a href="#cb19-396" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">ablPick</span>(key) {</span>
+<span id="cb19-397"><a href="#cb19-397" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> L <span class="op">=</span> ablData[key]<span class="op">;</span></span>
+<span id="cb19-398"><a href="#cb19-398" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sel <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(L<span class="op">.</span><span class="fu">map</span>((d<span class="op">,</span> i) <span class="kw">=&gt;</span> i)<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="vs">`지점 (</span><span class="sc">${</span>L<span class="op">.</span><span class="at">length</span> <span class="op">-</span> <span class="dv">1</span><span class="sc">}</span><span class="vs">곳)`</span><span class="op">,</span> <span class="dt">format</span><span class="op">:</span> i <span class="kw">=&gt;</span> L[i]<span class="op">.</span><span class="at">label</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="st">"100%"</span>})<span class="op">;</span></span>
+<span id="cb19-399"><a href="#cb19-399" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> img <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;img src="</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">src</span><span class="sc">}</span><span class="vs">" style="width:100%"&gt;`</span><span class="op">;</span></span>
+<span id="cb19-400"><a href="#cb19-400" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cap <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;figcaption class="figure-caption"&gt;</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">caption</span><span class="sc">}</span><span class="vs">&lt;/figcaption&gt;`</span><span class="op">;</span></span>
+<span id="cb19-401"><a href="#cb19-401" aria-hidden="true" tabindex="-1"></a>  sel<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"input"</span><span class="op">,</span> () <span class="kw">=&gt;</span> { <span class="kw">const</span> d <span class="op">=</span> L[sel<span class="op">.</span><span class="at">value</span>]<span class="op">;</span> img<span class="op">.</span><span class="at">src</span> <span class="op">=</span> d<span class="op">.</span><span class="at">src</span><span class="op">;</span> cap<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> d<span class="op">.</span><span class="at">caption</span><span class="op">;</span> })<span class="op">;</span></span>
+<span id="cb19-402"><a href="#cb19-402" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="fu">html</span><span class="vs">`&lt;figure class="figure"&gt;</span><span class="sc">${</span>sel<span class="sc">}${</span>img<span class="sc">}${</span>cap<span class="sc">}</span><span class="vs">&lt;/figure&gt;`</span><span class="op">;</span></span>
+<span id="cb19-403"><a href="#cb19-403" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display hidden">
 <div>
-<div id="ojs-cell-10-1" data-nodetype="declaration">
+<div id="ojs-cell-19-1" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
 <div class="cell-output cell-output-display hidden">
 <div>
-<div id="ojs-cell-10-2" data-nodetype="declaration">
+<div id="ojs-cell-19-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display hidden">
+<div>
+<div id="ojs-cell-19-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display hidden">
+<div>
+<div id="ojs-cell-19-4" data-nodetype="declaration">
 
 </div>
 </div>
@@ -2435,7 +1993,7 @@ window.Quarto = {
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImRlY1BpY2soXCJhaXJrb3JlYVwiKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiZGVjUGljayhcImVwYV9wbTI1XCIpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJkZWNQaWNrKFwiZXBhX28zXCIpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJkZWNQaWNrKFwib3BlbmFxXCIpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTUiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJkZWNQaWNrKFwid2Vpc1wiKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC02IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiZGVjUGljayhcInVzZ3NcIilcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImRlY1BpY2soXCJhc29zMVwiKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC04IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiZGVjUGljayhcImFzb3MyXCIpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTkiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJkZWNQaWNrKFwiaXNkXCIpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTEwIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiZGVjRGF0YSA9IEZpbGVBdHRhY2htZW50KFwiYXR0YWNobWVudHMvMjYxMDE1X2M5MGRkM19yMnBpY2svcjJwaWNrLmpzb25cIikuanNvbigpXG5mdW5jdGlvbiBkZWNQaWNrKGtleSkge1xuICBjb25zdCBMID0gZGVjRGF0YVtrZXldO1xuICBjb25zdCBzZWwgPSBJbnB1dHMuc2VsZWN0KEwubWFwKChkLCBpKSA9PiBpKSwge2xhYmVsOiBg7KeA7KCQICgke0wubGVuZ3RofeqzsylgLCBmb3JtYXQ6IGkgPT4gTFtpXS5sYWJlbCwgd2lkdGg6IFwiMTAwJVwifSk7XG4gIGNvbnN0IGltZyA9IGh0bWxgPGltZyBzcmM9XCIke0xbMF0uc3JjfVwiIHN0eWxlPVwid2lkdGg6MTAwJVwiPmA7XG4gIGNvbnN0IGNhcCA9IGh0bWxgPGZpZ2NhcHRpb24gY2xhc3M9XCJmaWd1cmUtY2FwdGlvblwiPiR7TFswXS5jYXB0aW9ufTwvZmlnY2FwdGlvbj5gO1xuICBzZWwuYWRkRXZlbnRMaXN0ZW5lcihcImlucHV0XCIsICgpID0+IHsgY29uc3QgZCA9IExbc2VsLnZhbHVlXTsgaW1nLnNyYyA9IGQuc3JjOyBjYXAudGV4dENvbnRlbnQgPSBkLmNhcHRpb247IH0pO1xuICByZXR1cm4gaHRtbGA8ZmlndXJlIGNsYXNzPVwiZmlndXJlXCI+JHtzZWx9JHtpbWd9JHtjYXB9PC9maWd1cmU+YDtcbn1cbiJ9XX0=
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImRlY1BpY2soXCJhaXJrb3JlYVwiKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiZGVjUGljayhcImVwYV9wbTI1XCIpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJkZWNQaWNrKFwiZXBhX28zXCIpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJkZWNQaWNrKFwib3BlbmFxXCIpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTUiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJkZWNQaWNrKFwid2Vpc1wiKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC02IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiZGVjUGljayhcInVzZ3NcIilcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImRlY1BpY2soXCJhc29zMVwiKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC04IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiZGVjUGljayhcImFzb3MyXCIpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTkiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJkZWNQaWNrKFwiaXNkXCIpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTEwIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiYWJsUGljayhcImFpcmtvcmVhXCIpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTExIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiYWJsUGljayhcImVwYV9wbTI1XCIpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTEyIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiYWJsUGljayhcImVwYV9vM1wiKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0xMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImFibFBpY2soXCJvcGVuYXFcIilcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJhYmxQaWNrKFwid2Vpc1wiKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0xNSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImFibFBpY2soXCJ1c2dzXCIpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTE2IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiYWJsUGljayhcImFzb3MxXCIpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTE3IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiYWJsUGljayhcImFzb3MyXCIpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTE4IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiYWJsUGljayhcImlzZFwiKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0xOSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImRlY0RhdGEgPSBGaWxlQXR0YWNobWVudChcImF0dGFjaG1lbnRzLzI2MTAxNV9jOTBkZDNfcjJwaWNrL3IycGljay5qc29uXCIpLmpzb24oKVxuZnVuY3Rpb24gZGVjUGljayhrZXkpIHtcbiAgY29uc3QgTCA9IGRlY0RhdGFba2V5XTtcbiAgY29uc3Qgc2VsID0gSW5wdXRzLnNlbGVjdChMLm1hcCgoZCwgaSkgPT4gaSksIHtsYWJlbDogYOyngOygkCAoJHtMLmxlbmd0aH3qs7MpYCwgZm9ybWF0OiBpID0+IExbaV0ubGFiZWwsIHdpZHRoOiBcIjEwMCVcIn0pO1xuICBjb25zdCBpbWcgPSBodG1sYDxpbWcgc3JjPVwiJHtMWzBdLnNyY31cIiBzdHlsZT1cIndpZHRoOjEwMCVcIj5gO1xuICBjb25zdCBjYXAgPSBodG1sYDxmaWdjYXB0aW9uIGNsYXNzPVwiZmlndXJlLWNhcHRpb25cIj4ke0xbMF0uY2FwdGlvbn08L2ZpZ2NhcHRpb24+YDtcbiAgc2VsLmFkZEV2ZW50TGlzdGVuZXIoXCJpbnB1dFwiLCAoKSA9PiB7IGNvbnN0IGQgPSBMW3NlbC52YWx1ZV07IGltZy5zcmMgPSBkLnNyYzsgY2FwLnRleHRDb250ZW50ID0gZC5jYXB0aW9uOyB9KTtcbiAgcmV0dXJuIGh0bWxgPGZpZ3VyZSBjbGFzcz1cImZpZ3VyZVwiPiR7c2VsfSR7aW1nfSR7Y2FwfTwvZmlndXJlPmA7XG59XG5hYmxEYXRhID0gRmlsZUF0dGFjaG1lbnQoXCJhdHRhY2htZW50cy8yNjEwMTVfYzkwZGQzX3IyYWJscGljay9yMmFibHBpY2suanNvblwiKS5qc29uKClcbmZ1bmN0aW9uIGFibFBpY2soa2V5KSB7XG4gIGNvbnN0IEwgPSBhYmxEYXRhW2tleV07XG4gIGNvbnN0IHNlbCA9IElucHV0cy5zZWxlY3QoTC5tYXAoKGQsIGkpID0+IGkpLCB7bGFiZWw6IGDsp4DsoJAgKCR7TC5sZW5ndGggLSAxfeqzsylgLCBmb3JtYXQ6IGkgPT4gTFtpXS5sYWJlbCwgd2lkdGg6IFwiMTAwJVwifSk7XG4gIGNvbnN0IGltZyA9IGh0bWxgPGltZyBzcmM9XCIke0xbMF0uc3JjfVwiIHN0eWxlPVwid2lkdGg6MTAwJVwiPmA7XG4gIGNvbnN0IGNhcCA9IGh0bWxgPGZpZ2NhcHRpb24gY2xhc3M9XCJmaWd1cmUtY2FwdGlvblwiPiR7TFswXS5jYXB0aW9ufTwvZmlnY2FwdGlvbj5gO1xuICBzZWwuYWRkRXZlbnRMaXN0ZW5lcihcImlucHV0XCIsICgpID0+IHsgY29uc3QgZCA9IExbc2VsLnZhbHVlXTsgaW1nLnNyYyA9IGQuc3JjOyBjYXAudGV4dENvbnRlbnQgPSBkLmNhcHRpb247IH0pO1xuICByZXR1cm4gaHRtbGA8ZmlndXJlIGNsYXNzPVwiZmlndXJlXCI+JHtzZWx9JHtpbWd9JHtjYXB9PC9maWd1cmU+YDtcbn1cbiJ9XX0=
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
