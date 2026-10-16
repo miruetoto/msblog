@@ -614,17 +614,23 @@ window.Quarto = {
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <table class="caption-top table">
 <colgroup>
-<col style="width: 11%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
 </colgroup>
 <thead>
 <tr class="header">
-<th></th>
+<th>지역</th>
+<th>지점</th>
+<th>물질</th>
+<th style="text-align: right;">1 / 0 (일)</th>
 <th style="text-align: right;">일평균 최적 (오라클)</th>
 <th style="text-align: right;">FPCA</th>
 <th style="text-align: right;">VMD+MFPCA</th>
@@ -636,6 +642,9 @@ window.Quarto = {
 <tbody>
 <tr class="odd">
 <td><strong>평균</strong></td>
+<td></td>
+<td></td>
+<td style="text-align: right;"></td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.878}\)</span></td>
 <td style="text-align: right;">0.419</td>
 <td style="text-align: right;">0.480</td>
@@ -644,44 +653,23 @@ window.Quarto = {
 <td style="text-align: right;">0.480</td>
 </tr>
 <tr class="even">
-<td>Q1</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.866}\)</span></td>
-<td style="text-align: right;">0.311</td>
-<td style="text-align: right;">0.341</td>
-<td style="text-align: right;">0.341</td>
-<td style="text-align: right;">0.341</td>
-<td style="text-align: right;">0.341</td>
-</tr>
-<tr class="odd">
-<td>Q2</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.878}\)</span></td>
-<td style="text-align: right;">0.419</td>
-<td style="text-align: right;">0.480</td>
-<td style="text-align: right;">0.480</td>
-<td style="text-align: right;">0.480</td>
-<td style="text-align: right;">0.480</td>
-</tr>
-<tr class="even">
-<td>Q3</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.891}\)</span></td>
-<td style="text-align: right;">0.527</td>
-<td style="text-align: right;">0.619</td>
-<td style="text-align: right;">0.619</td>
-<td style="text-align: right;">0.619</td>
-<td style="text-align: right;">0.619</td>
-</tr>
-<tr class="odd">
-<td>min</td>
-<td style="text-align: right;"><span class="math inline">\(\color{red}{0.853}\)</span></td>
-<td style="text-align: right;">0.203</td>
-<td style="text-align: right;">0.203</td>
-<td style="text-align: right;">0.203</td>
-<td style="text-align: right;">0.203</td>
-<td style="text-align: right;">0.203</td>
-</tr>
-<tr class="even">
-<td>max</td>
+<td>California / Los Angeles-Long Beach-Anaheim, CA</td>
+<td>Los Angeles – N. Main</td>
+<td>PM2.5</td>
+<td style="text-align: right;">24 / 436</td>
 <td style="text-align: right;"><span class="math inline">\(\color{red}{0.903}\)</span></td>
+<td style="text-align: right;">0.203</td>
+<td style="text-align: right;">0.203</td>
+<td style="text-align: right;">0.203</td>
+<td style="text-align: right;">0.203</td>
+<td style="text-align: right;">0.203</td>
+</tr>
+<tr class="odd">
+<td>서울특별시</td>
+<td>서울 종로구</td>
+<td>PM2.5</td>
+<td style="text-align: right;">11 / 258</td>
+<td style="text-align: right;"><span class="math inline">\(\color{red}{0.853}\)</span></td>
 <td style="text-align: right;">0.635</td>
 <td style="text-align: right;">0.757</td>
 <td style="text-align: right;">0.757</td>
@@ -691,7 +679,7 @@ window.Quarto = {
 </tbody>
 </table>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="113" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 112;"><span id="cb4-113"><a href="#cb4-113" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"openaq"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="110" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 109;"><span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"openaq"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-4" data-nodetype="expression">
 
@@ -799,7 +787,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="135" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 134;"><span id="cb5-135"><a href="#cb5-135" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"weis"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="132" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 131;"><span id="cb5-132"><a href="#cb5-132" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"weis"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-5" data-nodetype="expression">
 
@@ -907,7 +895,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="157" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 156;"><span id="cb6-157"><a href="#cb6-157" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"usgs"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="154" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 153;"><span id="cb6-154"><a href="#cb6-154" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"usgs"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-6" data-nodetype="expression">
 
@@ -1015,7 +1003,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb7" data-startfrom="179" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 178;"><span id="cb7-179"><a href="#cb7-179" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"asos1"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb7" data-startfrom="176" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 175;"><span id="cb7-176"><a href="#cb7-176" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"asos1"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-7" data-nodetype="expression">
 
@@ -1123,7 +1111,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb8" data-startfrom="201" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 200;"><span id="cb8-201"><a href="#cb8-201" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"asos2"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb8" data-startfrom="198" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 197;"><span id="cb8-198"><a href="#cb8-198" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"asos2"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-8" data-nodetype="expression">
 
@@ -1231,7 +1219,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb9" data-startfrom="223" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 222;"><span id="cb9-223"><a href="#cb9-223" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"isd"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb9" data-startfrom="220" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 219;"><span id="cb9-220"><a href="#cb9-220" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"isd"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-9" data-nodetype="expression">
 
@@ -1319,7 +1307,7 @@ window.Quarto = {
 </tbody>
 </table>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb10" data-startfrom="253" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 252;"><span id="cb10-253"><a href="#cb10-253" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"airkorea"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb10" data-startfrom="250" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 249;"><span id="cb10-250"><a href="#cb10-250" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"airkorea"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-10" data-nodetype="expression">
 
@@ -1391,7 +1379,7 @@ window.Quarto = {
 </tbody>
 </table>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb11" data-startfrom="269" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 268;"><span id="cb11-269"><a href="#cb11-269" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"epa_pm25"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb11" data-startfrom="266" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 265;"><span id="cb11-266"><a href="#cb11-266" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"epa_pm25"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-11" data-nodetype="expression">
 
@@ -1463,7 +1451,7 @@ window.Quarto = {
 </tbody>
 </table>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb12" data-startfrom="285" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 284;"><span id="cb12-285"><a href="#cb12-285" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"epa_o3"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb12" data-startfrom="282" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 281;"><span id="cb12-282"><a href="#cb12-282" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"epa_o3"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-12" data-nodetype="expression">
 
@@ -1535,7 +1523,7 @@ window.Quarto = {
 </tbody>
 </table>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb13" data-startfrom="301" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 300;"><span id="cb13-301"><a href="#cb13-301" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"openaq"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb13" data-startfrom="298" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 297;"><span id="cb13-298"><a href="#cb13-298" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"openaq"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-13" data-nodetype="expression">
 
@@ -1607,7 +1595,7 @@ window.Quarto = {
 </tbody>
 </table>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb14" data-startfrom="317" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 316;"><span id="cb14-317"><a href="#cb14-317" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"weis"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb14" data-startfrom="314" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 313;"><span id="cb14-314"><a href="#cb14-314" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"weis"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-14" data-nodetype="expression">
 
@@ -1679,7 +1667,7 @@ window.Quarto = {
 </tbody>
 </table>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb15" data-startfrom="333" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 332;"><span id="cb15-333"><a href="#cb15-333" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"usgs"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb15" data-startfrom="330" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 329;"><span id="cb15-330"><a href="#cb15-330" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"usgs"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-15" data-nodetype="expression">
 
@@ -1751,7 +1739,7 @@ window.Quarto = {
 </tbody>
 </table>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb16" data-startfrom="349" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 348;"><span id="cb16-349"><a href="#cb16-349" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"asos1"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb16" data-startfrom="346" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 345;"><span id="cb16-346"><a href="#cb16-346" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"asos1"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-16" data-nodetype="expression">
 
@@ -1823,7 +1811,7 @@ window.Quarto = {
 </tbody>
 </table>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb17" data-startfrom="365" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 364;"><span id="cb17-365"><a href="#cb17-365" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"asos2"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb17" data-startfrom="362" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 361;"><span id="cb17-362"><a href="#cb17-362" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"asos2"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-17" data-nodetype="expression">
 
@@ -1895,7 +1883,7 @@ window.Quarto = {
 </tbody>
 </table>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb18" data-startfrom="381" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 380;"><span id="cb18-381"><a href="#cb18-381" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"isd"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb18" data-startfrom="378" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 377;"><span id="cb18-378"><a href="#cb18-378" aria-hidden="true" tabindex="-1"></a><span class="fu">ablPick</span>(<span class="st">"isd"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-18" data-nodetype="expression">
 
@@ -1906,24 +1894,24 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell hidden">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb19" data-startfrom="390" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 389;"><span id="cb19-390"><a href="#cb19-390" aria-hidden="true" tabindex="-1"></a>decData <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"attachments/261015_c90dd3_r2pick/r2pick.json"</span>)<span class="op">.</span><span class="fu">json</span>()</span>
-<span id="cb19-391"><a href="#cb19-391" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">decPick</span>(key) {</span>
-<span id="cb19-392"><a href="#cb19-392" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> L <span class="op">=</span> decData[key]<span class="op">;</span></span>
-<span id="cb19-393"><a href="#cb19-393" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sel <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(L<span class="op">.</span><span class="fu">map</span>((d<span class="op">,</span> i) <span class="kw">=&gt;</span> i)<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="vs">`지점 (</span><span class="sc">${</span>L<span class="op">.</span><span class="at">length</span><span class="sc">}</span><span class="vs">곳)`</span><span class="op">,</span> <span class="dt">format</span><span class="op">:</span> i <span class="kw">=&gt;</span> L[i]<span class="op">.</span><span class="at">label</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="st">"100%"</span>})<span class="op">;</span></span>
-<span id="cb19-394"><a href="#cb19-394" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> img <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;img src="</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">src</span><span class="sc">}</span><span class="vs">" style="width:100%"&gt;`</span><span class="op">;</span></span>
-<span id="cb19-395"><a href="#cb19-395" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cap <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;figcaption class="figure-caption"&gt;</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">caption</span><span class="sc">}</span><span class="vs">&lt;/figcaption&gt;`</span><span class="op">;</span></span>
-<span id="cb19-396"><a href="#cb19-396" aria-hidden="true" tabindex="-1"></a>  sel<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"input"</span><span class="op">,</span> () <span class="kw">=&gt;</span> { <span class="kw">const</span> d <span class="op">=</span> L[sel<span class="op">.</span><span class="at">value</span>]<span class="op">;</span> img<span class="op">.</span><span class="at">src</span> <span class="op">=</span> d<span class="op">.</span><span class="at">src</span><span class="op">;</span> cap<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> d<span class="op">.</span><span class="at">caption</span><span class="op">;</span> })<span class="op">;</span></span>
-<span id="cb19-397"><a href="#cb19-397" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="fu">html</span><span class="vs">`&lt;figure class="figure"&gt;</span><span class="sc">${</span>sel<span class="sc">}${</span>img<span class="sc">}${</span>cap<span class="sc">}</span><span class="vs">&lt;/figure&gt;`</span><span class="op">;</span></span>
-<span id="cb19-398"><a href="#cb19-398" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb19-399"><a href="#cb19-399" aria-hidden="true" tabindex="-1"></a>ablData <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"attachments/261015_c90dd3_r2ablpick/r2ablpick.json"</span>)<span class="op">.</span><span class="fu">json</span>()</span>
-<span id="cb19-400"><a href="#cb19-400" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">ablPick</span>(key) {</span>
-<span id="cb19-401"><a href="#cb19-401" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> L <span class="op">=</span> ablData[key]<span class="op">;</span></span>
-<span id="cb19-402"><a href="#cb19-402" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sel <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(L<span class="op">.</span><span class="fu">map</span>((d<span class="op">,</span> i) <span class="kw">=&gt;</span> i)<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="vs">`지점 (</span><span class="sc">${</span>L<span class="op">.</span><span class="at">length</span> <span class="op">-</span> <span class="dv">1</span><span class="sc">}</span><span class="vs">곳)`</span><span class="op">,</span> <span class="dt">format</span><span class="op">:</span> i <span class="kw">=&gt;</span> L[i]<span class="op">.</span><span class="at">label</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="st">"100%"</span>})<span class="op">;</span></span>
-<span id="cb19-403"><a href="#cb19-403" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> img <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;img src="</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">src</span><span class="sc">}</span><span class="vs">" style="width:100%"&gt;`</span><span class="op">;</span></span>
-<span id="cb19-404"><a href="#cb19-404" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cap <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;figcaption class="figure-caption"&gt;</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">caption</span><span class="sc">}</span><span class="vs">&lt;/figcaption&gt;`</span><span class="op">;</span></span>
-<span id="cb19-405"><a href="#cb19-405" aria-hidden="true" tabindex="-1"></a>  sel<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"input"</span><span class="op">,</span> () <span class="kw">=&gt;</span> { <span class="kw">const</span> d <span class="op">=</span> L[sel<span class="op">.</span><span class="at">value</span>]<span class="op">;</span> img<span class="op">.</span><span class="at">src</span> <span class="op">=</span> d<span class="op">.</span><span class="at">src</span><span class="op">;</span> cap<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> d<span class="op">.</span><span class="at">caption</span><span class="op">;</span> })<span class="op">;</span></span>
-<span id="cb19-406"><a href="#cb19-406" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="fu">html</span><span class="vs">`&lt;figure class="figure"&gt;</span><span class="sc">${</span>sel<span class="sc">}${</span>img<span class="sc">}${</span>cap<span class="sc">}</span><span class="vs">&lt;/figure&gt;`</span><span class="op">;</span></span>
-<span id="cb19-407"><a href="#cb19-407" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb19" data-startfrom="387" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 386;"><span id="cb19-387"><a href="#cb19-387" aria-hidden="true" tabindex="-1"></a>decData <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"attachments/261015_c90dd3_r2pick/r2pick.json"</span>)<span class="op">.</span><span class="fu">json</span>()</span>
+<span id="cb19-388"><a href="#cb19-388" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">decPick</span>(key) {</span>
+<span id="cb19-389"><a href="#cb19-389" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> L <span class="op">=</span> decData[key]<span class="op">;</span></span>
+<span id="cb19-390"><a href="#cb19-390" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sel <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(L<span class="op">.</span><span class="fu">map</span>((d<span class="op">,</span> i) <span class="kw">=&gt;</span> i)<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="vs">`지점 (</span><span class="sc">${</span>L<span class="op">.</span><span class="at">length</span><span class="sc">}</span><span class="vs">곳)`</span><span class="op">,</span> <span class="dt">format</span><span class="op">:</span> i <span class="kw">=&gt;</span> L[i]<span class="op">.</span><span class="at">label</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="st">"100%"</span>})<span class="op">;</span></span>
+<span id="cb19-391"><a href="#cb19-391" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> img <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;img src="</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">src</span><span class="sc">}</span><span class="vs">" style="width:100%"&gt;`</span><span class="op">;</span></span>
+<span id="cb19-392"><a href="#cb19-392" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cap <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;figcaption class="figure-caption"&gt;</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">caption</span><span class="sc">}</span><span class="vs">&lt;/figcaption&gt;`</span><span class="op">;</span></span>
+<span id="cb19-393"><a href="#cb19-393" aria-hidden="true" tabindex="-1"></a>  sel<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"input"</span><span class="op">,</span> () <span class="kw">=&gt;</span> { <span class="kw">const</span> d <span class="op">=</span> L[sel<span class="op">.</span><span class="at">value</span>]<span class="op">;</span> img<span class="op">.</span><span class="at">src</span> <span class="op">=</span> d<span class="op">.</span><span class="at">src</span><span class="op">;</span> cap<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> d<span class="op">.</span><span class="at">caption</span><span class="op">;</span> })<span class="op">;</span></span>
+<span id="cb19-394"><a href="#cb19-394" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="fu">html</span><span class="vs">`&lt;figure class="figure"&gt;</span><span class="sc">${</span>sel<span class="sc">}${</span>img<span class="sc">}${</span>cap<span class="sc">}</span><span class="vs">&lt;/figure&gt;`</span><span class="op">;</span></span>
+<span id="cb19-395"><a href="#cb19-395" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb19-396"><a href="#cb19-396" aria-hidden="true" tabindex="-1"></a>ablData <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"attachments/261015_c90dd3_r2ablpick/r2ablpick.json"</span>)<span class="op">.</span><span class="fu">json</span>()</span>
+<span id="cb19-397"><a href="#cb19-397" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">ablPick</span>(key) {</span>
+<span id="cb19-398"><a href="#cb19-398" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> L <span class="op">=</span> ablData[key]<span class="op">;</span></span>
+<span id="cb19-399"><a href="#cb19-399" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sel <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(L<span class="op">.</span><span class="fu">map</span>((d<span class="op">,</span> i) <span class="kw">=&gt;</span> i)<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="vs">`지점 (</span><span class="sc">${</span>L<span class="op">.</span><span class="at">length</span> <span class="op">-</span> <span class="dv">1</span><span class="sc">}</span><span class="vs">곳)`</span><span class="op">,</span> <span class="dt">format</span><span class="op">:</span> i <span class="kw">=&gt;</span> L[i]<span class="op">.</span><span class="at">label</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="st">"100%"</span>})<span class="op">;</span></span>
+<span id="cb19-400"><a href="#cb19-400" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> img <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;img src="</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">src</span><span class="sc">}</span><span class="vs">" style="width:100%"&gt;`</span><span class="op">;</span></span>
+<span id="cb19-401"><a href="#cb19-401" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cap <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;figcaption class="figure-caption"&gt;</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">caption</span><span class="sc">}</span><span class="vs">&lt;/figcaption&gt;`</span><span class="op">;</span></span>
+<span id="cb19-402"><a href="#cb19-402" aria-hidden="true" tabindex="-1"></a>  sel<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"input"</span><span class="op">,</span> () <span class="kw">=&gt;</span> { <span class="kw">const</span> d <span class="op">=</span> L[sel<span class="op">.</span><span class="at">value</span>]<span class="op">;</span> img<span class="op">.</span><span class="at">src</span> <span class="op">=</span> d<span class="op">.</span><span class="at">src</span><span class="op">;</span> cap<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> d<span class="op">.</span><span class="at">caption</span><span class="op">;</span> })<span class="op">;</span></span>
+<span id="cb19-403"><a href="#cb19-403" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="fu">html</span><span class="vs">`&lt;figure class="figure"&gt;</span><span class="sc">${</span>sel<span class="sc">}${</span>img<span class="sc">}${</span>cap<span class="sc">}</span><span class="vs">&lt;/figure&gt;`</span><span class="op">;</span></span>
+<span id="cb19-404"><a href="#cb19-404" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-19-1" data-nodetype="declaration">
