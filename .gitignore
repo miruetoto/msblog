@@ -8,3 +8,7 @@
 # Dropbox 충돌 파일
 *conflicted copy*
 *.DS_Store
+
+# 리포트 2 지점 드롭다운 그림의 «만들 때 쓰는» 사본 — ms_reports.py 가 같이하기에서 다시 옮긴다. 공개되는 것은 docs/ 쪽 (2026-10-16, 지점 전부 2,101곳이라 두 벌을 git 에 두지 않음)
+Posts/attachments/*_r2pick/
+Posts/attachments/*_r2ablpick/
