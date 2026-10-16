@@ -226,6 +226,8 @@ decPick("isd")
 
 `-` 표의 줄 — Full model 에서 부품을 하나씩 뺌 (w/o = without). 값은 평균 ARI, 괄호는 Full model 과의 차.
 
+`-` 탭마다 표 · 그림 (자료 평균) 아래에 지점별 — 지점마다 바꾼 뒤 ARI − Full model ARI 를 네 분해로 평균한 값 (지도 · 상자, 작은 자료는 표).
+
 - Full model: 분해 성분 (느린 변동까지 — VMD 는 DC 모드, EMD 계열은 마지막 잔차) 을 에너지 큰 것부터 99 % 까지 남기고, 날마다 성분을 지배주파수에 따라 1 · 2 · 3 · 4+ cycles/day 칸 (band) 에 모아 더한 뒤 칸 에너지를 가중치로 MFPCA (점수 3개) → 점수를 표준화해 k-means (k = 2). 하루 평균은 더하지 않음
 - w/o decomposition: 분해 없이 하루 원곡선을 FPCA (= 3절 FPCA — 네 분해 열이 같은 값)
 - w/o band regrouping: 성분을 주파수 칸에 모으지 않고 성분 하나하나를 그대로 MFPCA 변수로 (가중치는 성분 에너지)
@@ -248,6 +250,13 @@ decPick("isd")
 
 ![에어코리아 — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_17.png)
 
+::: {layout="[[62,38]]"}
+![에어코리아 — 지점마다 바꾼 뒤 ARI − Full model ARI (네 분해 평균, 빈 점은 계산 못 한 곳)](attachments/261015_c90dd3_18.png)
+
+![에어코리아 — 지점별 분포](attachments/261015_c90dd3_19.png)
+:::
+
+
 ## EPA AQS · PM2.5
 
 | 바꾼 것 | VMD | CEEMDAN | EEMD | EMD |
@@ -259,7 +268,14 @@ decPick("isd")
 | w/o energy truncation | 0.145 (+0.001) | 0.146 (+0.004) | 0.142 (-0.000) | 0.131 (+0.012) |
 | w/o score standardization | 0.157 (+0.013) | 0.167 (+0.025) | 0.168 (+0.026) | 0.148 (+0.030) |
 
-![EPA AQS · PM2.5 — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_18.png)
+![EPA AQS · PM2.5 — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_20.png)
+
+::: {layout="[[62,38]]"}
+![EPA AQS · PM2.5 — 지점마다 바꾼 뒤 ARI − Full model ARI (네 분해 평균, 빈 점은 계산 못 한 곳)](attachments/261015_c90dd3_21.png)
+
+![EPA AQS · PM2.5 — 지점별 분포](attachments/261015_c90dd3_22.png)
+:::
+
 
 ## EPA AQS · O3
 
@@ -272,7 +288,14 @@ decPick("isd")
 | w/o energy truncation | 0.033 (+0.000) | 0.028 (+0.000) | 0.037 (-0.002) | 0.033 (+0.001) |
 | w/o score standardization | 0.037 (+0.004) | 0.036 (+0.008) | 0.042 (+0.004) | 0.039 (+0.007) |
 
-![EPA AQS · O3 — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_19.png)
+![EPA AQS · O3 — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_23.png)
+
+::: {layout="[[62,38]]"}
+![EPA AQS · O3 — 지점마다 바꾼 뒤 ARI − Full model ARI (네 분해 평균, 빈 점은 계산 못 한 곳)](attachments/261015_c90dd3_24.png)
+
+![EPA AQS · O3 — 지점별 분포](attachments/261015_c90dd3_25.png)
+:::
+
 
 ## OpenAQ
 
@@ -285,7 +308,13 @@ decPick("isd")
 | w/o energy truncation | 0.480 (+0.000) | 0.480 (+0.000) | 0.480 (+0.000) | 0.480 (+0.000) |
 | w/o score standardization | 0.810 (+0.330) | 0.806 (+0.326) | 0.815 (+0.335) | 0.537 (+0.057) |
 
-![OpenAQ — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_20.png)
+![OpenAQ — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_26.png)
+
+| 지역 | 지점 | w/o decomposition | w/o band regrouping | w/o band weighting | w/o energy truncation | w/o score standardization |
+|---|---|---:|---:|---:|---:|---:|
+| California / Los Angeles-Long Beach-Anaheim, CA | Los Angeles – N. Main | +0.000 | -0.086 | +0.114 | +0.000 | +0.438 |
+| 서울특별시 | 서울 종로구 | -0.122 | -0.767 | +0.000 | +0.000 | +0.086 |
+
 
 ## WEIS
 
@@ -298,7 +327,26 @@ decPick("isd")
 | w/o energy truncation | 0.038 (-0.000) | 0.030 (-0.000) | 0.036 (-0.006) | 0.038 (+0.006) |
 | w/o score standardization | 0.033 (-0.006) | 0.032 (+0.002) | 0.032 (-0.010) | 0.038 (+0.006) |
 
-![WEIS — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_21.png)
+![WEIS — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_27.png)
+
+::: {layout="[[62,38]]"}
+![WEIS — 지점마다 바꾼 뒤 ARI − Full model ARI (네 분해 평균, 빈 점은 계산 못 한 곳)](attachments/261015_c90dd3_28.png)
+
+![WEIS — 지점별 분포](attachments/261015_c90dd3_29.png)
+:::
+
+| 지역 | 지점 | w/o decomposition | w/o band regrouping | w/o band weighting | w/o energy truncation | w/o score standardization |
+|---|---|---:|---:|---:|---:|---:|
+| 강원특별자치도 · 한강 수계 | 의암호 | -0.001 | +0.006 | +0.000 | +0.000 | +0.004 |
+| 경상남도 · 낙동강 수계 | 상동 | +0.024 | -0.001 | -0.001 | +0.000 | +0.020 |
+| 경상남도 · 낙동강 수계 | 청암 | -0.000 | -0.017 | +0.003 | +0.002 | -0.017 |
+| 경상남도 · 낙동강 수계 | 칠서 | -0.001 | -0.003 | +0.000 | +0.002 | -0.015 |
+| 경상북도 · 낙동강 수계 | 다산 | -0.007 | +0.077 | -0.009 | -0.007 | +0.020 |
+| 경상북도 · 낙동강 수계 | 해평 | -0.002 | -0.005 | -0.005 | -0.004 | -0.016 |
+| 전라남도 · 영산·섬진 수계 | 주암호 | -0.028 | -0.030 | -0.000 | -0.001 | -0.028 |
+| 전북특별자치도 · 금강 수계 | 용담호 | +0.001 | +0.003 | +0.000 | +0.000 | +0.001 |
+| 충청북도 · 금강 수계 | 대청호 | +0.272 | -0.041 | -0.025 | +0.004 | +0.014 |
+
 
 ## USGS
 
@@ -311,7 +359,14 @@ decPick("isd")
 | w/o energy truncation | 0.083 (+0.001) | 0.073 (-0.001) | 0.090 (+0.001) | 0.075 (-0.001) |
 | w/o score standardization | 0.068 (-0.014) | 0.066 (-0.007) | 0.073 (-0.016) | 0.064 (-0.012) |
 
-![USGS — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_22.png)
+![USGS — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_30.png)
+
+::: {layout="[[62,38]]"}
+![USGS — 지점마다 바꾼 뒤 ARI − Full model ARI (네 분해 평균, 빈 점은 계산 못 한 곳)](attachments/261015_c90dd3_31.png)
+
+![USGS — 지점별 분포](attachments/261015_c90dd3_32.png)
+:::
+
 
 ## 기상청 ASOS ①
 
@@ -324,7 +379,24 @@ decPick("isd")
 | w/o energy truncation | 0.086 (-0.001) | 0.060 (-0.000) | 0.065 (+0.015) | 0.051 (+0.003) |
 | w/o score standardization | -0.004 (-0.090) | -0.003 (-0.063) | -0.002 (-0.053) | -0.001 (-0.049) |
 
-![기상청 ASOS ① — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_23.png)
+![기상청 ASOS ① — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_33.png)
+
+::: {layout="[[62,38]]"}
+![기상청 ASOS ① — 지점마다 바꾼 뒤 ARI − Full model ARI (네 분해 평균, 빈 점은 계산 못 한 곳)](attachments/261015_c90dd3_34.png)
+
+![기상청 ASOS ① — 지점별 분포](attachments/261015_c90dd3_35.png)
+:::
+
+| 지역 | 지점 | w/o decomposition | w/o band regrouping | w/o band weighting | w/o energy truncation | w/o score standardization |
+|---|---|---:|---:|---:|---:|---:|
+| 대구광역시 | 대구 | -0.004 | -0.095 | -0.021 | +0.003 | -0.067 |
+| 대전광역시 | 대전 | -0.005 | -0.034 | -0.006 | -0.001 | -0.059 |
+| 부산광역시 | 부산 | +0.011 | -0.071 | -0.056 | -0.003 | -0.081 |
+| 서울특별시 | 서울 | +0.002 | -0.071 | -0.064 | +0.029 | -0.072 |
+| 울산광역시 | 울산 | -0.004 | -0.031 | -0.018 | -0.002 | -0.036 |
+| 인천광역시 | 인천 | +0.005 | -0.063 | -0.015 | +0.004 | -0.062 |
+| 전남광주통합특별시 | 광주 | -0.020 | -0.043 | -0.033 | +0.000 | -0.069 |
+
 
 ## 기상청 ASOS ②
 
@@ -337,7 +409,24 @@ decPick("isd")
 | w/o energy truncation | 0.191 (+0.001) | 0.193 (-0.000) | 0.187 (+0.007) | 0.159 (-0.001) |
 | w/o score standardization | 0.042 (-0.149) | 0.043 (-0.151) | 0.042 (-0.138) | 0.043 (-0.117) |
 
-![기상청 ASOS ② — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_24.png)
+![기상청 ASOS ② — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_36.png)
+
+::: {layout="[[62,38]]"}
+![기상청 ASOS ② — 지점마다 바꾼 뒤 ARI − Full model ARI (네 분해 평균, 빈 점은 계산 못 한 곳)](attachments/261015_c90dd3_37.png)
+
+![기상청 ASOS ② — 지점별 분포](attachments/261015_c90dd3_38.png)
+:::
+
+| 지역 | 지점 | w/o decomposition | w/o band regrouping | w/o band weighting | w/o energy truncation | w/o score standardization |
+|---|---|---:|---:|---:|---:|---:|
+| 대구광역시 | 대구 | -0.001 | -0.159 | -0.012 | +0.001 | -0.164 |
+| 대전광역시 | 대전 | -0.012 | -0.085 | -0.010 | +0.004 | -0.103 |
+| 부산광역시 | 부산 | +0.003 | -0.141 | -0.040 | -0.002 | -0.153 |
+| 서울특별시 | 서울 | +0.039 | -0.121 | -0.092 | +0.011 | -0.158 |
+| 울산광역시 | 울산 | +0.027 | -0.130 | -0.022 | -0.005 | -0.176 |
+| 인천광역시 | 인천 | +0.018 | -0.129 | -0.039 | +0.003 | -0.117 |
+| 전남광주통합특별시 | 광주 | +0.004 | -0.066 | -0.018 | -0.000 | -0.100 |
+
 
 ## NOAA ISD
 
@@ -350,7 +439,14 @@ decPick("isd")
 | w/o energy truncation | 0.240 (+0.001) | 0.129 (-0.000) | 0.267 (-0.004) | 0.125 (-0.052) |
 | w/o score standardization | 0.220 (-0.020) | 0.204 (+0.075) | 0.223 (-0.048) | 0.178 (+0.000) |
 
-![NOAA ISD — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_25.png)
+![NOAA ISD — 어블레이션 (Full model 대비 평균 ARI 차)](attachments/261015_c90dd3_39.png)
+
+::: {layout="[[62,38]]"}
+![NOAA ISD — 지점마다 바꾼 뒤 ARI − Full model ARI (네 분해 평균, 빈 점은 계산 못 한 곳)](attachments/261015_c90dd3_40.png)
+
+![NOAA ISD — 지점별 분포](attachments/261015_c90dd3_41.png)
+:::
+
 
 :::
 
