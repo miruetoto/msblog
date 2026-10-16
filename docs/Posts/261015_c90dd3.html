@@ -245,36 +245,41 @@ window.Quarto = {
 <td>1 = 지점이 속한 권역에 PM2.5 주의보 · 경보가 걸친 날 / 0 = 그 밖의 날 중 그 권역의 PM2.5 예보 (당일 최종 발표) 가 «좋음» 이거나 가장 가까운 ASOS 일강수 ≥ 1 mm 인 날</td>
 </tr>
 <tr class="even">
-<td>EPA AQS</td>
+<td>EPA AQS · PM2.5</td>
 <td>AQI USG 이상 vs Good · Moderate</td>
-<td>1 = 카운티 일 AQI ≥ 101 이고 그날 AQI 를 정한 물질이 이 지점의 물질인 날 / 0 = 카운티 일 AQI 가 Good · Moderate 인 날</td>
+<td>1 = 카운티 일 AQI ≥ 101 이고 그날 AQI 를 정한 물질이 PM2.5 인 날 / 0 = 카운티 일 AQI 가 Good · Moderate 인 날</td>
 </tr>
 <tr class="odd">
+<td>EPA AQS · O3</td>
+<td>AQI USG 이상 vs Good · Moderate</td>
+<td>1 = 카운티 일 AQI ≥ 101 이고 그날 AQI 를 정한 물질이 O3 인 날 / 0 = 카운티 일 AQI 가 Good · Moderate 인 날</td>
+</tr>
+<tr class="even">
 <td>OpenAQ</td>
 <td>(라벨 없음)</td>
 <td>LA: EPA 규칙 (LA 카운티 · PM2.5) / 서울 종로구: 에어코리아 규칙</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>WEIS</td>
 <td>조류경보제 발령 기간 vs 평상시 정상일</td>
 <td>1 = 대응하는 조류경보 지점에 경보 (관심 이상) 가 걸린 날 / 0 = 경보가 아님이 확인된 날 (모든 달). 대응하는 경보 지점이 없는 곳은 라벨 없음</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>USGS</td>
 <td>강우 유출 · 홍수 유입일 vs 기저 유출 평수기</td>
 <td>일유량 Q 를 Lyne–Hollick 필터 (α 0.925, 앞 · 뒤 · 앞) 로 기저 유출과 직접 유출 D 로 나눔. 1 = D / Q ≥ 0.5 인 날 / 0 = D / Q ≤ 0.1 이고 Q 가 지점의 P25 – P75 안인 날</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>기상청 ASOS ①</td>
 <td>폭염 · 열대야 발생일 vs 비폭염 정상일</td>
 <td>1 = 기상청 공식 폭염일 (일최고 ≥ 33 °C) 또는 열대야일 (18:01 – 익일 09:00 최저 ≥ 25 °C) / 0 = 둘 다 아닌 날</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>기상청 ASOS ②</td>
 <td>청명일 (맑음) vs 강우 · 운량 8 이상 흐린 날</td>
 <td>1 = 일강수 ≥ 0.1 mm 이거나 일평균 전운량 ≥ 8 인 날 / 0 = 일평균 전운량 0 – 5 (기상청 하늘상태 «맑음») 이고 강수 보고가 없는 날</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>NOAA ISD</td>
 <td>고온 건조 기후일 vs 한랭 전선 통과 · 강수일</td>
 <td>1 = 강수 ≥ 1 mm 이거나 한랭 전선이 지난 날 (일평균 기온이 전날보다 5 °C 이상 내리고 일평균 해면기압이 3 hPa 이상 오름) / 0 = 강수 0 이고 일최고 ≥ 지점 P75 · 일평균 습도 ≤ 지점 중앙값인 날</td>
@@ -370,7 +375,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="57" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 56;"><span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"airkorea"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="58" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 57;"><span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"airkorea"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-1" data-nodetype="expression">
 
@@ -460,7 +465,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="77" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 76;"><span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"epa_pm25"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="78" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 77;"><span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"epa_pm25"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-2" data-nodetype="expression">
 
@@ -550,7 +555,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="97" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 96;"><span id="cb3-97"><a href="#cb3-97" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"epa_o3"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="98" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 97;"><span id="cb3-98"><a href="#cb3-98" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"epa_o3"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-3" data-nodetype="expression">
 
@@ -626,7 +631,7 @@ window.Quarto = {
 </tbody>
 </table>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="110" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 109;"><span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"openaq"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="111" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 110;"><span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"openaq"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-4" data-nodetype="expression">
 
@@ -794,7 +799,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="136" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 135;"><span id="cb5-136"><a href="#cb5-136" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"weis"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="137" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 136;"><span id="cb5-137"><a href="#cb5-137" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"weis"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-5" data-nodetype="expression">
 
@@ -884,7 +889,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="156" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 155;"><span id="cb6-156"><a href="#cb6-156" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"usgs"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="157" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 156;"><span id="cb6-157"><a href="#cb6-157" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"usgs"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-6" data-nodetype="expression">
 
@@ -1030,7 +1035,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb7" data-startfrom="180" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 179;"><span id="cb7-180"><a href="#cb7-180" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"asos1"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb7" data-startfrom="181" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 180;"><span id="cb7-181"><a href="#cb7-181" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"asos1"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-7" data-nodetype="expression">
 
@@ -1176,7 +1181,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb8" data-startfrom="204" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 203;"><span id="cb8-204"><a href="#cb8-204" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"asos2"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb8" data-startfrom="205" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 204;"><span id="cb8-205"><a href="#cb8-205" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"asos2"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-8" data-nodetype="expression">
 
@@ -1266,7 +1271,7 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb9" data-startfrom="224" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 223;"><span id="cb9-224"><a href="#cb9-224" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"isd"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb9" data-startfrom="225" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 224;"><span id="cb9-225"><a href="#cb9-225" aria-hidden="true" tabindex="-1"></a><span class="fu">decPick</span>(<span class="st">"isd"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-9" data-nodetype="expression">
 
@@ -1924,15 +1929,15 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell hidden">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb10" data-startfrom="365" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 364;"><span id="cb10-365"><a href="#cb10-365" aria-hidden="true" tabindex="-1"></a>decData <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"attachments/261015_c90dd3_r2pick/r2pick.json"</span>)<span class="op">.</span><span class="fu">json</span>()</span>
-<span id="cb10-366"><a href="#cb10-366" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">decPick</span>(key) {</span>
-<span id="cb10-367"><a href="#cb10-367" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> L <span class="op">=</span> decData[key]<span class="op">;</span></span>
-<span id="cb10-368"><a href="#cb10-368" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sel <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(L<span class="op">.</span><span class="fu">map</span>((d<span class="op">,</span> i) <span class="kw">=&gt;</span> i)<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="vs">`지점 (</span><span class="sc">${</span>L<span class="op">.</span><span class="at">length</span><span class="sc">}</span><span class="vs">곳)`</span><span class="op">,</span> <span class="dt">format</span><span class="op">:</span> i <span class="kw">=&gt;</span> L[i]<span class="op">.</span><span class="at">label</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="st">"100%"</span>})<span class="op">;</span></span>
-<span id="cb10-369"><a href="#cb10-369" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> img <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;img src="</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">src</span><span class="sc">}</span><span class="vs">" style="width:100%"&gt;`</span><span class="op">;</span></span>
-<span id="cb10-370"><a href="#cb10-370" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cap <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;figcaption class="figure-caption"&gt;</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">caption</span><span class="sc">}</span><span class="vs">&lt;/figcaption&gt;`</span><span class="op">;</span></span>
-<span id="cb10-371"><a href="#cb10-371" aria-hidden="true" tabindex="-1"></a>  sel<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"input"</span><span class="op">,</span> () <span class="kw">=&gt;</span> { <span class="kw">const</span> d <span class="op">=</span> L[sel<span class="op">.</span><span class="at">value</span>]<span class="op">;</span> img<span class="op">.</span><span class="at">src</span> <span class="op">=</span> d<span class="op">.</span><span class="at">src</span><span class="op">;</span> cap<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> d<span class="op">.</span><span class="at">caption</span><span class="op">;</span> })<span class="op">;</span></span>
-<span id="cb10-372"><a href="#cb10-372" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="fu">html</span><span class="vs">`&lt;figure class="figure"&gt;</span><span class="sc">${</span>sel<span class="sc">}${</span>img<span class="sc">}${</span>cap<span class="sc">}</span><span class="vs">&lt;/figure&gt;`</span><span class="op">;</span></span>
-<span id="cb10-373"><a href="#cb10-373" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb10" data-startfrom="366" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 365;"><span id="cb10-366"><a href="#cb10-366" aria-hidden="true" tabindex="-1"></a>decData <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"attachments/261015_c90dd3_r2pick/r2pick.json"</span>)<span class="op">.</span><span class="fu">json</span>()</span>
+<span id="cb10-367"><a href="#cb10-367" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">decPick</span>(key) {</span>
+<span id="cb10-368"><a href="#cb10-368" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> L <span class="op">=</span> decData[key]<span class="op">;</span></span>
+<span id="cb10-369"><a href="#cb10-369" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> sel <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(L<span class="op">.</span><span class="fu">map</span>((d<span class="op">,</span> i) <span class="kw">=&gt;</span> i)<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="vs">`지점 (</span><span class="sc">${</span>L<span class="op">.</span><span class="at">length</span><span class="sc">}</span><span class="vs">곳)`</span><span class="op">,</span> <span class="dt">format</span><span class="op">:</span> i <span class="kw">=&gt;</span> L[i]<span class="op">.</span><span class="at">label</span><span class="op">,</span> <span class="dt">width</span><span class="op">:</span> <span class="st">"100%"</span>})<span class="op">;</span></span>
+<span id="cb10-370"><a href="#cb10-370" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> img <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;img src="</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">src</span><span class="sc">}</span><span class="vs">" style="width:100%"&gt;`</span><span class="op">;</span></span>
+<span id="cb10-371"><a href="#cb10-371" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> cap <span class="op">=</span> <span class="fu">html</span><span class="vs">`&lt;figcaption class="figure-caption"&gt;</span><span class="sc">${</span>L[<span class="dv">0</span>]<span class="op">.</span><span class="at">caption</span><span class="sc">}</span><span class="vs">&lt;/figcaption&gt;`</span><span class="op">;</span></span>
+<span id="cb10-372"><a href="#cb10-372" aria-hidden="true" tabindex="-1"></a>  sel<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"input"</span><span class="op">,</span> () <span class="kw">=&gt;</span> { <span class="kw">const</span> d <span class="op">=</span> L[sel<span class="op">.</span><span class="at">value</span>]<span class="op">;</span> img<span class="op">.</span><span class="at">src</span> <span class="op">=</span> d<span class="op">.</span><span class="at">src</span><span class="op">;</span> cap<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> d<span class="op">.</span><span class="at">caption</span><span class="op">;</span> })<span class="op">;</span></span>
+<span id="cb10-373"><a href="#cb10-373" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="fu">html</span><span class="vs">`&lt;figure class="figure"&gt;</span><span class="sc">${</span>sel<span class="sc">}${</span>img<span class="sc">}${</span>cap<span class="sc">}</span><span class="vs">&lt;/figure&gt;`</span><span class="op">;</span></span>
+<span id="cb10-374"><a href="#cb10-374" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display hidden">
 <div>
 <div id="ojs-cell-10-1" data-nodetype="declaration">
